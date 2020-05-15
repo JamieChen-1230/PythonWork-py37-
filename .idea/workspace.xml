@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff1e8a4e-9f45-4d3b-9949-a27f16c94dbc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/框架(Django Rest Framework)/200501_CBV/mysite/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/框架(Django Rest Framework)/200501_CBV/mysite/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,34 +13,39 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200502_restful規範/mysite/mysite/urls.py">
+        <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200504_DRF用戶登入(認證、權限、節流)/筆記.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200504_DRF用戶登入(認證、權限、節流)/mysite/mysite/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="31">
-              <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+            <state relative-caret-position="224">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
               <folding>
-                <element signature="e#0#32#0" expanded="true" />
+                <element signature="e#1#29#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200502_restful規範/mysite/app01/views.py">
+        <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200504_DRF用戶登入(認證、權限、節流)/mysite/api/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="37" column="21" lean-forward="true" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
+            <state relative-caret-position="759">
+              <caret line="94" column="40" lean-forward="true" selection-start-line="94" selection-start-column="40" selection-end-line="94" selection-end-column="40" />
               <folding>
-                <element signature="e#0#49#0" expanded="true" />
+                <element signature="e#1#37#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200502_restful規範/筆記.txt">
+        <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200504_DRF用戶登入(認證、權限、節流)/mysite/api/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
+            <state relative-caret-position="199">
+              <caret line="15" column="56" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -56,6 +61,12 @@
         <option value="$PROJECT_DIR$/框架(Django Rest Framework)/200502_CBV/mysite/mysite/urls.py" />
         <option value="$PROJECT_DIR$/框架(Django Rest Framework)/200502_restful規範/mysite/mysite/urls.py" />
         <option value="$PROJECT_DIR$/框架(Django Rest Framework)/200502_restful規範/筆記.txt" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/框架(Django Rest Framework)/200503_DRF框架初試/mysite/mysite/urls.py" />
+        <option value="$PROJECT_DIR$/框架(Django Rest Framework)/200503_DRF框架初試/mysite/app01/views.py" />
+        <option value="$PROJECT_DIR$/框架(Django Rest Framework)/200504_DRF用戶登入(認證、權限、節流)/mysite/mysite/urls.py" />
+        <option value="$PROJECT_DIR$/框架(Django Rest Framework)/200504_DRF用戶登入(認證、權限、節流)/mysite/api/views.py" />
+        <option value="$PROJECT_DIR$/框架(Django Rest Framework)/200504_DRF用戶登入(認證、權限、節流)/mysite/api/models.py" />
       </list>
     </option>
   </component>
@@ -86,7 +97,30 @@
               <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
               <item name="框架(Django Rest Framework)" type="462c0819:PsiDirectoryNode" />
-              <item name="200502_restful規範" type="462c0819:PsiDirectoryNode" />
+              <item name="200504_DRF用戶登入(認證、權限、節流)" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
+              <item name="框架(Django Rest Framework)" type="462c0819:PsiDirectoryNode" />
+              <item name="200504_DRF用戶登入(認證、權限、節流)" type="462c0819:PsiDirectoryNode" />
+              <item name="mysite" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
+              <item name="框架(Django Rest Framework)" type="462c0819:PsiDirectoryNode" />
+              <item name="200504_DRF用戶登入(認證、權限、節流)" type="462c0819:PsiDirectoryNode" />
+              <item name="mysite" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
+              <item name="框架(Django Rest Framework)" type="462c0819:PsiDirectoryNode" />
+              <item name="200504_DRF用戶登入(認證、權限、節流)" type="462c0819:PsiDirectoryNode" />
+              <item name="mysite" type="462c0819:PsiDirectoryNode" />
+              <item name="mysite" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -97,6 +131,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -124,12 +159,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1589505763598</updated>
-      <workItem from="1589505765212" duration="3769000" />
+      <workItem from="1589505765212" duration="4460000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3769000" />
+    <option name="totallyTimeSpent" value="4460000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -191,13 +226,10 @@
     <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200502_restful規範/mysite/app01/models.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200502_restful規範/mysite/mysite/urls.py">
+    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200502_restful規範/筆記.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="672">
+          <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -211,10 +243,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200502_restful規範/筆記.txt">
+    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200502_restful規範/mysite/mysite/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
+        <state relative-caret-position="31">
+          <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="3" column="15" lean-forward="true" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200503_DRF框架初試/mysite/app01/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200503_DRF框架初試/mysite/app01/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200503_DRF框架初試/mysite/mysite/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200504_DRF用戶登入(認證、權限、節流)/筆記.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200504_DRF用戶登入(認證、權限、節流)/mysite/mysite/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#1#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200504_DRF用戶登入(認證、權限、節流)/mysite/api/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="759">
+          <caret line="94" column="40" lean-forward="true" selection-start-line="94" selection-start-column="40" selection-end-line="94" selection-end-column="40" />
+          <folding>
+            <element signature="e#1#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200504_DRF用戶登入(認證、權限、節流)/mysite/api/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="15" column="56" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="56" />
         </state>
       </provider>
     </entry>
