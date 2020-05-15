@@ -1,0 +1,114 @@
+Redis：
+    - 是以字典結構（key-value鍵值對結構）存儲數據，並允許其他應用通過TCP協議讀寫字典中的內容。
+    - Redis是一個key-value存儲系統，或者說是一個key-value數據庫。
+
+Redis命令：
+    http://redisdoc.com/index.html
+
+操作(redis-cli和python)：
+    - redis-cli：
+        - 整體操作：
+            - 連接上redis-server：
+                redis-cli -h <IP> -p <端口>： redis-cli -h 127.0.0.1 -p 6379\
+            - 刪除所有鍵值對：
+                flushall
+
+        - 字符串操作：
+            - 添加：
+                set <key> <value>： set name "jamie"
+            - 獲取：
+                get <key>： get name
+            - 刪除：
+                del <key>： del name
+            - 設置過期時間(若沒設置，則為永久)：
+                expire <key> <timeout>(秒)： expire name 5
+            - 添加並設置過期時間：
+                set <key> <value> EX <timeout>(秒)： set name 'jamie' EX 5
+            - 查看過期時間：
+                ttl <key>： ttl name
+            - 查看所有的key：
+                keys *
+
+        - 列表操作：
+            - 在列表左邊添加元素(若無列表，則會創建列表再把value放進去)：
+                lpush <key> <value>： lpush users 'jamie'
+            - 在列表右邊添加元素(若無列表，則會創建列表再把value放進去)：
+                rpush <key> <value>： rpush users 'jj'
+            - 查看列表元素：
+                lrange <key> <start> <stop>： lrange users 0 1
+            - 查看列表所有元素：
+                lrange <key> 0 -1
+            - 刪除並返回頭元素：
+                lpop <key>： lpop users
+            - 刪除並返回尾元素：
+                rpop <key>： rpop users
+            - 刪除並返回指定元素：
+                count > 0：從表頭開始向表尾搜索，刪等於value之元素，數量為count。
+                count < 0：從表尾開始向表頭搜索，刪除等於value之元素，數量為count的絕對值。
+                count = 0：移除表中所有等於value之元素。
+                lrem <key> <count> <value>： lrem users 0 jamie
+            - 返回第幾個元素：
+                lindex <key> <index>： lindex users 1
+            - 返回列表元素個數：
+                llen <key>： llen users
+
+        - 集合操作(不能重複、無序)：
+            - 添加：
+                sadd <key> <value1> <value2>...： sadd s1 jamie jj joker
+                                                  sadd s2 jason vivi joker
+            - 查看所有元素：
+                smembers <key>： smembers s1
+            - 移除元素：
+                srem <key> <value>： srem s1 jj
+            - 查看元素個數：
+                scard <key>： scard s1
+            - 交集：
+                sinter <key1> <key2>...： sinter s1 s2
+            - 並集：
+                sunion <key1> <key2>...： sunion s1 s2
+            - 差集(前-後)：
+                sdiff <key1> <key2>...： sdiff s1 s2
+
+        - hash(類似字典)操作：
+            - 添加：
+                hset <key> <field> <value>： hset di_user name 'jamie'
+            - 添加多個field和value：
+                hmset <key> <field1> <value1> <field2> <value2>...： hmset di_user height 180 weight 70
+            - 刪除hash中field：
+                hdel <key> <field>： hdel di_user name
+            - 獲取hash中field的值：
+                hget <key> <field>： hget di_user name
+            - 獲取hash中所有field和value：
+                hgetall <key>： hgetall di_user
+            - 獲取hash中所有field：
+                hkeys <key>： hkeys di_user
+            - 獲取hash中所有value：
+                hvals <key>： hvals di_user
+            - 判斷hash是否有這個field(1表有；0表無)：
+                hexists <key> <field>： hexists di_user name
+            - 獲取有幾個field：
+                hlen <key>： hlen di_user
+
+        - 事務操作(可以一次執行多個命令)：
+            - 特徵：
+                - 隔離操作：事務中的所有命令都會序列化，按順序執行，不會被其他命令打擾。
+                - 原子操作：事務中的命令要嘛全部執行，要嘛全部不執行。
+            - 開啟一個事務：
+                multi
+            - 執行事務(若事務中有報錯，則全都不執行)：
+                exec
+            - 取消事務：
+                discard
+            - 監視一個或多個key(當被監視的key在編寫事務途中被其他人(開新的cmd)改變了的話，則事務不執行)：
+                ※ 要先開監聽，再開事務
+                watch <key>...： watch name
+                multi
+            - 取消監視：
+                unwatch
+
+        - 發佈(傳訊息)與訂閱(接收)操作，需要使用到虛擬機(兩個人)：
+            - 訂閱某個頻道的消息(要先開訂閱)：
+                subscribe <channel1> <channel2>...： subscribe chatroom
+            - 在某個頻道發佈消息：
+                publish <channel> <message>： publish chatroom "hi"
+
