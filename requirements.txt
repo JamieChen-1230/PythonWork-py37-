@@ -1,4 +1,4 @@
-Django==2.2
+Django==2.2.10
 djangorestframework==3.11.0
 Scrapy==2.1.0
 sqlparse==0.3.1
