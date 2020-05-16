@@ -10,6 +10,18 @@ Redis命令：
         - 整體操作：
             - 連接上redis-server：
                 redis-cli -h <IP> -p <端口>： redis-cli -h 127.0.0.1 -p 6379\
+            - 設置密碼：
+                到配置文件(redis.conf)中找到requirepass，並設置密碼。(默認是被註釋的) requirepass 851230
+                ※ windows中配置文件為redis.windows-service.conf
+            - 重啟服務(在更改配置文件後，要重啟服務才能生效)：
+                linux：service redis-server restart
+                windows：開工作管理員中的服務
+            - 登入後開權限：
+                auth <password>： auth 851230
+            - 登入時開權限：
+                redis-cli -a <password>： redis-cli -a 851230
+            - 開啟其他IP也能連接本機的redis：
+                到配置文件(redis.conf)中找到bind，並設置本機IP位置(自己的)，讓其他人也能通過此IP來連接。(默認只有127.0.0.1) bind 127.0.0.1 192.168.xx.xx
             - 刪除所有鍵值對：
                 flushall
 
