@@ -1,0 +1,34 @@
+※ 權限(EX:用戶等級權限)：【先做認證，在做權限】
+    一、使用：不同視圖不同權限可以訪問
+        - 創建類：繼承BasePermission，並實現has_permission方法。
+
+        - 返回值(兩種)：
+            - True：有權限
+            - False：無權限
+
+        - 局部使用(在view中加入靜態字段permission_classes)：
+            class OrderView(APIView):
+                # 加入權限
+                permission_classes = [OtherPermission, ]
+
+        - 全局使用(加到settings.py)：
+            REST_FRAMEWORK = {
+                # 全局使用認證類(若想讓view不使用全局認證類，則在其中加入authentication_classes=[])
+                "DEFAULT_PERMISSION_CLASSES": ('api.utils.permission.SVIPPermission',)
+            }
+
+    二、源碼流程：
+        -> dispatch
+            -> initial
+                -> check_permissions
+                    -> for permission in self.get_permissions(): (循環了權限類的所有對象)
+
+    三、內置類：
+        class BasePermission(object):
+            # 具體做權限操作的方法
+            def has_permission(self, request, view):
+                return True
+            def has_object_permission(self, request, view, obj):
+                return True
+
+

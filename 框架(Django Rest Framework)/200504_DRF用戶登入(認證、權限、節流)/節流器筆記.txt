@@ -1,0 +1,30 @@
+※ 節流(EX:訪問頻率限制)：
+    一、使用：
+        - 創建類：
+            - 繼承BaseThrottle，並實現allow_request方法。
+            - (優)繼承SimpleRateThrottle，並實現scope屬性(setting.py中的key)和get_cache_key方法。
+
+        - 返回值(兩種)：
+            - True：可繼續訪問
+            - False：訪問頻率太高，不可繼續訪問
+
+        - 局部使用(在view中加入靜態字段throttle_classes)：
+            class OrderView(APIView):
+                # 加入權限
+                throttle_classes = [VisitThrottle, ]
+
+        - 全局使用(加到settings.py)：
+            REST_FRAMEWORK = {
+                'DEFAULT_THROTTLE_CLASSES': ('api.utils.throttle.VisitThrottle',),  # 通常不會寫到views中，而是會再另外創一個py檔(EX:throttle.py)
+                # 使用內置的訪問節流器(SimpleRateThrottle)，需要設置訪問的頻率
+                'DEFAULT_THROTTLE_RATES': {
+                    'ip': '3/m',   # ip為自定義字段，3/m表示一分鐘三次
+                    'username': '10/m',
+                },  # 若繼承SimpleRateThrottle的話就必須設置
+            }
+
+    二、源碼流程：
+        -> dispatch
+            -> initial
+                -> check_throttles
+                    -> for throttle in self.get_throttles() (循環了節流器類的所有對象)

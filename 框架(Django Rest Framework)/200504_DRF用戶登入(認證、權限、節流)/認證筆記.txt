@@ -1,0 +1,41 @@
+※ 認證(EX:用戶登入)：【先做認證，在做權限】
+    一、使用：
+        - 創建類：繼承BaseAuthentication，並實現authenticate方法。
+
+        - 返回值(三種)：
+            - None：自己不處理，交給下認證來處理
+            - 拋出異常：
+                from rest_framework import exceptions
+                raise exceptions.AuthenticationFailed('用戶驗證失敗')
+            - (元素1, 元素2)：
+                元素1賦值給request.user；元素2賦值給request.auth
+
+        - 局部使用(在view中加入靜態字段authentication_classes)：
+            class OrderView(APIView):
+                # 加入認證
+                authentication_classes = [MyAuthentication, ]
+
+        - 全局使用(加到settings.py)：
+            REST_FRAMEWORK = {
+                # 全局使用認證類(若想讓view不使用全局認證類，則在其中加入authentication_classes=[])
+                "DEFAULT_AUTHENTICATION_CLASSES": ('api.views.MyAuthentication', )  # 通常不會寫到views中，而是會再另外創一個py檔(EX:auth.py)
+            }
+
+    二、源碼流程：
+        -> dispatch
+            -> 封裝到request
+                -> 獲取所有定義的認證類(全局/局部定義的)，在通過列表生成式(列表推導)創建了各個認證類之對象
+            -> initial
+                -> perform_authentication
+                    -> request.user (在內部循環了認證類的所有對象)
+
+    三、內置類：
+        class BaseAuthentication(object):
+            # 具體做認證操作的方法
+            def authenticate(self, request):
+                raise NotImplementedError(".authenticate() must be overridden.")
+            # 當認證失敗時，給瀏覽器返回的響應頭
+            def authenticate_header(self, request):
+                pass
+
+

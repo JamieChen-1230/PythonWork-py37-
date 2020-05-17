@@ -1,0 +1,53 @@
+※ 版本：
+    一、方式：
+        - 在URL中透過get參數傳參。
+            URL：http://127.0.0.1:8000/api/users/?version=v1
+            類： 使用DRF內置提供的QueryParameterVersioning
+                - 配置文件(settings.py):
+                    REST_FRAMEWORK = {
+                        'DEFAULT_VERSION': 'v1',  # 默認版本號
+                        'ALLOWED_VERSIONS': ['v1', 'v2'],  # 允許的版本號
+                        'VERSION_PARAM': 'version',  # 在get請求中版本號的key(EX: ?version)
+                    }
+                - 路由設置(urls.py)：
+                    urlpatterns = [
+                        path('users/', views.UsersView.as_view()),
+                    ]
+
+        - (推薦)在URL的路徑中傳參。
+            URL：http://127.0.0.1:8000/api/v1/users/
+            類： 使用DRF內置提供的URLPathVersioning
+                - 配置文件(settings.py)：
+                    REST_FRAMEWORK = {
+                        'DEFAULT_VERSION': 'v1',  # 默認版本號
+                        'ALLOWED_VERSIONS': ['v1', 'v2'],  # 允許的版本號
+                        'VERSION_PARAM': 'version',  # 在get請求中版本號的key(EX: ?version)
+                    }
+                - 路由設置(urls.py)：
+                    urlpatterns = [
+                        # re_path要使用正則表達式時使用
+                        re_path(r'^(?P<version>[v1|v2]+)/users/$', views.UsersView.as_view()),
+                    ]
+
+    二、使用：
+        - 透過版本類中的reverse方法反向生成出當前url
+            url = request.versioning_scheme.reverse(viewname='uuu', request=request)
+
+        - 創建類： 不需要自定義，內建的很夠用了。
+
+        - 局部使用(在view中加入靜態字段versioning_class)：
+            versioning_class = URLPathVersioning
+
+        - 全局使用(加到settings.py)：
+            REST_FRAMEWORK = {
+                # 全局使用版本號
+                'DEFAULT_VERSIONING_CLASS': 'rest_framework.versioning.URLPathVersioning',
+                'DEFAULT_VERSION': 'v1',  # 默認版本號
+                'ALLOWED_VERSIONS': ['v1', 'v2'],  # 允許的版本號
+                'VERSION_PARAM': 'version',  # 在get請求中版本號的key
+            }
+
+    三、源碼流程：
+        -> dispatch
+            -> initial
+                -> determine_version(返回版本號和所使用的版本類)

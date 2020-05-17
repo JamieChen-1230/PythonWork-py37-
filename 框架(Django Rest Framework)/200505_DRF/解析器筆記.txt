@@ -1,0 +1,54 @@
+※ 解析器：【對請求體數據進行解析。】
+    一、前戲(Django的request.POST和request.BODY)：
+        - request.POST中會有值的條件(值為去request.body中解析出來的數據)：
+            1. 請求頭中的Content-Type須為 application/x-www-form-urlencoded。
+            2. 請求體中的數據格式須為：
+                - 範例：name=jamie&age=18&height=179
+
+        - 什麼場合會有值：
+            - form表單提交(默認情況下)
+            - ajax提交(默認情況下)
+
+        - 什麼場合不會有值：
+            - 解決方法： 使用解析器。
+            - 範例：
+                $.ajax({
+                    url: ... ,
+                    type: 'POST',
+                    headers: {'Content-Type': 'application/json'},  # 但請求頭不符合條件
+                    data: {'name': 'jamie', 'age': 18},  # 內部會自動轉換為name=jamie&age=18(符合條件)
+                })
+
+            - 範例二：
+                $.ajax({
+                    url: ... ,
+                    type: 'POST',
+                    data: JSON.stringify({'name': 'jamie', 'age': 18}),  # 數據格式不符合條件
+                })
+
+    二、流程：
+        1. 獲取用戶請求
+        2. 獲取用戶請求體
+        3. 獲取用戶請求頭並和parser_classes進行比對，選擇要用的解析器
+        4. 解析器對請求體進行解析
+        5. 數據封裝到request.data
+
+    三、使用：
+        - 創建類： 不需要自定義，內建的很夠用了
+
+        - 局部使用(在view中加入靜態字段parser_classes)：
+            parser_classes = [JSONParser, FormParser, MultiPartParser]
+
+        - 全局使用(加到settings.py)：
+            REST_FRAMEWORK = {
+                'DEFAULT_PARSER_CLASSES': (
+                    'rest_framework.parsers.JSONParser',
+                    'rest_framework.parsers.FormParser',
+                    'rest_framework.parsers.MultiPartParser',
+                ),
+            }
+
+    四、源碼流程：
+        -> dispatch
+            -> 封裝到request
+                -> 獲取所有定義的解析器類(全局/局部定義的)，在通過列表生成式(列表推導)創建了各個解析器類之對象
