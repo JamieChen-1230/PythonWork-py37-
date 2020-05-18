@@ -1,47 +1,135 @@
 ※ 序列化：
     一、序列化類：
-        - 方法一(繼承serializers.Serializer)：
-            class UsersSerializer(serializers.Serializer):
-                # 字段名必須跟數據庫一致，除非有加source參數
-                # 一般字段
-                id = serializers.IntegerField()
-                username = serializers.CharField()
-                password = serializers.CharField()
-                # choices字段
-                user_type_num = serializers.CharField(source='user_type')  # source表示數據庫的某個字段
-                # get_字段名_display： 他會先取出字段名對應的數據，但如果是可被執行的話，就會繼續找下去
-                user_type = serializers.CharField(source='get_user_type_display')  # 取出來的是VIP、SIP等
-                # 一對多字段
-                groups = serializers.CharField(source='group.title')  # 取出外鍵對象.title字段
-                # 多對多字段
-                rls = serializers.SerializerMethodField()  # 自定義顯示
+    	(1) 繼承內置類：
+	        - 方法一(繼承serializers.Serializer)：
+	            class UsersSerializer(serializers.Serializer):
+	                # 字段名必須跟數據庫一致，除非有加source參數
+	                # 一般字段
+	                id = serializers.IntegerField()
+	                username = serializers.CharField()
+	                password = serializers.CharField()
+	                # choices字段
+	                user_type_num = serializers.CharField(source='user_type')  # source表示數據庫的某個字段
+	                # get_字段名_display： 他會先取出字段名對應的數據，但如果是可被執行的話，就會繼續找下去
+	                user_type = serializers.CharField(source='get_user_type_display')  # 取出來的是VIP、SIP等
+	                # 一對多字段
+	                groups = serializers.CharField(source='group.title')  # 取出外鍵對象.title字段
+	                # 多對多字段
+	                rls = serializers.SerializerMethodField()  # 自定義顯示
 
+	                def get_rls(self, obj):  # 自定義顯示的方法，名稱為get_字段名
+	                    roles_obj_list = obj.roles.all()
+	                    ret = []
+	                    for item in roles_obj_list:
+	                        ret.append({'id': item.id, 'title': item.title})
+	                    return ret  # 要顯示的數據
+
+	        - (推薦)方法二(繼承serializers.ModelSerializer)：
+	            class UsersSerializer(serializers.ModelSerializer):
+	                # choices字段
+	                # get_字段名_display： 他會先取出字段名對應的數據，但如果是可被執行的話，就會繼續找下去
+	                type = serializers.CharField(source='get_user_type_display')  # 取出來的是VIP、SIP等
+	                # 一對多字段
+	                groups = serializers.CharField(source='group.title')
+	                # 多對多字段
+	                rls = serializers.SerializerMethodField()  # 自定義顯示
+
+	                def get_rls(self, obj):  # 自定義顯示的方法，名稱為get_字段名
+	                    roles_obj_list = obj.roles.all()
+	                    ret = []
+	                    for item in roles_obj_list:
+	                        ret.append({'id': item.id, 'title': item.title})
+	                    return ret  # 要顯示的數據
+
+	                class Meta:
+	                    model = models.UserInfo  # 關聯的表
+	                    # fields = '__all__'
+	                    # 只能用於簡單的字段
+	                    fields = ['id', 'username', 'password', 'type', 'groups', 'rls']  # 要顯示的字段
+
+            - (推薦)方法三(繼承serializers.ModelSerializer)：
+				class UsersSerializer(serializers.ModelSerializer):
+				    type = serializers.CharField(source='get_user_type_display')
+
+				    class Meta:
+				        model = models.UserInfo  # 關聯的表
+				        fields = ['id', 'username', 'password', 'type', 'group', 'roles']
+				        # 透過設置深度可以很輕鬆的獲取關聯表的所有數據。(建議範圍1~10)
+				        # 但無法取到choices字段
+				        depth = 1  # 深度，若不想要關聯表詳細數據可以設為0
+
+	        - 方法四(透過生成鏈結進行深度查詢)：
+				class UsersSerializer(serializers.ModelSerializer):
+				    # lookup_field為要去深度查的外鍵字段
+				    # lookup_url_kwarg為url中我們設置的變量名
+				    # view_name為url的別名
+				    gp_url = serializers.HyperlinkedIdentityField(lookup_field='group_id', lookup_url_kwarg='fk', view_name='gp')
+
+				    class Meta:
+				        model = models.UserInfo  # 關聯的表
+				        fields = ['id', 'username', 'password', 'gp_url']      	
+
+
+        (2) 字段：
+        	- get_字段名_display：
+            	user_type = serializers.CharField(source='get_user_type_display')  # 他會先取出字段名對應的數據，但如果是可被執行的話，就會繼續找下去
+
+        	- 要取外鍵屬性之字段：
+        		groups = serializers.CharField(source='group.title')   # 可透過外鍵字段.字段名
+
+        	- 自定義顯示字段：
+        		rls = serializers.SerializerMethodField()  # 自定義顯示
                 def get_rls(self, obj):  # 自定義顯示的方法，名稱為get_字段名
                     roles_obj_list = obj.roles.all()
                     ret = []
                     for item in roles_obj_list:
                         ret.append({'id': item.id, 'title': item.title})
-                    return ret  # 要顯示的數據
+                    return ret  # 回傳要顯示的數據
 
-        - (推薦)方法二(繼承serializers.ModelSerializer)：
-            class UsersSerializer(serializers.ModelSerializer):
-                # choices字段
-                # get_字段名_display： 他會先取出字段名對應的數據，但如果是可被執行的話，就會繼續找下去
-                type = serializers.CharField(source='get_user_type_display')  # 取出來的是VIP、SIP等
-                # 一對多字段
-                groups = serializers.CharField(source='group.title')
-                # 多對多字段
-                rls = serializers.SerializerMethodField()  # 自定義顯示
+            - 生成深度查找鏈結：
+				# lookup_field為要去深度查的外鍵字段id
+				# lookup_url_kwarg為url中我們設置的變量名
+				# view_name為url的別名
+				gp_url = serializers.HyperlinkedIdentityField(lookup_field='group_id', lookup_url_kwarg='fk', view_name='gp')            	
 
-                def get_rls(self, obj):  # 自定義顯示的方法，名稱為get_字段名
-                    roles_obj_list = obj.roles.all()
-                    ret = []
-                    for item in roles_obj_list:
-                        ret.append({'id': item.id, 'title': item.title})
-                    return ret  # 要顯示的數據
 
-                class Meta:
-                    model = models.UserInfo  # 關聯的表
-                    # fields = '__all__'
-                    # 只能用於簡單的字段
-                    fields = ['id', 'username', 'password', 'type', 'groups', 'rls']  # 要顯示的字段
+	二、源碼流程：
+		-> 實例化：
+			對象給Serializer類處理；Queryset給ListSerializer類處理。
+			-> to_representation
+				-> 封裝到ser.data中
+
+
+	三、作驗證規則使用：
+		# 自定義驗證規則
+		class Myvalidator(object):
+		    def __init__(self, x):
+		        self.x = x
+
+		    # 驗證規則
+		    def __call__(self, value):
+		        if not value.startswith(self.x):
+		            message = '必須以 %s 作為開頭' % self.x
+		            raise serializers.ValidationError(message)
+
+
+		class VerifySerializer(serializers.Serializer):
+			# error_messages為錯誤信息
+			# validators設置自定義驗證規則
+		    title = serializers.CharField(
+		        error_messages={'required': 'title不能為空'}, validators=[Myvalidator('jamie')])
+
+
+		class VerifyView(APIView):
+
+		    def post(self, request, *args, **kwargs):
+		        # request.data 為獲取經過解析器解析的數據
+		        ser = VerifySerializer(data=request.data)
+		        # 驗證
+		        if ser.is_valid():
+		            print(ser.validated_data)
+		        else:
+		            print(ser.errors)
+
+		        return HttpResponse('提交數據')
+
