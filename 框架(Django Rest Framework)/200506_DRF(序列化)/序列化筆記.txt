@@ -101,7 +101,7 @@
 
 
 	三、作驗證規則使用：
-		# 自定義驗證規則
+		# 方法一：validators設置自定義驗證規則
 		class Myvalidator(object):
 		    def __init__(self, x):
 		        self.x = x
@@ -109,15 +109,23 @@
 		    # 驗證規則
 		    def __call__(self, value):
 		        if not value.startswith(self.x):
-		            message = '必須以 %s 作為開頭' % self.x
+		            message = 'title開頭必須為 %s' % self.x
 		            raise serializers.ValidationError(message)
 
 
 		class VerifySerializer(serializers.Serializer):
-			# error_messages為錯誤信息
-			# validators設置自定義驗證規則
+		    # error_messages為錯誤信息
+		    # 方法一：validators設置自定義驗證規則
 		    title = serializers.CharField(
 		        error_messages={'required': 'title不能為空'}, validators=[Myvalidator('jamie')])
+
+		    # (推薦)方法二：鉤子函數設置自定義驗證規則
+		    # def validate_字段名(self, data)，data為request.data.get(字段名)
+		    def validate_title(self, data):
+		        from rest_framework import exceptions
+		        if not data.endswith('老男人'):
+		            raise exceptions.ValidationError('title結尾必須為老男人')
+		        return data  # 驗證成功回傳data
 
 
 		class VerifyView(APIView):
