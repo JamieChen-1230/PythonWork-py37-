@@ -1,0 +1,57 @@
+※ 分頁：
+    一、分頁內置類：
+    	(1) 繼承或直接使用PageNumberPagination：
+    		- 概念： 看到第n頁，每頁顯示m條數據。
+    		- 代碼：
+	    		class MyPageNumberPagination(PageNumberPagination):
+				    # 每頁數據量
+				    page_size = 3
+				    # 使用get傳參(key=page)來獲取分頁
+				    page_query_param = 'page'
+				    # 用戶自定義page_size，可以透過get傳參(key=size)，來獲取更多的數據量
+				    page_size_query_param = 'size'
+				    # 每頁數據量上限
+				    max_page_size = 10
+
+			    class RolesView(APIView):
+				    def get(self, request, *args, **kwargs):
+				        # 獲取所有數據
+				        roles = models.Role.objects.all()
+				        # 創建分頁對象
+				        pg = MyPageNumberPagination()
+				        # 獲取分頁大小的數據
+				        page_roles = pg.paginate_queryset(queryset=roles, request=request, view=self)
+				        # 序列化
+				        ser = RolesSerializer(instance=page_roles, many=True)  # many=True表取出多條數據
+				        # 使用DRF分頁提供的渲染器，功能更強(幫我們生成了上下一頁)
+				        return pg.get_paginated_response(data=ser.data)
+
+
+	    (2)	繼承或直接使用LimitOffsetPagination：
+    		- 概念： 在第n個位置，向後顯示m條數據。
+    		- 代碼：
+    			class MyLimitOffsetPagination(LimitOffsetPagination):
+				    # 每次取幾條數據
+				    default_limit = 3
+				    # 用戶自定義limit，可以透過get傳參(key=limit)，來獲取更多的數據量
+				    limit_query_param = 'limit'  # 默認也叫limit
+				    # 用戶自定義offset，可以透過get傳參(key=offset)，來設定初始位置
+				    offset_query_param = 'offset'  # 默認也叫offset，offset:從第幾個位置後開始取
+				    # 最大獲取量
+				    max_limit = 10
+				    
+
+	    (3) 繼承或直接使用CursorPagination：
+    		- 概念： 加密頁碼分頁，只能透過上下一頁進行切換，但當頁數多的話，此方法不會變慢，效率較好。
+    		- 代碼：
+	    		class MyCursorPagination(CursorPagination):
+				    # 加密頁碼參數(不需要改，用默認的就好
+				    # cursor_query_param = 'cursor'
+				    # 每頁大小
+				    page_size = 3
+				    # 排序規則(-id表示照倒敘的id排)
+				    ordering = '-id'
+				    # 用戶自定義page_size，可以透過get傳參(key=size)，來獲取更多的數據量
+				    page_size_query_param = 'size'
+				    # 每頁數據量上限
+				    max_page_size = 10

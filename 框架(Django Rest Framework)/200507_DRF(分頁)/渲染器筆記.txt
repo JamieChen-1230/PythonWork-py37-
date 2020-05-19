@@ -1,0 +1,18 @@
+from rest_framework.response import Response
+from django.shortcuts import HttpResponse
+
+
+class UsersView(APIView):
+
+    def get(self, request, *args, **kwargs):
+        users = models.UserInfo.objects.all()
+        # 若要使用到HyperlinkedIdentityField字段，這邊要加上context={'request': request}
+        ser = UsersSerializer(instance=users, many=True, context={'request': request})   # many=True表取出多條數據
+
+        # 方法一：
+        # ret = json.dumps(ser.data, ensure_ascii=False)  # ensure_ascii=False才能顯示中文
+        # return HttpResponse(ret)
+
+        # (推薦)方法二：
+        # 使用DRF的渲染器，不用轉json，他會自動幫我們處理
+        return Response(ser.data)
