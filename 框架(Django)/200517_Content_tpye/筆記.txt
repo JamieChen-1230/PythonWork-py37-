@@ -1,0 +1,55 @@
+※ Contenttypes：
+	- 用途：當我們遇到一張表要同時在相同字段關聯很多表時可以使用它。
+	- models.py：
+		class Course(models.Model):
+		    """
+		    普通課
+		    """
+		    title = models.CharField(max_length=32)
+
+		    """3. GenericRelation幫我們快速實現反向查找"""
+		    # 內建幫我們快速查找相關數據。(僅用於反向查找，不會顯示在數據表字段中)
+		    price_policy_list = GenericRelation('PricePolicy')
+
+
+		class DegreeCourse(models.Model):
+		    """
+		    學位課
+		    """
+		    title = models.CharField(max_length=32)
+
+		    # 內建幫我們快速查找相關數據。(僅用於反向查找，不會顯示在數據表字段中)
+		    price_policy_list = GenericRelation('PricePolicy')
+
+
+		class PricePolicy(models.Model):
+		    """
+		    價格策略
+		    """
+		    price = models.IntegerField()
+		    period = models.IntegerField()
+
+		    """1. content_type幫我們生成了價格與課程間的關聯數據表"""
+		    # Django內建的contenttypes設置：
+		    # 因為Django在建表時會自動創建一張表(ContentType)，裡面存放這所有表名稱，
+		    # 所以我們只要透過外建去鏈結這張表，就能從其中取得我們需要的表名稱。
+		    content_type = models.ForeignKey(ContentType, verbose_name="關聯的課程表名稱", on_delete=models.CASCADE)
+		    object_id = models.IntegerField(verbose_name="關聯表中的課程ID")
+
+		    """2. GenericForeignKey幫我們快速實現CRUD操作，關於對content_type外鍵直接幫我們處理"""
+		    # 內建提供幫助我們快速實現content_type操作。(這不會顯示在數據表字段中)		  
+		    content_object = GenericForeignKey('content_type', 'object_id')
+
+    - views.py：
+    	 1. 為RestFramework添加一個價格策略。
+			    obj2 = models.Course.objects.filter(title='RestFramework').first()
+			    # 透過content_object自動幫我們去獲取obj_id和cobj_id，並填入object_id和content_type字段
+			    models.PricePolicy.objects.create(price=1.1, period=30, content_object=obj2)
+			    models.PricePolicy.objects.create(price=11.1, period=60, content_object=obj2)
+			    models.PricePolicy.objects.create(price=21.1, period=90, content_object=obj2)
+
+	    2. 根據課程ID獲取課程價格策略。
+			    course = models.Course.objects.filter(id=1).first()
+			    # 透過設置特殊字段，內建幫我們取出。
+			    price_policys = course.price_policy_list.all()
+			    print(price_policys)
