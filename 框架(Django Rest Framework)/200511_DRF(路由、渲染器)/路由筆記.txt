@@ -1,0 +1,31 @@
+※ 路由：
+	一、 演變：
+		- 過去：
+			1. re_path(r'^(?P<version>[v1|v2]+)/roles/$', views.RolesView.as_view()),
+
+			2. re_path(r'^(?P<version>[v1|v2]+)/roles/$', views.RolesView.as_view({
+				   # 也可以用這樣呈現(http://127.0.0.1:8000/api/v1/roles/?format=json)
+		           'get': 'list',   # 數據列表
+		           'post': 'create',  # 創建
+		       })),
+
+	        3. re_path(r'^(?P<version>[v1|v2]+)/roles\.(?P<format>\w+)/$', views.RolesView.as_view({
+	        	   # 可以選定什麼格式呈現(EX: http://127.0.0.1:8000/api/v1/roles.json/)
+			       'get': 'list',   # 數據列表
+			       'post': 'create',  # 創建
+			   })),
+
+
+	    - 現在：
+	    	4. 等同於幫我們生成了以上(過去)的所有URL，但如果只想設置增刪等局部的話，還是建議用過去的方式生成。
+		    	from rest_framework import routers
+
+				router = routers.DefaultRouter()
+				router.register(r'roles', viewset=views.RolesView)
+
+				urlpatterns = [
+				    # 使用DRF路由器幫我們生成URL
+				    # 使用這個就等於幫我們生成了以上全部URL
+				    re_path(r'(?P<version>[v1|v2]+)/', include(router.urls))
+				]
+						

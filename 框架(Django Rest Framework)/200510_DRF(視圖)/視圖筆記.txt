@@ -1,0 +1,102 @@
+※ 視圖：
+	一、 演變：
+		- 過去：
+			1. class MyView(View)。
+			2. class MyView(APIView)。
+				繼承：APIView繼承View
+				代碼：
+					class RolesView(APIView):
+					    def get(self, request, *args, **kwargs):
+					        # 獲取所有數據
+					        roles = models.Role.objects.all()
+					        # 創建分頁對象
+					        pg = MyCursorPagination()
+					        # 獲取分頁大小的數據
+					        page_roles = pg.paginate_queryset(queryset=roles, request=request, view=self)
+					        # 序列化
+					        ser = RolesSerializer(instance=page_roles, many=True)  # many=True表取出多條數據
+					        # 使用DRF分頁提供的渲染器，功能更強(幫我們生成了上下一頁)
+					        return pg.get_paginated_response(data=ser.data)
+
+
+		- 無用(因為跟過去的沒差多少)：
+			3. class MyView(GenericAPIView)。
+				繼承：GenericAPIView繼承APIView
+				代碼：
+					from rest_framework.generics import GenericAPIView
+
+					class RolesView(GenericAPIView):
+					    queryset = models.Role.objects.all()
+					    serializer_class = RolesSerializer
+					    pagination_class = MyPageNumberPagination
+
+					    def get(self, request, *args, **kwargs):
+					        # 獲取數據
+					        roles = self.get_queryset()
+					        # 分頁
+					        page_roles = self.paginate_queryset(roles)
+					        # 序列化
+					        ser = self.get_serializer(instance=page_roles, many=True)
+					        return Response(ser.data)
+
+    	- 有一點點用：
+    		4. class MyView(GenericViewSet)。
+    			繼承： GenericViewSet(ViewSetMixin, generics.GenericAPIView)
+    			路由：re_path(r'^(?P<version>[v1|v2]+)/roles/$', views.RolesView.as_view({'get': 'list', 'post': 'create'}))  # GenericViewSet要額外設置路由映射
+    			代碼：
+    				from rest_framework.viewsets import GenericViewSet
+
+	    			class RolesView(GenericViewSet):
+					    queryset = models.Role.objects.all()
+					    serializer_class = RolesSerializer
+					    pagination_class = MyPageNumberPagination
+
+					    # 自定義名稱的get方法
+					    def list(self, request, *args, **kwargs):
+					        # 獲取數據
+					        roles = self.get_queryset()
+					        # 分頁
+					        page_roles = self.paginate_queryset(roles)
+					        # 序列化
+					        ser = self.get_serializer(instance=page_roles, many=True)
+					        return Response(ser.data)
+
+					    # 自定義名稱的post方法
+					    def create(self, request, *args, **kwargs):
+					        pass
+
+    	- 現在：
+    		5. class MyView(ModelViewSet)。
+	    		繼承： ModelViewSet(mixins.CreateModelMixin,
+	                   mixins.RetrieveModelMixin,
+	                   mixins.UpdateModelMixin,
+	                   mixins.DestroyModelMixin,
+	                   mixins.ListModelMixin,
+	                   GenericViewSet)
+	            路由：
+	            	※ 要設置兩種網址，需要ID的和不需要的
+	            	※ 對應名稱只能這麼寫(因為繼承裡面的方法名是這樣寫)
+	            	re_path(r'^(?P<version>[v1|v2]+)/roles/$', views.RolesView.as_view({
+				        'get': 'list',  # 數據列表
+				        'post': 'create',  # 創建
+				    })),
+				    re_path(r'^(?P<version>[v1|v2]+)/roles/(?P<pk>\d+)/$', views.RolesView.as_view({
+				        'get': 'retrieve',  # 獲取單條數據
+				        'delete': 'destroy',  # 刪除
+				        'put':  'update',  # 更新
+				        'patch': 'partial_update',  # 局部更新
+				    })),
+	    		代碼：
+	    			from rest_framework.viewsets import ModelViewSet
+
+					class RolesView(ModelViewSet):
+					    """
+					    mixins.CreateModelMixin,     => 添加
+					    mixins.RetrieveModelMixin,  => 查詢單條數據(要id)
+					    mixins.UpdateModelMixin,    => 更新(要id)
+					    mixins.DestroyModelMixin,   => 刪除(要id)
+					    mixins.ListModelMixin,         => 數據列表
+					    """
+					    queryset = models.Role.objects.all()
+					    serializer_class = RolesSerializer
+					    pagination_class = MyPageNumberPagination
