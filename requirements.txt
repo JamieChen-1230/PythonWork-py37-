@@ -1,5 +1,0 @@
-Django==2.2
-djangorestframework==3.11.0
-Scrapy==2.1.0
-sqlparse==0.3.1
-redis==3.5.2

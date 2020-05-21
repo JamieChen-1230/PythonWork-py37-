@@ -1,0 +1,14 @@
+Django開發：
+Django==2.2
+sqlparse==0.3.1
+djangorestframework==3.11.0
+
+緩存：
+redis==2.10.6 (redis==3.5.2版本太高)
+
+爬蟲：
+Scrapy==2.1.0
+
+異步任務：
+celery==4.3.0
+eventlet==0.25.2 (因為windows不支持celery4，所以要額外安裝它)

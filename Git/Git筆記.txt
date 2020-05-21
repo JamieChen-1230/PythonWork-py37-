@@ -1,0 +1,156 @@
+Git和Github的區別：
+    Git：
+        是一個分佈式版本控制系統。
+        (簡單的說就是一個軟件，用於記錄文件變化，以便來查閱特定版本修訂情況。)
+    Github：
+        是一個為用戶提供Git服務的網站。
+        (簡單說就是一個可以放代碼的地方。Github除了提供管理Git的web界面外，還提供了訂閱、關注、討論組在線編輯器等豐富的功能。)
+
+Git本地操作的三個區域：
+    工作區：我們平時存放和操作代碼的目錄位置。
+    暫存區：暫時存取我們要從工作區傳到倉庫的文件。
+    (本地)倉庫區：最後決定要真正要保存到倉庫的文件，並成為一個新的版本。
+        - 倉(版本)庫可理解為一個目錄，裡面的文件記錄著各種信息，而每個文件的修改Git都會進行追蹤並記錄，以便之後的追踪或還原。
+            版本庫創建： git init => 創建了一個隱藏的.git目錄當作版本庫
+
+
+====================================-本地操作-====================================
+(全局配置)登入Git，讓大家知道這是誰傳的更新：
+    ※ 建議寫GitHub的郵箱和用戶名
+    git config --global user.email as124122323@gmail.com
+    git config --global user.name silencejammie
+
+查詢目前郵箱和用戶名：
+    git config --global user.name
+    git config --global user.email
+
+Git倉庫的初始化(即讓Git知道需要他來管理這個目錄)：
+    git init  =>  創建了一個隱藏的.git目錄當作版本庫
+
+查看當前倉庫的操作狀態：
+    git status  =>  查看目前所有文件狀態
+
+添加文件到暫存區：
+    git add readme.txt readme2.txt  =>  告訴Git我想要把此文件添加到暫存區
+    git add .  =>  告訴Git我想要把「當前目錄的所有文件」添加到暫存區
+
+提交暫存區中的文件至版本庫：
+    ※ 註釋要寫的精簡且易懂。
+    git commit -m "這邊寫註釋"  =>  告訴Git把此文件提交到(本地)版本庫
+
+查看版本日誌：
+    git log  =>  顯示每一次commit的信息(id, author, date)，便於我們找出要回滾的版本
+    git log --pretty=oneline  => 【推薦】顯示每一次commit的信息(只有id)
+查看包括所有的提交與回滾紀錄的版本日誌：
+    git reflog  =>  若後悔回滾的話的補救方法
+
+回滾(撤回、退回)：
+    ※ 會回到自己想要的版本，表示工作目錄中的檔案也會被修改、刪除。
+    git reset --hard HEAD^  =>  回滾到上一個版本
+    git reset --hard fc25e782315b0a3f1674c78dabc081f2e29052cc  =>  回滾到此id(輸入前7碼即可)的版本，只要有id就能回滾
+        - 相當於 git reset --hard fc25e78
+
+小結：
+    一、工作資料夾 --add--> 暫存區 --commit--> 本地倉庫。
+    二、要想回到過去必須要有commit_id(透過git log查看)，並使用 git reset --hard commit_id 來回到過去。
+    三、要想回到未來，必須透過 git reflog 查看已被回滾的commit_id，再來使用 git reset --hard commit_id 來回到未來。
+    四、commit_id 至少輸入前7碼會比較穩。
+
+
+============================-學習使用遠程倉庫(以 Github 為例)-============================
+兩種常規使用方式：
+    一、基於https協議：
+        (1) 先到要存放目錄的位置(cd D:\Programming\WorkPlace\PythonWork(py37)\Git)。
+        (2) clone遠程倉庫到本地(後面的網址為遠程倉庫的地址)：
+            git clone https://github.com/silencejamie/git_demo.git
+                => 會產生了一個跟遠程倉庫相同命名的資料夾(D:\Programming\WorkPlace\PythonWork(py37)\Git\git_demo)，
+                   裡面帶著所有代碼和.git版本庫。
+        (3) 之後這個資料夾就會變成所謂的工作區(工作目錄)，裡面可以做任何的本地git操作。
+        (4) 本地操作完後，提交到遠程倉庫：
+                1. 如果是首次提交，首先應獲取權限(否則會出現403的錯誤)。
+                    - 獲取權限(修改.git/config文件中的url字段)：
+                        舊的：https://github.com/silencejamie/git_demo.git
+                        在github.com前面加上「用戶名:密碼@」
+                        新的：https://silencejamie:jamie851230@github.com/silencejamie/git_demo.git
+                2. 先更新本地端代碼(因為有可能別人已先在遠程倉庫中新增了新的代碼)：
+                    ※ 如果git pull時，工作目錄中有一些修改未提交到版本庫，此時禁止git pull，
+                    ※ 需要先在工作區和版本庫中做一些一致性調整(要麼將工作目錄的修改提交到版本庫，要麼捨棄工作目錄的修改)。
+                    git pull
+                3. 提交本地倉庫至遠程倉庫(但通常要push前最好先git pull，才不會造成遠程倉庫版本混亂)：
+                    git push
+    二、基於ssh協議(要額外使用生成公私鑰的套件)：
+        影片教學：https://www.bilibili.com/video/BV1sJ411D7xN?p=12
+        具體實現在https://blog.csdn.net/jiahuan_/article/details/105933423
+
+
+====================================-分支操作(本地)-====================================
+查看分支(*代表當前分支)：
+    git branch
+
+創建分支(在哪個分支上創建分支，就會以該分支為基礎創建)：
+    git branch 分支名
+刪除分支(要被刪的分支不能處於使用中)：
+    git branch -d 分支名
+
+切換分支：
+    git checkout 分支名
+    git checkout -b 分支名  =>  創建並切換分支
+
+合併分支：
+    ※ 不同分支之間是互不影響的。
+        EX：在新的分支裡添加完並commit到本地倉庫後，再切回master分支，會發現工作目錄下剛剛在分支更改的東西消失了。
+            => 所以才需要合併分支。
+    ※ 要先切換到欲合併其他分支的主分支下。
+    git merge 分支名
+
+
+==================================-git bush的vim編輯器-==================================
+按Esc：
+    退出輸入模式，並進入到命令行模式(也是系統默認模式)。
+o, i, a：
+    都可以從命令行模式進入到輸入模式。
+:wq：
+    在命令模式下輸入 :wq，代表保存修改並且退出vim編輯器。
+:w：
+    如果只想保存文件，則輸入 :w。回車後底行會提示寫入操作結果，並保持停留在命令行模式。
+:q!：
+    在命令模式下輸入 :q!，代表放棄所有修改並退出。
+:e!：
+    放棄所有修改，但不退出，回車後回到命令模式。
+
+
+====================================-衝突的產生與解決-====================================
+案件一：同事在更改了遠端倉庫，但我在操作本地倉庫前沒有使用git pull先更新本地代碼(且更改的是相同文件)。
+    - 衝突原因：
+        在本地與遠端倉庫不一致的情況下直接更改本地內容(且更改的是相同文件)。
+    - 在git push遇到的錯誤：
+        error: failed to push some refs to 'https://silencejamie:jamie851230@github.com/silencejamie/git_demo.git'
+    - 解決方法：
+        (1) 先git pull。這時還沒有成功，打開衝突文件後會發現他會把衝突的地方標記出來，並標註是誰(commit_id)改的。
+            ※ 會顯示在哪裡起了衝突  =>  CONFLICT (content): Merge conflict in readme.txt
+        (2) 去詢問這是誰改的，並討論該留哪些代碼。
+        (3) 把改好的文件再重新提交到本地倉庫，最後push到遠端即可。
+
+
+案件二：同案例一(但是更改的為不同的文件)。
+    - 衝突原因：
+        在本地與遠端倉庫不一致的情況下直接更改本地內容(但更改的是不同的文件)。
+    - 在git push遇到的錯誤(同案件一)：
+        error: failed to push some refs to 'https://silencejamie:jamie851230@github.com/silencejamie/git_demo.git'
+    - 解決方法：
+        (1) 先git pull。
+            這時會自動進入vim編輯器，要我們編寫本次merge的文檔。
+        (2) 編輯完文檔後，Git會自動幫我們merge起來。
+        (3) 最後再push即可。
+
+
+====================================-忽略文件-====================================
+在上傳時忽略掉某些文件(讓一些文件不上傳到遠程倉庫)：
+    (1) 在工作目錄中建立 .gitignore 文件：
+        touch .gitignore
+    (2) 編寫 .gitignore 文件。
+        常用規則如下：
+            1. 過濾整個資料夾      /mtk/
+            2. 過濾所有.zip文件    *.zip
+            3. 過濾某个具體文件    /mtk/a.txt
+            4. 不過濾具體某个文件  !index.php

@@ -1,4 +1,183 @@
+Python特性：
+    - Python是一種解釋型語言，這意味著，與C，C++不同，Python不需要在運行之前進行編譯。它是邊運行邊解釋的。
+    - Python是動態類型化的，不需要聲明變量的類型。
+    - Python中函數是一等對象，這意味著它們可以在運行時動態創建，能賦值給變量或者作為參數傳給函數，還能作為函數的返回值。
+    - Python運行速度通常比編譯語言慢。但Python允許包含基於C的擴展，所以瓶頸可以被優化掉。
+
+
+Python引號：
+    - 單個單、雙引號都是用來表示字符串。
+    - 三單引號一般用來輸入多行文本。
+    - 三雙引號一般用在類里面，用來註釋類。
+
+
 Python實例化class的執行順序：
 	1. 調用type類 -> 調用內置的元類mateClass -> 調用__new__方法將類實例化
 	2. 實例將會初始化自己的類變量
 	3. 進入構造方法__init__，並初始化自己的實例變量
+
+
+Python函數參數：
+    - 位置(必選)參數： def foo(x, y)
+    - 默認參數： def foo(x, y=10)   ※ 注意默認參數(y)要放在必選參數(x)後面，且默認參數不要設為可變對象(可先用None代替)。
+        def add_end(L=None):
+            if L is None:
+                L = [] L.append('END')
+            return L
+    - 可變參數：def foo(x, y ,*args)
+    - 關鍵字參數： def foo(x, y ,**kwargs)
+    - 命名關鍵字參數： def person(name, age, *, city, job)  ※ 命名關鍵字參數需要一個特殊分隔符*，*後面的參數被視為命名關鍵字參數。
+
+
+物件導向程式設計(OOP)、面向對象：
+	- 目的：使程式碼的維護和擴充更容易，且更容易閱讀理解程式碼邏輯。
+	- 三大特性：
+		封裝：
+            把想同類型的屬性和方法封裝到類中，這樣可以簡化編程，使用者也可以僅通過外部接口來調用，使程式容易模組化。。
+        繼承：
+            繼承就是子類繼承父類的特徵和行為，使得子類對象具有父類的實例和方法，
+            這樣可以減少重複性代碼，且彼此的耦合度會較低，靈活度也較高。
+        多態：
+            不同的(子類)對象調用相同的(父類)方法，產生不同的結果，可以增加代碼的外部調用靈活度。
+            簡單的說就是呼叫同名的方法時，會得到不同的結果。
+
+
+lambda 表達式：
+    通常是在需要一個函數，但是又不想費神去命名一個函數的場合下使用，也就是指匿名函數。
+    EX：
+	    max = lambda m, n: m if m > n else n
+		print(max(10, 3))  # 顯示 10
+
+
+mutable/immutable：
+    是指變數被賦值以後，值可不可以改變。以list來說，li = ['a', 'b']，對應到內存的一個id位置；然後再讓li[0] = 'c'，
+    這時li還是指向同一個位置，表示這個列表這個type就是可變的。
+        - 可變：list, set, dict, array
+        - 不可變：數值, str, bytes, tuple
+
+
+list和array比較：
+    - list：方便，可以容納不同的數據類型，但較慢且也要耗費更多得記憶體空間。
+    - array：只能容納一種數據類型，較快也較省空間。
+        原因：
+	        一、一開始陣列內部的型態定義就定義好了，所以不會需要每次都到底層的去做比對
+	        二、因為array是直接儲存數據而非指針，所以相較於list還要去遍歷所有指針會快很多
+
+
+dict和list比較：
+    一、字典的查找速度比列表快很多，但也因此要耗費較大的內存。
+        - 原因：dict和set都是由hash和散列表來實現的。
+            散列表中的每一個表元都是相同大小的，所以查找時可以通過偏移量來進行。
+            查找時會通過基層的演算法用hash(key)進行匹對。
+    二、字典和集合是無序的，列表是有序的。
+
+
+tuple和list比較：
+    兩者最大的差異就在於元組是不可變的。但元組佔用空間較少，也可以當作字典的key做使用，
+    且具名元祖可以理解為元組的增強版本，它為元組中的每個元素都賦予了含義，從而增強代碼可讀性。
+
+
+字符串格式化(%和.format的區別)：
+    %在於使用時更為方便快速，但format較為靈活與強大，可以做到格式限定符(比如:填充、對齊、精度等)。
+
+
+Python多線程：
+    Python有一個多線程包threading，可以使用多線程來加快你的代碼。但是Python有一個叫做GIL(全局解釋器鎖Global Interpreter Lock)的構造。
+    它限制了python同一時間只能有一個線程執行，所以多線程們實際上只是輪流使用相同的CPU內核。
+        - 對於IO密集型操作：在等待操作系統返回時會釋放GIL；再比如爬蟲因為有等待的服務器的響應時間，可以利用多線程來加速。
+        - 對於CPU密集型操作：只能通過多進程Multiprocess來加速。
+
+
+ORM是什麼？
+	- 對象（Object）：表示面向對象語言中的對象，EX：Python。
+	- 關係（Relational）：表示你正在使用的RDBMS數據庫（關係數據庫管理器系統），EX：MySQL。
+	- 映射（Mapping）：表示前面兩個部分之間的橋接和連接，即透過對象和數據庫連結。
+
+
+SQLAlchemy和Django ORM比較：
+	- SQLAlchemy可獨立使用，任何使用Python的專案都可以使用。
+	- SQLAlchemy多提供了非常豐富的特性：連線池、auto-map等。
+		- 連線池：負責分配，管理資料庫連線，它允許應用程式重複使用一個現有的資料庫連線，而不是重新建立一個。
+	- Django ORM可以為你的表自動創建主鍵，而SQLAlchemy不會這麼做。
+	- Django ORM較為容易上手。
+	- SQLAlchemy使用了數據映射器的實現，數據庫結構和對象結構之間是分離的(要透過Session來進行交互)，
+	  不像Django ORM中每一行記錄都直接映射到代碼中的一個對象，較容易理解。
+	- 總結：在較為不複雜的CRUD的情況下推薦使用Django ORM，而需要使用更複雜的查詢時在使用SQLAlchemy。
+
+
+Django中間件：
+    在django中，每一中間件其實就是一個類，在request到來和結束後，django會在合適的時機執行中間件中相應的方法。
+
+
+Django生命週期：
+    瀏覽器 -> wsgi -process_request-> 路由系統 -process_views-> 視圖函數（和ORM、Template處理完後）-process_response-> 瀏覽器
+    wsgi(web server gateway interface)：web伺服器網關街口，是python中web伺服器和web應用的一種規範。
+        - wsgiref：是Django默認實現wsgi協議的一個模塊，用來做一個socket服務端。
+        - uwsgi：也是實現wsgi協議的一個模塊，用來做socket服務端，速度比wsgiref快很多。
+
+
+MTV架構：
+    一、Models(模型)：
+        功能：為一個抽象層，用來構建和操作數據庫。
+        內容：包含儲存數據的欄位和行為，通常每個模型對應資料庫中的一張表。
+        對比：與 MVC 架構的 Models 對應。
+
+    二、Template(模板)：
+        功能：與視圖做溝通，並呈現模板給使用者。
+        內容：模板包含所需 HTML 輸出的靜態部分，以及一些特殊的語法，描述如何將動態內容插入。
+        對比：與 MVC 架構的 Views 對應。
+
+    三、Views(視圖)：
+        功能：用於封裝負責處理用戶請求及返迴響應的邏輯。視圖可以看作是前端與資料庫的中間人，他會將前端想要的數據從資料庫中讀出來給前端。
+        內容：控制與業務邏輯語句。
+        對比：(Views + Urls) 與 MVC 架構的 Controller 對應。
+
+
+跨域資源共用(Cross-Origin Resource Sharing)(CORS)：
+	- 介紹：
+		簡單來說就是因為瀏覽器的一些安全考量，你在載入其他網域的資源時會受到一些限制，解決方法就是在 Server 那邊加上一些 response header。
+	- 在Django中解決：
+		使用'corsheaders.middleware.CorsMiddleware'中間件。
+
+
+對restful api的認識：
+    其實它本質上是一個規範，讓我們寫API時，可以更好的去做區分，也更容易讓後臺去處理，
+    也讓前端工程師也更容易的去記住URL，並透過URL體現出API的操作。
+    他通常會包括版本號、狀態碼、method等等，而我有接觸的是Django Rest FrameWork，他可以輕易幫我們做到....
+    https://www.cnblogs.com/wupeiqi/articles/7805382.html
+
+
+狀態碼有哪些？
+    - 1xx (Informational) — 資訊
+    - 2xx (Successful) — 成功
+        200 OK - [GET]：請求成功。
+        201 CREATED - [POST/PUT/PATCH]：請求已經滿足，且建立或更新了資源。
+        202 Accepted - [*]：伺服器已經接受請求，但尚未處理完成(異步任務)。
+        204 NO CONTENT - [DELETE]：請求已經成功，且沒有需要回應的內容。
+    - 3xx (Redirection) — 重定向
+        301 Moved Permanently - [*] 目標已被分配到一個新的URI，將來任何對該資源的引用都應使用此URI。
+    - 4xx (Client Error) — 客戶端的錯誤
+        400 INVALID REQUEST - [POST/PUT/ PATCH]：請求被認定有誤，服務器沒有進行新建或修改數據的操作。
+        401 Unauthorized - [*]：請求未被採用，因其缺少對目標資源的有效驗證憑證。
+        403 Forbidden - [*]：表示用戶得到授權（與401錯誤相對），但是訪問是被禁止的。
+        404 NOT FOUND - [*]：用戶發出的請求針對的是不存在的記錄。
+        406 Not Acceptable - [GET]：用戶請求的格式不可得（比如用戶請求JSON格式，但是只有XML格式）。
+        410 Gone - [GET]：用戶請求的資源被永久刪除，且不會再得到的。
+        422 Unprocesable entity - [POST/PUT/ PATCH]：當創建一個對象時，發生一個驗證錯誤。
+    - 5xx (Server Error) — 伺服端的錯誤
+        500 INTERNAL SERVER ERROR - [*]：服務器發生錯誤，用戶將無法判斷發出的請求是否成功。
+
+
+git基礎：
+    一、Git可以分為 Local（本地）和 Remote（遠端）兩個環境。
+        - Local：
+            分為working directory（工作資料夾）、staging area（暫存區）和 repositories（倉庫）
+    二、在自己開發時：
+            - 上傳：工作資料夾 --add--> 暫存區 --commit--> 本地倉庫 --push--> 遠端倉庫
+            - 下載更新：git pull <遠程主機名> <遠程分支名>:<本地分支名>
+                - 等同於 git fetch(抓取遠端的branch) + git merge(將遠端branch和本地branch合併)
+
+
+瀑布和敏捷式開發：
+	瀑布：按順序排列，因此如果上一步成功完成，項目開發團隊只會進入下一階段的開發或測試。
+	敏捷：開發和測試活動是並發的，與Waterfall模型不同。此過程允許客戶，開發人員，經理和測試人員之間進行更多溝通和調適。
