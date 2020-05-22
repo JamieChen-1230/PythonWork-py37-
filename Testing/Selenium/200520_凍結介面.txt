@@ -1,0 +1,9 @@
+教學網址：http://www.python3.vip/tut/auto/selenium/skills_2/
+
+
+在頁面中按F12  ->  在開發者工具欄(最上面)console裡面執行js代碼  ->  輸入：setTimeout(function(){debugger}, 5000)  ->  進入debug畫面
+
+
+setTimeout(function(){debugger}, 5000)：
+    表示在5000毫秒後，執行debugger命令。
+    執行該命令會瀏覽器會進入debug狀態。debug狀態有個特性，界面被凍住，不管我們怎麼點擊界面都不會觸發事件。
