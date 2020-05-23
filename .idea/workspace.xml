@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ff1e8a4e-9f45-4d3b-9949-a27f16c94dbc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Git/Git筆記.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Git/Git筆記.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Testing/Selenium/200521_xpath.py" beforeDir="false" afterPath="$PROJECT_DIR$/Testing/Selenium/200521_xpath.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Testing/Selenium/筆記.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Testing/Selenium/筆記.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/基礎觀念/筆記.txt" beforeDir="false" afterPath="$PROJECT_DIR$/基礎觀念/筆記.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/Pytest/筆記.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Testing/Pytest/筆記.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/安裝套件.txt" beforeDir="false" afterPath="$PROJECT_DIR$/安裝套件.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,13 +13,28 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$200510_test_sample.coverage" NAME="200510_test_sample Coverage Results" MODIFIED="1590213629688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$200510_sample_test.coverage" NAME="200510_sample_test Coverage Results" MODIFIED="1590217757452" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_200521_fixture_test_test_one.coverage" NAME="pytest for 200521_fixture_test.test_one Coverage Results" MODIFIED="1590220614627" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_fixture_test" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_200521_setup_test_TestCase.coverage" NAME="pytest for 200521_setup_test.TestCase Coverage Results" MODIFIED="1590218722612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_200521_fixture_test_TestCase.coverage" NAME="pytest for 200521_fixture_test.TestCase Coverage Results" MODIFIED="1590220735634" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_fixture_test" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_200521_fixture_test_py.coverage" NAME="pytest in 200521_fixture_test.py Coverage Results" MODIFIED="1590223552794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_fixture_test" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$200519_.coverage" NAME="200519_窗口切換 Coverage Results" MODIFIED="1590131403257" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Selenium" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_200510_sample_test_test_one.coverage" NAME="pytest for 200510_sample_test.test_one Coverage Results" MODIFIED="1590216783762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_200510_sample_test_py.coverage" NAME="pytest in 200510_sample_test.py Coverage Results" MODIFIED="1590217530584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_200510_sample_test_TestCase.coverage" NAME="pytest for 200510_sample_test.TestCase Coverage Results" MODIFIED="1590216326242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_200510_sample_test_TestCase_test_three.coverage" NAME="pytest for 200510_sample_test.TestCase.test_three Coverage Results" MODIFIED="1590216741569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_200521_fixture_test_test_three.coverage" NAME="pytest for 200521_fixture_test.test_three Coverage Results" MODIFIED="1590221030072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_fixture_test" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_200510_test_sample_py.coverage" NAME="pytest in 200510_test_sample.py Coverage Results" MODIFIED="1590213634806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_200521_setup_test_py.coverage" NAME="pytest in 200521_setup_test.py Coverage Results" MODIFIED="1590218866739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$200520_.coverage" NAME="200520_彈出式對話框 Coverage Results" MODIFIED="1590137764580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Selenium" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$200521_xpath.coverage" NAME="200521_xpath Coverage Results" MODIFIED="1590195728451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Selenium" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_200521_fixture_test_TestCase_test_two.coverage" NAME="pytest for 200521_fixture_test.TestCase.test_two Coverage Results" MODIFIED="1590220657338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_fixture_test" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$200514_RedisByPython.coverage" NAME="200514_RedisByPython Coverage Results" MODIFIED="1589595365325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NoSQL資料庫(Redis)" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$200518_First_demo.coverage" NAME="200518_First_demo Coverage Results" MODIFIED="1590124371734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Selenium" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$200519_frame.coverage" NAME="200519_frame切換 Coverage Results" MODIFIED="1590129862910" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Selenium" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$200520_radio.coverage" NAME="200520_radio選擇框 Coverage Results" MODIFIED="1590135133130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Selenium" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_200510_sample_test_TestCase_test_two.coverage" NAME="pytest for 200510_sample_test.TestCase.test_two Coverage Results" MODIFIED="1590216774812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$publish.coverage" NAME="publish Coverage Results" MODIFIED="1590118801479" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NoSQL資料庫(Redis)" />
   </component>
   <component name="DatabaseView">
@@ -39,7 +52,26 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Testing/Pytest/筆記.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="386">
+              <caret line="29" column="66" lean-forward="true" selection-start-line="29" selection-start-column="66" selection-end-line="29" selection-end-column="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_fixture_test/200521_fixture_test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -60,8 +92,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/框架(Django Rest Framework)/200502_CBV/mysite/mysite/urls.py" />
-        <option value="$PROJECT_DIR$/框架(Django Rest Framework)/200502_restful規範/mysite/mysite/urls.py" />
         <option value="$PROJECT_DIR$/框架(Django Rest Framework)/200502_restful規範/筆記.txt" />
         <option value="$PROJECT_DIR$/框架(Django Rest Framework)/200503_DRF框架初試/mysite/mysite/urls.py" />
         <option value="$PROJECT_DIR$/框架(Django Rest Framework)/200503_DRF框架初試/mysite/app01/views.py" />
@@ -105,6 +135,14 @@
         <option value="$PROJECT_DIR$/Testing/Selenium/筆記.txt" />
         <option value="$PROJECT_DIR$/基礎觀念/筆記.txt" />
         <option value="$PROJECT_DIR$/Git/Git筆記.txt" />
+        <option value="$PROJECT_DIR$/Testing/Pytest/200521_入門/文檔網址.txt" />
+        <option value="$PROJECT_DIR$/Testing/Pytest/200521_入門/200510_test_sample.py" />
+        <option value="$PROJECT_DIR$/Testing/Pytest/200521_入門/200510_sample_test.py" />
+        <option value="$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_fixture_test.py" />
+        <option value="$PROJECT_DIR$/Testing/Pytest/200521_入門/200520_firstdemo_test.py" />
+        <option value="$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_setup_test.py" />
+        <option value="$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_fixture_test/200521_fixture_test.py" />
+        <option value="$PROJECT_DIR$/Testing/Pytest/筆記.txt" />
       </list>
     </option>
   </component>
@@ -129,12 +167,28 @@
             <path>
               <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
-              <item name="Git" type="462c0819:PsiDirectoryNode" />
+              <item name="Testing" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
-              <item name="基礎觀念" type="462c0819:PsiDirectoryNode" />
+              <item name="Testing" type="462c0819:PsiDirectoryNode" />
+              <item name="Pytest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
+              <item name="Testing" type="462c0819:PsiDirectoryNode" />
+              <item name="Pytest" type="462c0819:PsiDirectoryNode" />
+              <item name="200521_入門" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
+              <item name="Testing" type="462c0819:PsiDirectoryNode" />
+              <item name="Pytest" type="462c0819:PsiDirectoryNode" />
+              <item name="200521_入門" type="462c0819:PsiDirectoryNode" />
+              <item name="200521_fixture_test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
@@ -150,7 +204,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Testing/Pytest/200521_入門/200510_sample_test.py" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -167,43 +221,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.200521_xpath">
-    <configuration name="200519_窗口切換" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python tests.pytest in 200521_fixture_test.py">
+    <configuration name="200510_sample_test" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="PythonWork(py37)" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Testing/Selenium" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="SDK_HOME" value="D:\Programming\Python\Anaconda3\envs\py37\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Testing/Pytest/200521_入門" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Testing/Selenium/200519_窗口切換.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="200520_更多操作技巧" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PythonWork(py37)" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Testing/Selenium" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Testing/Selenium/200520_更多操作技巧.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Testing/Pytest/200521_入門/200510_sample_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -234,56 +266,101 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="200520_radio選擇框" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pytest for 200521_fixture_test.TestCase" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="PythonWork(py37)" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Testing/Selenium" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_fixture_test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Testing/Selenium/200520_radio選擇框.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;200521_fixture_test.TestCase&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="200521_xpath" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pytest for 200521_fixture_test.TestCase.test_two" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="PythonWork(py37)" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Testing/Selenium" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_fixture_test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Testing/Selenium/200521_xpath.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;200521_fixture_test.TestCase.test_two&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest for 200521_fixture_test.test_one" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="PythonWork(py37)" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_fixture_test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;200521_fixture_test.test_one&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for 200521_fixture_test.test_three" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="PythonWork(py37)" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_fixture_test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;200521_fixture_test.test_three&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in 200521_fixture_test.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="PythonWork(py37)" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_fixture_test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_fixture_test/200521_fixture_test.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.200510_sample_test" />
+      <item itemvalue="Python tests.pytest for 200521_fixture_test.test_one" />
+      <item itemvalue="Python tests.pytest for 200521_fixture_test.TestCase.test_two" />
+      <item itemvalue="Python tests.pytest for 200521_fixture_test.TestCase" />
+      <item itemvalue="Python tests.pytest for 200521_fixture_test.test_three" />
+      <item itemvalue="Python tests.pytest in 200521_fixture_test.py" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.200521_xpath" />
-        <item itemvalue="Python.200520_更多操作技巧" />
-        <item itemvalue="Python.200520_radio選擇框" />
-        <item itemvalue="Python.200519_窗口切換" />
+        <item itemvalue="Python tests.pytest in 200521_fixture_test.py" />
+        <item itemvalue="Python tests.pytest for 200521_fixture_test.test_three" />
+        <item itemvalue="Python tests.pytest for 200521_fixture_test.TestCase" />
+        <item itemvalue="Python tests.pytest for 200521_fixture_test.TestCase.test_two" />
+        <item itemvalue="Python tests.pytest for 200521_fixture_test.test_one" />
       </list>
     </recent_temporary>
   </component>
@@ -304,22 +381,55 @@
       <workItem from="1589937367210" duration="3682000" />
       <workItem from="1590036600002" duration="15948000" />
       <workItem from="1590110604947" duration="26494000" />
-      <workItem from="1590193732702" duration="9049000" />
+      <workItem from="1590193732702" duration="18783000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="pytest_for_200521_setup_test_TestCase - 2020.05.23 at 15h 25m 23s.xml">
+      <configuration name="pytest for 200521_setup_test.TestCase" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_200521_setup_test_py - 2020.05.23 at 15h 26m 01s.xml">
+      <configuration name="pytest in 200521_setup_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_200521_setup_test_py - 2020.05.23 at 15h 26m 45s.xml">
+      <configuration name="pytest in 200521_setup_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_200521_setup_test_py - 2020.05.23 at 15h 26m 49s.xml">
+      <configuration name="pytest in 200521_setup_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_200521_setup_test_py - 2020.05.23 at 15h 27m 47s.xml">
+      <configuration name="pytest in 200521_setup_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_200521_fixture_test_test_one - 2020.05.23 at 15h 56m 55s.xml">
+      <configuration name="pytest for 200521_fixture_test.test_one" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_200521_fixture_test_TestCase_test_two - 2020.05.23 at 15h 57m 37s.xml">
+      <configuration name="pytest for 200521_fixture_test.TestCase.test_two" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_200521_fixture_test_TestCase - 2020.05.23 at 15h 58m 56s.xml">
+      <configuration name="pytest for 200521_fixture_test.TestCase" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_200521_fixture_test_test_three - 2020.05.23 at 16h 03m 50s.xml">
+      <configuration name="pytest for 200521_fixture_test.test_three" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_200521_fixture_test_py - 2020.05.23 at 16h 45m 53s.xml">
+      <configuration name="pytest in 200521_fixture_test.py" configurationId="tests" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96970000" />
+    <option name="totallyTimeSpent" value="106704000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19571045" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.25637394" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.44050992" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -328,7 +438,7 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3371105" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3371105" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -366,44 +476,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/NoSQL資料庫(Redis)/redis-cli筆記.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-700">
-          <caret line="91" column="53" lean-forward="true" selection-start-line="91" selection-start-column="53" selection-end-line="91" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt" />
-    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200504_DRF用戶登入(認證、權限、節流)/筆記.txt" />
-    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200504_DRF用戶登入(認證、權限、節流)/mysite/api/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200505_DRF/筆記.txt" />
-    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200504_DRF用戶登入(認證、權限、節流)/節流器筆記.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200505_DRF/版本筆記.txt" />
-    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200505_DRF/解析器筆記.txt" />
-    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200504_DRF用戶登入(認證、權限、節流)/認證筆記.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200505_DRF(版本、解析器)/mysite/mysite/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200505_DRF(版本、解析器)/mysite/api/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -601,6 +673,72 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-159">
           <caret line="47" column="38" lean-forward="true" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/Pytest/200521_入門/文檔網址.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="54" selection-start-column="54" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/Pytest/200521_入門/200510_test_sample.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/Pytest/200521_入門/200510_sample_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="30" column="7" lean-forward="true" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Python/Anaconda3/envs/py37/Lib/site-packages/_pytest/fixtures.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="1106" column="30" lean-forward="true" selection-start-line="1106" selection-start-column="30" selection-end-line="1106" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_fixture_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_setup_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/Pytest/200521_入門/200520_firstdemo_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_fixture_test/200521_fixture_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_fixture_test/report.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/Pytest/筆記.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="29" column="66" lean-forward="true" selection-start-line="29" selection-start-column="66" selection-end-line="29" selection-end-column="66" />
         </state>
       </provider>
     </entry>
