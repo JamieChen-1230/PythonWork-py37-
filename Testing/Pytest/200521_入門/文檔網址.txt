@@ -1,1 +1,2 @@
-https://docs.pytest.org/en/latest/getting-started.html
+文檔：https://docs.pytest.org/en/latest/getting-started.html
+影片：https://www.bilibili.com/video/BV1JC4y147XK?from=search&seid=11214600092267182629
