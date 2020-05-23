@@ -77,11 +77,23 @@ Git倉庫的初始化(即讓Git知道需要他來管理這個目錄)：
                     ※ 需要先在工作區和版本庫中做一些一致性調整(要麼將工作目錄的修改提交到版本庫，要麼捨棄工作目錄的修改)。
                     git pull
                 3. 提交本地倉庫至遠程倉庫(但通常要push前最好先git pull，才不會造成遠程倉庫版本混亂)：
-                    git push
+                    git push <遠程主機名> <本地分支名>:<遠程分支名>
+                    EX: git push -u origin master:master   # -u表示他會記住我們現在傳遞的倉庫分支，這樣之後執行單git push就能達到同樣效果
+
     二、基於ssh協議(要額外使用生成公私鑰的套件)：
         影片教學：https://www.bilibili.com/video/BV1sJ411D7xN?p=12
         具體實現在https://blog.csdn.net/jiahuan_/article/details/105933423
 
+額外指令：
+    檢視遠端版本庫的「簡稱」：
+        ※ 如果你clone了一個遠端版本庫，你至少看得到一個「origin」(它是Git的預設簡稱，用來代表被克隆的來源)。
+        git remote -v
+    新增遠端版本庫：
+        git remote add <簡稱> <url>
+        EX: git remote add demo https://github.com/silencejamie/git_test.git
+    檢視遠端：
+        git remote show <簡稱>
+        EX: git remote show origin
 
 ====================================-分支操作(本地)-====================================
 查看分支(*代表當前分支)：

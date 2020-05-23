@@ -42,6 +42,18 @@ HTML文檔的根節點： /
 範圍選擇(從1開始)：
     - //div/option[position()<=2]  代表所有div下第1, 2個option元素
     - //*[@class='multi_choice']/*[position()>=last()-2]  代表class屬性為multi_choice的後3個子元素
+
+組選擇【或(|)】：
+    - //option | // h3  找出所有的option和h3
+    - //*[@class='single_choice'] | //*[@class='multi_choice']  找出所有class為single_choice和class為multi_choice的元素
+    
+選擇父節點【用/..表示】(CSS做不到)：
+    - //*[@id='china']/..  找出id為china元素的父節點
+    
+兄弟節點：
+    - 【following-sibling:: 表示所有後續的兄弟節點】=>  //*[@class='single_choice']/following-sibling::*   找出class為single_choice元素的所有類型的後續兄弟節點
+    -  //*[@class='single_choice']/following-sibling::div  找出class為single_choice元素的所有div後續兄弟節點
+    - 【preceding-sibling:: 表示所有前面的兄弟節點】=>  //*[@class='single_choice']/preceding-sibling::*   找出class為single_choice元素的所有類型的前面兄弟節點
 """
 
 elements = driver.find_elements_by_xpath("/html/body/div")
@@ -50,4 +62,4 @@ for e in elements:
     print(e.get_attribute('outerHTML'))
 
 
-driver.quit()
+# driver.quit()

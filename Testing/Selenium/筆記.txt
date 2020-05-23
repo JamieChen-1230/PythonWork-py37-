@@ -6,3 +6,84 @@ Selenium：是一個Web應用的自動化框架。
         自動化程序(Selenium 客戶端庫)  --(發送HTTP請求 EX:點擊界面按鈕)->  瀏覽器驅動(由各自瀏覽器提供)  --(轉發給)->  瀏覽器
         返回結果：
         瀏覽器  --(返回自動化的結果)->  瀏覽器驅動  --(通過HTTP響應返回)->  自動化程序(Selenium 客戶端庫)
+
+   - 基本代碼流程：
+        from selenium import webdriver
+        # 一、先啟動瀏覽器驅動和瀏覽器，返回一個WebDriver對象。(參數為chrome驅動的路徑)
+        driver = webdriver.Chrome(r'd:\Programming\WorkPlace\PythonWork(py37)\Testing\Selenium\chromedriver\chromedriver.exe')
+        # 二、先設定隱性等待。(詳細解釋在first_demo.py)
+        driver.implicitly_wait(10)
+        # 三、打開網站窗口。
+        driver.get(url='http://cdn1.python3.vip/files/selenium/test1.html')
+        # 四、開始查找操作要用的元素。(建議使用xpath)
+        elements = driver.find_elements_by_xpath("/html/body/div")
+
+   - WebDriver對象操作指令：
+        wd.get(url='https://www.google.com.tw/')： 打開網站
+        wd.implicitly_wait(5)： 隱式等待
+        wd.quit()： 關閉瀏覽器驅動和瀏覽器
+        wd.title： 當前窗口的標記欄(google分頁上顯示的那個標題)
+        wd.current_window_handle： 當前窗口的handle
+        wd.switch_to.window(handle)： 切換窗口
+        wd.switch_to.frame('frame的id或WebElement對象')： 切換frame
+        wd.switch_to.default_content()： 切換回到主Html
+
+   - 操作WebElement對象：
+        點擊對象(通常用於button或a對象)： WebElement對象.click()
+        輸入字符串： WebElement對象.send_keys()
+        獲取文本內容(介面上看的到的文本)： WebElement對象.text
+        獲取元素屬性： WebElement對象.get_attribute(EX:'a')
+            - 獲取整個元素對應的HTML文本內容： WebElement對象.get_attribute('outerHTML')
+            - 獲取此元素内部所有的HTML文本內容： WebElement對象.get_attribute('innerHTML')
+            - 獲取輸入框裡面的文字(不能用.text獲取)： WebElement對象.get_attribute('value')
+            - 獲取文本內容(介面上看不到的文本)： WebElement對象.get_attribute('textContent'或'innerText')
+        ※ 更多操作技巧在ActionChains類裡面(參考更多操作技巧.py)
+
+   - 在瀏覽器中也能透過CSS或xpath選擇器來進行查找(非常方便)：
+        先按F12  ->  在上面一排選Elements  ->  按 ctrl+f  ->  輸入查詢條件
+
+   - (推薦)xpath選擇器(WebbElement對象.find_element(s)_by_xpath('代碼')來調用)：
+        HTML文檔的根節點： /
+        當前對象(EX：.//div  代表當前對象下的所有div元素)： .
+        通配符(代表所有對象)(EX： //div/*  代表div之下的所有元素)： *
+        選擇html中的body中的div元素： /html/body/div
+            - 相當於CSS選擇器的 html>body>div
+            - 相當於找子元素
+        找子元素： /div
+        找後代元素(相對路徑)： //div
+        屬性查找： [@屬性名="屬性值"]
+            - /div[@class="li"]  代表子元素中的div標籤且id="li"
+            - /div[@id="1"][@class="li"]  多條件：代表子元素中的div標籤且id="1"且class="li"
+            - //*[@name="aa"]  代表所有name="aa"的元素
+            - //*[@href]  代表所有有href屬性的元素
+            - //p[@class="capital huge-city"]  如果class包含多個值，不能只寫其中一個，一定要寫全部
+                - 在這方面CSS選擇器做得比較好，可以透過單個值查詢。
+
+        屬性值進階查找：
+            - //*[contains(@style,'color')]  代表所有style屬性值包含color字符串的元素
+            - //a[starts-with(@href, '/all/hot/recent/')]  找到href開頭為/all/hot/recent/的所有a元素
+            - //a[re:test(@href, '/all/hot/recent/\d+')]  用正則找到href為/all/hot/recent/\d+的所有a標籤
+            - xpath 1中沒有以結尾做查找的方式。
+                - CSS選擇器中有： a[href$="123"]
+
+        按次序選擇：
+            - //p[2]  代表第二個p類型的元素
+            - //div/*[last()]  代表所有div下的最後一個元素
+            - //div/*[last()-1]  代表所有div下的倒數第二個元素
+
+        範圍選擇(從1開始)：
+            - //div/option[position()<=2]  代表所有div下第1, 2個option元素
+            - //*[@class='multi_choice']/*[position()>=last()-2]  代表class屬性為multi_choice的後3個子元素
+
+        組選擇【或(|)】：
+            - //option | // h3  找出所有的option和h3
+            - //*[@class='single_choice'] | //*[@class='multi_choice']  找出所有class為single_choice和class為multi_choice的元素
+
+        選擇父節點【用/..表示】(CSS做不到)：
+            - //*[@id='china']/..  找出id為china元素的父節點
+
+        兄弟節點：
+            - 【following-sibling:: 表示所有後續的兄弟節點】=>  //*[@class='single_choice']/following-sibling::*   找出class為single_choice元素的所有類型的後續兄弟節點
+            -  //*[@class='single_choice']/following-sibling::div  找出class為single_choice元素的所有div後續兄弟節點
+            - 【preceding-sibling:: 表示所有前面的兄弟節點】=>  //*[@class='single_choice']/preceding-sibling::*   找出class為single_choice元素的所有類型的前面兄弟節點
+
