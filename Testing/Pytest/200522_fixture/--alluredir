@@ -1,0 +1,9 @@
+============================= test session starts =============================
+platform win32 -- Python 3.7.1, pytest-5.4.2, py-1.8.1, pluggy-0.13.1 -- d:\programming\python\anaconda3\envs\py37\python.exe
+cachedir: .pytest_cache
+metadata: {'Python': '3.7.1', 'Platform': 'Windows-10-10.0.18362-SP0', 'Packages': {'pytest': '5.4.2', 'py': '1.8.1', 'pluggy': '0.13.1'}, 'Plugins': {'allure-pytest': '2.8.15', 'assume': '2.2.1', 'html': '2.1.1', 'metadata': '1.9.0', 'rerunfailures': '9.0'}, 'JAVA_HOME': 'D:\\Programming\\Java\\jdk1.8.0_202'}
+rootdir: D:\Programming\WorkPlace\PythonWork(py37)\Testing\Pytest, inifile: pytest.ini
+plugins: allure-pytest-2.8.15, assume-2.2.1, html-2.1.1, metadata-1.9.0, rerunfailures-9.0
+collecting ... collected 0 items
+
+============================ no tests ran in 0.01s ============================

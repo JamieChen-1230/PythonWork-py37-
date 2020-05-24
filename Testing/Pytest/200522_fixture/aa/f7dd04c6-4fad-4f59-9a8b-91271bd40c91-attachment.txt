@@ -1,0 +1,3 @@
+setup
+some_data: 42
+teardown

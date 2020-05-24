@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sun May 24 13:28:09 GMT+08:00 2020","Sun May 24 13:28:09 GMT+08:00 2020","0","200522_fixture","test_sample3","","","","test_1",""
+"passed","Sun May 24 13:28:09 GMT+08:00 2020","Sun May 24 13:28:09 GMT+08:00 2020","0","200522_fixture","test_sample3","","","","test_0",""
+"passed","Sun May 24 13:28:09 GMT+08:00 2020","Sun May 24 13:28:09 GMT+08:00 2020","0","200522_fixture","test_sample1","","","","test_some_data",""
+"failed","Sun May 24 13:28:09 GMT+08:00 2020","Sun May 24 13:28:09 GMT+08:00 2020","0","200522_fixture","test_sample1","","","","test_a_list",""
+"passed","Sun May 24 13:28:09 GMT+08:00 2020","Sun May 24 13:28:09 GMT+08:00 2020","1","200522_fixture","test_sample3","TestCase","","","test_3",""
+"passed","Sun May 24 13:28:09 GMT+08:00 2020","Sun May 24 13:28:09 GMT+08:00 2020","0","200522_fixture","test_sample2","","","","test_some_data",""
+"passed","Sun May 24 13:28:09 GMT+08:00 2020","Sun May 24 13:28:09 GMT+08:00 2020","0","200522_fixture","test_sample3","TestCase","","","test_2",""

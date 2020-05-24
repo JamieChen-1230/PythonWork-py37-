@@ -9,12 +9,14 @@ pytest==5.4.2
 pytest-rerunfailures==9.0 (用來進行重複pytest測試的)
 pytest-assume==2.2.1 (用來讓assert failed後，後面的程序還能運行完)
 pytest-html==2.1.1  (用來生成測試報告)
+allure-pytest==2.8.15  (用來生成更友好測試報告，還需要額外安裝allure)
 
 緩存：
 redis==2.10.6 (redis==3.5.2版本太高)
 
 爬蟲：
 Scrapy==2.1.0
+requests==2.23.0
 
 異步任務：
 celery==4.3.0

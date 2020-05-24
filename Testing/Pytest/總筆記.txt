@@ -1,0 +1,115 @@
+Pytest介紹:
+    - 介紹： 是python的一種單元測試框架。
+    - 兼容： pytest可以執行原生unittest框架寫的用例和方法。
+    - 文檔規則：
+        - 檔名識別： 通常設為 test_*.py 或是 *_test.py 兩種。
+        - 用例識別：
+            (1) Test* 類所包含的所有 test_* 方法。(測試類不能帶有__init__方法)
+            (2) 不在類中的 test_* 方法。
+
+
+Pytest的非測試文件：
+    - pytest.ini： pytest的主配置文件，可以配置很多選項來改變pytest的默認行為。(通常放在測試文檔的根目錄)
+        - addopts： 添增默認指令(EX:-v等)，讓我們每次測試不用輸入一大串。
+        - makers： 給我們的標每個標籤添加註釋(防止出現warning)。
+        - minversion： 指定pytest的版本至少要有多新。
+        - norecursedirs： 執行pytest時忽略哪些目錄。
+    - conftest.py： 本地的插件庫，裡面可以存放要用於此目錄和子目錄的hook函數和fixture。
+    - __init__.py： 每個測試目錄中理應都必須有一個__init__.py文件，這樣在多個測試目錄中如果出現同名測試文件才不會報錯。
+
+
+Pytest指令(cmd)：
+    - 運行：
+        - pytest  =>  執行該目錄下的所有測試文件。(包括子目錄中的測試文件)
+        - pytest 測試文件名.py  =>  只執行該測試文件。(可以一次寫多個，用空格隔開)
+        - pytest -v  =>  -v 顯示更為詳細的測試內容。
+        - pytest -s  =>  如果文件中有使用print方法，使用-s能額外捕捉它們。
+        - pytest -x  =>  -x 表示只要遇到一個failed，就會直接停止測試。
+        - pytest --maxfail=2  =>  --maxfail=2 表示遇到2個failed，就會直接停止測試。
+        - pytest 測試文件名.py::test_one  =>  運行指定方法(此為test_one方法)。
+        - pytest 測試文件名.py::TestCase::test_two  =>  運行指定方法(此為TestCase類下的test_two方法)。
+        - pytest --setup-show  =>  --setup-show 顯示外殼函數執行順序。
+
+    - 只運行某幾條測試用例：
+        - pytest -m 標記名  =>  -m 只執行標記名相同的用例(用 @pytest.mark.標記名 進行裝飾且標記)。
+            - (防止出現warning)在根目錄下創建pytest.ini檔，並寫入
+             《參考200521_fixture_test/使用conftest/test_demo.py》
+                [pytest]
+                    markers = 標記名: 對標記的描述
+        - pytest -k "表達式(EX:類名 and not 方法名)"  =>  -k 使用表達式來篩選指定執行某些用例。
+
+    - 遇到failed時重複執行測試【需先 pip install pytest-rerunfailures】：
+        - pytest --reruns=2  =>  --reruns=2 表示重複跑兩次測試
+        - pytest --reruns=2 --reruns-delay=2  =>  --reruns-delay=2 表示停2秒後才能重複測試
+
+    - 生成測試文件【需先 pip install pytest-html allure-pytest】：
+        - 使用pytest-html：
+            - pytest -v -s --html=report.html  =>  --html=report.html 表示要生成一個report.html的測試文件
+        - (推薦)使用allure-pytest：
+            - pytest -v --alluredir ./aa  =>  --alluredir ./aa  表示要生成測試資料文檔，然後放在當前目錄下的aa子目錄
+            - allure generate aa -o aa_html  =>  生成allure測試文件，從aa資料夾提取資料，-o aa_html表示最終測試文件要放在aa_html子目錄下
+
+
+Pytest代碼：
+    - 使用pytest.assume()代替assert()【需先pip install pytest-assume】：
+        差異：
+            assert()： 當遇到failed時會直接結束此函式，後面的代碼不再執行。
+            pytest.assume()： 就算遇到failed，也會繼續執行完整個函式。
+
+    - 在文檔中使用pytest命令行指令：
+        if __name__ == '__main__':
+            """
+            原因是因為Pycharm會把一些信息自動記錄下來。
+            如果遇到奇怪的問題可以去中上偏右有一個顯示你當前文檔的框框點下去 => Edit Configurations
+            => 把左半邊有關此文檔的紀錄都刪掉(用左上的-來刪除) => +一個python  => script path選擇此文檔路徑 => OK
+            """
+            # 在這邊調用命令行的參數
+            pytest.main(['-v', '--reruns=2', '200510_sample_test.py::test_one'])
+
+    - @pytest.mark.parametrize("headers, payload", param)裝飾器：
+        - 參考： 《參考200523_django_test/tests/test_param2.py》
+        - 用途： 讓我們能做到測試函數和測試數據分離。(測試數據不用寫在測試函數中，讓代碼更簡潔)
+        - 參數：
+            - argnames： 為要傳的數據命名。(在測試函數中要叫什麼)
+            - argvalues： 要傳的數據。
+
+    - setup和teardown方法《值行並參考200521_setup_test.py》：
+        優先級：
+            - 模塊級(module)： 全局的(優先度最高)。
+                - 函數級(function)： 只對函數用例生效。
+                - 類級(class)： 只對類用例生效(只在類中的最前後運行一次)。
+                    - 方法級(method)： 開始於方法始末。
+                        - 最低級()： 運行在調用方法前後。
+
+    - python-fixture《參考200521_fixture_test/200521_fixture_test.py和200522_fixture》：
+        - 用途：
+            fixture是在測試函數前後運行的外殼函數(比setup等方便許多)，可以用來滿足多變的測試需求。
+            EX：定義傳入測試的數據集、配置測試前系統的初始狀態(像是連接數據庫等)、提供測試數據源等。
+        - 使用：
+            - @pytest.fixture()裝飾器用於聲明此函數為一個fixture。
+            - fixture函數可以當作參數傳遞給test方法。
+            - 檢測順序： 優先檢索當前測試文件中的fixture，再來檢索conftest.py的，且會在測試函數運行前就先執行fixture。
+            - fixture可以完成測試任務，也可以返回數據給測試函數。
+        - 參數：
+            - scope： 用來控制fixture使用範圍。(默認是function)
+                《參考200522_fixture/test_sample3.py》
+                "function" (默認), "class", "module", "package"(包級別), "session"(最高級別，整個作用域都可用) 五種
+            - params： 參數，fixture函數可透過return request.parm將參數傳給測試函數。
+                - 參數須為一個列表。
+                - 參數列表中有幾個值，測試函數就會運行幾次(每次運行的參數依序為list[0], list[1]...)。
+            - autouse： autouse=True，代表全部測試方法都會自動調用此fixture。
+        - 代碼大綱：
+            @pytest.fixture()
+            def some_data():
+                print("setup")     # yield前相當於執行setup外殼函數
+                yield 42           # yield跟return一樣也可以傳值
+                print("teardown")  # yield後相當於執行teardown外殼函數
+            def test_some_data(some_data):
+                print('some_data:', some_data)
+                assert some_data == 42
+        - 共同用例配置文件(conftest.py)：
+            - conftest.py配置文檔名稱是固定的，不能改名稱。
+            - conftest.py與運行的用例要在同一個pakage下，並且有__init__.py文件。
+            - 不需要import導入conftest.py，pytest用例會自動查找。
+
+
