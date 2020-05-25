@@ -40,6 +40,7 @@ class AuthView(APIView):
 
     # 通常用戶登入是用post請求
     def post(self, request, *args, **kwargs):
+        self.dispatch()
         ret = {'code': 1000, 'msg': None}
         try:
             user = request._request.POST.get('username')

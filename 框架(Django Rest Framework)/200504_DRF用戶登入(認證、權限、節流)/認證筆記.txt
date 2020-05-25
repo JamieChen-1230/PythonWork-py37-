@@ -18,7 +18,7 @@
         - 全局使用(加到settings.py)：
             REST_FRAMEWORK = {
                 # 全局使用認證類(若想讓view不使用全局認證類，則在其中加入authentication_classes=[])
-                "DEFAULT_AUTHENTICATION_CLASSES": ('api.views.MyAuthentication', )  # 通常不會寫到views中，而是會再另外創一個py檔(EX:auth.py)
+                "DEFAULT_AUTHENTICATION_CLASSES": ('api.utils.auth.MyAuthentication', )  # 通常不會寫到views中，而是會再另外創一個py檔(EX:auth.py)
             }
 
     二、源碼流程：
