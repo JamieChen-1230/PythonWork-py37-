@@ -11,6 +11,9 @@ Python引號：
     - 三雙引號一般用在類里面，用來註釋類。
 
 
+Python垃圾回收機制： 回收計數引用為0的對象，釋放其占用空間。
+
+
 Python實例化class的執行順序：
 	1. 調用type類 -> 調用內置的元類mateClass -> 調用__new__方法將類實例化
 	2. 實例將會初始化自己的類變量
@@ -32,7 +35,7 @@ Python函數參數：
 物件導向程式設計(OOP)、面向對象：
 	- 目的：使程式碼的維護和擴充更容易，且更容易閱讀理解程式碼邏輯。
 	- 三大特性：
-	封裝：
+	    封裝：
             把想同類型的屬性和方法封裝到類中，這樣可以簡化編程，使用者也可以僅通過外部接口來調用，使程式容易模組化。。
         繼承：
             繼承就是子類繼承父類的特徵和行為，使得子類對象具有父類的實例和方法，
@@ -77,6 +80,13 @@ tuple和list比較：
     且具名元祖可以理解為元組的增強版本，它為元組中的每個元素都賦予了含義，從而增強代碼可讀性。
 
 
+json和字典dict比較：
+    一、json是一種輕量級的數據交換格式；dict是python中的數據類型。
+    二、json的字符串強制使用雙引號；dict則是單、雙引號都可以。
+    三、json的類型是字符串，只是是按照key:value鍵值對格式定義。
+    四、json的key可以是有序、重複的；dict的key不可以重複。
+
+
 字符串格式化(%和.format的區別)：
     %在於使用時更為方便快速，但format較為靈活與強大，可以做到格式限定符(比如:填充、對齊、精度等)。
 
@@ -92,6 +102,39 @@ ORM是什麼？
 	- 對象（Object）：表示面向對象語言中的對象，EX：Python。
 	- 關係（Relational）：表示你正在使用的RDBMS數據庫（關係數據庫管理器系統），EX：MySQL。
 	- 映射（Mapping）：表示前面兩個部分之間的橋接和連接，即透過對象和數據庫連結。
+
+Django_ORM優化：
+    - 無優化：
+        - 代碼：
+            book_list = models.Books.objects.all()
+            for book in book_list:
+                print(book.publish.name)
+        - 造成速度慢之原因：
+            因為Django ORM的Queryset查找是屬惰性查找，所以在當在print之前，ORM不會真正的去進行資料庫的訪問，
+            而是當要使用之時(EX：print)時，他才會進行訪問，而這也導致在循環中會不停的訪問資料庫，造成延遲。
+    - 優化方式：
+        - select_related：
+            - 使用時機：
+                - 在模型欄位並不複雜且數量並不多的情況下。
+                - 正向一對多、一對一。
+            - 代碼：
+                book_list = models.Books.objects.all().select_related('publish', )  # 能合併多張表
+                for book in book_list:
+                    print(book.publish.name)
+            - 原因：
+                相當於在求book_list時，就進行了資料庫的inner join操作，所以之後循環時才不用在再次訪問。
+            - 缺點：
+                一次聯表查詢獲取所有的數據(一次查多張表)，聯太多表時會有性能的損耗。
+        - prefetch_related：
+            - 使用時機：
+                - 在查詢集中的對象欄位較多較複雜，且查詢集較大的時候。
+                - 反向一對多、多對多關係。
+            - 代碼：
+                book_list = models.Books.objects.all().prefetch_related('publish', )  # 能合併多張表
+                for book in book_list:
+                    print(book.publish.name)
+            - 原因：
+                相當於在Python層面上的進行join，因此該操作允許多對多關係以及反向關係，而這是select_related無法做到的。
 
 
 SQLAlchemy和Django ORM比較：
@@ -203,3 +246,4 @@ git基礎(詳細在git筆記)：
             - 系統模塊間接口的調用測試
     - 工具：
         - SELENIUM：本身不是測試工具，只是模擬瀏覽器操作的工具，它主要是用於Web應用程序的自動化測試。
+        - Pytest：是python的一種單元測試框架。
