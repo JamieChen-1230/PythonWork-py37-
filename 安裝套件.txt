@@ -14,10 +14,15 @@ allure-pytest==2.8.15  (用來生成更友好測試報告，還需要額外安�
 緩存：
 redis==2.10.6 (redis==3.5.2版本太高)
 
+消息對列(RabbitMQ)：
+要先載erlang(RabbitMQ需要的環境)，再載(RabbitMQ，
+之後再安裝rabbitmq_management。(透過命令行rabbitmq-plugins enable rabbitmq_management)
+pika==1.1.0 (python要連接rabbitMQ的套件)
+
 爬蟲：
 Scrapy==2.1.0
 requests==2.23.0
 
 異步任務：
-celery==4.3.0
+celery==3.1.25
 eventlet==0.25.2 (因為windows不支持celery4，所以要額外安裝它)

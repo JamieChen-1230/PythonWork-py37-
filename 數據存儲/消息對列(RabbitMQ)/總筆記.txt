@@ -1,0 +1,29 @@
+RabbitMQ：
+    - 介紹： 實現AMQP（高級消息隊列協議）的消息中間件，用於在分佈式系統中存儲轉發消息，在易用性、擴展性、高可用性等方面表現不俗。
+        - 消息中間件： 是一種在消息傳輸過程中保存消息的容器，主要用於組件之間的解耦，消息的發送者無需知道消息使用者的存在。
+        - 對列： 主要目的是提供路由並保證消息傳遞，如果發送消息時接收方無法處理，那消息則會先保留在對列中，等到成功傳遞為止(還是會有期限限制)。
+
+    - 安裝：
+        一、安裝Erlang(因為RabbitMQ是建立在Erlang OTP平台上)：
+            https://www.erlang.org/downloads
+        二、安裝RabbitMQ：
+            https://www.rabbitmq.com/download.html
+        三、安裝rabbitmq_management(用於可視化的方式查看RabbitMQ服務器實例的狀態，以及操控RabbitMQ服務器)：
+            指令： rabbitmq-plugins enable rabbitmq_management
+        四、安装python rabbitMQ module(pika是RabbitMQ團隊編寫的官方Python的AMQP庫。)：
+            指令： pip install pika
+
+    - 指令：
+        - 創建用戶：
+            rabbitmqctl add_user <username> <password>
+            範例： rabbitmqctl add_user jamie 851230
+        - 查看用戶列表：
+            rabbitmqctl list_users
+        - 設置tag：
+            ※ administrator代表最高權限，共有administrator、monitoring、policymaker、management和none(無權限)五種。
+            rabbitmqctl set_user_tags <username> <tag1> <tag2> ...
+            範例： rabbitmqctl set_user_tags jamie administrator
+        - 查看目前有哪些隊列並顯示傳遞消息數量：
+            rabbitmqctl.bat list_queues
+
+

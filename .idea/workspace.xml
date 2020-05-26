@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff1e8a4e-9f45-4d3b-9949-a27f16c94dbc" name="Default Changelist" comment="" />
+    <list default="true" id="ff1e8a4e-9f45-4d3b-9949-a27f16c94dbc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/安裝套件.txt" beforeDir="false" afterPath="$PROJECT_DIR$/安裝套件.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/觀念/筆記.txt" beforeDir="false" afterPath="$PROJECT_DIR$/觀念/筆記.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/資料庫/NoSQL資料庫(Redis)/200514_RedisByPython.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/資料庫/NoSQL資料庫(Redis)/publish.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/資料庫/NoSQL資料庫(Redis)/redis-cli持久化筆記.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/資料庫/NoSQL資料庫(Redis)/redis-cli筆記.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/資料庫/SQL資料庫(MySQL)/180823_數據庫操作.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/資料庫/SQL資料庫(MySQL)/180823_數據表操作.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/資料庫/SQL資料庫(MySQL)/180823_數據表紀錄操作.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/資料庫/SQL資料庫(MySQL)/180824_索引.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/資料庫/SQL資料庫(MySQL)/180825_pymysql.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/資料庫/SQL資料庫(MySQL)/180825_事務.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/資料庫/SQL資料庫(MySQL)/180825_多表查詢.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/資料庫/SQL資料庫(MySQL)/180826_外鍵約束.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/資料庫/SQL資料庫(MySQL)/190515_資料庫三范式.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/資料庫/SQL資料庫(MySQL)/200110_用戶權限.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/資料庫/SQL資料庫(MySQL)/200111_其他約束.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/資料庫/SQL資料庫(MySQL)/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/資料庫/SQL資料庫(MySQL)/練習範例數據(外鍵).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/資料庫/SQL資料庫(MySQL)/練習範例數據(多表).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/資料庫/SQL資料庫(MySQL)/練習範例數據.txt" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +53,7 @@
     <SUITE FILE_PATH="coverage/PythonWork_py37_$get_data.coverage" NAME="get_data Coverage Results" MODIFIED="1590310182085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200523_django_test/tests/utils" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$200501___.coverage" NAME="200501_模仿計時裝飾器(多層裝飾器) Coverage Results" MODIFIED="1590392709974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎/200425_裝飾器" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$publish.coverage" NAME="publish Coverage Results" MODIFIED="1590118801479" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NoSQL資料庫(Redis)" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$send.coverage" NAME="send Coverage Results" MODIFIED="1590498403290" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200525_初試" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$200510_sample_test.coverage" NAME="200510_sample_test Coverage Results" MODIFIED="1590217757452" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_200521_fixture_test_test_one.coverage" NAME="pytest for 200521_fixture_test.test_one Coverage Results" MODIFIED="1590220614627" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_fixture_test" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_test_sample3_py.coverage" NAME="pytest in test_sample3.py Coverage Results" MODIFIED="1590293673152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200522_fixture" />
@@ -38,6 +62,7 @@
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_test_sample1_py.coverage" NAME="pytest in test_sample1.py Coverage Results" MODIFIED="1590292538827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200522_fixture" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$200429_.coverage" NAME="200429_深淺複製 Coverage Results" MODIFIED="1590397194386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎/200429_對象引用" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_test_sample2_test_some_data.coverage" NAME="pytest for test_sample2.test_some_data Coverage Results" MODIFIED="1590292196301" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200522_fixture" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$receive.coverage" NAME="receive Coverage Results" MODIFIED="1590498384258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200525_初試" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_200510_sample_test_TestCase.coverage" NAME="pytest for 200510_sample_test.TestCase Coverage Results" MODIFIED="1590216326242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_200510_sample_test_TestCase_test_three.coverage" NAME="pytest for 200510_sample_test.TestCase.test_three Coverage Results" MODIFIED="1590216741569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$200409_.coverage" NAME="200409_賦值 Coverage Results" MODIFIED="1590397106360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎/200429_對象引用" />
@@ -67,7 +92,35 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200525_初試/send.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200525_初試/receive.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/總筆記.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="588">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -89,11 +142,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Testing/Selenium/200520_更多操作技巧.py" />
-        <option value="$PROJECT_DIR$/Testing/Selenium/200520_凍結介面.txt" />
-        <option value="$PROJECT_DIR$/Testing/Selenium/200520_彈出式對話框.py" />
-        <option value="$PROJECT_DIR$/Testing/Selenium/200521_xpath.py" />
-        <option value="$PROJECT_DIR$/Testing/Selenium/筆記.txt" />
         <option value="$PROJECT_DIR$/基礎觀念/筆記.txt" />
         <option value="$PROJECT_DIR$/Git/Git筆記.txt" />
         <option value="$PROJECT_DIR$/Testing/Pytest/200521_入門/200510_test_sample.py" />
@@ -136,10 +184,15 @@
         <option value="$PROJECT_DIR$/基礎/200501_內置函數&amp;反射.py" />
         <option value="$PROJECT_DIR$/Testing/Pytest/總筆記.txt" />
         <option value="$PROJECT_DIR$/Testing/Selenium/總筆記.txt" />
-        <option value="$PROJECT_DIR$/觀念/筆記.txt" />
         <option value="$PROJECT_DIR$/資料庫/SQL資料庫(MySQL)/180823_數據庫操作.txt" />
         <option value="$PROJECT_DIR$/資料庫/SQL資料庫(MySQL)/180823_數據表操作.txt" />
         <option value="$PROJECT_DIR$/資料庫/SQL資料庫(MySQL)/180823_數據表紀錄操作.txt" />
+        <option value="$PROJECT_DIR$/觀念/筆記.txt" />
+        <option value="$PROJECT_DIR$/異步/celery/總筆記.txt" />
+        <option value="$PROJECT_DIR$/資料庫/消息對列(RabbitMQ)/總筆記.txt" />
+        <option value="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/總筆記.txt" />
+        <option value="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200525_初試/receive.py" />
+        <option value="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200525_初試/send.py" />
       </list>
     </option>
   </component>
@@ -161,6 +214,22 @@
             <path>
               <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
+              <item name="數據存儲" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
+              <item name="數據存儲" type="462c0819:PsiDirectoryNode" />
+              <item name="消息對列(RabbitMQ)" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
+              <item name="異步" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -188,29 +257,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.200501_內置函數&amp;反射">
-    <configuration name="200409_賦值" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PythonWork(py37)" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/基礎/200429_對象引用" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/基礎/200429_對象引用/200409_賦值.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.send">
     <configuration name="200429_深淺複製" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonWork(py37)" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -225,28 +272,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/基礎/200429_對象引用/200429_深淺複製.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="200429_Python之傳值&amp;傳址" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PythonWork(py37)" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/基礎/200429_對象引用" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/基礎/200429_對象引用/200429_Python之傳值&amp;傳址.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -321,21 +346,65 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="receive" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PythonWork(py37)" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200525_初試" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200525_初試/receive.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="send" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PythonWork(py37)" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200525_初試" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200525_初試/send.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.200510_sample_test" />
-      <item itemvalue="Python.200409_賦值" />
-      <item itemvalue="Python.200429_Python之傳值&amp;傳址" />
       <item itemvalue="Python.200429_深淺複製" />
       <item itemvalue="Python.200430_解析式" />
       <item itemvalue="Python.200501_內置函數&amp;反射" />
+      <item itemvalue="Python.receive" />
+      <item itemvalue="Python.send" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.send" />
+        <item itemvalue="Python.receive" />
         <item itemvalue="Python.200501_內置函數&amp;反射" />
         <item itemvalue="Python.200430_解析式" />
         <item itemvalue="Python.200429_深淺複製" />
-        <item itemvalue="Python.200429_Python之傳值&amp;傳址" />
-        <item itemvalue="Python.200409_賦值" />
       </list>
     </recent_temporary>
   </component>
@@ -359,7 +428,8 @@
       <workItem from="1590193732702" duration="21827000" />
       <workItem from="1590290461258" duration="18727000" />
       <workItem from="1590387912631" duration="9153000" />
-      <workItem from="1590457619466" duration="7814000" />
+      <workItem from="1590457619466" duration="11448000" />
+      <workItem from="1590484686810" duration="7379000" />
     </task>
     <servers />
   </component>
@@ -396,12 +466,37 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145442000" />
+    <option name="totallyTimeSpent" value="156455000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20375335" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20643431" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.43767706" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Console" order="7" weight="0.3286119" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3371105" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="13" weight="0.3286119" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" weight="0.122654155" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20375335" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -415,33 +510,9 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3371105" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3371105" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.3286119" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.122654155" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1930295" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.25637394" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Database Console" order="7" weight="0.3286119" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3371105" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -460,152 +531,26 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200505_DRF(版本、解析器)/mysite/api/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-646">
-          <caret line="14" column="41" lean-forward="true" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200505_DRF(版本、解析器)/解析器筆記.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="53" column="67" lean-forward="true" selection-start-line="53" selection-start-column="67" selection-end-line="53" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200506_DRF(序列化)/mysite/mysite/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200506_DRF(序列化)/mysite/api/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200506_DRF(序列化)/mysite/api/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="23" selection-start-column="23" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200506_DRF(序列化)/序列化筆記.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-420">
-          <caret line="108" column="18" lean-forward="true" selection-start-line="108" selection-start-column="18" selection-end-line="108" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200506_DRF(序列化)/mysite/api/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2408">
-          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200506_DRF(序列化)/mysite/api/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="86" column="29" lean-forward="true" selection-start-line="86" selection-start-column="29" selection-end-line="86" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200507_DRF(分頁)/mysite/mysite/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200507_DRF(分頁)/mysite/api/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200507_DRF(分頁)/mysite/mysite/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200507_DRF(分頁)/mysite/api/pagination.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200507_DRF(分頁)/mysite/mysite/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="132" column="14" lean-forward="true" selection-start-line="132" selection-start-column="14" selection-end-line="132" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200507_DRF(分頁)/mysite/api/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-504">
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200507_DRF(分頁)/分頁筆記.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="51" column="40" lean-forward="true" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200507_DRF(分頁)/渲染器筆記.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-84" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200510_DRF(視圖)/mysite/api/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-84">
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200510_DRF(視圖)/mysite/api/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200507_DRF(分頁)/mysite/mysite/urls.py" />
+    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200507_DRF(分頁)/mysite/api/urls.py" />
+    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200507_DRF(分頁)/mysite/mysite/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200507_DRF(分頁)/mysite/api/pagination.py" />
+    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200507_DRF(分頁)/mysite/mysite/settings.py" />
+    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200507_DRF(分頁)/mysite/api/views.py" />
+    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200507_DRF(分頁)/分頁筆記.txt" />
+    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200507_DRF(分頁)/渲染器筆記.txt" />
+    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200510_DRF(視圖)/mysite/api/urls.py" />
+    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200510_DRF(視圖)/mysite/api/serializers.py" />
     <entry file="file://$PROJECT_DIR$/../../Python/Anaconda3/envs/py37/Lib/site-packages/rest_framework/generics.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3801">
@@ -620,42 +565,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200510_DRF(視圖)/mysite/api/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="55" column="45" lean-forward="true" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200510_DRF(視圖)/視圖筆記.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1224">
-          <caret line="49" column="60" lean-forward="true" selection-start-line="49" selection-start-column="60" selection-end-line="49" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200511_DRF(路由、渲染器)/mysite/api/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-336">
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200511_DRF(路由、渲染器)/路由筆記.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/框架(Django)/200517_Content_tpye/筆記.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-532">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200510_DRF(視圖)/mysite/api/views.py" />
+    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200510_DRF(視圖)/視圖筆記.txt" />
+    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200511_DRF(路由、渲染器)/mysite/api/urls.py" />
+    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200511_DRF(路由、渲染器)/路由筆記.txt" />
+    <entry file="file://$PROJECT_DIR$/框架(Django)/200517_Content_tpye/筆記.txt" />
     <entry file="file://$PROJECT_DIR$/基礎觀念/筆記.txt" />
     <entry file="file://$PROJECT_DIR$/基礎/200425_裝飾器/200430_模仿認證功能裝飾器(有參數).py">
       <provider selected="true" editor-type-id="text-editor">
@@ -759,13 +673,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Testing/Pytest/總筆記.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Testing/Selenium/在瀏覽器中透過CSS選擇器查詢標籤.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -781,29 +688,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NoSQL資料庫(Redis)/redis-cli持久化筆記.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-706" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NoSQL資料庫(Redis)/redis-cli筆記.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2072">
-          <caret line="28" column="17" lean-forward="true" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/NoSQL資料庫(Redis)/redis-cli持久化筆記.txt" />
+    <entry file="file://$PROJECT_DIR$/NoSQL資料庫(Redis)/redis-cli筆記.txt" />
     <entry file="file://$PROJECT_DIR$/資料庫/SQL資料庫(MySQL)/180823_數據庫操作.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="560">
           <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/觀念/筆記.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="129" column="44" selection-start-line="129" selection-start-column="44" selection-end-line="129" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -824,6 +714,72 @@
     <entry file="file://$PROJECT_DIR$/資料庫/SQL資料庫(MySQL)/180824_索引.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1070" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/資料庫/NoSQL資料庫(Redis)/publish.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/資料庫/SQL資料庫(MySQL)/180825_pymysql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="38" column="17" lean-forward="true" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/資料庫/NoSQL資料庫(Redis)/200514_RedisByPython.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="2" selection-start-column="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/Pytest/總筆記.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-650">
+          <caret line="71" column="13" lean-forward="true" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/觀念/筆記.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="207" column="46" selection-start-line="207" selection-start-column="46" selection-end-line="207" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/異步/celery/總筆記.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/資料庫/消息對列(RabbitMQ)/總筆記.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/總筆記.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200525_初試/receive.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200525_初試/send.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
       </provider>
     </entry>
   </component>
