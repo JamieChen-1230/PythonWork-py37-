@@ -1,0 +1,76 @@
+本地MySQL密碼：
+    username：root
+    password：生(一)
+
+- 創建用戶
+- CREATE USER '用戶名'@'當前用戶能從哪個IP地址登入' IDENTIFIED by '密碼';
+指令範例：
+CREATE USER 'jamie'@'127.0.0.1' IDENTIFIED by '851230';
+CREATE USER 'jamie'@'%' IDENTIFIED by '851230'; => %代表所有的IP，讓其他電腦也能訪問到本機
+
+- 修改用戶
+- rename user '用戶名'@'IP地址' to '新用戶名'@'新IP地址';
+指令範例：rename user 'jamie'@'127.0.0.1' to 'jamie2'@'localhost';
+
+- 刪除用戶
+- drop user '用戶名'@'IP地址';
+指令範例：drop user 'jamie2'@'localhost';
+
+- 修改密碼
+- cmd命令行中更改密碼(僅限本機端使用)
+- mysqladmin -u用戶名 -p密碼 password 新密碼
+指令範例：mysqladmin -ujamie -p851230 password 123
+- 用SQL語句更改密碼
+- ALTER USER '用戶名'@'IP地址' IDENTIFIED WITH mysql_native_password BY "新密碼";
+指令範例：ALTER USER 'jamie'@'%' IDENTIFIED WITH mysql_native_password BY "123";
+
+- 查看用戶權限
+- SHOW GRANTS FOR '用戶名'@'IP地址';
+指令範例：SHOW GRANTS FOR 'jamie'@'127.0.0.1';
+
+- 賦予用戶權限
+- GRANT 權限(增刪改查等) ON 數據庫.數據表 to '用戶名'@'IP地址';
+指令範例：
+GRANT SELECT, UPDATE ON db1.info to 'jamie'@'127.0.0.1';
+GRANT SELECT, UPDATE ON *.* to 'jamie'@'127.0.0.1';  => *.*賦予所有庫所有表的權限
+
+- 移除用戶權限
+- REVOKE 權限 ON 數據庫.數據表 FROM '用戶名'@'IP地址';
+指令範例：REVOKE ALL PRIVILEGES ON *.* FROM 'jamie'@'127.0.0.1';
+
+- 刷新權限
+指令範例：FLUSH PRIVILEGES;
+
+************權限列表************
+all privileges  除了grant以外的所有權限
+select          僅查詢
+select,insert   查和插入權限
+...
+usage                   無訪問權限
+alter                   使用alter table
+alter routine           使用alter procedure和drop procedure
+create                  使用create table
+create routine          使用create procedure
+create temporary tables 使用create temporary tables
+create user             使用create user、drop user、rename user和revoke  all privileges
+create view             使用create view
+delete                  使用delete
+drop                    使用drop table
+execute                 使用call和存储过程
+file                    使用select into outfile 和 load data infile
+grant option            使用grant 和 revoke
+index                   使用index
+insert                  使用insert
+lock tables             使用lock table
+process                 使用show full processlist
+select                  使用select
+show databases          使用show databases
+show view               使用show view
+update                  使用update
+reload                  使用flush
+shutdown                使用mysqladmin shutdown(关闭MySQL)
+super                   使用change master、kill、logs、purge、master和set global。还允许mysqladmin调试登陆
+replication client      服务器位置的访问
+replication slave       由复制从属使用
+
+

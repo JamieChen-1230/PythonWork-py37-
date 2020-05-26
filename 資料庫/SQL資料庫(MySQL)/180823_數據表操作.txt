@@ -1,0 +1,92 @@
+創建表：
+    create table tab_name(
+           field1 type [完整性約束條件] ,
+           field2 type,
+           ...
+           fieldn type
+    )[ character set xxx ];
+    指令範例：
+        CREATE TABLE employee(
+                id TINYINT PRIMARY KEY AUTO_INCREMENT,
+                name VARCHAR(25),
+                gender BOOLEAN,
+                age INT DEFAULT 19,
+                department VARCHAR(20),
+                salary DOUBLE(7,2)
+        );
+
+------------約束------------
+    primary key (非空且唯一)：能夠唯一區分出當前記錄的字段稱為主鍵
+    unique：唯一
+    not null：非空
+    default：默認值
+    auto_increment：主鍵字段必須是數字類型且會自動增加
+    foreign key：外鍵約束
+----------------------------
+
+
+查看表信息：
+    - 查看表結構
+        - desc tab_name;
+        指令範例： desc tb1;
+    - 查看表結構
+        - show columns from tab_name;
+        指令範例： show columns from tb1;
+    - 查看當前數據庫中的所有的表
+        - show tables;
+        指令範例： show tables;
+    - 查看當前數據庫表建表語句
+        - show create table tab_name;
+        指令範例： show create table tb1;
+
+
+修改表結構：
+    - 增加字段
+        - alter table tab_name add 列名 type［完整性約束條件］［first｜after字段名］;
+        指令範例： alter table employee add birthday DATE NOT NULL;
+    - 添加多個字段
+        指令範例：
+            alter table employee
+                add addr varchar (20),
+                add birth varchar (20) after name;
+    - 刪除字段
+        - alter table tab_name drop 列名;
+        指令範例： alter table employee drop birth;
+    - 刪除多個字段
+        指令範例：
+            alter table employee
+                drop addr,
+                drop birthday;
+    - 增加主鍵
+        - ALTER TABLE tab_name add PRIMARY KEY(字段一, ....);
+        指令範例： ALTER TABLE info2 add PRIMARY KEY(id, name);  =>  此為聯合主鍵
+    - 刪除主鍵
+        - ALTER TABLE tab_name drop PRIMARY KEY;
+        指令範例： ALTER TABLE info2 drop PRIMARY KEY;
+    - 添加默認值
+        - ALTER TABLE tab_name alter 列名 set default 默認值;
+        指令範例： ALTER TABLE info2 alter name set default 'jamie';
+    - 刪除默認值
+        - ALTER TABLE tab_name alter 列名 drop default;
+        指令範例： ALTER TABLE info2 alter name drop default;
+    - 修改字段屬性
+        - alter table tab_name modify 列名 類型 [完整性約束條件]［first｜after字段名］;
+        指令範例：alter table employee modify age tinyint default 20 after id;
+    - 修改字段名和屬性
+        - alter table tab_name change 列名 新列名 類型 [完整性約束條件]［first｜after字段名］;
+        指令範例： alter table employee change department depart varchar(30) default 28 first;  ==> default為默認值
+    - 修改表名
+        - rename table 表名 to 新表名;
+        指令範例： rename table employee to employees;
+    - 修改表所用的字符集
+        指令範例： alter table employee character set gbk;
+    - 刪除表
+        - drop table tab_name;
+        指令範例： drop table tb1;
+    - 複製表
+        - 只複製表結構和數據(主鍵、外鍵、索引、觸發器等不會被複製)
+            指令範例： create table test (select * from employee);
+        - 只複製表結構(主鍵、外鍵、索引、觸發器等不會被複製)
+            指令範例： create table test (select * from employee where !1=1);
+        - 只複製表結構(外鍵、索引、觸發器等不會被複製)
+            指令範例： create table test like employee;

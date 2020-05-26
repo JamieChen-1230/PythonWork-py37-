@@ -1,0 +1,28 @@
+1.外鍵約束(範例數據在 練習範例數據(外鍵).txt 中)
+- 創建表時添加外鍵
+    主表(被綁定的表) -----------------> 部門表
+    子表(去綁定別人的表) -------------> 人員表
+
+- 額外修改外鍵
+    - 增加外鍵
+    ALTER TABLE 子表 ADD CONSTRAINT 外鍵名
+                        FOREIGN KEY (子表外鍵列名)
+                        REFERENCES 主表(主表外鍵列名);
+    指令範例：ALTER TABLE person ADD CONSTRAINT fk_id FOREIGN KEY(dept_id) REFERENCES dept(did);
+
+    - 刪除外鍵
+    ALTER TABLE 表 DROP FOREIGN KEY 外鍵名;
+    指令範例：ALTER TABLE person DROP FOREIGN KEY fk_id;
+
+- 定義外鍵條件
+    （1）外鍵對應的欄位數據類型保持一致，且被關聯的欄位(即references指定的另外一個表的欄位)，必須保證唯一
+    （2）所有tables的存儲引擎必須是InnoDB類型(目前MySQL只有此引擎支持外鍵)
+    （3）外鍵的約束4種類型: 1.RESTRICT 2. NO ACTION 3.CASCADE 4.SET NULL
+        - RESTRICT：同no action，都是立即檢查外鍵約束
+        - NO ACTION：如果子表中有匹配的記錄，則不允許對父表對應候選鍵進行update/delete操作
+        - CASCADE：在父表上update/delete記錄時，同步update/delete掉子表的匹配記錄
+        - SET NULL：在父表上update/delete記錄時，將子表上匹配記錄的列設為null (要註意子表的外鍵列不能為not null)
+    （4）建議:1.如果需要外鍵約束，最好創建表同時創建外鍵約束.
+              2.如果需要設置級聯關系，刪除時最好設置為 SET NULL.
+     註：插入數據時，先插入主表中的數據，再插入從表中的數據。
+         刪除數據時，先刪除從表中的數據，再刪除主表中的數據。

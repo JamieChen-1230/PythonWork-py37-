@@ -1,0 +1,45 @@
+1.非空約束
+- 關鍵字: NOT NULL 表示不可空。用來約束表中的欄位列
+指令範例：
+create table t1(
+       id int(10) not null primary key,
+       name varchar(100) null
+       );
+
+2.主鍵約束
+- 用於約束表中的一行，作為這一行的標識符，在一張表中通過主鍵就能準確定位到一行，因此主鍵十分重要。
+指令範例：
+create table t2(
+    id int(10) not null primary key
+    );
+***注意:主鍵這一行的數據不能重復且不能為空。***
+- 還有一種特殊的主鍵——復合主鍵。主鍵不僅可以是表中的一列，也可以由表中的兩列或多列來共同標識。
+指令範例：
+create table t3(
+    id int(10) not null,
+    name varchar(100) ,
+    primary key(id,name)
+    );
+
+3.唯一約束
+- 關鍵字: UNIQUE 比較簡單，它規定一張表中指定的一列的值必須不能有重復值，即這一列每個值都是唯一的。
+***注意: 當INSERT語句新插入的數據和已有數據重復的時候，如果有UNIQUE約束，則INSERT失敗。***
+指令範例：
+create table t4(
+    id int(10) not null,
+    name varchar(255) ,
+    unique id_name(id, name)
+    );
+- 添加唯一约束
+指令範例：alter table t4 add unique id_name(id,name);
+- 刪除唯一约束
+指令範例：alter table t4 drop index id_name;
+
+4.默認值約束
+- 關鍵字: DEFAULT
+指令範例：
+create table t5(
+    id int(10) not null primary key,
+    name varchar(255) default 'jamie'
+    );
+***注意:INSERT語句執行時，如果被DEFAULT約束的位置沒有值，那麼這個位置將會被DEFAULT的值填充。***

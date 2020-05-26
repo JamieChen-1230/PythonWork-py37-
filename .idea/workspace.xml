@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff1e8a4e-9f45-4d3b-9949-a27f16c94dbc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/觀念/筆記.txt" beforeDir="false" afterPath="$PROJECT_DIR$/觀念/筆記.txt" afterDir="false" />
-    </list>
+    <list default="true" id="ff1e8a4e-9f45-4d3b-9949-a27f16c94dbc" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,17 +67,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/觀念/筆記.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="129" column="44" selection-start-line="129" selection-start-column="44" selection-end-line="129" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -102,9 +89,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Testing/Selenium/200519_窗口切換.py" />
-        <option value="$PROJECT_DIR$/Testing/Selenium/200520_選擇框.pyi" />
-        <option value="$PROJECT_DIR$/Testing/Selenium/200520_radio選擇框.py" />
         <option value="$PROJECT_DIR$/Testing/Selenium/200520_更多操作技巧.py" />
         <option value="$PROJECT_DIR$/Testing/Selenium/200520_凍結介面.txt" />
         <option value="$PROJECT_DIR$/Testing/Selenium/200520_彈出式對話框.py" />
@@ -153,6 +137,9 @@
         <option value="$PROJECT_DIR$/Testing/Pytest/總筆記.txt" />
         <option value="$PROJECT_DIR$/Testing/Selenium/總筆記.txt" />
         <option value="$PROJECT_DIR$/觀念/筆記.txt" />
+        <option value="$PROJECT_DIR$/資料庫/SQL資料庫(MySQL)/180823_數據庫操作.txt" />
+        <option value="$PROJECT_DIR$/資料庫/SQL資料庫(MySQL)/180823_數據表操作.txt" />
+        <option value="$PROJECT_DIR$/資料庫/SQL資料庫(MySQL)/180823_數據表紀錄操作.txt" />
       </list>
     </option>
   </component>
@@ -174,11 +161,6 @@
             <path>
               <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
-              <item name="觀念" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -377,7 +359,7 @@
       <workItem from="1590193732702" duration="21827000" />
       <workItem from="1590290461258" duration="18727000" />
       <workItem from="1590387912631" duration="9153000" />
-      <workItem from="1590457619466" duration="4433000" />
+      <workItem from="1590457619466" duration="7814000" />
     </task>
     <servers />
   </component>
@@ -414,13 +396,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142061000" />
+    <option name="totallyTimeSpent" value="145442000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20375335" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20375335" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -434,7 +415,7 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3371105" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3371105" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -482,37 +463,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../Python/Anaconda3/envs/py37/Lib/site-packages/rest_framework/versioning.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="73" column="70" lean-forward="true" selection-start-line="73" selection-start-column="70" selection-end-line="73" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200505_DRF(版本、解析器)/版本筆記.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1042">
-          <caret line="5" column="36" lean-forward="true" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200505_DRF(版本、解析器)/mysite/mysite/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="5" column="38" lean-forward="true" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200505_DRF(版本、解析器)/mysite/mysite/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="137" column="4" lean-forward="true" selection-start-line="137" selection-start-column="4" selection-end-line="137" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/框架(Django Rest Framework)/200505_DRF(版本、解析器)/mysite/api/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-646">
@@ -843,11 +793,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/資料庫/SQL資料庫(MySQL)/180823_數據庫操作.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/觀念/筆記.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
           <caret line="129" column="44" selection-start-line="129" selection-start-column="44" selection-end-line="129" selection-end-column="44" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/資料庫/SQL資料庫(MySQL)/180823_數據表操作.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/資料庫/SQL資料庫(MySQL)/180823_數據表紀錄操作.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1184">
+          <caret line="137" column="55" lean-forward="true" selection-start-line="137" selection-start-column="55" selection-end-line="137" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/資料庫/SQL資料庫(MySQL)/180824_索引.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1070" />
       </provider>
     </entry>
   </component>

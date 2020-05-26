@@ -1,0 +1,61 @@
+-- 创建部门 ==> 主表(被綁定的表)
+CREATE TABLE IF NOT EXISTS dept (
+    did int not null auto_increment PRIMARY KEY,
+    dname VARCHAR(50) not null COMMENT '部门名称'
+)ENGINE=INNODB DEFAULT charset utf8;
+
+
+-- 添加部门数据
+INSERT INTO `dept` VALUES ('1', '教学部');
+INSERT INTO `dept` VALUES ('2', '销售部');
+INSERT INTO `dept` VALUES ('3', '市场部');
+INSERT INTO `dept` VALUES ('4', '人事部');
+INSERT INTO `dept` VALUES ('5', '鼓励部');
+
+
+
+
+
+
+
+-- 创建人员  ==> 子表(去綁定別人的表)
+-- ***切記:作為外鍵一定要和關聯主鍵的數據類型保持一致***
+-- ***若兩張表有關聯就無法隨意刪主表數據，要刪之前須把子表內相關連結數據給刪除***
+DROP TABLE IF EXISTS `person`;
+CREATE TABLE `person` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `age` tinyint(4) DEFAULT '0',
+  `sex` enum('男','女','人妖') NOT NULL DEFAULT '人妖',
+  `salary` decimal(10,2) NOT NULL DEFAULT '250.00',
+  `hire_date` date NOT NULL,
+  `dept_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  CONSTRAINT fk_id FOREIGN KEY(dept_id) REFERENCES dept(did) ON DELETE SET NULL  -- 添加SET NULL外键约束
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
+
+-- 添加人员数据
+
+-- 教学部
+INSERT INTO `person` VALUES ('1', 'alex', '28', '人妖', '53000.00', '2010-06-21', '1');
+INSERT INTO `person` VALUES ('2', 'wupeiqi', '23', '男', '8000.00', '2011-02-21', '1');
+INSERT INTO `person` VALUES ('3', 'egon', '30', '男', '6500.00', '2015-06-21', '1');
+INSERT INTO `person` VALUES ('4', 'jingnvshen', '18', '女', '6680.00', '2014-06-21', '1');
+
+-- 销售部
+INSERT INTO `person` VALUES ('5', '歪歪', '20', '女', '3000.00', '2015-02-21', '2');
+INSERT INTO `person` VALUES ('6', '星星', '20', '女', '2000.00', '2018-01-30', '2');
+INSERT INTO `person` VALUES ('7', '格格', '20', '女', '2000.00', '2018-02-27', '2');
+INSERT INTO `person` VALUES ('8', '周周', '20', '女', '2000.00', '2015-06-21', '2');
+
+-- 市场部
+INSERT INTO `person` VALUES ('9', '月月', '21', '女', '4000.00', '2014-07-21', '3');
+INSERT INTO `person` VALUES ('10', '安琪', '22', '女', '4000.00', '2015-07-15', '3');
+
+-- 人事部
+INSERT INTO `person` VALUES ('11', '周明月', '17', '女', '5000.00', '2014-06-21', '4');
+
+-- 鼓励部
+INSERT INTO `person` VALUES ('12', '苍老师', '33', '女', '1000000.00', '2018-02-21', '5');
+
+

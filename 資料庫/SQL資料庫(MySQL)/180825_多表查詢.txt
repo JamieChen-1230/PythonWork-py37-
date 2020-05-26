@@ -1,0 +1,124 @@
+範例數據在 練習範例數據(多表).txt 中
+
+1.笛卡爾積查詢
+- 產生len(person)*len(dept)行
+指令範例：SELECT * From person, dept;
+
+2.多表聯合查詢(等同於內連接查詢)
+- 只篩選出有意義的數據(沒用到的部門或人不會出現)
+指令範例：
+SELECT * From person as p, dept as d WHERE p.dept_id=d.did;  -- 多表聯合查詢
+SELECT * From person as p INNER JOIN dept as d ON p.dept_id=d.did;  -- 內連接查詢
+
+3.外連接查詢(左連接查詢)
+- 以左表為基礎，若遇到無法和右表對應之數據照樣顯示，但對應的資訊為null。(在內連接的基礎上增加左邊有右邊沒有的結果)
+指令範例：SELECT * From person as p LEFT JOIN dept as d ON p.dept_id=d.did;
+
+4.外連接查詢(右連接查詢)
+- 以右表為基礎，若遇到無法和左表對應之數據照樣顯示，但對應的資訊為null。(在內連接的基礎上增加右邊有左邊沒有的結果)
+指令範例：SELECT * From person as p RIGHT JOIN dept as d ON p.dept_id=d.did;
+
+5.全連接查詢
+- mysql不支持全外連接FULL JOIN，mysql可以使用union間接實現全外連接。(注意union與union all的區別：union會去掉相同的紀錄)
+指令範例：
+SELECT * From person as p LEFT JOIN dept as d ON p.dept_id=d.did
+UNION
+SELECT * From person as p RIGHT JOIN dept as d ON p.dept_id=d.did;
+
+6.子語句查詢(嵌套查詢)
+    -- 子查詢是將一個查詢語句嵌套在另一個查詢語句中，內層查詢語句的查詢結果，可以為外層查詢語句提供查詢條件。
+    -- 子查詢中可以包含：IN、NOT IN、ANY、ALL、EXISTS和NOT EXISTS等關鍵字，還可以包含比較運算符：=, !=, >, <等。
+- 作为表名使用
+指令範例：SELECT * FROM (SELECT * FROM person) AS p;  -- 需給他取別名，這樣系統才會把它當作一張表
+- 求最大工资那个人的姓名和薪水
+錯誤示範：SELECT name, MAX(salary) FROM person;  -- 這樣顯示出來的name不是我們要的，他只是把第一筆資料的name拿出來
+指令範例：SELECT * FROM person WHERE salary=(SELECT MAX(salary) FROM person);
+- 求工资高于所有人员平均工资的人员
+指令範例：SELECT * FROM person WHERE salary>(SELECT AVG(salary) FROM person);
+- 查询平均年龄在20岁以上的部门名
+指令範例：SELECT * FROM dept WHERE dept.did in (SELECT dept_id FROM person GROUP BY dept_id HAVING AVG(age)>20);
+
+7.關鍵字查詢
+(1) ANY
+    select ...from ... where a > any(...);
+    等同於
+    select ...from ... where (a > result1) or (a > result2) or (a > result3);
+(2) ALL
+    select ...from ... where a > all(...);
+    等同於
+    select ...from ... where a > result1 and a > result2 and a > result3;
+(3) EXISTS
+- 主查询(外部查询)会根据子查询验证结果（TRUE 或 FALSE）来决定主查询是否得以执行。
+指令範例：SELECT * FROM person WHERE EXISTS (SELECT * FROM dept WHERE did=10);  -- 因為部門id沒有等於10的，所以前面SELECT * FROM person將不會被執行
+(4) IN
+in (1,3,5) 表示只有1,3,5符合
+- 查询平均年龄在20岁以上的部门名
+指令範例：SELECT * FROM dept WHERE dept.did in (SELECT dept_id FROM person GROUP BY dept_id HAVING AVG(age)>20);
+(5) IF
+IF(条件表达式,"结果为true",'结果为false')
+- 根据工资高低(5000),将人员划分为两个级别,分别为 高端人群和低端人群。显示效果:姓名,年龄,性别,工资,级别
+指令範例：SELECT *, IF(salary>5000,"高端人群","低端人群") FROM person
+(6) WHEN ELSE (一)
+SELECT
+    CASE WHEN STATE = '1' THEN '成功'
+         WHEN STATE = '2' THEN '失败'
+         ELSE '其他' END
+FROM 表;
+- 根据工资高低,统计每个部门人员收入情况,划分为 富人,小资,平民,吊丝 四个级别, 要求统计四个级别分别有多少人
+指令範例：
+SELECT dname,
+			SUM(CASE WHEN salary>50000 THEN 1 ELSE 0 END) AS 富人,
+			SUM(CASE WHEN (salary>25000 AND salary<50000) THEN 1 ELSE 0 END) AS 小資,
+			SUM(CASE WHEN (salary>10000 AND salary<25000) THEN 1 ELSE 0 END) AS 平民,
+			SUM(CASE WHEN salary<10000 THEN 1 ELSE 0 END) AS 吊丝
+FROM person, dept WHERE person.dept_id=dept.did GROUP BY dept_id;
+(7) WHEN ELSE (二)
+SELECT CASE age
+           WHEN 23 THEN '23岁'
+           WHEN 27 THEN '27岁'
+           WHEN 30 THEN '30岁'
+        ELSE '其他岁' END
+FROM 表;
+指令範例：
+SELECT name,
+	(CASE age
+	WHEN 20 THEN '二十'
+	WHEN 28 THEN '二十八'
+	ELSE '未知' END) AS age
+FROM person;
+
+
+
+練習題：
+1. 查询出 教学部 年龄大于20岁,并且工资小于40000的员工,按工资倒序排列
+- 使用子語句查詢
+指令範例：
+SELECT * FROM person WHERE age>20 and salary<40000 and dept_id=(SELECT did FROM dept WHERE dname = '教学部') ORDER BY salary DESC;
+- 使用多表連接查詢
+指令範例：
+SELECT * FROM person AS p, dept AS d
+	WHERE p.dept_id=d.did and p.age>20 and p.salary<40000 and d.dname='教学部'
+	ORDER BY p.salary DESC;
+
+2. 查询每个部门中最高工资和最低工资是多少,显示部门名称
+指令範例：
+SELECT d.dname, MAX(p.salary), MIN(p.salary) FROM person AS p, dept AS d WHERE p.dept_id=d.did GROUP BY dept_id;
+
+3.查询高于本部门平均工资的人员
+指令範例：
+SELECT * FROM person, (SELECT dept_id, AVG(salary) as a_salary FROM person GROUP BY dept_id) as d_avg
+	WHERE person.dept_id=d_avg.dept_id and person.salary>d_avg.a_salary;
+
+
+
+********************重點：執行順序********************
+(7) SELECT
+(8) DISTINCT <select_list>
+(1) FROM <left_table>
+(3) <join_type> JOIN <right_table>
+(2) ON <join_condition>
+(4) WHERE <where_condition>
+(5) GROUP BY <group_by_list>
+(6) HAVING <having_condition>
+(9) ORDER BY <order_by_condition>
+(10) LIMIT <limit_number>
