@@ -1,4 +1,4 @@
-RabbitMQ：
+RabbitMQ： http://localhost:15672/
     - 介紹： 實現AMQP（高級消息隊列協議）的消息中間件，用於在分佈式系統中存儲轉發消息，在易用性、擴展性、高可用性等方面表現不俗。
         - 消息中間件： 是一種在消息傳輸過程中保存消息的容器，主要用於組件之間的解耦，消息的發送者無需知道消息使用者的存在。
         - 對列： 主要目的是提供路由並保證消息傳遞，如果發送消息時接收方無法處理，那消息則會先保留在對列中，等到成功傳遞為止(還是會有期限限制)。
@@ -23,7 +23,60 @@ RabbitMQ：
             ※ administrator代表最高權限，共有administrator、monitoring、policymaker、management和none(無權限)五種。
             rabbitmqctl set_user_tags <username> <tag1> <tag2> ...
             範例： rabbitmqctl set_user_tags jamie administrator
+        - 設定權限(vhost)：
+            rabbitmqctl set_permissions -p <vhostpath> <username>
+            rabbitmqctl set_permissions -p / jamie ".*" ".*" ".*"
         - 查看目前有哪些隊列並顯示傳遞消息數量：
-            rabbitmqctl.bat list_queues
+            rabbitmqctl list_queues
+        - 虛擬主機管理：
+            列出所有虛擬主機：
+                rabbitmqctl list_vhosts
+            創建虛擬主機：
+                rabbitmqctl add_vhost <vhostpath>
+            刪除虛擬主機：
+                rabbitmqctl delete_vhost <vhostpath>
+            列出虛擬主機所有權限：
+                rabbitmqctl list_permissions -p <vhostpath>
 
+    - 代碼：
+        - 《200525_初試》：
+            實現了最基本的消息傳遞(hello world)，且若通道中同時有兩個接收者，則會按順序輪流從隊列中取消息。
 
+        - 《200525_消息安全接收&持久化》：
+            一、測試若有一個接收者接收消息後沒完成任務，RabbitMQ會怎麼處理？
+                - 都在消費者端(receive.py)完成
+                - 透過ack機制：
+                    在接收端的channel.basic_consume中若沒設置auto_ack參數(默認為False)，RabbitMQ則默認會幫我們把沒處理完的消息給下一個接收者處理。
+                    但若設為auto_ack=True，則不會再交給下一個接收者處理，消息直接放水流。
+                - 還需要顯示的確認：
+                    def callback(ch, method, properties, body):
+                        ch.basic_ack(delivery_tag=method.delivery_tag)
+            二、測試若生產者(EX:伺服器端)崩潰了，要怎麼讓消息不丟失？
+                - 透過消息持久化機制，在生產者端(send.py)完成：
+                    可以通過將通道和消息保存到磁盤中進行持久化，但是由於從內存寫入磁盤也需要時間，如果這段時間出現故障，
+                    則這些消息也是會丟失的。是一種弱的持久化。
+                        channel.basic_publish(exchange='',
+                              routing_key='task_queue',
+                              body=message,
+                              properties=pika.BasicProperties(delivery_mode=2)  # 讓消息持久化
+                        )
+                - 以需要將隊列設為持久化(這個是在生產消費兩邊都要設置)：
+                    channel.queue_declare(queue='task_queue', durable=True)
+
+        - 《200526_消息發布與訂閱》：
+            - 差異：
+                之前的例子都是1對1的消息發送和接收，即消息只能發送到指定的queue裡，
+                但有些時候你想讓你的消息被所有的Queue收到，類似廣播的效果，這時候就要用到exchange了。
+            - Exchange在定義的時候是有類型的，以決定到底是哪些符合條件的Queue可以接收消息：
+                fanout(廣播)： 所有bind到此exchange的queue都可以接收消息
+                direct(組播)： 通過routingKey和exchange決定的哪組queue可以接收消息
+                topic： 所有符合routingKey(此時可以是一個表達式)的routingKey所bind的queue可以接收消息
+                headers： 通過headers來決定把消息發給哪些queue
+
+        - 《200527_消息RPC》：
+            - RPC：
+                - 在分散式計算中，遠端程序呼叫(Remote Procedure Call)是一個電腦通信協定。
+                - 該協定允許執行於一台電腦的程式呼叫另一台電腦的子程式，而程式設計師就像呼叫本地程式一樣，無需額外地為這個互動作用編程。
+                - RPC是一種伺服器-客戶端(Client/Server)模式，經典實現是一個通過傳送請求-接受回應進行資訊互動的系統。
+            - 差異：
+                之前的都是單向的傳遞，而這是要實現可雙向傳遞消息。

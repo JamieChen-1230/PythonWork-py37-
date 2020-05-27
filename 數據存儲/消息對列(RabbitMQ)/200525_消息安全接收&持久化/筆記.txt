@@ -1,0 +1,19 @@
+一、測試若有一個接收者接收消息後沒完成任務，RabbitMQ會怎麼處理？
+    - 都在消費者端(receive.py)完成
+    - 透過ack機制：
+        在接收端的channel.basic_consume中若沒設置auto_ack參數(默認為False)，RabbitMQ則默認會幫我們把沒處理完的消息給下一個接收者處理。
+        但若設為auto_ack=True，則不會再交給下一個接收者處理，消息直接放水流。
+    - 還需要顯示的確認：
+        def callback(ch, method, properties, body):
+            ch.basic_ack(delivery_tag=method.delivery_tag)
+
+二、測試若生產者(EX:伺服器端)崩潰了，要怎麼讓消息不丟失？
+    - 在生產者端(send.py)完成
+    - 透過持久化機制：
+        可以通過將通道和消息保存到磁盤中進行持久化，但是由於從內存寫入磁盤也需要時間，如果這段時間出現故障，
+        則這些消息也是會丟失的。是一種弱的持久化。
+        channel.basic_publish(exchange='',
+              routing_key='task_queue',
+              body=message,
+              properties=pika.BasicProperties(delivery_mode=2)  # 讓消息持久化
+        )
