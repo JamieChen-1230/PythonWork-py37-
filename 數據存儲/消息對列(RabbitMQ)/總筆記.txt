@@ -80,3 +80,35 @@ RabbitMQ： http://localhost:15672/
                 - RPC是一種伺服器-客戶端(Client/Server)模式，經典實現是一個通過傳送請求-接受回應進行資訊互動的系統。
             - 差異：
                 之前的都是單向的傳遞，而這是要實現可雙向傳遞消息。
+            - 代碼：
+                client：
+                    1. 初始化FibonacciRpcClient：
+                        (1) 連結RabbitMQ
+                        (2) 生成一個隨機名字的隊列(用於接收從server端回來的信息)
+                        (3) 定義channel.basic_consume，決定要從哪個隊列(第二步驟生成的)接收結果，並定義回調函數on_response()
+                    2. 調用call方法：
+                        (1) 定義response(用於接收server的回傳結果，並用來判斷是否要停止監聽隊列)
+                        (2) 透過uuid產生一個唯一標識符，用來判斷server端的回傳結果是否為我們所要的
+                        (3) channel.basic_publish，向server端推送消息
+                            - routing_key='rpc_queue'： 透過rpc_queue隊列
+                            - properties=pika.BasicProperties(reply_to=self.callback_queue, correlation_id=self.corr_id)：
+                              傳送屬性給server端使用。(包含1-(2)所生成的隊列和uuid唯一標識符)
+                            - body=str(n)： 我們所要交給server計算的值
+                        (4) 透過connection.process_data_events()，監控著1-(2)所生成的隊列
+                server：
+                    1. 設定：
+                        (1) 連結RabbitMQ
+                        (2) 聲明rpc_queue隊列(用於接收client傳過來的消息)
+                        (3) 設定channel.basic_qos(prefetch_count=1)，讓消息不會堆積太多
+                        (4) 定義channel.basic_consume(on_message_callback=on_request, queue='rpc_queue')
+                        (5) channel.start_consuming()，開始死循環接收
+                    2.  回調函數on_request：
+                        (1) 透過獲取的消息計算出斐波那契數列結果
+                        (2) channel.basic_publish，向client端推送消息
+                            - routing_key=props.reply_to： 透過1-(2)所生成的隊列來回傳給client
+                            - properties=pika.BasicProperties(correlation_id=props.correlation_id)：
+                              傳屬性(uuid唯一標識符)回client，讓他用於判斷是否為要的結果
+                            - body=str(response)： 回傳斐波那契數列結果
+                        (3) 透過ch.basic_ack，告訴client或rpc_queue隊列我已完成消息處理
+                    3. 繼續等待下一個消息到來
+

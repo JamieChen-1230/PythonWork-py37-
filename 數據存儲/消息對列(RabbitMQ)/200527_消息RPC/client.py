@@ -11,6 +11,7 @@ class FibonacciRpcClient(object):
         self.channel = self.connection.channel()
 
         result = self.channel.queue_declare(queue='', exclusive=True)
+        # 透過RabbitMQ產生一個隊列(用於接收從server端回來的信息)
         self.callback_queue = result.method.queue
         # 定義好要從哪裡接收結果
         self.channel.basic_consume(on_message_callback=self.on_response, queue=self.callback_queue)
@@ -40,7 +41,7 @@ class FibonacciRpcClient(object):
         return int(self.response)  # 回傳結果
 
 
-fibonacci_rpc = FibonacciRpcClient()  # 實例化
+fibonacci_rpc = FibonacciRpcClient()
 num = sys.argv[1] if len(sys.argv) > 1 else 30
 print(" [x] Requesting fib(%s)" % num)
 response = fibonacci_rpc.call(num)
