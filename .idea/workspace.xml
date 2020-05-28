@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ff1e8a4e-9f45-4d3b-9949-a27f16c94dbc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/安裝套件.txt" beforeDir="false" afterPath="$PROJECT_DIR$/安裝套件.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/異步/celery/總筆記.txt" beforeDir="false" afterPath="$PROJECT_DIR$/異步/celery/總筆記.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -84,31 +82,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/異步/celery/總筆記.txt">
+        <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django)/200528_Nginx/總筆記.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="90" column="59" selection-start-line="90" selection-start-column="20" selection-end-line="90" selection-end-column="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/異步/celery/200527_定時任務/periodic/celery.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="6" column="46" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="46" />
-              <folding>
-                <element signature="e#0#56#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/異步/celery/200527_定時任務/periodic/tasks_1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="1" column="74" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="74" />
+            <state relative-caret-position="139">
+              <caret line="126" column="14" selection-start-line="126" selection-start-column="14" selection-end-line="126" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -121,6 +98,7 @@
         <option value="Python Stub" />
         <option value="package.json" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -135,8 +113,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Testing/Pytest/200523_django_test/data/test_param_splite/test_param_splite.json" />
-        <option value="$PROJECT_DIR$/Testing/Pytest/200523_django_test/tests/conftest.py" />
         <option value="$PROJECT_DIR$/框架(Django Rest Framework)/200501_CBV/mysite/app01/views.py" />
         <option value="$PROJECT_DIR$/框架(Django Rest Framework)/200504_DRF用戶登入(認證、權限、節流)/mysite/mysite/urls.py" />
         <option value="$PROJECT_DIR$/框架(Django Rest Framework)/200504_DRF用戶登入(認證、權限、節流)/mysite/api/utils/auth.py" />
@@ -186,6 +162,8 @@
         <option value="$PROJECT_DIR$/異步/celery/200527_定時任務/periodic/celery.py" />
         <option value="$PROJECT_DIR$/異步/celery/200527_定時任務/periodic/tasks_2.py" />
         <option value="$PROJECT_DIR$/異步/celery/總筆記.txt" />
+        <option value="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200501_CBV/mysite/templates/index.html" />
+        <option value="$PROJECT_DIR$/Web網頁框架/框架(Django)/200528_Nginx/總筆記.txt" />
       </list>
     </option>
   </component>
@@ -210,28 +188,46 @@
             <path>
               <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
-              <item name="異步" type="462c0819:PsiDirectoryNode" />
+              <item name="Web網頁框架" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
-              <item name="異步" type="462c0819:PsiDirectoryNode" />
-              <item name="celery" type="462c0819:PsiDirectoryNode" />
+              <item name="Web網頁框架" type="462c0819:PsiDirectoryNode" />
+              <item name="框架(Django Rest Framework)" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
-              <item name="異步" type="462c0819:PsiDirectoryNode" />
-              <item name="celery" type="462c0819:PsiDirectoryNode" />
-              <item name="200527_定時任務" type="462c0819:PsiDirectoryNode" />
+              <item name="Web網頁框架" type="462c0819:PsiDirectoryNode" />
+              <item name="框架(Django Rest Framework)" type="462c0819:PsiDirectoryNode" />
+              <item name="200501_CBV" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
-              <item name="異步" type="462c0819:PsiDirectoryNode" />
-              <item name="celery" type="462c0819:PsiDirectoryNode" />
-              <item name="200527_定時任務" type="462c0819:PsiDirectoryNode" />
-              <item name="periodic" type="462c0819:PsiDirectoryNode" />
+              <item name="Web網頁框架" type="462c0819:PsiDirectoryNode" />
+              <item name="框架(Django Rest Framework)" type="462c0819:PsiDirectoryNode" />
+              <item name="200501_CBV" type="462c0819:PsiDirectoryNode" />
+              <item name="mysite" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
+              <item name="Web網頁框架" type="462c0819:PsiDirectoryNode" />
+              <item name="框架(Django Rest Framework)" type="462c0819:PsiDirectoryNode" />
+              <item name="200501_CBV" type="462c0819:PsiDirectoryNode" />
+              <item name="mysite" type="462c0819:PsiDirectoryNode" />
+              <item name="mysite" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
+              <item name="Web網頁框架" type="462c0819:PsiDirectoryNode" />
+              <item name="框架(Django Rest Framework)" type="462c0819:PsiDirectoryNode" />
+              <item name="200501_CBV" type="462c0819:PsiDirectoryNode" />
+              <item name="mysite" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -241,6 +237,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/異步/celery/200528_Django中應用初試/mysite" />
@@ -434,7 +431,7 @@
       <workItem from="1590457619466" duration="11448000" />
       <workItem from="1590484686810" duration="7506000" />
       <workItem from="1590539305039" duration="32675000" />
-      <workItem from="1590626909620" duration="13056000" />
+      <workItem from="1590626909620" duration="26303000" />
     </task>
     <servers />
   </component>
@@ -471,7 +468,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="202313000" />
+    <option name="totallyTimeSpent" value="215560000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -484,8 +481,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8031496" visible="true" weight="0.21179625" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8031496" visible="true" weight="0.21179625" />
       <window_info id="Structure" order="1" sideWeight="0.19685039" side_tool="true" weight="0.20911528" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -499,14 +497,14 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3654391" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3654391" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.20107238" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.15817694" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20375335" />
@@ -554,10 +552,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/資料庫/SQL資料庫(MySQL)/180824_索引.txt" />
-    <entry file="file://$PROJECT_DIR$/資料庫/NoSQL資料庫(Redis)/publish.py" />
-    <entry file="file://$PROJECT_DIR$/資料庫/SQL資料庫(MySQL)/180825_pymysql.py" />
-    <entry file="file://$PROJECT_DIR$/資料庫/NoSQL資料庫(Redis)/200514_RedisByPython.py" />
     <entry file="file://$PROJECT_DIR$/Testing/Pytest/總筆記.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-650">
@@ -852,8 +846,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/異步/celery/總筆記.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="90" column="59" selection-start-line="90" selection-start-column="20" selection-end-line="90" selection-end-column="59" />
+        <state relative-caret-position="324">
+          <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200501_CBV/mysite/mysite/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-162" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../PythonWork/SelfLearn/框架(Django_rest_framework)/200503_restful規範/筆記.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200501_CBV/mysite/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django)/200528_Nginx/總筆記.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="126" column="14" selection-start-line="126" selection-start-column="14" selection-end-line="126" selection-end-column="14" />
         </state>
       </provider>
     </entry>

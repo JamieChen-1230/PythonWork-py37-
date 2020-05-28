@@ -1,0 +1,129 @@
+※ 使用 Nginx+uwsgi+Django，在ubuntu上測試
+一、怎麼讓其他人也能造訪我們的網站？(因為使用python manage.py runserver只能自己使用)
+    這樣的步驟稱為「部署」：
+        1. 買台服務器
+        2. 租IP
+        3. 把代碼上傳到服務器上
+        4. 服務器上安裝所需環境
+        5. 最後再啟動服務器
+
+二、一個Django Web Server端會包括 socket server 和 django程序，但因為django自帶的socket server性能較差，
+    所以我們會使用另一個socket server叫做uWSGI。
+    uWSGI(只能在Linux上運行，windows不兼容)：
+        1. 是一個外部的socket server。
+        2. 是一個Python的模塊(sudo pip install uwsgi)。
+    啟動：
+        1. 使用命令行來驅動：
+            (1) 先進入項目中，並確認可以透過python3 manage.py runserver本地跑起來。
+            (2) 透過指令ifconfig，查詢ubuntu主機ip地址(EX: 192.168.95.128)
+            (3) 記得要把setting.py中的ALLOWED_HOSTS改成 ALLOWED_HOSTS=['*']
+            (4) 運行服務端指令：
+                    uwsgi --http <ubuntu主機ip地址>:<端口> --file <Django專案名>/wsgi.py --static-map=/static=static
+                範例：
+                    uwsgi --http 192.168.95.128:8080 --file mysite/wsgi.py --static-map=/static=static
+
+                --static-map=/static： 指的是設定在服務器端的靜態文件檔位置
+                --static-map=/static=static： 指的是設定在服務器端的靜態文件檔位置並指向我們本地端的static資料夾(因為我們的static就在mysite下)
+
+        2. 透過配置文件啟動uwsgi
+            (1) 建立一個script目錄(跟django專案同層級，也就是說跟第一層的mysite同層)，目的是讓腳本文件不要混到專案文件中
+                - project
+                    - script
+                    - mysite
+                        - mysite
+                        ...
+            (2) 在script目錄中建立uwsgi.ini：
+                1. 建立uwsgi.ini
+                2. 配置uwsgi.ini：
+                    [uwsgi]
+                    # 指定ip和端口
+                    http=192.168.95.128:8080
+                    # 指定靜態文件目錄
+                    static-map=/static=/home/jamie/django_uwsgi/mysite/static
+                    # 項目的目錄路徑
+                    chdir=/home/jamie/django_uwsgi/mysite
+                    # 設定項目的application(默認叫application，看wsgi.py裡的設定)
+                    module=mysite.wsgi:application
+                    # 指定sock文件路徑(會把socket端的ip和端口等信息封裝到裡面)
+                    socket=/home/jamie/django_uwsgi/script/uwsgi.sock
+                    # 限制進程數
+                    workers=5
+                    # uwsgi啟動後會產生進程，pidfile裡會封裝這些進程的信息
+                    pidfile=/home/jamie/django_uwsgi/script/uwsgi.pid
+                    # 當服務器停止時，自動移除socket和pid文件
+                    vacuum=true
+                    # 啟動uwsgi的用戶名和用戶組(不知道是不是規定要這樣設)
+                    uid=root
+                    gid=root
+                    # 啟用主進程
+                    master = true
+                    # 啟用線程
+                    enable-threads=true
+                    # 設置目錄日誌(有加這行才能在uwsgi --ini uwsgi.ini之後繼續動作)
+                    daemonize=/home/jamie/django_uwsgi/script/uwsgi.log
+            (3) 啟動：
+                常用命令：
+                    透過配置文件啟動： uwsgi --ini uwsgi.ini
+                        - 啟動後會自動生成pid文件和sock文件
+                    停止uwsgi： uwsgi --stop uwsgi.pid
+                    重載配置： uwsgi --reload uwsgi.ini
+
+        3. uwsgi缺陷：
+            問題： 靜態請求處裡較差。
+                - 靜態請求： css, js, 圖片等
+                - 動態請求： 提交表單, 訪問資料庫, 動態渲染html等
+            解決：
+                靜態請求交給Nginx，動態請求繼續使用uwsgi
+
+三、完美搭配： Nginx + uwsgi + Django
+    安裝Nginx：
+        一、安裝Nginx：
+            sudo apt update
+            sudo apt install nginx
+        二、安裝完後Nginx會自動被啟動，可以通過下面指令驗證看看：
+            sudo systemctl status nginx
+        三、配置防火牆：
+            需要確保防火牆被配置好，允許流量通過HTTP（80）和HTTPS（443）端口。
+            假設你正在使用UFW，你可以做的是啟用'Nginx Full' profile，它包含了這兩個端口。
+            sudo ufw allow 'Nginx Full'
+            想要驗證狀態，輸入：
+            sudo ufw status
+        四、到http://192.168.95.128/(自己的IP)確認是否啟用
+    配置文件：
+        一、先到/etc/nginx/conf.d
+        二、建立一個配置文件(EX: mysite.conf)，要用超級用戶sudo去建立：
+            sudo vim mysite.conf
+            server {
+                # 我要配置的端口
+                listen 80;
+                # 域名(EX:www.jd.com)，但如果沒有的話就寫IP地址
+                server_name 192.168.95.128;
+                # 定義本虛擬機中nginx的訪問日誌
+                access_log  /var/log/nginx/access.log;
+                # 設定編碼
+                charset utf-8;
+                # 啟用壓縮，會讓速度變快
+                gzip on;
+                # 支持壓縮的類型
+                gzip_types text/json;
+                # 設定錯誤頁面
+                error_page 404   /404.html;
+                error_page 500 502 503 504  /50x.html;
+                # 指定項目路徑uwsgi(非常重要，用於設定把動態請求丟給uwsgi)
+                location / {
+                    include uwsgi_params;  # 導入一個nginx模塊，用來和uwsgi溝通
+                    uwsgi_connect_timeout 30;  # uwsgi超時設定
+                    # 指定有關動態請求就會丟給uwsgi
+                    uwsgi_pass unix:/home/jamie/django_uwsgi/script/uwsgi.sock;
+                }
+                # 指定靜態文件路徑(靜態分離，nginx直接執行)
+                location /static/ {
+                    alias /home/jamie/django_uwsgi/mysite/static;
+                    index index.html index.html;
+                }
+            }
+        三、指令：
+            啟動nginx： sudo service nginx start
+            停止nginx： sudo service nginx stop
+
+
