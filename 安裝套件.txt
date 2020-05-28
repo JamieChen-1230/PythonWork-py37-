@@ -2,6 +2,7 @@ Django開發：
 Django==2.2
 sqlparse==0.3.1
 djangorestframework==3.11.0
+django-celery-beat==2.0.0 (為了在django中能使用celery定時任務)
 
 web測試：
 selenium==3.141.0
@@ -12,7 +13,7 @@ pytest-html==2.1.1  (用來生成測試報告)
 allure-pytest==2.8.15  (用來生成更友好測試報告，還需要額外安裝allure)
 
 緩存：
-redis==2.10.6 (redis==3.5.2版本太高)
+redis==3.2.0 (redis==2.10.6版本太低)
 
 消息對列(RabbitMQ)：
 要先載erlang(RabbitMQ需要的環境)，再載(RabbitMQ，
@@ -24,5 +25,5 @@ Scrapy==2.1.0
 requests==2.23.0
 
 異步任務：
-celery==3.1.25
+celery==4.3.0
 eventlet==0.25.2 (因為windows不支持celery4，所以要額外安裝它)

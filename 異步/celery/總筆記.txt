@@ -1,5 +1,5 @@
 Celery：
-    用途：是一個基於python開發的分佈式異步消息任務隊列，通過它可以輕鬆的實現任務的異步處理。
+    用途： 是一個基於python開發的分佈式異步消息任務隊列，通過它可以輕鬆的實現任務的異步處理。
     例子：
         - 你想對100台機器執行一條批量命令，但你不想讓你的程序等著結果返回，而是給你返回一個任務id，
           過一段時間只要拿著任務id就可以拿到任務結果，在任務執行進行時，你可以繼續做其它的事情。
@@ -7,7 +7,89 @@ Celery：
     搭配套件：
         - Celery在執行任務時需要通過一個消息中間件來接收和發送任務消息，以及存儲任務結果，一般使用rabbitMQ或Redis。
     優點：
-        簡單：一單熟悉了celery的工作流程後，配置和使用還是比較簡單的。
-        高可用：當任務執行失敗或執行過程中發生連接中斷，celery 會自動嘗試重新執行任務
-        快速：一個單進程的celery每分鐘可處理上百萬個任務
-        靈活： 幾乎celery的各個組件都可以被擴展及自定制
+        簡單： 一但熟悉了celery的工作流程後，配置和使用還是比較簡單的。
+        高可用： 當任務執行失敗或執行過程中發生連接中斷，celery會自動嘗試重新執行並分配任務。
+        快速： 一個單進程的celery每分鐘可處理上百萬個任務。
+        靈活： 幾乎celery的各個組件都可以被擴展及自定制。
+
+    Celery文檔目錄《200526_目錄架構》：
+        ※ 指令大同小異，只是把<實現worker的py檔檔名>改成<Celery目錄>
+        ※ 在window中運行celery4都需要使用eventlet套件，在指令後面加上 -P eventlet
+        ※ 如果照這樣創建Celery目錄的話，執行指令變為： celery -A <Celery目錄> worker -l <模式(EX:info,debug)> -P eventlet
+           範例： celery -A DirectoryStructure worker -l debug -P eventlet
+        - __init__.py
+        - celery.py
+        - tasks.py
+
+    指令：
+        ※ 在window中運行celery4都需要使用eventlet套件，在指令後面加上 -P eventlet
+        - 啟動一個worker：
+            celery -A <實現worker的py檔檔名> -l <模式(EX:info,debug)> -P eventlet
+            範例： celery -A task worker -l debug -P eventlet
+        - 啟動一個定時任務調度器(beat)《200527_定時任務》：
+            celery -A <Celery目錄>.<實現定時任務的worker的py檔檔名> -l <模式(EX:info,debug)>
+            範例： celery -A periodic.tasks_1 beat -l debug
+        - ※ 後臺執行(windows不支持後臺執行)：
+            - 後臺執行worker：
+                celery multi start <取一個worker名稱> -A <Celery目錄> -l <模式(EX:info,debug)> -P eventlet
+                範例： celery multi start w1 -A DirectoryStructure -l info -P eventlet
+            - 停止後臺的worker：
+                celery multi stop  <取一個worker名稱> -A <Celery目錄> -l <模式(EX:info,debug)> -P eventlet
+                範例： celery multi stop  w1 -A DirectoryStructure -l info -P eventlet
+            - 重啟後臺的worker：
+                celery multi restart  <取一個worker名稱> -A <Celery目錄> -l <模式(EX:info,debug)> -P eventlet
+                範例： celery multi restart  w1 -A DirectoryStructure -l info -P eventlet
+
+    代碼：
+        - 遠端執行任務：
+            方法名.delay(參數)
+        - 獲取返回值【result = 方法名.delay(參數)】：
+            result.get()
+        - 判斷結果否返回了：
+            result.ready()
+
+    在Django中配置Celery《200528_Django中應用初試》：
+        ※ 此Django專案名為mysite，Django app為api。
+        一、在mysite\mysite目錄中：
+            1. 設置celery.py
+            2. 在settings.py中添加：
+                CELERY_BROKER_URL = 'redis://:851230@localhost'
+                CELERY_RESULT_BACKEND = 'redis://:851230@localhost'
+            3. 在__init__.py中添加：
+                from __future__ import absolute_import, unicode_literals
+                from .celery import app as celery_app
+
+                __all__ = ['celery_app']
+
+        二、在app目錄中(此為mysite\api)：
+            1. 設置tasks.py (必須叫tasks)
+            2. 在views.py中調用要任務和編寫業務邏輯
+
+        三、運行Django前，要先啟動至少一個worker去處理任務：
+            指令(在mysite這層輸入)：
+                celery -A mysite worker -l debug -P eventlet
+
+        ※ 若要使用定時任務：
+            (1) 需先安裝 pip install django-celery-beat
+            (2) 在配置文件(settings.py)中的INSTALLED_APPS添加：
+                INSTALLED_APPS = (
+                    ...,
+                    'django_celery_beat',
+                )
+            (3) 需要執行指令migrate(因為它會需要創建幾張表)：
+                python manage.py migrate
+            (4) 到admin中的celery表中配置定時任務：
+                - Crontabs：
+                    設置定時時間格式(m/h/d/dM/MY)
+                - Intervals：
+                    設置每隔多久執行
+                - Periodic tasks：
+                    設置定時任務
+            (5) 啟用beat定時任務調度器：
+                指令(在mysite這層輸入)：
+                    ※ -S django 表示告訴beat要到django裡面去讀任務
+                    celery -A mysite beat -l info -S django
+
+
+
+
