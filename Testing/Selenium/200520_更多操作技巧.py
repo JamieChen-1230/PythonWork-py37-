@@ -9,6 +9,7 @@ wd.get('https://www.baidu.com/')
 # 這個類裡面提供了很多操作技巧
 from selenium.webdriver.common.action_chains import ActionChains
 
+# 調用ActionChains的方法不會立即執行，而是將動作放到一個隊列裡，當調用.perform()時才會依序執行
 ac = ActionChains(wd)
 
 # 鼠標移動到某個元素上

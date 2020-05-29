@@ -1,0 +1,11 @@
+name: "jamie"
+age: 18
+data_di:
+  a: 1
+  b: 2
+  c: 3
+data_li:
+  - 1
+  - 2
+  - 3
+

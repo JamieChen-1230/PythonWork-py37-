@@ -3,6 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="ff1e8a4e-9f45-4d3b-9949-a27f16c94dbc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/Selenium/200518_First_demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/Testing/Selenium/200518_First_demo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/Selenium/200520_更多操作技巧.py" beforeDir="false" afterPath="$PROJECT_DIR$/Testing/Selenium/200520_更多操作技巧.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/Selenium/總筆記.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Testing/Selenium/總筆記.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/安裝套件.txt" beforeDir="false" afterPath="$PROJECT_DIR$/安裝套件.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/觀念/筆記.txt" beforeDir="false" afterPath="$PROJECT_DIR$/觀念/筆記.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,55 +20,79 @@
     <SUITE FILE_PATH="coverage/PythonWork_py37_$receive__1_.coverage" NAME="receive (1) Coverage Results" MODIFIED="1590550525268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200525_初試_2" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_test_demo_test_two.coverage" NAME="pytest for test_demo.test_two Coverage Results" MODIFIED="1590232489538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_fixture_test/使用conftest" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_test_demo_py.coverage" NAME="pytest in test_demo.py Coverage Results" MODIFIED="1590232646547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_fixture_test/使用conftest" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for__2_2_MyTestCase.coverage" NAME="pytest for 基本使用_2-2優化.MyTestCase Coverage Results" MODIFIED="1590729490087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200525_入門" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_200521_fixture_test_TestCase.coverage" NAME="pytest for 200521_fixture_test.TestCase Coverage Results" MODIFIED="1590220735634" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_fixture_test" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_200510_sample_test_test_one.coverage" NAME="pytest for 200510_sample_test.test_one Coverage Results" MODIFIED="1590216783762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_test_param1_TestParam1_test_param_1.coverage" NAME="pytest for test_param1.TestParam1.test_param_1 Coverage Results" MODIFIED="1590306484170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200523_django_test/tests" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_demo_py.coverage" NAME="pytest in demo.py Coverage Results" MODIFIED="1590732399425" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_3(數據分離)" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$200502___.coverage" NAME="200502_(內建)緩存裝飾器 Coverage Results" MODIFIED="1590393161636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎/200425_裝飾器" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_test_demo_TestCase_test_three.coverage" NAME="pytest for test_demo.TestCase.test_three Coverage Results" MODIFIED="1590232481114" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_fixture_test/使用conftest" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_200521_fixture_test_TestCase_test_two.coverage" NAME="pytest for 200521_fixture_test.TestCase.test_two Coverage Results" MODIFIED="1590220657338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_fixture_test" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_first_demo_MyTestCase.coverage" NAME="pytest for first_demo.MyTestCase Coverage Results" MODIFIED="1590726547285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200525_入門" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$receive2__1_.coverage" NAME="receive2 (1) Coverage Results" MODIFIED="1590550527788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200525_初試_2" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for__2_2_MyTestCase_test_b.coverage" NAME="pytest for 基本使用_2-2優化.MyTestCase.test_b Coverage Results" MODIFIED="1590729697095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200525_入門" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$200501___.coverage" NAME="200501_模仿計時裝飾器(多層裝飾器) Coverage Results" MODIFIED="1590392709974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎/200425_裝飾器" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$publish.coverage" NAME="publish Coverage Results" MODIFIED="1590118801479" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NoSQL資料庫(Redis)" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$send.coverage" NAME="send Coverage Results" MODIFIED="1590544170130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200525_初試" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$200510_sample_test.coverage" NAME="200510_sample_test Coverage Results" MODIFIED="1590217757452" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_200527_skip_py.coverage" NAME="pytest in 200527_skip.py Coverage Results" MODIFIED="1590741372569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for__2_2_MyTestCase_test_a.coverage" NAME="pytest for 基本使用_2-2優化.MyTestCase.test_a Coverage Results" MODIFIED="1590728777416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200525_入門" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_DDTfile_data_py__1_.coverage" NAME="pytest in DDT提供的file_data.py (1) Coverage Results" MODIFIED="1590738165396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_3(數據分離)/yml使用" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_test_sample3_py.coverage" NAME="pytest in test_sample3.py Coverage Results" MODIFIED="1590293673152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200522_fixture" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for__2_MyTestCase.coverage" NAME="pytest for 基本使用_2.MyTestCase Coverage Results" MODIFIED="1590727906363" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200525_入門" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$200430_.coverage" NAME="200430_解析式 Coverage Results" MODIFIED="1590397549382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for__2___MyTestCase_test_a.coverage" NAME="pytest for 基本使用_2(多個參數).MyTestCase.test_a Coverage Results" MODIFIED="1590730822585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_test_sample1_py.coverage" NAME="pytest in test_sample1.py Coverage Results" MODIFIED="1590292538827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200522_fixture" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$receive.coverage" NAME="receive Coverage Results" MODIFIED="1590553410057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200526_消息發布與訂閱/fanout(廣播)" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in__2_2_py.coverage" NAME="pytest in 基本使用_2-2優化.py Coverage Results" MODIFIED="1590729756389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200525_入門" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_200510_sample_test_TestCase_test_three.coverage" NAME="pytest for 200510_sample_test.TestCase.test_three Coverage Results" MODIFIED="1590216741569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$demo.coverage" NAME="demo Coverage Results" MODIFIED="1590732380934" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_3(數據分離)" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_200510_test_sample_py.coverage" NAME="pytest in 200510_test_sample.py Coverage Results" MODIFIED="1590213634806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$200520_.coverage" NAME="200520_彈出式對話框 Coverage Results" MODIFIED="1590137764580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Selenium" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$200520_.coverage" NAME="200520_更多操作技巧 Coverage Results" MODIFIED="1590714552128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Selenium" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_test_param_splite_py__1_.coverage" NAME="pytest in test_param_splite.py (1) Coverage Results" MODIFIED="1590310501367" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200523_django_test/tests/test_param_splite" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$200501__.coverage" NAME="200501_內置函數&amp;反射 Coverage Results" MODIFIED="1590397960865" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$send__1_.coverage" NAME="send (1) Coverage Results" MODIFIED="1590550490181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200525_初試_2" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_test_param_splite_py.coverage" NAME="pytest in test_param_splite.py Coverage Results" MODIFIED="1590309632287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200523_django_test/tests" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_DDTfile_data_MyTestCase_test_2.coverage" NAME="pytest for DDT提供的file_data.MyTestCase.test_2 Coverage Results" MODIFIED="1590738218797" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_3(數據分離)" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_200521_fixture_test_py.coverage" NAME="pytest in 200521_fixture_test.py Coverage Results" MODIFIED="1590232685325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_fixture_test" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$200519_.coverage" NAME="200519_窗口切換 Coverage Results" MODIFIED="1590131403257" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Selenium" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$200523_.coverage" NAME="200523_用戶登入 Coverage Results" MODIFIED="1590721786091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Selenium" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_200510_sample_test_py.coverage" NAME="pytest in 200510_sample_test.py Coverage Results" MODIFIED="1590217530584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$200429_Python_.coverage" NAME="200429_Python之傳值&amp;傳址 Coverage Results" MODIFIED="1590397148076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎/200429_對象引用" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$receive2.coverage" NAME="receive2 Coverage Results" MODIFIED="1590553411929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200526_消息發布與訂閱/fanout(廣播)" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_200521_fixture_test_test_three.coverage" NAME="pytest for 200521_fixture_test.test_three Coverage Results" MODIFIED="1590221030072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_fixture_test" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$.coverage" NAME="測試使用 Coverage Results" MODIFIED="1590731444331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/觀念" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$client.coverage" NAME="client Coverage Results" MODIFIED="1590563984137" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200527_消息RPC" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_DDTfile_data_py.coverage" NAME="pytest in DDT提供的file_data.py Coverage Results" MODIFIED="1590738220693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_3(數據分離)" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in___py.coverage" NAME="pytest in 基本使用_斷言.py Coverage Results" MODIFIED="1590739974507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$200521_xpath.coverage" NAME="200521_xpath Coverage Results" MODIFIED="1590195728451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Selenium" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$run.coverage" NAME="run Coverage Results" MODIFIED="1590627208987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/異步/celery/200526_目錄架構" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$run.coverage" NAME="run Coverage Results" MODIFIED="1590743537034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200528_測試套件(suite)" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$200514_RedisByPython.coverage" NAME="200514_RedisByPython Coverage Results" MODIFIED="1589595365325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NoSQL資料庫(Redis)" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$200518_First_demo.coverage" NAME="200518_First_demo Coverage Results" MODIFIED="1590124371734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Selenium" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for__2_MyTestCase_test_a.coverage" NAME="pytest for 基本使用_2.MyTestCase.test_a Coverage Results" MODIFIED="1590727323197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200525_入門" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$server.coverage" NAME="server Coverage Results" MODIFIED="1590563980916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200527_消息RPC" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in__2___py.coverage" NAME="pytest in 基本使用_2(多個參數).py Coverage Results" MODIFIED="1590730825139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$get_data.coverage" NAME="get_data Coverage Results" MODIFIED="1590310182085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200523_django_test/tests/utils" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$main.coverage" NAME="main Coverage Results" MODIFIED="1590570344982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/異步/celery/200526_初試" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in__2_py.coverage" NAME="pytest in 基本使用_2.py Coverage Results" MODIFIED="1590728350067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200525_入門" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_200521_fixture_test_test_one.coverage" NAME="pytest for 200521_fixture_test.test_one Coverage Results" MODIFIED="1590220614627" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_fixture_test" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in__py.coverage" NAME="pytest in 基本使用.py Coverage Results" MODIFIED="1590730249378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200526_ddt使用" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_200521_setup_test_TestCase.coverage" NAME="pytest for 200521_setup_test.TestCase Coverage Results" MODIFIED="1590218722612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$send__2_.coverage" NAME="send (2) Coverage Results" MODIFIED="1590553413917" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200526_消息發布與訂閱/fanout(廣播)" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in__skip_py.coverage" NAME="pytest in 基本使用_skip.py Coverage Results" MODIFIED="1590740861128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$200429_.coverage" NAME="200429_深淺複製 Coverage Results" MODIFIED="1590397194386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎/200429_對象引用" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_test_sample2_test_some_data.coverage" NAME="pytest for test_sample2.test_some_data Coverage Results" MODIFIED="1590292196301" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200522_fixture" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_200510_sample_test_TestCase.coverage" NAME="pytest for 200510_sample_test.TestCase Coverage Results" MODIFIED="1590216326242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$demo__1_.coverage" NAME="demo (1) Coverage Results" MODIFIED="1590737876667" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_3(數據分離)/yml使用" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$200409_.coverage" NAME="200409_賦值 Coverage Results" MODIFIED="1590397106360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎/200429_對象引用" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$conftest.coverage" NAME="conftest Coverage Results" MODIFIED="1590232642268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_fixture_test/使用conftest" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_200521_setup_test_py.coverage" NAME="pytest in 200521_setup_test.py Coverage Results" MODIFIED="1590218866739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_test_param_splite_TestParam2_test_param_2.coverage" NAME="pytest for test_param_splite.TestParam2.test_param_2 Coverage Results" MODIFIED="1590311718804" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200523_django_test/tests/test_param_splite" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_DDTfile_data_MyTestCase_test_a.coverage" NAME="pytest for DDT提供的file_data.MyTestCase.test_a Coverage Results" MODIFIED="1590735104151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_3(數據分離)" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$200519_frame.coverage" NAME="200519_frame切換 Coverage Results" MODIFIED="1590129862910" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Selenium" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$200520_radio.coverage" NAME="200520_radio選擇框 Coverage Results" MODIFIED="1590135133130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Selenium" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_200510_sample_test_TestCase_test_two.coverage" NAME="pytest for 200510_sample_test.TestCase.test_two Coverage Results" MODIFIED="1590216774812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_first_demo_py.coverage" NAME="pytest in first_demo.py Coverage Results" MODIFIED="1590725912812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200525_入門" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -80,12 +109,33 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django)/200528_Nginx/總筆記.txt">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Testing/Unittest/總筆記.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="126" column="14" selection-start-line="126" selection-start-column="14" selection-end-line="126" selection-end-column="14" />
+            <state relative-caret-position="280">
+              <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Testing/Unittest/200528_測試套件(suite)/tests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="4" column="16" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Testing/Unittest/200528_測試套件(suite)/run.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="354">
+              <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -97,8 +147,8 @@
       <list>
         <option value="Python Stub" />
         <option value="package.json" />
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -113,38 +163,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/框架(Django Rest Framework)/200501_CBV/mysite/app01/views.py" />
-        <option value="$PROJECT_DIR$/框架(Django Rest Framework)/200504_DRF用戶登入(認證、權限、節流)/mysite/mysite/urls.py" />
-        <option value="$PROJECT_DIR$/框架(Django Rest Framework)/200504_DRF用戶登入(認證、權限、節流)/mysite/api/utils/auth.py" />
-        <option value="$PROJECT_DIR$/框架(Django Rest Framework)/200504_DRF用戶登入(認證、權限、節流)/認證筆記.txt" />
-        <option value="$PROJECT_DIR$/框架(Django Rest Framework)/200504_DRF用戶登入(認證、權限、節流)/mysite/api/views.py" />
-        <option value="$PROJECT_DIR$/基礎/200425_裝飾器/200429_裝飾器基本架構.py" />
-        <option value="$PROJECT_DIR$/基礎/200425_裝飾器/200501_模仿計時裝飾器(多層裝飾器).py" />
-        <option value="$PROJECT_DIR$/基礎/200430_解析式.py" />
-        <option value="$PROJECT_DIR$/基礎/200501_內置函數&amp;反射.py" />
-        <option value="$PROJECT_DIR$/Testing/Pytest/總筆記.txt" />
-        <option value="$PROJECT_DIR$/Testing/Selenium/總筆記.txt" />
-        <option value="$PROJECT_DIR$/資料庫/SQL資料庫(MySQL)/180823_數據庫操作.txt" />
-        <option value="$PROJECT_DIR$/資料庫/SQL資料庫(MySQL)/180823_數據表操作.txt" />
-        <option value="$PROJECT_DIR$/資料庫/SQL資料庫(MySQL)/180823_數據表紀錄操作.txt" />
-        <option value="$PROJECT_DIR$/觀念/筆記.txt" />
-        <option value="$PROJECT_DIR$/資料庫/消息對列(RabbitMQ)/總筆記.txt" />
-        <option value="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200525_初試/receive.py" />
-        <option value="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200525_初試/send.py" />
-        <option value="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200525_初試/筆記.txt" />
-        <option value="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200525_初試_2/筆記.txt" />
-        <option value="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200525_初試_2/send.py" />
-        <option value="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200525_初試_2/receive2.py" />
-        <option value="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200525_初試_2/receive.py" />
-        <option value="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200526_消息發布與訂閱/筆記.txt" />
-        <option value="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200526_消息發布與訂閱/fanout(廣播)/send.py" />
-        <option value="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200526_消息發布與訂閱/fanout(廣播)/receive.py" />
-        <option value="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200526_消息發布與訂閱/fanout(廣播)/receive2.py" />
-        <option value="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200526_消息發布與訂閱/direct(組播)/receive.py" />
-        <option value="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200526_消息發布與訂閱/direct(組播)/send.py" />
-        <option value="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200526_消息發布與訂閱/topic(更細緻的過濾)/receive.py" />
-        <option value="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200526_消息發布與訂閱/topic(更細緻的過濾)/send.py" />
-        <option value="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200527_消息RPC/server.py" />
         <option value="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200527_消息RPC/client.py" />
         <option value="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/總筆記.txt" />
         <option value="$PROJECT_DIR$/異步/celery/200526_初試/task.py" />
@@ -164,6 +182,38 @@
         <option value="$PROJECT_DIR$/異步/celery/總筆記.txt" />
         <option value="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200501_CBV/mysite/templates/index.html" />
         <option value="$PROJECT_DIR$/Web網頁框架/框架(Django)/200528_Nginx/總筆記.txt" />
+        <option value="$PROJECT_DIR$/觀念/筆記.txt" />
+        <option value="$PROJECT_DIR$/Testing/Selenium/200520_更多操作技巧.py" />
+        <option value="$PROJECT_DIR$/Testing/Selenium/總筆記.txt" />
+        <option value="$PROJECT_DIR$/Testing/Selenium/200518_First_demo.py" />
+        <option value="$PROJECT_DIR$/Testing/Selenium/200523_用戶登入.py" />
+        <option value="$PROJECT_DIR$/Testing/Unittest/200525_入門/first_demo.py" />
+        <option value="$PROJECT_DIR$/Testing/Unittest/200525_入門/基本使用_2.py" />
+        <option value="$PROJECT_DIR$/Testing/Unittest/200525_入門/基本使用_2-1優化.py" />
+        <option value="$PROJECT_DIR$/Testing/Unittest/200525_入門/基本使用_2-2優化.py" />
+        <option value="$PROJECT_DIR$/Testing/Unittest/200526_ddt使用/基本使用.py" />
+        <option value="$PROJECT_DIR$/觀念/測試使用.py" />
+        <option value="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_3(數據分離)/demo.py" />
+        <option value="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_2(多個參數).py" />
+        <option value="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_3(數據分離)/自己寫讀取函數.py" />
+        <option value="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_3(數據分離)/data.yml" />
+        <option value="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_3(數據分離)/data2.json" />
+        <option value="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_3(數據分離)/data.json" />
+        <option value="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_3(數據分離)/yml使用/data.yml" />
+        <option value="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_3(數據分離)/yml使用/data2.yml" />
+        <option value="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_3(數據分離)/yml使用/demo.py" />
+        <option value="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_3(數據分離)/yml使用/data3.yml" />
+        <option value="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_3(數據分離)/yml使用/DDT提供的file_data.py" />
+        <option value="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_3(數據分離)/DDT提供的file_data.py" />
+        <option value="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_斷言.py" />
+        <option value="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_skip.py" />
+        <option value="$PROJECT_DIR$/Testing/Unittest/200527_skip.py" />
+        <option value="$PROJECT_DIR$/Testing/Unittest/200528_測試套件(suite)/demo.py" />
+        <option value="$PROJECT_DIR$/Testing/Unittest/200528_測試套件(suite)/tests.py" />
+        <option value="$PROJECT_DIR$/Testing/Unittest/1.py" />
+        <option value="$PROJECT_DIR$/Testing/Unittest/HTMLTestRunner.py" />
+        <option value="$PROJECT_DIR$/Testing/Unittest/總筆記.txt" />
+        <option value="$PROJECT_DIR$/Testing/Unittest/200528_測試套件(suite)/run.py" />
       </list>
     </option>
   </component>
@@ -188,46 +238,28 @@
             <path>
               <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
-              <item name="Web網頁框架" type="462c0819:PsiDirectoryNode" />
+              <item name="Testing" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
+              <item name="Testing" type="462c0819:PsiDirectoryNode" />
+              <item name="Unittest" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
               <item name="Web網頁框架" type="462c0819:PsiDirectoryNode" />
-              <item name="框架(Django Rest Framework)" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
-              <item name="Web網頁框架" type="462c0819:PsiDirectoryNode" />
-              <item name="框架(Django Rest Framework)" type="462c0819:PsiDirectoryNode" />
-              <item name="200501_CBV" type="462c0819:PsiDirectoryNode" />
+              <item name="基礎" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
-              <item name="Web網頁框架" type="462c0819:PsiDirectoryNode" />
-              <item name="框架(Django Rest Framework)" type="462c0819:PsiDirectoryNode" />
-              <item name="200501_CBV" type="462c0819:PsiDirectoryNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
-              <item name="Web網頁框架" type="462c0819:PsiDirectoryNode" />
-              <item name="框架(Django Rest Framework)" type="462c0819:PsiDirectoryNode" />
-              <item name="200501_CBV" type="462c0819:PsiDirectoryNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
-              <item name="Web網頁框架" type="462c0819:PsiDirectoryNode" />
-              <item name="框架(Django Rest Framework)" type="462c0819:PsiDirectoryNode" />
-              <item name="200501_CBV" type="462c0819:PsiDirectoryNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="觀念" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -280,50 +312,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="client" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PythonWork(py37)" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200527_消息RPC" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200527_消息RPC/client.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PythonWork(py37)" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/異步/celery/200526_初試" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/異步/celery/200526_初試/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonWork(py37)" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -332,12 +320,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/異步/celery/200526_目錄架構" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Testing/Unittest/200528_測試套件(suite)" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/異步/celery/200526_目錄架構/run.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Testing/Unittest/200528_測試套件(suite)/run.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -346,65 +334,85 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="send (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pytest in 200527_skip.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="PythonWork(py37)" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200526_消息發布與訂閱/fanout(廣播)" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Testing/Unittest" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200526_消息發布與訂閱/fanout(廣播)/send.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Testing/Unittest/200527_skip.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="server" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pytest in DDT提供的file_data.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="PythonWork(py37)" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200527_消息RPC" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_3(數據分離)" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200527_消息RPC/server.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_3(數據分離)/DDT提供的file_data.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in 基本使用_斷言.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="PythonWork(py37)" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_斷言.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in 基本使用_skip.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="PythonWork(py37)" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_skip.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Python.200510_sample_test" />
-      <item itemvalue="Python.send (2)" />
-      <item itemvalue="Python.server" />
-      <item itemvalue="Python.client" />
-      <item itemvalue="Python.main" />
+      <item itemvalue="Python tests.pytest in DDT提供的file_data.py" />
+      <item itemvalue="Python tests.pytest in 基本使用_斷言.py" />
+      <item itemvalue="Python tests.pytest in 基本使用_skip.py" />
+      <item itemvalue="Python tests.pytest in 200527_skip.py" />
       <item itemvalue="Python.run" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.run" />
-        <item itemvalue="Python.main" />
-        <item itemvalue="Python.client" />
-        <item itemvalue="Python.server" />
-        <item itemvalue="Python.send (2)" />
+        <item itemvalue="Python tests.pytest in 200527_skip.py" />
+        <item itemvalue="Python tests.pytest in 基本使用_skip.py" />
+        <item itemvalue="Python tests.pytest in 基本使用_斷言.py" />
+        <item itemvalue="Python tests.pytest in DDT提供的file_data.py" />
       </list>
     </recent_temporary>
   </component>
@@ -431,44 +439,45 @@
       <workItem from="1590457619466" duration="11448000" />
       <workItem from="1590484686810" duration="7506000" />
       <workItem from="1590539305039" duration="32675000" />
-      <workItem from="1590626909620" duration="26303000" />
+      <workItem from="1590626909620" duration="26619000" />
+      <workItem from="1590712475798" duration="26887000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_in_test_param_splite_py - 2020.05.24 at 16h 37m 28s.xml">
-      <configuration name="pytest in test_param_splite.py" configurationId="tests" />
+    <history-entry file="pytest_in_基本使用_skip_py - 2020.05.29 at 16h 18m 55s.xml">
+      <configuration name="pytest in 基本使用_skip.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_param_splite_py - 2020.05.24 at 16h 37m 53s.xml">
-      <configuration name="pytest in test_param_splite.py" configurationId="tests" />
+    <history-entry file="pytest_in_基本使用_skip_py - 2020.05.29 at 16h 23m 27s.xml">
+      <configuration name="pytest in 基本使用_skip.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_param_splite_py - 2020.05.24 at 16h 38m 07s.xml">
-      <configuration name="pytest in test_param_splite.py" configurationId="tests" />
+    <history-entry file="pytest_in_基本使用_skip_py - 2020.05.29 at 16h 24m 51s.xml">
+      <configuration name="pytest in 基本使用_skip.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_param_splite_py - 2020.05.24 at 16h 39m 25s.xml">
-      <configuration name="pytest in test_param_splite.py" configurationId="tests" />
+    <history-entry file="pytest_in_基本使用_skip_py - 2020.05.29 at 16h 27m 29s.xml">
+      <configuration name="pytest in 基本使用_skip.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_param_splite_py - 2020.05.24 at 16h 40m 32s.xml">
-      <configuration name="pytest in test_param_splite.py" configurationId="tests" />
+    <history-entry file="pytest_in_基本使用_skip_py - 2020.05.29 at 16h 27m 41s.xml">
+      <configuration name="pytest in 基本使用_skip.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_param_splite_py_(1) - 2020.05.24 at 16h 50m 01s.xml">
-      <configuration name="pytest in test_param_splite.py (1)" configurationId="tests" />
+    <history-entry file="pytest_in_200527_skip_py - 2020.05.29 at 16h 30m 11s.xml">
+      <configuration name="pytest in 200527_skip.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_param_splite_py_(1) - 2020.05.24 at 16h 50m 16s.xml">
-      <configuration name="pytest in test_param_splite.py (1)" configurationId="tests" />
+    <history-entry file="pytest_in_200527_skip_py - 2020.05.29 at 16h 32m 11s.xml">
+      <configuration name="pytest in 200527_skip.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_param_splite_TestParam2_test_param_2 - 2020.05.24 at 16h 52m 03s.xml">
-      <configuration name="pytest for test_param_splite.TestParam2.test_param_2" configurationId="tests" />
+    <history-entry file="pytest_in_200527_skip_py - 2020.05.29 at 16h 35m 34s.xml">
+      <configuration name="pytest in 200527_skip.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_param_splite_py_(1) - 2020.05.24 at 16h 55m 02s.xml">
-      <configuration name="pytest in test_param_splite.py (1)" configurationId="tests" />
+    <history-entry file="pytest_in_200527_skip_py - 2020.05.29 at 16h 35m 54s.xml">
+      <configuration name="pytest in 200527_skip.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_param_splite_TestParam2_test_param_2 - 2020.05.24 at 17h 15m 19s.xml">
-      <configuration name="pytest for test_param_splite.TestParam2.test_param_2" configurationId="tests" />
+    <history-entry file="pytest_in_200527_skip_py - 2020.05.29 at 16h 36m 13s.xml">
+      <configuration name="pytest in 200527_skip.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="215560000" />
+    <option name="totallyTimeSpent" value="242763000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -483,12 +492,12 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8031496" visible="true" weight="0.21179625" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8031496" visible="true" weight="0.21447721" />
       <window_info id="Structure" order="1" sideWeight="0.19685039" side_tool="true" weight="0.20911528" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.42351276" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.34844193" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -497,38 +506,38 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3654391" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3654391" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.15817694" />
+      <window_info anchor="right" id="Database" order="4" weight="0.15817694" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20375335" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8031496" visible="true" weight="0.21447721" />
+      <window_info id="Structure" order="1" sideWeight="0.19685039" side_tool="true" weight="0.20911528" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.44050992" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.4631728" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Console" order="7" weight="0.3286119" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3371105" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3654391" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.122654155" />
+      <window_info anchor="right" id="Database" order="4" weight="0.15817694" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -552,261 +561,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Testing/Pytest/總筆記.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-650">
-          <caret line="71" column="13" lean-forward="true" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/觀念/筆記.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="207" column="46" selection-start-line="207" selection-start-column="46" selection-end-line="207" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/資料庫/消息對列(RabbitMQ)/總筆記.txt" />
-    <entry file="file://$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200525_初試/receive2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-84">
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200525_初試/筆記.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200525_初試_2/筆記.txt" />
-    <entry file="file://$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200525_初試_2/receive.py" />
-    <entry file="file://$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200525_初試_2/send.py" />
-    <entry file="file://$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200525_初試_2/receive2.py" />
-    <entry file="file://$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200526_消息發布與訂閱/筆記.txt" />
-    <entry file="file://$PROJECT_DIR$/../../Python/Anaconda3/envs/py37/Lib/site-packages/pika/channel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-381">
-          <caret line="783" column="8" selection-start-line="783" selection-start-column="8" selection-end-line="783" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200526_消息發布與訂閱/fanout(廣播)/receive2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200526_消息發布與訂閱/fanout(廣播)/receive.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="16" column="53" lean-forward="true" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200526_消息發布與訂閱/fanout(廣播)/send.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="11" column="57" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200526_消息發布與訂閱/topic(更細緻的過濾)/send.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200526_消息發布與訂閱/topic(更細緻的過濾)/receive.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200525_初試/send.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="7" column="101" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="101" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200525_消息安全接收&amp;持久化/send.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-376">
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200525_消息安全接收&amp;持久化/receive.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200525_消息安全接收&amp;持久化/receive2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-745">
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200526_消息發布與訂閱/direct(組播)/send.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200526_消息發布與訂閱/direct(組播)/receive.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-392">
-          <caret line="13" column="56" lean-forward="true" selection-start-line="13" selection-start-column="56" selection-end-line="13" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Python/Anaconda3/envs/py37/Lib/site-packages/pika/adapters/blocking_connection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-45">
-          <caret line="806" column="8" selection-start-line="806" selection-start-column="8" selection-end-line="806" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200527_消息RPC/server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-40">
-          <caret line="34" column="52" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-            <element signature="e#367#477#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200525_初試/receive.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-68">
-          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200527_消息RPC/client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12">
-          <caret line="37" column="24" lean-forward="true" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-            <element signature="e#650#796#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/總筆記.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6">
-          <caret line="96" column="77" selection-start-line="96" selection-start-column="77" selection-end-line="96" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/異步/celery/200526_初試/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/異步/celery/200526_目錄架構/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/異步/celery/200526_目錄架構/tasks.py" />
-    <entry file="file://$PROJECT_DIR$/異步/celery/200526_目錄架構/celery.py" />
-    <entry file="file://$PROJECT_DIR$/異步/celery/200526_DirectoryStructure/tasks_2.py" />
-    <entry file="file://$PROJECT_DIR$/異步/celery/200526_DirectoryStructure/tasks_1.py" />
-    <entry file="file://$PROJECT_DIR$/異步/celery/200526_DirectoryStructure/celery.py" />
-    <entry file="file://$PROJECT_DIR$/異步/celery/200526_目錄架構/DirectoryStructure/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/異步/celery/200526_初試/task.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12">
-          <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/異步/celery/200526_目錄架構/DirectoryStructure/celery.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/異步/celery/200526_目錄架構/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/異步/celery/200526_目錄架構/DirectoryStructure/tasks_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/異步/celery/200526_目錄架構/DirectoryStructure/tasks_2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/異步/celery/200527_定時任務/periodic/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/異步/celery/200527_定時任務/periodic/tasks2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="34" column="6" lean-forward="true" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/異步/celery/200527_定時任務/periodic/tasks_2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -859,17 +613,327 @@
     <entry file="file://$PROJECT_DIR$/../PythonWork/SelfLearn/框架(Django_rest_framework)/200503_restful規範/筆記.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200501_CBV/mysite/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200501_CBV/mysite/templates/index.html" />
+    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django)/200528_Nginx/總筆記.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        <state relative-caret-position="195">
+          <caret line="128" lean-forward="true" selection-start-line="128" selection-end-line="128" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django)/200528_Nginx/總筆記.txt">
+    <entry file="file://$PROJECT_DIR$/Testing/Selenium/200520_radio選擇框.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="126" column="14" selection-start-line="126" selection-start-column="14" selection-end-line="126" selection-end-column="14" />
+        <state>
+          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/安裝套件.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Python/Anaconda3/envs/py37/Lib/site-packages/selenium/webdriver/common/action_chains.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2645">
+          <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/觀念/筆記.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="256" column="37" selection-start-line="256" selection-start-column="37" selection-end-line="256" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/Selenium/200519_窗口切換.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-420" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/Selenium/200523_用戶登入.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="23" column="40" lean-forward="true" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/Selenium/200520_更多操作技巧.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/Selenium/總筆記.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1691">
+          <caret line="37" column="7" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/Selenium/200519_frame切換.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/Unittest/200525_入門/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基礎/200501_內置函數&amp;反射.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1799" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/Unittest/200525_入門/first_demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/Selenium/200518_First_demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-273">
+          <caret line="70" selection-start-line="70" selection-end-line="70" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/Unittest/200525_入門/基本使用_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/Unittest/200525_入門/基本使用_2-1優化.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/Unittest/200525_入門/基本使用_1.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/Unittest/200525_入門/基本使用_2-2優化.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="31" column="26" lean-forward="true" selection-end-line="33" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/觀念/測試使用.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_2(多個參數).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_3(數據分離)/demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_3(數據分離)/data.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_3(數據分離)/自己寫讀取函數.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Python/Anaconda3/envs/py37/Lib/site-packages/yaml/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="102" column="4" selection-start-line="102" selection-start-column="4" selection-end-line="102" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_3(數據分離)/data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_3(數據分離)/yml使用/data.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_3(數據分離)/yml使用/data2.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_3(數據分離)/yml使用/demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_3(數據分離)/data2.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_3(數據分離)/yml使用/data3.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_3(數據分離)/yml使用/DDT提供的file_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="15" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_3(數據分離)/DDT提供的file_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="26" column="26" lean-forward="true" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_斷言.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_skip.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-119">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/Unittest/200526_斷言.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/Unittest/200528_測試套件(suite)/demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/Unittest/200527_skip.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="27" column="26" lean-forward="true" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/Unittest/1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="823" column="21" selection-start-line="823" selection-start-column="21" selection-end-line="823" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/Unittest/HTMLTestRunner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-728">
+          <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <folding>
+            <element signature="e#3554#3569#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/Unittest/總筆記.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/Unittest/200528_測試套件(suite)/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/Unittest/200528_測試套件(suite)/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

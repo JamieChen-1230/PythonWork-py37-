@@ -1,0 +1,49 @@
+Unittest框架：
+    介紹：
+        - Python下自帶的一個單元測試框架，可以結合Selenium和Requests來實現UI和接口的自動化測試。
+        - Unittest無須額外安裝，已經包含在了Python中。
+
+    四大組件：
+        1. test fixture： setUP(前置條件)和tearDOWN(後置條件)，用於初始化測試用例和清理資源。
+        2. test case： 測試用例類(必須繼承Unuttest TestCase類)。
+            - 測試用例名稱定義： def test_*() 或 def *_test()
+        3. test suite： 測試套件，也稱測試用例集。
+        4. test runner： 運行器，一般透過runner來調用suite。
+
+    DDT數據驅動【pip install ddt】《200525_DDT使用》：
+        應用場景： 在單個測試用例中，需要使用到不同的測試數據。
+        使用：
+            @ddt.ddt： 裝飾於測試類，這樣才可在用例中使用ddt
+            @ddt.data： 為用例傳入數據集
+            @ddt.unpack： 當用例參數不只一個時須使用
+            @ddt.file_data： DDT提供可去yml檔或json檔取數據並為用例導入數據集的方法
+
+    斷言(在Unittest的TestCase類中已經有提供封裝好的斷言方法)：
+        用途： 用於校驗預期結果和實際結果是否相等，斷言強調的是對於整個測試流程結果進行判斷，所以要斷言核心的點。
+        使用：
+            assertEqual: 判斷是否相等
+            assertNotEqual: 判斷是否不相等
+            assertTrue: 判斷是否為True
+            assertFalse: 判斷是否為False
+            ...
+
+    skip用法《200525_DDT使用》：
+        用途： 在TestCase中，對於不想執行或特定情況下不執行的用例，可以使用skip()來實現有條件執行。
+        使用：
+            @unittest.skip(<reason>)： 無條件跳過用例
+            @unittest.skipIf(<條件判斷>, <reason>)： 有條件跳過用例(條件判斷為True就會跳過用例)
+            @unittest.skipUnless(<條件判斷>, <reason>)： 有條件跳過用例(條件判斷為False就會跳過用例)
+            @unittest.expectedFailure： 如果用例failed的話，也不會計入FAILURES中
+
+    測試套件《200528_測試套件(suite)》：
+        用途：
+            - 可對測試用例進行順序。(不然Unittest是看用例名去排序的)
+            - 只挑選要執行的用例
+
+    測試報告：
+        源自： https://blog.csdn.net/qq_31524409/article/details/80984729
+
+
+    Unittest運行機制：
+        1. 通過在main()函數中，調用unittest.main()
+

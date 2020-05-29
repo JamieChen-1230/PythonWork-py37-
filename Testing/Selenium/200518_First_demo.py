@@ -5,7 +5,7 @@ from selenium import webdriver
 # 參數為chrome驅動的路徑
 wd = webdriver.Chrome(r'd:\Programming\WorkPlace\PythonWork(py37)\Testing\Selenium\chromedriver\chromedriver.exe')
 
-# 打開網站
+# 跳轉頁面
 wd.get(url='https://www.google.com.tw/')
 # 因為有可能會遇到一種情況，就是web server尚未向我們(用戶)的瀏覽器返回頁面時，我們的程序繼續運行下一行代碼，導致找不到要的Element。
 # 所以這時可以使用implicitly_wait(5)，他代表的是最多等5秒，每0.5秒會去搜索一次，如果搜索到了就繼續下一行代碼，反之則等待下一個0.5秒搜索。

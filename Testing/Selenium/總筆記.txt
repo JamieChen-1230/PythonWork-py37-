@@ -39,6 +39,22 @@ Selenium：是一個Web應用的自動化框架。
             - 獲取文本內容(介面上看不到的文本)： WebElement對象.get_attribute('textContent'或'innerText')
         ※ 更多操作技巧在ActionChains類裡面(參考更多操作技巧.py)
 
+   - ActionChains類方法簡易介紹：
+        執行ActionChains鏈中所有動作： perform()
+        單擊滑鼠左鍵： click()
+        雙擊滑鼠左鍵： double_click()
+        單擊滑鼠右鍵： context_click()
+        鼠標移動到某個元素上： move_to_element(WebElement)
+        單擊滑鼠左鍵且不鬆開： click_and_hold()
+        鬆開滑鼠左鍵： release()
+        按下鍵盤上的某鍵： key_down(value)
+        鬆開鍵盤上的某鍵： key_up(value)
+        拖曳到某個元素然後鬆開： drag_and_drop(source, target)
+        拖曳到某個座標然後鬆開： drag_and_drop_by_offset(source, x座標, y座標)
+        鼠標移動到某個座標： move_by_offset(x座標, y座標)
+        移動到距離某個元素(由元素左上角座標計算)多少距離的位置： move_to_element_with_offset(target, x值, y值)
+
+
    - 在瀏覽器中也能透過CSS或xpath選擇器來進行查找(非常方便)：
         先按F12  ->  在上面一排選Elements  ->  按 ctrl+f  ->  輸入查詢條件
 
