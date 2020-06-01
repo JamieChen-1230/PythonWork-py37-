@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>no_alias_register註冊</h1>
+
+<!--直接寫action="/app01/register/"也可以，因為django自動去抓ip和port-->
+<!--action表示要提交到哪裡(url)，會到urls.py內進行匹配-->
+<form action="/app01/no_alias_register/" method="get">
+    <p>姓名<input type="text" name="user"></p>
+    <p>年齡<input type="number" name="age"></p>
+    <p>
+        愛好
+        <input type="checkbox" name="hobby" value="1">籃球
+        <input type="checkbox" name="hobby" value="2">足球
+    </p>
+    <p><input type="submit">提交</p>
+</form>
+</body>
+</html>

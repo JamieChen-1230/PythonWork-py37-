@@ -1,0 +1,112 @@
+初始設定(mysite\__init__.py)：
+    ※ Django2開始不支持pymysql，要使用mysqlclient，且不須額外設定
+    # ※ 因為MySQLdb目前不支持python3，所以這邊採用pymysql來連線MySQLdb。
+    # import pymysql
+    # # 告訴django不要用mysqldb，要使用pymysql
+    # pymysql.install_as_MySQLdb()
+
+
+設定(settings)：
+    - 設定資料庫(這裡使用MySQL)：
+        DATABASES = {
+            'default': {
+                'ENGINE': 'django.db.backends.mysql',  # 資料庫引擎
+                'NAME': 'django_orm_deep_query',    # 資料庫名稱
+                'USER': 'root',   # 資料庫用戶名
+                'PASSWORD': '851230',  # 資料庫密碼
+                'HOST': '',  # 資料庫主機，為空默認為localhost
+                'PORT': '3306',  # 資料庫端口
+            }
+        }
+
+    - 創建django_orm_deep_query資料庫：
+        - 在cmd進入mysql後創建資料庫：create database django_orm_deep_query;
+
+
+模型(models)：
+    - 創建表：
+        (1) 必須繼承models.Model，python才會知道他是表。
+            - 表一：
+                class Book(models.Model):
+                    name = models.CharField(max_length=20)
+                    price = models.IntegerField()
+                    # 一對多操作：ORM會自動抓publish的id進行連結，並自動建立publish_id
+                    publish = models.ForeignKey('Publisher')  # 外鍵要建在【多】那方
+                    # 多對多操作：自動創造book_authors的表，另一種方法是自己建一個表且有兩個ForeignKey
+                    authors = models.ManyToManyField('Author')
+            - 表二：
+                class Author(models.Model):
+                    name = models.CharField(max_length=20)
+                    age = models.IntegerField()
+            - 表三：
+                # Publisher對Book：一對多關係
+                class Publisher(models.Model):
+                    name = models.CharField(max_length=32)
+
+        (2) 生成同步數據庫的腳本（偵測 model 變化，並建立更改文件）。
+            cmd中執行 python manage.py makemigrations
+
+        (3) 同步數據庫（依更改文件修正資料庫）。
+            cmd中執行 python manage.py migrate
+
+
+視圖(views)：
+    一、聚合查詢【aggregate()是QuerySet的一個終止子句，它返回一個包含一些鍵值對的字典】：
+        - 所有書的平均價格：
+            - 無指定名稱：
+                代碼：models.Book.objects.all().aggregate(Avg('price'))
+                結果：{'price__avg': 476.0}
+            - 指定名稱：
+                代碼：models.Book.objects.all().aggregate(a=Avg('price'))
+                結果：{'a': 476.0}
+
+        - 所有書的總價格和最高價(可以使用多個聚合函數)：
+            代碼：models.Book.objects.all().aggregate(Sum('price'), Max('price'))
+            結果：{'price__sum': 2380}
+
+        - jamie的書總價格(jamie_money為自定義名稱)：
+            代碼：models.Book.objects.filter(authors__name="jamie").aggregate(jamie_money=Sum('price'))
+            結果：{'jamie_money': 950}
+
+    二、分組查詢【使用annotate()對每個對象個別進行處理】：
+        ※ 可以先用values分組，再用annotate個別進行處理。
+        - 個別作者出的書的總價：
+            代碼：models.Book.objects.all().values('authors__name').annotate(s=Sum('price'))
+            結果：<QuerySet [{'s': 950, 'authors__name': 'jamie'}, {'s': 750, 'authors__name': 'vivi'}, {'s': 1180, 'authors__name': 'joker'}, {'s': 250, 'authors__name': 'jack'}]>
+
+        - 每個出版社最便宜的書價格：
+            代碼：models.Book.objects.all().values('publish__name').annotate(Min('price'))
+            結果：<QuerySet [{'publish__name': '吉米出版社', 'price__min': 450}, {'publish__name': '海龍出版社', 'price__min': 250}]>
+
+        - 每本書的作者數量：
+            代碼：models.Book.objects.all().values().annotate(Count("authors__name"))
+            結果：<QuerySet [{'name': 'python', 'authors__name__count': 2}, {'name': 'js', 'authors__name__count': 1}, {'name': 'mysql', 'authors__name__count': 1}, {'name': 'sqlite', 'authors__name__count': 2}, {'name': 'java', 'authors__name__count': 1}]>
+
+    三、F查詢：
+        - 比較同一個model 實例中兩個不同字段的值：
+            - 找出書籍id大於等於作者id的書：
+                代碼：models.Book.objects.filter(id__gt=2)
+                結果：<QuerySet [<Book: js>, <Book: sqlite>, <Book: java>]>
+
+        - 幫現有的值加上固定值
+            代碼：models.Book.objects.all().update(price=F('price')+10)
+
+    四、Q查詢【需要更複雜的查詢（例如OR語句）時，可以使用】：
+        ※ |或, &且, ~not
+        - 找出書籍價大於550或書籍名為python的書：
+            代碼：models.Book.objects.filter(Q(price__gt=550) | Q(name='python')).values('name')
+            結果：<QuerySet [{'name': 'python'}, {'name': 'java'}]>
+
+        - 找出書籍名不為python的書：
+            代碼：models.Book.objects.filter(~Q(name='python')).values('name')
+            結果：<QuerySet [{'name': 'js'}, {'name': 'mysql'}, {'name': 'sqlite'}, {'name': 'java'}]>
+
+
+總結：
+    一、(Django2不適用)使用MySQL時要記得在__init__.py文件中加以註解。(因為MySQLdb目前不支持python3)
+    二、aggregate(聚合查詢)，返回一個包含一些鍵值對的字典。
+    三、annotate(分組查詢)，為調用的QuerySet中每一個對象都生成一個獨立的統計值。
+    四、F查詢：
+        (1) 用來做字段的值做比較。
+        (2) 支持F()對象之間以及F()對象和常數之間的加減乘除。
+    五、Q查詢：需要更複雜的查詢（例如OR語句）時使用。

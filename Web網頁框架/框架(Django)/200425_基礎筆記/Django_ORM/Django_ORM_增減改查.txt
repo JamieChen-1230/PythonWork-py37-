@@ -1,0 +1,88 @@
+class Classes(models.Model):
+    name = models.CharField(max_length=32)
+    ct = models.ManyToManyField('Teachers')
+
+class Teachers(models.Model):
+    name = models.CharField(max_length=32)
+
+class Students(models.Model):
+    name = models.CharField(max_length=20)
+    age = models.IntegerField()
+    gender = models.BooleanField()
+    cs = models.ForeignKey('Classes')
+
+總結：
+1. 類代表數據表
+2. 類的對象代指數據庫的一行數據
+3. ForeignKey代指關聯表的一行數據(類的對象)
+    - 正向：ForeignKey字段
+    - 反向：小寫表名_set
+4. ManyToManyField會自動生成第三張表，依賴關聯表對第三張表進行間接操作
+
+
+# ------------- 一對多 -------------
+# 增加
+Students.objects.create(name='jamie', age=18, gender=True, cs_id=1)  # better
+Students.objects.create(name='jamie', age=18, gender=True, cs=Class.objects.filter(id=1)[0])
+
+# 查詢所有列名
+ret = Student.objects.get(id=1)
+print(ret.id)
+print(ret.name)
+print(ret.age)
+print(ret.gender)
+print(ret.cs_id)
+print(ret.cs.id)  # ret.cs為Classes對象
+print(ret.cs.name)
+
+# 刪除
+Students.objects.filer(cs_id=1).delete()
+Students.objects.filer(cs=Class.objects.get(id=1)).delete()
+Students.objects.filer(cs__id=1).delete()  # cs__id是Classes的id
+
+# 修改
+Students.objects.filer(cs_id=1).update(name='SB')
+Students.objects.filer(cs=Class.objects.get(id=1)).update(name='SB')
+Students.objects.filer(cs__id=1).update(name='SB')  # cs__id是Classes的id
+
+# 練習
+- 所有學生姓名以及其所在之班級名稱
+    Students.objects.all().values('name', 'cs__name')
+    類型：Queryset且內部元素為字典
+    [{'name': ..., 'Classes__name': ...}, {'name': ..., 'Classes__name': ...}, {'name': ..., 'Classes__name': ...}]
+- 找到3班所有學生
+    Students.objects.filter(cs__name='3班')  # 若要通過外鍵拿到值得用__，cs__school__....
+    類型：Queryset且內部元素為對象
+    # 反向查找
+    obj_cls = Classes.objects.filter(name='3班')[0]
+    obj_cls.students_set.all()  # 關聯表名_set => 反向查找
+
+
+# ------------- 多對多 -------------
+# 增加
+obj_cls = Classes.objects.filter(id=1)[0]
+obj_cls.ct.add(2)  # obj_cls.ct代表cls_teacher這張關聯表，2為老師id
+obj_cls.ct.add(*[2, 3, 4])  # 新增多個
+# 反向操作
+obj_t = models.Teachers.objects.get(id=1)
+obj_t.classes_set.add(*[1, 2, 17])
+
+# 刪除
+obj_cls = Classes.objects.filter(id=1)[0]
+obj_cls.ct.remove(2)  # obj_cls.ct代表cls_teacher這張關聯表，2為老師id
+obj_cls.ct.clear()  # 刪除所有班級id為1的值
+
+# 重置
+obj_cls = Classes.objects.filter(id=1)[0]
+obj_cls.ct.set(2)  # 把原本的全清空再新增，2為老師id
+
+# 查詢
+obj_cls = Classes.objects.filter(name='3班')[0]
+list_t = odj_cls.ct.all()  # 取出所有3班老師的信息對象
+list_t_name = list_t.values('name')
+
+list_cls = models.Classes.objects.filter(ct__name='t1')
+list_cls_name = list_cls.values('name')
+
+
+

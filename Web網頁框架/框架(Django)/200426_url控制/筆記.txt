@@ -1,0 +1,49 @@
+路由分發(urls)：
+    一、mysite\urls.py：總路由分發。
+        - 基本的url配置：path(路徑, views視圖函數)
+            path('login/', views.login)
+
+        - 基本的url配置2： re_path(可使用正則表達式之路徑, views視圖函數)
+            re_path(r'^show_time/$', views.show_time)
+            # ^ 匹配字符串須為網址開頭, $ 須為網址結尾
+
+        - 進階路由分發(include(<<欲分配至的url檔>>))：
+            re_path(r'^app01/', include('app01.urls'))
+            # 有關app01的網址都移到app01的urls，這樣APP多時才不會搞混
+
+    二、app01\urls.py：應用路由分發。
+        - 無命名分組url配置： re_path(正則表達式(有分組), views視圖函數)
+            re_path(r'no_name_grouping/(\d{4})/(\d{2})', views.no_name)
+            # 在views中的no_name(request, y, m)函數需要多兩個形參(y, m)來接收
+
+        - 有命名分組url配置： re_path(正則表達式(有分組), views視圖函數)
+            re_path(r'name_grouping/(?P<year>\d{4})/(?P<month>\d{2})', views.has_name)
+            # 在views中的has_name(request, year, month)函數需要多兩個形參(year, month)來接收函數參數需對應命名
+            # 且形參名必須與命名相同
+
+        - 有別名url配置： path(正則表達式, views視圖函數, 別名)
+            path('alias_register', views.alias_register, name="reg")
+            # 可減低維護複雜度(可以在模塊或html中通過別名調用)
+
+
+視圖(views)：
+    一、每個view函數必須有參數，用來接收客戶端的請求信息(request)。
+
+    二、render()與redirect()：
+        - render()：渲染
+            參數：render(客戶端的請求信息(request), 模板文件名, 前端要用的變數(字典形式)，key為變量名稱，value為值)
+            範例：render(request, "show_time.html", {"t": t})
+            網址是否會改變：否
+            login函式內的其他程序是否會被執行：否  => 所以不能用於跳轉網頁
+
+        - redirect()：重定向
+            參數：redirect(路徑)
+            範例：redirect("/login/")
+            網址是否會改變：是
+            login函式內的其他程序是否會被執行：是
+
+    三、request：
+        - request.GET：接收前端傳來的GET數據。
+        - request.POST：接收前端傳來的POST數據。
+        - request.method：前端傳回數據的方式。
+

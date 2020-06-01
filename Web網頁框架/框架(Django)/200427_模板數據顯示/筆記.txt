@@ -1,0 +1,138 @@
+變量(variable)：
+    一、列表(list)：
+        - 後端： li = ['jamie', 'sb', 'nb']
+        - 模板：
+            - {{ li }}：顯示列表 => ['jamie', 'sb', 'nb']
+            - {{ li.0 }}：顯示 li[0] => jamie
+
+    二、字典：
+        - 後端： d = {'name': 'jamie', 'age': 12}
+        - 模板：
+            - {{ d }}：顯示字典 => {'name': 'jamie', 'age': 12}
+            - {{ d.name}}：顯示 d["name"] => jamie
+            - {{ d.age|add:12 }}：顯示 d["age"] + 12 => 24
+
+    三、對象：
+        - 後端： obj = Animal('dog')
+        - 模板：
+            - {{ obj }}：顯示對象 =>  <app01.views.Animal object at 0x000002588BAD0A58>
+            - {{ obj.name }}：顯示 obj.name => dog
+
+    四、字符串：
+        - 後端：
+            - test = 'hello world'
+            - test2 = 'h e ll o w  orld'
+        - 模板：
+            - {{ test|capfirst }}：首字母大寫 =>  Hello world
+            - {{ test2|cut:" " }}：移除指定的字符 => helloworld
+            - {{ e|default:'空的' }}：如果值是False，就替换成设置的默认值，否则就是用本来的值 => 空的
+
+    五、時間：
+        - 後端： t = datetime.datetime.now()
+        - 模板：
+            - {{ t|date:"Y--m--d" }}：格式化字符串 => 2020--05--05
+
+    六、布林值：
+        - 後端： e = ''
+        - 模板：
+            - {{ e|default:'空的' }}：如果值是False，就會顯示默認值，否則就會顯示原本的值 => 空的
+
+    七、Html標籤：
+        - 後端： a = "<a href=''>click</a>"
+        - 模板：
+            - {{ a|safe }}：讓後端傳來的標籤能使用
+            - {% autoescape off %} {{ a }} {% endautoescape %}：讓後端傳來的標籤能使用(方法二)
+
+
+語法標籤(label)：
+    一、if 語法：
+        - 後端： d = {'name': 'jamie', 'age': 8}
+        - 模板：
+            {% if d.age > 20 %}
+                <p>大於20</p>
+            {% elif d.age == 20 %}
+                <p>等於20</p>
+            {% else %}
+                {% if d.age > 10 %}
+                    <p>大於10，小於20</p>
+                {% else %}
+                    <p>小於10</p>
+                {% endif %}
+            {% endif %}
+
+    二、for 語法：
+        - 後端： li = ['jamie', 'sb', 'nb']
+        - 模板：
+            {% for i in li %}
+                <!--forloop.counter正計數-->
+                <li>{{ forloop.counter }} : {{ i }}</li>
+                <!--forloop.revcounter倒計數-->
+                <li>{{ forloop.revcounter }} : {{ i }}</li>
+                <!--forloop.first是否為第一次迴圈-->
+                <li>{{ forloop.first }} : {{ i }}</li>
+            {% endfor %}
+
+    三、empty 語法：
+        - 後端： li22 = []
+        - 模板：
+            {% for i in li22 %}
+                <p>不為空列表</p>
+            <!--跟for一起用-->
+            {% empty %}
+                <p>為空列表</p>
+            {% endfor %}
+
+    四、csrf_token 語法：會給予一個金鑰，讓post可以通行
+        - 模板：
+            <form action="{% url 'show_time' %}" method="post">
+                <p>用戶名<input type="text" name="user"></p>
+                <p><input type="submit"> </p>
+                <!--會給予一個金鑰，讓post可以通行-->
+                {% csrf_token %}
+            </form>
+
+    五、with 語法：用更簡單的變量名替代複雜的變量名
+        - 後端：li = ['jamie', 'sb', 'nb']
+        - 模板：
+            {% with l=li %} {{ l }} {% endwith %}
+
+    六、verbatim 語法：禁止被render翻譯
+        - 模板：
+            {% verbatim %}
+                {{ li }}
+            {% endverbatim %}
+
+    七、load 語法：加載標籤庫
+        - 後端：
+            - 自定義標籤庫：
+                a、在app中創建templatetags資料夾(必要的)
+                b、創建任意 .py 文件，如：my_tags.py
+                c、(在檔案開頭導入)在使用自定義simple_tag和filter的html文件中導入之前創建的my_tags.py  EX：{% load my_tags %}
+                d、使用simple_tag和filter
+                e、在settings中的INSTALLED_APPS配置當前app，不然django無法找到自定義的simple_tag
+        - 模板：
+            - {% load <<標籤文件名>> %}：加載標籤文件，此行要加在html文檔最上方
+
+    八、自定義標籤(放在my_tags.py)：
+        - 後端：
+            - 自定義過濾器：
+                register = template.Library()   # register的名字是固定的，不可改成其他的
+
+                @register.filter()  # filter只能2個參數
+                def filter_multi(x, y):
+                    print(x, y)
+                    return x*y
+
+            - 自定義標籤：
+                register = template.Library()   # register的名字是固定的，不可改成其他的
+
+                @register.simple_tag()  # simple_tag不限制參數數
+                def simple_tag_multi(x, y, z):
+                    print(x, y, z)
+                    return x*y*z
+        - 模板：
+            - {{ d.age|filter_multi:2 }}
+            - {% simple_tag_multi d.age 2 3 %}
+
+    九、引用路由配置的地址(別名)：
+        - 模板：<form action="{% url 'show_time' %}" method="post"></form>

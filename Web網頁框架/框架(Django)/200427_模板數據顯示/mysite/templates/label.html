@@ -1,0 +1,72 @@
+{% load my_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h2>if 語法</h2>
+{% if d.age > 20 %}
+    <p>大於20</p>
+{% elif d.age == 20 %}
+    <p>等於20</p>
+{% else %}
+    {% if d.age > 10 %}
+        <p>大於10，小於20</p>
+    {% else %}
+        <p>小於10</p>
+    {% endif %}
+{% endif %}
+
+<h2>for 語法</h2>
+{% for i in li %}
+    <!--forloop.counter正計數-->
+    <li>{{ forloop.counter }} : {{ i }}</li>
+    <!--forloop.revcounter倒計數-->
+    <li>{{ forloop.revcounter }} : {{ i }}</li>
+    <!--forloop.first是否為第一次迴圈-->
+    <li>{{ forloop.first }} : {{ i }}</li>
+{% endfor %}
+
+<h2>empty 語法</h2>
+{% for i in li22 %}
+    <p>不為空列表</p>
+<!--跟for一起用-->
+{% empty %}
+    <p>為空列表</p>
+{% endfor %}
+
+<h2>csrf_token 語法</h2>
+<form action="{% url 'show_time' %}" method="post">
+    <p>用戶名<input type="text" name="user"></p>
+    <p><input type="submit"> </p>
+    <!--會給予一個金鑰，讓post可以通行-->
+    {% csrf_token %}
+</form>
+
+<h2>with 語法：用更簡單的變量名替代複雜的變量名</h2>
+{% with l=li %} {{ l }} {% endwith %}
+
+<h2>verbatim 語法：禁止被render翻譯</h2>
+{% verbatim %}
+    {{ li }}
+{% endverbatim %}
+
+<h2>load 語法：加載標籤庫</h2>
+<!--自定義filter-->
+<!--a、在app中創建templatetags模塊(必要的)-->
+<!--b、創建任意 .py 文件，如：my_tags.py-->
+<!--c、(最上面)在使用自定義simple_tag和filter的html文件中導入之前創建的my_tags.py ： load my_tags -->
+<!--d、使用simple_tag和filter（如何調用）-->
+<!--e、在settings中的INSTALLED_APPS配置當前app，不然django無法找到自定義的simple_tag-->
+
+<!--額外參數只能有一個-->
+<p>{{ d.age|filter_multi:2 }}</p>
+<!--不能用在控制語句裡-->
+<p>{% simple_tag_multi d.age 2 3 %}</p>
+
+
+</body>
+</html>

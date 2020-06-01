@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p>List: {{ li }}</p>
+<b>透過 .取出列表中的值</b>
+<p>List.0: {{ li.0 }}</p>
+
+<br>
+
+<p>Dict: {{ d }}</p>
+<b>透過 .取出字典中的值</b>
+<p>Dict.name: {{ d.name}}</p>
+<p>Dict.age: {{ d.age}}</p>
+
+<br>
+
+<p>Object: {{ obj }}</p>
+<b>透過 .取出對象中的值</b>
+<p>Object.name: {{ obj.name}}</p>
+
+<br>
+
+<h3>add方法 => {{ d.age|add:12 }}</h3>
+
+<h3>首字母大寫 => {{ test|capfirst }}</h3>
+
+<h3>移除指定的字符 => {{ test2|cut:" " }}</h3>
+
+<h3>格式化字符串 => {{ t|date:"Y--m--d" }}</h3>
+
+<h3>如果值是False,就替换成设置的默认值，否则就是用本来的值 => {{ e|default:'空的' }}</h3>
+
+<h3>讓後端傳來的標籤能使用 => {{ a|safe }}</h3>
+{% autoescape off %}
+    <h3>讓後端傳來的標籤能使用-2 => {{ a }}</h3>
+{% endautoescape %}
+
+</body>
+</html>

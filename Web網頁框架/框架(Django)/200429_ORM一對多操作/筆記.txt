@@ -1,0 +1,107 @@
+設定(settings)：
+    - 設定資料庫(這裡使用sqlite)：
+        DATABASES = {
+            'default': {
+                'ENGINE': 'django.db.backends.sqlite3',
+                'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+            }
+        }
+
+
+模型(models)：
+    - 創建表：
+        (1) 必須繼承models.Model，python才會知道他是表。
+            * Publisher對Book：一對多關係，外鍵要建在【多】那方。
+            - 表一【多】：
+                class Books(models.Model):
+                    name = models.CharField(max_length=20)
+                    price = models.IntegerField()
+                    # 一對多操作：ORM會自動抓publish的id進行連結，並自動建立publish_id
+                    publish = models.ForeignKey('Publisher', on_delete=models.CASCADE)  # 外鍵要建在【多】那方
+            - 表二【一】：
+                class Publisher(models.Model):
+                    name = models.CharField(max_length=32)
+
+        (2) 生成同步數據庫的腳本（偵測 model 變化，並建立更改文件）。
+            cmd中執行 python manage.py makemigrations
+
+        (3) 同步數據庫（依更改文件修正資料庫）。
+            cmd中執行 python manage.py migrate
+
+
+視圖(views)：
+    一、增(add)：
+        - 方法一：
+             models.Book.objects.create(name='c++', price=999, publish_id=1)
+        - 方法二：
+             obj_publisher = models.Publisher.objects.get(name='台灣出版社')
+             models.Books.objects.create(name='c++', price=455, publish=obj_publisher)
+
+    二、刪(delete)：
+        models.Books.objects.filter(name='c++').delete()
+
+    三、改(update)：
+        models.Books.objects.filter(name='c++').update(price=666)
+
+    四、查(search)：
+        ※ 一對多：obj_book.publish(外鍵)一定是一個外鍵對象(Publisher object)。
+        - 找出吉米出版社出的書：
+            - 方法一：
+                obj_publisher = models.Publisher.objects.get(name='吉米出版社')
+                models.Books.objects.filter(publish=obj_publisher).values('name', 'price')
+            - 方法二(主表_set，反向查找)：
+                obj_publisher = models.Publisher.objects.get(name='吉米出版社')
+                obj_publisher.books_set.all().values('name', 'price')  # 主表_set
+            - 方法三(雙下滑線查詢，較優)：
+                models.Books.objects.filter(publish__name='吉米出版社').values('name', 'price')
+
+        - 找出python的出版社：
+            - 方式一：雙下滑線查詢
+                models.Publisher.objects.filter(books__name='c').values('name')
+            - 方式二：雙下滑線查詢
+                models.Books.objects.filter(name='python').values('publish__name')
+
+    五、優化(減少sql查詢次數)：
+        - 無優化：
+            - 代碼：
+                book_list = models.Books.objects.all()
+                for book in book_list:
+                    print(book.publish.name)
+            - 造成速度慢之原因：
+                因為Django ORM的Queryset查找是屬惰性查找，所以在當在print之前，ORM不會真正的去進行資料庫的訪問，
+                而是當要使用之時(EX：print)時，他才會進行訪問，而這也導致在循環中會不停的訪問資料庫，造成延遲。
+
+        - 優化方式：
+            - select_related：
+                - 使用時機：
+                    - 在模型欄位並不複雜且數量並不多的情況下。
+                    - 正向一對多、一對一。
+                - 代碼：
+                    book_list = models.Books.objects.all().select_related('publish', )  # 能合併多張表
+                    for book in book_list:
+                        print(book.publish.name)
+                - 原因：
+                    相當於在求book_list時，就進行了資料庫的inner join操作，所以之後循環時才不用在再次訪問。
+                - 缺點：
+                    一次聯表查詢獲取所有的數據(一次查多張表)，聯太多表時會有性能的損耗。
+
+            - prefetch_related：
+                - 使用時機：
+                    - 在查詢集中的對象欄位較多較複雜，且查詢集較大的時候。
+                    - 反向一對多、多對多關係。
+                - 代碼：
+                    book_list = models.Books.objects.all().prefetch_related('publish', )  # 能合併多張表
+                    for book in book_list:
+                        print(book.publish.name)
+                - 原因：
+                    相當於在Python層面上的進行join，因此該操作允許多對多關係以及反向關係，而這是select_related無法做到的。
+
+
+總結：
+    一、一個Model類代表資料庫中的一張表。
+    二、Model類的對象代指資料庫的一行數據。
+    三、ForeignKey代指關聯表的一行數據(Model類的對象)。
+        - 正向：ForeignKey字段
+        - 反向：小寫表名_set
+    ※ 多多利用雙下划線
+    ※ 物件關聯對映(ORM) 是一種用於實現從物件資料到關聯資料的存儲對映的程式設計技術，將資料庫操作用物件導向的形式來呈現。

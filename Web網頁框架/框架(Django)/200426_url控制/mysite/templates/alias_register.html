@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--欲使用 %} 得先調用這個-->
+    {% load staticfiles %}
+    <title>Title</title>
+</head>
+<body>
+
+<h1>alias_register註冊</h1>
+<!--使用別名調用，易維護且Django會自動配置網址-->
+<form action="{% url 'reg' %}" method="get">
+    <p>姓名<input type="text" name="user"></p>
+    <p>年齡<input type="number" name="age"></p>
+    <p>
+        愛好
+        <input type="checkbox" name="hobby" value="1">籃球
+        <input type="checkbox" name="hobby" value="2">足球
+    </p>
+    <p><input type="submit">提交</p>
+</form>
+
+</body>
+</html>

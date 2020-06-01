@@ -1,0 +1,33 @@
+※ 物件關聯對映(Object Relational Mapping，簡稱ORM)：
+    這是一種用於實現從物件資料到關聯資料的存儲對映的程式設計技術，將資料庫操作用物件導向的形式來呈現。
+        - 對象（Object）：表示面向對象語言中的對象，EX：Python。
+        - 關係（Relational）：表示你正在使用的RDBMS數據庫（關係數據庫管理器系統），EX：MySQL。
+        - 映射（Mapping）：表示前面兩個部分之間的橋接和連接，即透過對象和數據庫連結。
+
+<1> null： 數據庫中字段是否可以為空
+
+<2> blank： Django的Admin中添加數據時是否可允許空值
+
+<3> default： 設定缺省默認值
+
+<4> editable： 如果設為False，Admin模式下將不能改寫(默認為True)
+
+<5> primary_key： 設置主鍵，如果沒有設置，Django創建表時會自動加上
+    ※ primary_key=True，表示blank=False、null=False、unique=True
+    範例： id = meta.AutoField('ID', primary_key=True)
+
+<6> unique： 數據唯一
+
+<7> verbose_name： Admin中字段的顯示名稱
+
+<8> validator_list： 有效性檢查，非有效產生django.core.validators.ValidationError錯誤
+
+<9> db_column： 數據庫中儲存該字段的列名(如果未指定，那麼Django將會使用Field名作為字段名)
+
+<10> db_index： 如果為True，則會為此字段創建數據庫索引
+
+<11> choices： 一個用來選擇值的2維元組。第一個值是實際存儲的值，第二個用來方便進行選擇
+    範例：
+        SEX_CHOICES = (('1', ' Female'),('2', ' Male'),)
+        gender = models.CharField（max_length=2, choices=SEX_CHOICES）
+

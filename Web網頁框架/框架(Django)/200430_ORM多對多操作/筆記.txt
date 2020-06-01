@@ -1,0 +1,89 @@
+設定(settings)：
+    - 設定資料庫(這裡使用sqlite)：
+        DATABASES = {
+            'default': {
+                'ENGINE': 'django.db.backends.sqlite3',
+                'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+            }
+        }
+
+
+模型(models)：
+    - 創建表：
+        (1) 必須繼承models.Model，python才會知道他是表。
+            - 表一【多】：
+                class Books(models.Model):
+                    name = models.CharField(max_length=20)
+                    price = models.IntegerField()
+                    # 多對多操作：自動創造book_authors的表，另一種方法是自己建一個表且有兩個ForeignKey
+                    authors = models.ManyToManyField('Author')
+            - 表二【多】：
+                class Author(models.Model):
+                    name = models.CharField(max_length=20)
+                    age = models.IntegerField()
+
+        (2) 生成同步數據庫的腳本（偵測 model 變化，並建立更改文件）。
+            cmd中執行 python manage.py makemigrations
+
+        (3) 同步數據庫（依更改文件修正資料庫）。
+            cmd中執行 python manage.py migrate
+
+
+視圖(views)：
+    一、增(add)：
+        - 創建紀錄：
+            models.Books.objects.create(name='c--', price=999)
+
+        ※ obj_book.authors.add()綁定多對多關係：
+            - 原因：
+                因為透過ManyToManyField創建的關係，實體上並沒有第三張表來讓我們可以create。
+            - 代碼：
+                obj_book = models.Books.objects.get(id=5)
+                obj_author = models.Author.objects.all()
+                obj_book.authors.add(*obj_author)  # obj_author因為是集合對象所以要加個*
+
+    二、刪(delete)：
+        - 刪除紀錄：
+            models.Books.objects.filter(name='js').delete()
+
+        ※ obj_book.authors.remove()刪除多對多關係：
+            - 原因：
+                因為透過ManyToManyField創建的關係，實體上並沒有第三張表來讓我們可以delete。
+            - 代碼：
+                obj_book = models.Books.objects.get(id=3)
+                obj_author = models.Author.objects.all()
+                obj_book.authors.remove(*obj_author)  # obj_author因為是集合對象所以要加個*
+
+    三、改(update)：
+        models.Books.objects.filter(name='c++').update(price=666)
+
+    四、重置(set)：
+        ※ 刪除所有與id=3書籍的作者關聯後，再加上與id=1的作者關聯。
+            obj_book = models.Books.objects.get(id=3)
+            obj_book.authors.set(1)
+        ※ 若為一列表切記勿加 *
+            li = [1, 2]
+            obj_book.authors.set(li)  # 不能加*號
+
+    五、查(search)：
+        - 找出id=3書籍的所有關聯作者對象的名字：
+            obj_book = models.Books.objects.get(id=3)
+            obj_book.authors.all().values('name')
+
+        - 找出作者jamie出的書：
+            - 方法一(反向查找)：books_set
+                obj_author = models.Author.objects.get(name="jamie")
+                obj_author.books_set.all().values('name')
+            - 方法二：雙下滑線__，形式和一對多相同
+                models.Books.objects.filter(authors__name='jamie').values('name', 'price')
+
+
+總結：
+    一、一個Model類代表資料庫中的一張表。
+    二、Model類的對象代指資料庫的一行數據。
+    三、ManyToManyField會自動生成第三張表，依賴關聯對第三張表進行間接操作。
+    四、ManyToManyField代指關聯表的數據(Model類的對象)。
+        - 正向：ManyToManyField字段
+        - 反向：小寫表名_set
+    ※ 多多利用雙下划線
+    ※ 物件關聯對映(ORM) 是一種用於實現從物件資料到關聯資料的存儲對映的程式設計技術，將資料庫操作用物件導向的形式來呈現。

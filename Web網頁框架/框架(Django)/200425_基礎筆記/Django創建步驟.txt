@@ -1,0 +1,83 @@
+創建Django基本步驟：
+    一、創建project(用cmd命令或pycharm創建皆可)
+
+    二、配置文件：
+        1.專案內建文件大綱：
+            - manage.py ==> 管理文件，對於當前Django程序的操作皆通過此文件完成
+                    - 啟動服務器命令： python manage.py runserver <<端口>>
+            - 根目錄(資料夾名稱為專案名，EX: mysite)
+                - settings.py ==> 配置文件
+                    - 模板參數設定： TEMPLATES
+                        - 模板文件目錄路徑： DIRS
+                    - (href等)欲使用靜態文件時的前綴： STATIC_URL
+                    - 本地靜態文件目錄路徑： STATICFILES_DIRS
+                    - 應用列表： INSTALLED_APPS
+                    - 數據庫： DATABASES
+                    - 時區：TIME_ZONE
+                - urls.py ==> Django的總路由系統(url與函數對應關係)
+                - wsgi.py ==> 網頁服務網端接口，用於定義Django如何實現Socket溝通協議(wsgiref(本地測試用), uwsgi(開發用))
+            - db.sqlite3  ==>  Django內建使用的資料庫
+
+        2.Settings配置
+            - 模板路徑
+                TEMPLATES = [
+                    {
+                        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+                        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+                        'APP_DIRS': True,
+                        'OPTIONS': {
+                            'context_processors': [
+                                'django.template.context_processors.debug',
+                                'django.template.context_processors.request',
+                                'django.contrib.auth.context_processors.auth',
+                                'django.contrib.messages.context_processors.messages',
+                            ],
+                        },
+                    },
+                ]
+
+            - 靜態文件路徑
+                # 定義使用時網址前綴 /static/
+                STATIC_URL = '/static/'
+                # 定義實際上去找文件的目錄名稱(static)
+                STATICFILES_DIRS = (
+                    os.path.join(BASE_DIR, 'static'),
+                )
+
+            - 加入自定義APP配置
+                INSTALLED_APPS = [
+                    'django.contrib.admin',
+                    'django.contrib.auth',
+                    'django.contrib.contenttypes',
+                    'django.contrib.sessions',
+                    'django.contrib.messages',
+                    'django.contrib.staticfiles',
+                    'app01',
+                ]
+
+            - 數據庫配置(如果使用MySQL的話)
+                DATABASES = {
+                    'default': {
+                        'ENGINE': 'django.db.backends.mysql',  # 資料庫總類
+                        'NAME': 'cts',    # 資料庫名稱
+                        'USER': 'root',   # 資料庫用戶名
+                        'PASSWORD': '851230',  # 資料庫密碼
+                        'HOST': 'localhost',  # 資料庫主機，為空默認為localhost
+                        'PORT': '3306',  # 資料庫端口
+                    }
+                }
+
+            - 時區配置：
+                # TIME_ZONE = 'UTC' 默認為英國格林威治天文臺
+                TIME_ZONE = 'Asia/Taipei'  # 台灣
+
+    三、註釋掉文件的csrf（便於開發）
+        MIDDLEWARE = [
+            'django.middleware.security.SecurityMiddleware',
+            'django.contrib.sessions.middleware.SessionMiddleware',
+            'django.middleware.common.CommonMiddleware',
+            # 'django.middleware.csrf.CsrfViewMiddleware',
+            'django.contrib.auth.middleware.AuthenticationMiddleware',
+            'django.contrib.messages.middleware.MessageMiddleware',
+            'django.middleware.clickjacking.XFrameOptionsMiddleware',
+        ]

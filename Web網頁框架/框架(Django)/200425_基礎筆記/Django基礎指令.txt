@@ -1,0 +1,26 @@
+安裝Django：
+    指令：pip3 install django
+
+建置專案（project）：
+    指令：django-admin startproject <專案名>
+    範例：django-admin startproject mysite
+
+創建APP：
+    指令：python manage.py startapp <APP名>
+    範例：python manage.py startapp app01
+
+啟動項目（測試網頁）：
+    指令：python manage.py runserver <端口>
+    範例：python manage.py runserver 127.0.0.1:8080
+
+建立超級使用者：
+    指令：python manage.py createsuperuser
+
+生成同步數據庫的腳本（偵測 model 變化，並建立更改文件）：
+    指令：python manage.py makemigrations
+
+同步數據庫（依更改文件修正資料庫）：
+    指令：python manage.py migrate
+
+幫助查詢：
+    指令：python manage.py -h

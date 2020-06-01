@@ -1,0 +1,83 @@
+﻿<1> CharField
+    - 字符串字段，用於較短的字符串
+    - CharField要求必須有一個參數maxlength，用於從數據庫層和Django校驗層限制該字段所允許的最大字符數
+
+<2> IntegerField
+    - 用於保存一個整數
+
+<3> FloatField
+    - 一個浮點數，必須提供兩個參數：
+    - 參數：
+        max_digits： 總位數(不包括小數點和符號)
+        decimal_places： 小數位數
+    - 範例： 如果要保存最大值為999(小數點後保存2位)
+        models.FloatField(max_digits=5, decimal_places=2)
+
+<4> AutoField
+    - 為一個IntegerField，添加記錄時它會自動增長(你通常不需要直接使用這個字段)
+        ※ 如果你不指定主鍵的話，系統Django_ORM也會自動添加一個主鍵字段到你的model中
+        自定義一個主鍵：
+            my_id=models.AutoField(primary_key=True)
+
+<5> BooleanField
+    - 一個true/false字段，Admin中用checkbox來表示此類字段
+
+<6> TextField
+    - 一個容量很大的文本字段
+    - Admin中用一個多行編輯框(textarea)來表示該字段數據
+
+<7> EmailField
+    - 一個帶有檢查Email合法性的CharField，不接受maxlength參數
+
+<8> DateField
+    - 一個日期字段
+
+<9> DateTimeField
+    - 一個日期時間字段，類似DateField支持同樣的附加選項
+
+<10> ImageField
+    - 類似FileField，不過要校驗上傳對像是否是一個合法圖片
+    - 可選參數： height_field, width_field(如果提供這兩個參數，則圖片將按提供的高度和寬度規格保存)
+
+<11> FileField
+    - 一個文件上傳字段
+    - 要求一個必有參數：
+        upload_to： 一個用於保存上載文件的本地文件系統路徑(這個路徑必須包含strftime)
+
+注意： 在一個model中使用FileField或ImageField需要以下步驟：
+    1. 在你的settings文件中，定義一個完整路徑給MEDIA_ROOT以便讓Django在此處保存上傳文件
+        - 出於性能考慮，這些文件並不保存到數據庫
+        - 定義MEDIA_URL作為該目錄的公共URL，要確保該目錄對WEB服務器用戶帳號是可寫的
+    2. 在你的model中添加FileField或ImageField，並確保定義了upload_to選項，以告訴Django使用MEDIA_ROOT的哪個子目錄保存上傳文件
+        - 數據庫中要保存的只是文件的路徑(相對於MEDIA_ROOT)
+        - 如果ImageField叫作mug_shot，可以在模板中透過{{ object.get_mug_shot_url }}的方式得到圖像的絕對路徑
+            - Django提供的get_<fieldname>_url函數
+
+<12> URLField
+    - 用於保存URL
+    - 若verify_exists參數為True(默認)，則會預先檢查儲存的URL是否存在(不存在則返回404)
+
+<13> NullBooleanField
+    - 類似BooleanField，不過允許NULL作為其中一個選項(推薦使用這個字段而不要用BooleanField加null=True選項)
+
+<14> SlugField
+    - slug是某個東西的小小標記(短簽)，只包含字母、數字、下劃線和連字符
+    - 它們通常用於URLs
+
+<13> XMLField
+    - 一個校驗值是否為合法XML的TextField
+    - 必須提供參數：
+        schema_path： 它是一個用來校驗文本的RelaxNG schema的文件系統路徑
+
+<14> FilePathField
+    - 可選項目為某個特定目錄下的文件名
+    - 支持三個特殊的參數，其中第一個是必須提供的：
+        path(必需參數)： 一個目錄的絕對文件系統路徑
+            EX: "/home/images"
+        match可選參數： 一個正則表達式，作為一個字符串，FilePathField將使用它過濾文件名
+        recursive可選參數： True/False，默認值是False，表示是否包括path下面的全部子目錄
+
+<15> IPAddressField
+    - 一個字符串形式的IP地址，如 "24.124.1.30"
+
+

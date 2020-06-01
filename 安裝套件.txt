@@ -1,6 +1,7 @@
 Django開發：
 Django==2.2
 sqlparse==0.3.1
+mysqlclient==1.4.6 (在django中要使用mysql，django2開始不支持pymysql了)
 djangorestframework==3.11.0
 django-celery-beat==2.0.0 (為了在django中能使用celery定時任務)
 

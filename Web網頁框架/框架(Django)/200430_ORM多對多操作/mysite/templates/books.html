@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .books {
+            border: 1px solid gray;
+            width: 30%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="outer">
+    <div class="btn">
+        <a href="/add_book/">添加數據</a>
+        <a href="/update_book/">修改數據</a>
+        <a href="/delete_book/">刪除數據</a>
+        <a href="/search_book/">查詢數據</a>
+    </div>
+    <div class="books">
+        {% for b in book_list %}
+            <ul>
+                <li>{{ b.id }}</li>
+                <li>{{ b.name }}</li>
+                <li>{{ b.price }}</li>
+            </ul>
+            <hr>
+        {% endfor %}
+    </div>
+</div>
+
+
+</body>
+</html>

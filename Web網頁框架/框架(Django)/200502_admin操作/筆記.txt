@@ -1,0 +1,87 @@
+初始設定(mysite\__init__.py)：
+    ※ Django2開始不支持pymysql，要使用mysqlclient，且不須額外設定
+
+
+設定(settings)：
+    - 設定資料庫(這裡使用MySQL)：
+        DATABASES = {
+            'default': {
+                'ENGINE': 'django.db.backends.mysql',  # 資料庫引擎
+                'NAME': 'django_orm_deep_query',    # 資料庫名稱
+                'USER': 'root',   # 資料庫用戶名
+                'PASSWORD': '851230',  # 資料庫密碼
+                'HOST': '',  # 資料庫主機，為空默認為localhost
+                'PORT': '3306',  # 資料庫端口
+            }
+        }
+
+    - 創建資料庫：
+        - 在cmd進入mysql後創建資料庫：create database django_orm_deep_query;
+
+
+模型(models)：
+    - 創建表：
+        (1) 必須繼承models.Model，python才會知道他是表。
+            - 表一：
+                class Book(models.Model):
+                    name = models.CharField(max_length=20)
+                    price = models.IntegerField()
+                    # 一對多操作：ORM會自動抓publish的id進行連結，並自動建立publish_id
+                    publish = models.ForeignKey('Publisher')  # 外鍵要建在【多】那方
+                    # 多對多操作：自動創造book_authors的表，另一種方法是自己建一個表且有兩個ForeignKey
+                    authors = models.ManyToManyField('Author')
+            - 表二：
+                class Author(models.Model):
+                    name = models.CharField(max_length=20)
+                    age = models.IntegerField()
+            - 表三：
+                # Publisher對Book：一對多關係
+                class Publisher(models.Model):
+                    name = models.CharField(max_length=32)
+
+        (2) 生成同步數據庫的腳本（偵測 model 變化，並建立更改文件）。
+            cmd中執行 python manage.py makemigrations
+
+        (3) 同步數據庫（依更改文件修正資料庫）。
+            cmd中執行 python manage.py migrate
+
+
+Django後台管理(admin)：
+    一、把數據表註冊到admin介面：
+        ※ 若沒做這一步驟，在admin介面中是不會顯示數據表的。
+        - 註冊Author表：
+            admin.site.register(models.Author)
+        - 註冊Publisher表：
+            admin.site.register(models.Publisher)
+        - 註冊models.Book表，並傳入自定義樣式(Bookadmin)：
+            admin.site.register(models.Book, Bookadmin)
+
+    二、設定admin樣式【需繼承admin.ModelAdmin類】：
+        - 表外層列名顯示【不能加多對多的列名】：
+            代碼：list_display = ('id', 'name', 'price', 'publish',)
+
+        - 可在表外層直接編輯的列名：
+            代碼：list_editable = ('name', 'price',)
+
+        - 每頁顯示資料行數【默認為20】：
+            代碼：list_per_page = 4
+
+        - 使多對多的選擇編輯更佳清晰：
+            代碼：filter_horizontal = ('authors',)
+
+        - 搜尋引擎【可透過列名(除了多對多的列名)來搜尋】：
+            代碼：list_display = ('id', 'name', 'price', 'publish',)
+
+        - 過濾器【可透過列名(包含多對多列名)篩選】：
+            代碼：list_filter = ('authors', 'name', 'price',)
+
+        - 排序【加'-'就是遞減】：
+            代碼：ordering = ('-price',)
+
+        - 表編輯頁摺疊：
+            fieldsets = [
+                # (欄位名, {'field':[列名, ], 'classes':[類型, ]})
+                # 'classes': ['collapse'] 表示默認為折疊
+                (None, {'fields': ['name']}),
+                ('price information', {'fields': ['price', 'publish', 'authors'], 'classes': ['collapse']}),
+            ]
