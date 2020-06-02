@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ff1e8a4e-9f45-4d3b-9949-a27f16c94dbc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Testing/Unittest/200528_測試套件(suite)/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/Testing/Unittest/200528_測試套件(suite)/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Testing/Unittest/總筆記.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Testing/Unittest/總筆記.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/觀念/筆記.txt" beforeDir="false" afterPath="$PROJECT_DIR$/觀念/筆記.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,10 +18,12 @@
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for__2_2_MyTestCase.coverage" NAME="pytest for 基本使用_2-2優化.MyTestCase Coverage Results" MODIFIED="1590729490087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200525_入門" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_200521_fixture_test_TestCase.coverage" NAME="pytest for 200521_fixture_test.TestCase Coverage Results" MODIFIED="1590220735634" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_fixture_test" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_200510_sample_test_test_one.coverage" NAME="pytest for 200510_sample_test.test_one Coverage Results" MODIFIED="1590216783762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$TwoSum.coverage" NAME="TwoSum Coverage Results" MODIFIED="1591074283315" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/觀念/LeetCode" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_test_param1_TestParam1_test_param_1.coverage" NAME="pytest for test_param1.TestParam1.test_param_1 Coverage Results" MODIFIED="1590306484170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200523_django_test/tests" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_demo_py.coverage" NAME="pytest in demo.py Coverage Results" MODIFIED="1590732399425" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_3(數據分離)" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$200502___.coverage" NAME="200502_(內建)緩存裝飾器 Coverage Results" MODIFIED="1590393161636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎/200425_裝飾器" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_test_demo_TestCase_test_three.coverage" NAME="pytest for test_demo.TestCase.test_three Coverage Results" MODIFIED="1590232481114" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_fixture_test/使用conftest" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$12.coverage" NAME="12 Coverage Results" MODIFIED="1591073665306" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/觀念" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_200521_fixture_test_TestCase_test_two.coverage" NAME="pytest for 200521_fixture_test.TestCase.test_two Coverage Results" MODIFIED="1590220657338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_fixture_test" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_first_demo_MyTestCase.coverage" NAME="pytest for first_demo.MyTestCase Coverage Results" MODIFIED="1590726547285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200525_入門" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$receive2__1_.coverage" NAME="receive2 (1) Coverage Results" MODIFIED="1590550527788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200525_初試_2" />
@@ -51,6 +50,7 @@
     <SUITE FILE_PATH="coverage/PythonWork_py37_$200501__.coverage" NAME="200501_內置函數&amp;反射 Coverage Results" MODIFIED="1590397960865" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$send__1_.coverage" NAME="send (1) Coverage Results" MODIFIED="1590550490181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200525_初試_2" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_test_param_splite_py.coverage" NAME="pytest in test_param_splite.py Coverage Results" MODIFIED="1590309632287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200523_django_test/tests" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$AddTwoNumbers.coverage" NAME="AddTwoNumbers Coverage Results" MODIFIED="1591078428853" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/觀念/LeetCode" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_DDTfile_data_MyTestCase_test_2.coverage" NAME="pytest for DDT提供的file_data.MyTestCase.test_2 Coverage Results" MODIFIED="1590738218797" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_3(數據分離)" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_200521_fixture_test_py.coverage" NAME="pytest in 200521_fixture_test.py Coverage Results" MODIFIED="1590232685325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_fixture_test" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$200519_.coverage" NAME="200519_窗口切換 Coverage Results" MODIFIED="1590131403257" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Selenium" />
@@ -109,32 +109,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/觀念/測試使用.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/觀念/LeetCode/TwoSum.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Testing/Unittest/總筆記.txt">
+        <entry file="file://$PROJECT_DIR$/觀念/LeetCode/AddTwoNumbers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="47" column="18" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Testing/Unittest/200529_測試報告/run.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Testing/Unittest/200529_測試報告/tests.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+            <state relative-caret-position="-394">
+              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -162,9 +159,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_斷言.py" />
-        <option value="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_skip.py" />
-        <option value="$PROJECT_DIR$/Testing/Unittest/200527_skip.py" />
         <option value="$PROJECT_DIR$/Testing/Unittest/200528_測試套件(suite)/demo.py" />
         <option value="$PROJECT_DIR$/Testing/Unittest/200528_測試套件(suite)/tests.py" />
         <option value="$PROJECT_DIR$/Testing/Unittest/1.py" />
@@ -213,6 +207,9 @@
         <option value="$PROJECT_DIR$/Testing/Unittest/200529_測試報告/tests.py" />
         <option value="$PROJECT_DIR$/Testing/Unittest/200529_測試報告/run.py" />
         <option value="$PROJECT_DIR$/Testing/Unittest/總筆記.txt" />
+        <option value="$PROJECT_DIR$/觀念/12.py" />
+        <option value="$PROJECT_DIR$/觀念/LeetCode/TwoSum.py" />
+        <option value="$PROJECT_DIR$/觀念/LeetCode/AddTwoNumbers.py" />
       </list>
     </option>
   </component>
@@ -238,13 +235,13 @@
             <path>
               <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
-              <item name="Testing" type="462c0819:PsiDirectoryNode" />
+              <item name="觀念" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
-              <item name="Testing" type="462c0819:PsiDirectoryNode" />
-              <item name="Unittest" type="462c0819:PsiDirectoryNode" />
+              <item name="觀念" type="462c0819:PsiDirectoryNode" />
+              <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -273,7 +270,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.run (1)">
+  <component name="RunManager" selected="Python.AddTwoNumbers">
+    <configuration name="12" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PythonWork(py37)" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/觀念" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/觀念/12.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="200510_sample_test" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="PythonWork(py37)" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -288,6 +307,50 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Testing/Pytest/200521_入門/200510_sample_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="AddTwoNumbers" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PythonWork(py37)" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/觀念/LeetCode" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/觀念/LeetCode/AddTwoNumbers.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TwoSum" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PythonWork(py37)" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/觀念/LeetCode" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/觀念/LeetCode/TwoSum.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -340,69 +403,21 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest in 200527_skip.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="PythonWork(py37)" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Testing/Unittest" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/Testing/Unittest/200527_skip.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest in 基本使用_斷言.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="PythonWork(py37)" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_斷言.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest in 基本使用_skip.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="PythonWork(py37)" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_skip.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Python.200510_sample_test" />
       <item itemvalue="Python.run" />
-      <item itemvalue="Python tests.pytest in 基本使用_斷言.py" />
-      <item itemvalue="Python tests.pytest in 基本使用_skip.py" />
-      <item itemvalue="Python tests.pytest in 200527_skip.py" />
       <item itemvalue="Python.run (1)" />
+      <item itemvalue="Python.12" />
+      <item itemvalue="Python.TwoSum" />
+      <item itemvalue="Python.AddTwoNumbers" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.AddTwoNumbers" />
+        <item itemvalue="Python.TwoSum" />
+        <item itemvalue="Python.12" />
         <item itemvalue="Python.run (1)" />
         <item itemvalue="Python.run" />
-        <item itemvalue="Python tests.pytest in 200527_skip.py" />
-        <item itemvalue="Python tests.pytest in 基本使用_skip.py" />
-        <item itemvalue="Python tests.pytest in 基本使用_斷言.py" />
       </list>
     </recent_temporary>
   </component>
@@ -432,7 +447,7 @@
       <workItem from="1590626909620" duration="26619000" />
       <workItem from="1590712475798" duration="27655000" />
       <workItem from="1590977111354" duration="13785000" />
-      <workItem from="1591061040800" duration="1907000" />
+      <workItem from="1591061040800" duration="13319000" />
     </task>
     <servers />
   </component>
@@ -469,7 +484,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="259223000" />
+    <option name="totallyTimeSpent" value="270635000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -484,12 +499,12 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.80133927" visible="true" weight="0.21983914" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.80133927" visible="true" weight="0.21983914" />
       <window_info id="Structure" order="1" sideWeight="0.19866072" side_tool="true" weight="0.21715818" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3371105" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3371105" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -553,40 +568,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django)/200501_ORM深度查詢/mysite/app01/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="784">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django)/200501_ORM深度查詢/mysite/mysite/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django)/200501_ORM深度查詢/mysite/app01/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="43" column="8" lean-forward="true" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django)/200501_ORM深度查詢/mysite/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django)/200502_cookie&amp;session/mysite/app01/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -833,13 +814,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/觀念/筆記.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="261" lean-forward="true" selection-start-line="261" selection-end-line="261" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/安裝套件.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28">
@@ -875,7 +849,7 @@
     <entry file="file://$PROJECT_DIR$/Testing/Unittest/200529_測試報告/run.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="474">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
@@ -893,6 +867,41 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
           <caret line="47" column="18" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/觀念/筆記.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="261" lean-forward="true" selection-start-line="261" selection-end-line="261" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/觀念/12.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="30" column="40" lean-forward="true" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/觀念/測試使用.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/觀念/LeetCode/TwoSum.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/觀念/LeetCode/AddTwoNumbers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-394">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
         </state>
       </provider>
     </entry>
