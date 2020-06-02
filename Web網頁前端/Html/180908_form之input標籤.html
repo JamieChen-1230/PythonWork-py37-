@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--form標籤;
+action路徑(表單資料要到的路徑);
+method提交方式(post、get(默認));
+enctype有上傳文件時必須使用-->
+<form action="http://127.0.0.1:8000/index" method="post" enctype="multipart/form-data">
+    <!--input標籤：跟服務端打交道(數據以字典形式傳輸);
+    type格式;
+    name為字典數據的key:
+    value一般來說為默認值;
+    placeholder灰字提示;
+    readonly唯讀;
+    disabled禁用-->
+    <p>用戶名<input type="text" name="user" value="jamie" readonly="readonly" disabled="disabled"></p>
+    <p>密碼<input type="password" name="password" placeholder="密碼"></p>
+
+    <!--checkbox和radio字典數據的值須用value定義;
+    在name相同的情況下，checkbox可多選，radio只能單選;
+    checked默認勾選-->
+    <p>愛好：
+        音樂<input type="checkbox" name="hobby" value="1" checked="checked">
+        運動<input type="checkbox" name="hobby" value="2">
+    </p>
+    <p>性別；
+        男<input type="radio" name="gender" value="1">
+        女<input type="radio" name="gender" value="2">
+    </p>
+
+    <!--file上傳文件(method須為post);
+    在django中用request.FILES取出文件對象-->
+    <p><input type="file" name="f"></p>
+
+    <!--label點選文字會跳到對應的輸入框-->
+    <label for="www">label</label>
+    <input id="www" type="text">
+
+    <!--reset清空表單-->
+    <p><input type="reset" value="重置"></p>
+
+    <!--button本身只是一個按鈕(無功能)，submit則是會提交表單資料-->
+    <p><input type="button" value="button"></p>
+    <p><input type="submit" value="submit"></p>
+</form>
+
+</body>
+</html>

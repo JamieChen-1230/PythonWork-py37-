@@ -38,10 +38,14 @@ Unittest框架：
     測試套件《200528_測試套件(suite)》：
         用途：
             - 可對測試用例進行順序。(不然Unittest是看用例名去排序的)
-            - 只挑選要執行的用例
+            - 管理測試用例
 
-    測試報告：
+    測試報告《200529_測試報告》：
         源自： https://blog.csdn.net/qq_31524409/article/details/80984729
+        步驟：
+            1. 下載 HTMLTestRunner.py 到Python目錄下的Lib目錄
+            2. import HTMLTestRunner
+            3. 寫代碼
 
 
     Unittest運行機制：

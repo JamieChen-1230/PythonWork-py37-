@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<select id="province">
+    <option value="">請選擇省份</option>
+</select>
+
+<select id="city">
+    <option value="">請選擇城市</option>
+</select>
+
+<script>
+    data={
+        "河北省":["石家莊", "廊仿"],
+        "山西":["晉城", "大同"],
+        "陝西":["西安", "延安"]
+    };
+    // console.log(data);
+    // console.log(typeof data);
+    // // 兩種調用元素方式
+    // console.log(data["河北省"]);
+    // console.log(data.河北省);
+
+    // for (var i in data){
+    //     console.log(i);
+    // }
+
+    var pro_ele = document.getElementById('province');
+    var city_ele = document.getElementById('city');
+
+    for (var i in data){
+        var option_pro = document.createElement("option");
+        option_pro.innerHTML=i;
+        pro_ele.appendChild(option_pro);
+    }
+
+    pro_ele.onchange=function (event) {
+        console.log(this.selectedIndex);  // 被selected的索引值
+        console.log(this.options[this.selectedIndex]); // 被selected的option
+
+        city_ele.options.length=1;  // 把除了第一個option以外的都刪掉
+        var citys = data[this.options[this.selectedIndex].innerText];
+        for (var i in citys){
+            var option_city = document.createElement("option");
+            option_city.innerHTML=citys[i];
+            // console.log(citys[i]);
+            city_ele.appendChild(option_city);
+        }
+    }
+
+</script>
+</body>
+</html>

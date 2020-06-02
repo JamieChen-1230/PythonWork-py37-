@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    // 創建方式
+    // 方式一
+    function f(x,y) {
+        return x+y; // 沒return為null
+    }
+    // console.log(f(123,456));
+    // 方式二
+    // var obj=new Function('name', 'console.log(\'hello\'+name)');
+    // obj('jamie');
+
+    // 參數長度
+    // console.log(f.length); //=> 2
+
+    // 函數的調用
+    // function add(x,y,z) {
+    //     return x+y+z;
+    // }
+    // console.log(add(1,2,3,4));  //=> 6，參數多了不報錯，進續執行
+    // console.log(add(1,2));  //=> NaN
+    // console.log(add('a','b'));  //=> abundefined
+
+    // 面試題
+    // function test(x,y) {
+    //     console.log(x+y);
+    // }
+    // var test=1;
+    // var b=2;
+    // test(test,b);  // 報錯，因為test被重新定義為1了
+
+    // arguments調出所有傳入的參數
+    // function add_all() {
+    //     var sum=0;
+    //     for (var i=0; i<arguments.length; i++){
+    //         sum+=arguments[i];
+    //     }
+    //     console.log(sum);
+    // }
+    // add_all(1,2,3,4,5);
+
+    // 匿名函數(不能在定義前調用，一般函數可以)
+    // 方式一
+    // var func = function (arg) {
+    //     alert(arg);
+    // };
+    // func('hello');
+    // 方式二
+    // (function (arg) {
+    //     alert(arg)
+    // })('jamie')
+
+</script>
+</body>
+</html>

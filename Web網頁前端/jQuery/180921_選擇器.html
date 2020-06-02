@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div>hello</div>
+<p id="p1" class="pp">pppp</p>
+<a href="">click</a>
+
+<div class="outer">
+    outer
+    <div class="inner">
+        inner
+        <p class="pp" id="p2">inner_p</p>
+    </div>
+    <div class="inner2">inner2</div>
+</div>
+<div class="outer2">outer2</div>
+
+<ul n="list">
+    <li>111</li>
+    <li>222</li>
+    <li>333</li>
+    <li>444</li>
+</ul>
+
+<input type="text">
+<input type="checkbox">
+<input type="submit">
+
+<script src="jquery-3.3.1.js"></script>
+<script>
+    // -------------基本選擇器-------------
+    // $("*") $("#id") $(".class") $("element") $(".class,p,div")
+    // 不用自己循環遍歷，jQuery會幫我們循環
+    // $("*").css("color","red"); // 全部
+    // $("#p1").css("color","red"); // id查找
+    // $(".outer").css("color","red"); // class查找
+    // $("div").css("color","red"); //標籤查找
+    // $("p,.inner").css("color","red"); // 多種查詢
+
+
+    // -------------層級選擇器-------------
+    // $(".outer p").css("color","red");  // 後代選擇器
+    // $(".outer>.inner2").css("color","red");  // 子代選擇器
+    // $(".outer+.outer2").css("color","red");  // 鄰邊選擇器(向下且緊挨著)
+    // $(".outer~.outer2").css("color","red");  // 鄰邊選擇器(向下但不必緊挨著)
+
+
+    // -------------屬性選擇器-------------
+    // $("[n='list']").css("color","red");
+    // $("[class='pp'][id='p2']").css("color","red"); // 多重屬性
+    // $("[type='text']").css("width", "500px").css("height", "200px");
+</script>
+</body>
+</html>

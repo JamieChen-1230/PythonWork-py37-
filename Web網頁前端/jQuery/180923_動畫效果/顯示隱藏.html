@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div>hello</div>
+<button onclick="f1()">顯示</button>
+<button onclick="f2()">隱藏</button>
+<button onclick="f3()">切換</button>
+
+<script src="jquery-3.3.1.js"></script>
+<script>
+    // 參數為顯示隱藏所需的秒數
+    function f1() {
+        $('div').show(1000);
+    }
+    function f2() {
+        $('div').hide(1000);
+    }
+    // show+hide
+    function f3() {
+        $('div').toggle(1000);
+    }
+</script>
+</body>
+</html>

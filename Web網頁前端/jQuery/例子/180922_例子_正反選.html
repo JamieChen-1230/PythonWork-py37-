@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+     <button onclick="selectall();">全選</button>
+     <button onclick="cancel();">取消</button>
+     <button onclick="inverse();">反選</button>
+
+     <table border="1">
+         <tr>
+             <td><input type="checkbox"></td>
+             <td>111</td>
+         </tr>
+         <tr>
+             <td><input type="checkbox"></td>
+             <td>222</td>
+         </tr>
+         <tr>
+             <td><input type="checkbox"></td>
+             <td>333</td>
+         </tr>
+         <tr>
+             <td><input type="checkbox"></td>
+             <td>444</td>
+         </tr>
+     </table>
+
+
+<script src="jquery-3.3.1.js"></script>
+<script>
+    function selectall() {
+        $("input").prop('checked', true);
+    }
+
+    function cancel() {
+        $('input').prop('checked', false);
+    }
+
+    function inverse() {
+        // 不能直接 $('input').prop('checked', !$('input').prop('checked'));
+        // 要個別調整
+        $('input').each(function () {
+           $(this).prop('checked', !$(this).prop('checked'));  // 給予相反值
+        });
+    }
+</script>
+</body>
+</html>

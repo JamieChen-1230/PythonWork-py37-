@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<button onclick="f()">跳轉</button>
+<button onclick="f1()">刷新</button>
+<button onclick="f2()">替代</button>
+
+<script>
+    function f() {
+        // 跳轉，可以跳回上一頁
+        location.assign('https://www.youtube.com/?gl=TW&hl=zh-tw');
+    }
+    function f1() {
+        // 刷新頁面
+        location.reload();
+    }
+    function f2() {
+        // 替代，也是一種跳轉，但不能跳回上一頁
+        location.replace('https://www.youtube.com/?gl=TW&hl=zh-tw');
+    }
+</script>
+</body>
+</html>

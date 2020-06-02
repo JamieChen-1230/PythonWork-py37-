@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="div1" con="c1"></div>
+
+<input type="checkbox" checked>是否可見
+<input type="checkbox">是否可見
+
+<div class="div2">
+    div2222
+    <p>pppp</p>
+</div>
+
+<input type="text" value="123">
+<div value="456"></div>
+
+<script src="jquery-3.3.1.js"></script>
+<script>
+    // --------------attr() 所有屬性都能找--------------
+    // console.log($('.div1').attr("con"));  //=>c1 找出con屬性
+    // $(".div1").attr("con", "c2");  // 跟改con屬性
+    // console.log($('.div1').attr("con"));  //=>c2
+    // 不好if判斷
+    // console.log($("[type='checkbox']").first().attr("checked"));  //=> checked
+    // console.log($("[type='checkbox']").last().attr("checked"));  //=> undefined
+
+    // --------------prop() 只能用來找固有的屬性--------------
+    // console.log($('.div1').prop("class")); //=> div1
+    // 便於if判斷
+    // console.log($("[type='checkbox']").first().prop("checked"));  //=> true
+    // console.log($("[type='checkbox']").last().prop("checked"));  //=> false
+
+    // --------------removeAttr() 刪除屬性--------------
+    // $(".div1").removeAttr("con");
+    // console.log($('.div1').attr("con"));
+
+    // --------------addClass() 添加class屬性--------------
+    // $(".div1").addClass("ddd");
+    // console.log($('.div1').attr("class"));
+
+    // --------------removeClass() 刪除class屬性--------------
+    // $(".div1").removeClass("div1");
+    // console.log($('.div1').attr("class"));
+
+    // --------------html() 等同於innerHTML--------------
+    // console.log($(".div2").html());
+    // console.log($(".div2").html("<h1>jamie<\h1>")); // 更改
+
+    // --------------text() 等同於innerTEXT--------------
+    // console.log($(".div2").text());
+    // console.log($(".div2").text("<h1>jamie<\h1>")); // 更改
+
+    // --------------val() 只能用於固有的value屬性--------------
+    // console.log($("[type='text']").val());
+    // console.log($(".div2").val()); // 不能用
+    // console.log($("[type='text']").val("789"));  // 更改
+
+    // --------------css() css樣式修改--------------
+    // $('.div2').css({"width":"200px", "height":"200px", "background":"red"});
+
+</script>
+
+</body>
+</html>

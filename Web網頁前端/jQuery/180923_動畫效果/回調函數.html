@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.3.1.js"></script>
+</head>
+<body>
+  <button>hide</button>
+  <p>helloworld helloworld helloworld</p>
+
+<script>
+   $("button").click(function (){
+       // 回調函數：執行完一個動作後會執行的函數
+       // 在隱藏之後alert
+       $("p").hide(1000, function (){
+           alert('回調函數');
+       });
+   });
+</script>
+</body>
+</html>

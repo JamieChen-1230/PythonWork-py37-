@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--onfocus 元素獲得焦點-->
+<!--onblur 元素失去焦點-->
+<input type="text" id="search" value="用戶名" onfocus="f1()" onblur="f2()">
+
+<script>
+    function f1() {
+        var ele=document.getElementById('search');
+        if (ele.value=="用戶名")
+            ele.value="";
+    }
+    function f2() {
+        var ele=document.getElementById('search');
+        if (ele.value.trim()==""){
+            ele.value="用戶名";
+        }
+    }
+</script>
+</body>
+</html>

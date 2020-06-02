@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .outer{
+            height: 1000px;
+            width: 100%;
+        }
+        .menu{
+            float: left;
+            background: bisque;
+            width: 30%;
+            height: 1000px;
+        }
+        .content{
+            float: left;
+            background: lightgray;
+            width: 70%;
+            height: 1000px;
+        }
+        .i_title{
+            background: #99aecd;
+            line-height: 40px;
+        }
+        .hide{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="outer">
+    <div class="menu">
+        <div class="item">
+            <div class="i_title" onclick="show(this)">菜單一</div>
+            <div class="i_content">
+                <div>111</div>
+                <div>111</div>
+                <div>111</div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="i_title" onclick="show(this)">菜單二</div>
+            <div class="i_content hide">
+                <div>222</div>
+                <div>222</div>
+                <div>222</div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="i_title" onclick="show(this)">菜單三</div>
+            <div class="i_content hide">
+                <div>333</div>
+                <div>333</div>
+                <div>333</div>
+            </div>
+        </div>
+    </div>
+    <div class="content"></div>
+</div>
+
+
+<script src="jquery-3.3.1.js"></script>
+<script>
+    function show(self) {
+        $(self).next().removeClass("hide");  // 被操作的i_title標籤
+        $(self).parent().siblings().children(".i_content").addClass("hide");
+    }
+</script>
+</body>
+</html>

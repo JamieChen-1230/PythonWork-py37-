@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="div1">
+    <p name='littlep' class="p1">hello p</p>
+    <div class="div2">
+        hello div
+        <div class="div3">div3</div>
+        <a>aaa</a>
+    </div>
+</div>
+
+<div>out1-div</div>
+
+<script>
+    // 全局找標籤：
+    // document.getElementById() 方法 => 透過id找
+    // document.getElementsByTagName() 方法 => 透過標籤名找
+    // document.getElementsByClassName() 方法 => 透過class找
+    // document.getElementsByName() 方法 => 透過name找
+
+    // 局部找標籤(只支持透過class和標籤名找)：
+    // element.getElementsByTagName() 方法 => 透過標籤名找
+    // element.getElementsByClassName() 方法 => 透過class找
+
+    // document代表整個文本對象
+    // var ele=document.getElementsByClassName('p1');  // 是個列表
+    // ----------自身屬性----------
+    // console.log(ele[0]);  //=><p class="p1">hello p</p>，這才是要找的對象
+    // console.log(ele[0].attributes);  // 所有屬性
+    // console.log(ele[0].nodeType);  //=> 1
+    // console.log(ele[0].nodeName);  //=> p
+    // console.log(ele[0].nodeValue);  //=> null
+    // console.log(ele[0].innerHTML);  //=> hello p，裡面的所有內容
+    // console.log(ele[0].innerText);  //=> hello p，裡面的所有文本內容
+    // ele[0].innerHTML = 'hello world';
+
+    // ----------導航屬性----------
+    // 節點的父節點
+    // var ele=document.getElementsByClassName('p1');
+    // var p_ele=ele[0].parentNode;
+    // console.log(p_ele.nodeName);  //=> div
+
+    // 下一個兄弟標籤(previousElementSibling上一個兄弟標籤)
+    // var ele=document.getElementsByClassName('p1');
+    // var b_ele=ele[0].nextElementSibling;
+    // console.log(b_ele.nodeName);  //=> div
+    // console.log(b_ele.innerHTML);  //=> hello div
+
+    // firstElementChild (第一個子標籤元素)
+    // lastElementChild  (最後一個子標籤元素)
+
+    // 所有子標籤
+    // var ele=document.getElementsByClassName('div1');
+    // var childs_ele=ele[0].children;
+    // console.log(childs_ele);  //=> [p.p1, div.div2]
+
+    // element.局部查找
+    // var ele = document.getElementsByClassName('div1')[0];
+    // var div_in_ele = ele.getElementsByTagName('div');
+    // console.log(div_in_ele); //=> .div1下的.div2和.div3
+
+</script>
+
+</body>
+</html>

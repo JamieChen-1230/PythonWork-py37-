@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #content{
+            text-align: center;
+            background-color: lightblue;
+            border:solid 1px red;
+            display: none;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="slideDown">出現</div>
+    <div id="slideUp">隱藏</div>
+    <div id="slideToggle">切換</div>
+
+    <div id="content">helloworld</div>
+
+<script src="jquery-3.3.1.js"></script>
+<script>
+     $( "#slideDown").click(function (){
+         $("#content").slideDown(1000);
+     });
+
+     $( "#slideUp").click(function (){
+         $("#content").slideUp(1000);
+     });
+
+     $( "#slideToggle").click(function (){
+         $("#content").slideToggle(1000);
+     })
+
+</script>
+</body>
+</html>

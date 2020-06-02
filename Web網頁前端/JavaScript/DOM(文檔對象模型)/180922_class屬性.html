@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="div1 div2">div1</div>
+
+<script>
+    var div1=document.getElementsByClassName('div1')[0];
+    console.log(div1);
+    div1.classList.add('hide');  // 添加class屬性(remove為刪除)
+    // 取出class名字
+    console.log(div1.className);
+    console.log(div1.classList);
+
+</script>
+</body>
+</html>

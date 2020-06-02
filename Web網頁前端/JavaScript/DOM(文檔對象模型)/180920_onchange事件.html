@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--onchange 域的內容被改變。應用場景：通常用於表單元素,當元素內容被改變時觸發-->
+<select name="region" onchange="f(this)">
+        <!--selected默認勾選-->
+        <option value="1">北京</option>
+        <option value="2">南京</option>
+        <option value="3" selected="selected">廣東</option>
+</select>
+
+<script>
+    function f(obj) {
+        alert(obj);
+        console.log(obj);
+    }
+</script>
+</body>
+</html>

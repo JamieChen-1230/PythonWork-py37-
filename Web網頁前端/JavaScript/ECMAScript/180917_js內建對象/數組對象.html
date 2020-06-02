@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    // 創建方式
+    var arr1=[1, 'hello', [11,2]];
+    var arr2=new Array(4);  // 加數字的話為創建固定長度數組
+    var arr3=new Array([1, 'world', true, [1,2,3]]); // 長度依元素決定
+
+    // --------------數組方法--------------
+    // 連接 join
+    // console.log(arr1.join("***"));  //=> 1***hello***11,2
+
+    // 拼接 concate
+    // console.log(arr1.concat([4,5]));  //=> [1, "hello", Array(2), 4, 5]
+
+    // 轉字符串 tostring
+    // console.log(arr1.toString());  //=> 1,hello,11,2
+    // console.log(typeof arr1.toString());  //=> string
+
+    // 反轉 reverse
+    // var arr4 = [10, 1, 5, 99, 4];
+    // console.log(arr4.reverse()); //=> [4, 99, 5, 1, 10]
+
+    // 排序 sort
+    // var arr4 = [10, 1, 5, 99, 4];
+    // console.log(arr4.sort());  //=> [1, 10, 4, 5, 99]，從最高位開始排
+    //
+    // function f(a,b) {
+    //     if (a>b){
+    //         return 1;  // 要正數
+    //     }
+    //     else if (a<b){
+    //         return -1;  // 要負數
+    //     }
+    //     else {
+    //         return 0;  // 要0
+    //     }
+    // }
+    // // 簡寫
+    // function f2(a,b){
+    //     return a-b;
+    // }
+    // console.log(arr4.sort(f)); //=>[1, 4, 5, 10, 99]，自定義正常排序
+
+    // 刪除/新增子數組
+    // var arr5=[1,2,3,4,5,6,7];
+    // arr5.splice(1,2);  // 從第1筆刪除2個值
+    // console.log(arr5); //=> [1, 4, 5, 6, 7]
+    // arr5.splice(1,0,99,98);  // 從第1筆刪除0個值，並加入99和98
+    // console.log(arr5); //=> [1, 99, 98, 4, 5, 6, 7]
+
+    // 進出棧操作(先進後出)
+    // var arr6=[1,2,3];
+    // arr6.push([7,8,0]);  // 做為一個元素加入
+    // console.log(arr6);  //=> [1, 2, 3, [7,8,0]]
+    // arr6.push('jamie',666);  // 分開加入
+    // console.log(arr6);  //=> [1, 2, 3, [7,8,0], "jamie", 666]
+    //
+    // console.log(arr6.pop());  //=> 666，取最後一筆
+    // console.log(arr6.length);  //=> 5
+
+    // 進出棧操作2
+    // var arr7=[1,2,3];
+    // arr7.unshift([7,8,0]);
+    // console.log(arr7);  //=> [[7,8,0], 1, 2, 3]
+    // arr7.unshift('jamie',666);  // 分開加入
+    // console.log(arr7);  //=> ["jamie", 666, [7,8,0], 1, 2, 3]
+    // console.log(arr7.shift());  //=> jamie，取第一筆
+    // console.log(arr7.length);  //=> 5
+
+</script>
+</body>
+</html>

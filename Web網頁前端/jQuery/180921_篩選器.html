@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div>hello</div>
+<p id="p1" class="pp">pppp</p>
+<a href="">click</a>
+
+<div class="outer">
+    outer
+    <div class="inner">
+        inner
+        <p class="pp" id="p2">inner_p</p>
+    </div>
+    <div class="inner2">inner2</div>
+    <p>outer_p</p>
+</div>
+<div class="outer2">outer2</div>
+
+<ul n="list">
+    <li class="test" id="start">111</li>
+    <li class="test">222</li>
+    <li>333</li>
+    <li id="end">444</li>
+    <li>555</li>
+</ul>
+
+<input type="text">
+<input type="checkbox">
+<input type="submit">
+
+
+<script src="jquery-3.3.1.js"></script>
+<script>
+    // -------------基本篩選器-------------
+    // $("ul li").css("color","red");  // ul下的所有li標籤
+    // $("ul li:first").css("color","red");  // 第一個
+    // $("ul li:last").css("color","red");  // 最後一個
+    // $("ul li:eq(2)").css("color","red");  // 自定義第幾+1個(從0開始算)
+    // $("ul li:even").css("color","red");  // 基數個
+    // $("ul li:odd").css("color","red");  // 偶數個
+    // $("ul li:gt(1)").css("color","red");  // 大於第幾+1個(從0開始算)
+
+
+    // -------------過濾篩選器-------------(跟基本差不多，但較建議使用)
+    // $("ul li").first().css("color","red");  // 第一個
+    // $("li").eq(2).css("color","red");  // 自定義第幾+1個(從0開始算)
+
+
+    // -------------查找篩選器-------------(最重要)
+    // .代表通過class找；#代表通過id找
+    // $(".outer").siblings().css("color","red");  // 兄弟篩選器(最常用)
+    // $(".outer").children("p").css("color","red");  // 子代篩選器
+    // $(".outer").find("p").css("color","red");  // 後代篩選器
+    // $(".inner p").parent().css("color","red");  // 父親篩選器
+    // $(".inner p").parents().css("color","red");  // 祖輩篩選器(少用)
+    // $(".inner p").parentsUntil("body").css("color","red");  // 自定義結束點祖輩篩選器
+    // $("li").first().next().css("color","red");  // next()下一個
+    // $("li").first().nextAll().css("color","red");  // nextAll()後面全部
+    // $("li").first().nextUntil("#end").css("color","red");  // nextUntil()自定義結束點
+    // $("li").last().prev().css("color","red");  // prev()上一個
+    // $("li").last().prevAll().css("color","red");  // prevAll()上面全部
+    // $("li").last().prevUntil("#start").css("color","red");  // prevUntil()自定義結束點
+
+
+    // console.log($(".inner p").parent().html());  // html()等同於js的innerHTML
+</script>
+
+</body>
+</html>

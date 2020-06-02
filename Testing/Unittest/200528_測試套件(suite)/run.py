@@ -1,7 +1,5 @@
 import unittest
 from tests import MyTestCase
-import HTMLTestRunner
-import os
 
 # 創建一個測試套件
 suite = unittest.TestSuite()
@@ -20,7 +18,7 @@ suite = unittest.TestSuite()
 
 # 方式三：
 # 添加整個類進suite
-# suite.addTests(unittest.TestLoader().loadTestsFromTestCase(testCaseClass=MyTestCase))
+suite.addTests(unittest.TestLoader().loadTestsFromTestCase(testCaseClass=MyTestCase))
 
 # 方式四：
 # 透過匹配的所有test.py檔，將其中的用例全部執行
@@ -28,17 +26,10 @@ suite = unittest.TestSuite()
 # discover = unittest.defaultTestLoader.discover(start_dir=test_dir, pattern='*.py')
 
 # 套件要透過Runner對象執行
-# runner = unittest.TextTestRunner()
-# runner.run(suite)
+runner = unittest.TextTestRunner()
+runner.run(suite)
 # runner.run(discover)
 
-
-report_path = './report/'
-report_file = report_path + 'report.html'
-if not os.path.exists(report_path):
-    # 如果沒有report文件夾則創建
-    os.mkdir(report_path)
-runner = HTMLTestRunner.HTMLTestRunner()
 
 
 

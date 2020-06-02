@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<ul>
+    <li>1111</li>
+    <li>2222</li>
+    <li>3333</li>
+    <li>4444</li>
+</ul>
+
+<button>add</button>
+
+<script src="jquery-3.3.1.js"></script>
+<script>
+    // --------------事件綁定--------------
+    // jQuery能一次多個綁定
+    // $('ul li').bind("click",function () {
+    //    alert(777);
+    // });
+    //
+    // $('ul li').unbind("click"); // 解除綁定
+    //
+    // 簡寫
+    // $('ul li').click(function () {
+    //    alert(666);
+    // });
+
+    // --------------事件委託--------------
+    // 事件是綁定在ul，所以當觸發事件時會先找ul再往下找li，所以新增的li也能觸發事件
+    // $('ul').on('click','li',function () {
+    //    alert(999);
+    // });
+    //
+    // $('button').click(function () {
+    //    var $ele=$('<li>');
+    //    $ele.html(($('ul li').length+1)*1111);
+    //    $("ul").append($ele);
+    // });
+
+</script>
+</body>
+</html>

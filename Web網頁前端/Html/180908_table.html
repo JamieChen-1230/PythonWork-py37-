@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--table表格;
+border邊框;
+cellpadding內表格邊距;
+cellspacing外表格邊距-->
+<table border="1px" cellpadding="10px" cellspacing="5px">
+    <!--thead通常放列名-->
+    <thead>
+        <tr>
+            <!--th字會加粗-->
+            <th>台灣</th>
+            <th>中國</th>
+            <th>日本</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <!--rowspan佔幾列-->
+            <td rowspan="2">台北</td>
+            <!--colspan佔幾欄-->
+            <td colspan="2">北京</td>
+        </tr>
+        <tr>
+            <td>南京</td>
+            <td>北海道</td>
+        </tr>
+    </tbody>
+</table>
+
+<!--thead&tbody不一定要加，效果一樣-->
+<table border="1px" cellpadding="10px" cellspacing="5px">
+    <tr>
+        <!--th字會加粗-->
+        <th>台灣</th>
+        <th>中國</th>
+        <th>日本</th>
+    </tr>
+
+    <tr>
+        <!--rowspan佔幾列-->
+        <td rowspan="2">台北</td>
+        <!--colspan佔幾欄-->
+        <td colspan="2">北京</td>
+    </tr>
+    <tr>
+        <td>南京</td>
+        <td>北海道</td>
+    </tr>
+</table>
+
+</body>
+</html>

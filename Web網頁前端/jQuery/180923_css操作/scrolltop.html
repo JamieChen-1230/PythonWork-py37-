@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .div1,.div2{
+            width: 100%;
+            height: 1000px;
+        }
+        .div1{
+            background: #99aecd;
+        }
+        .div2{
+            background: #ffee33;
+        }
+        .gotop{
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 100px;
+            height: 40px;
+            background: white;
+            text-align: center;
+            line-height: 40px;
+        }
+        .hide{
+            display: none;
+        }
+        .scro{
+            height: 150px;
+            width: 50%;
+            background: bisque;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+
+<button onclick="gotop2()">go to top2</button>
+<div class="scro">
+    <h1>1111</h1>
+    <h1>1111</h1>
+    <h1>1111</h1>
+    <h1>1111</h1>
+    <h1>1111</h1>
+    <h1>1111</h1>
+    <h1>1111</h1>
+    <h1>1111</h1>
+</div>
+<div class="div1"></div>
+<div class="div2"></div>
+<div class="gotop hide" onclick="gotop()">go to top</div>
+
+
+<script src="jquery-3.3.1.js"></script>
+<script>
+    // onscroll 監聽滾動軸
+    window.onscroll=function (ev) {
+        // scrollTop()滑輪距離最頂端的長度
+        console.log($(window).scrollTop());  // $(window) 窗口對象
+        if ($(window).scrollTop()>300){
+            $('.gotop').removeClass('hide');
+        }
+        else {
+            $('.gotop').addClass('hide');
+        }
+    };
+
+    function gotop() {
+        $(window).scrollTop(0);
+    }
+    // 局部滑輪應用
+    // function gotop2() {
+    //     $('.scro').scrollTop(0);
+    // }
+    $('button').click(function () {
+        $('.scro').scrollTop(0);
+    });
+</script>
+</body>
+</html>

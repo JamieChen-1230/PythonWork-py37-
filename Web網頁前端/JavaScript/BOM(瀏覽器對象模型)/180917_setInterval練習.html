@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #id1{
+            width: 300px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<!--onclick點擊事件，後面加函數-->
+<input type="text" id="id1" onclick="begin()">
+<button onclick="end()">停止</button>
+
+<script>
+    function show_time() {
+        var t = new Date().toLocaleString(); // Date對象
+        var ele = document.getElementById('id1');  // 透過id找到input標籤
+        ele.value = t;
+    }
+
+    var clock1;
+    function begin() {
+        // 為了防止開啟多個計時器
+        if (clock1==undefined){  // 若無計時器
+            show_time();  // 讓他onclick的第一瞬間就有值
+            clock1 = window.setInterval(show_time, 1000);  // 每秒執行一次show_time()
+        }
+    }
+
+    function end() {
+        clearInterval(clock1);  // 清除Interval定時器對象
+        clock1 = undefined;
+    }
+</script>
+</body>
+</html>

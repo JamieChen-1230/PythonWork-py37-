@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .div1,.div2{
+            width: 200px;
+            height: 100px;
+        }
+        .div1{
+            border: 5px solid red;
+            padding: 20px;
+            margin: 3px;
+            background: #99aecd;
+        }
+        .div2{
+            background: #ffee33;
+        }
+        .outer{
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+<div class="div1">內容框</div>
+<div class="outer">
+    <div class="div2"></div>
+</div>
+
+<script src="jquery-3.3.1.js"></script>
+<script>
+    console.log($('.div1').height());  // 內容框長
+    console.log($('.div1').width());  // 內容框寬
+
+    console.log($('.div1').innerHeight());  // 內容框長+padding
+    console.log($('.div1').innerWidth()); // 內容框寬+padding
+
+    console.log($('.div1').outerHeight());  // 內容框長+padding+border
+    console.log($('.div1').outerWidth()); // 內容框寬+padding+border
+
+    // 以上三種若給予參數true則會計算margin
+    console.log($('.div1').outerHeight(true));  // 內容框長+padding+border+margin
+    console.log($('.div1').outerWidth(true)); // 內容框寬+padding+border+margin
+
+</script>
+</body>
+</html>

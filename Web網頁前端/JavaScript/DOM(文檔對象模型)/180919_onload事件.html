@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--script放在上面有可能會因標籤還沒加載而報錯-->
+    <!--所以可以使用onload，使頁面加載後再執行script-->
+    <script>
+        // onload 一張頁面或一幅圖像完成加載
+        window.onload=function () {
+            var ele=document.getElementsByClassName('div1')[0];
+            console.log(ele.innerHTML);
+        };
+    </script>
+</head>
+<body>
+
+<div class="div1">hello div</div>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="http://127.0.0.1:8000/index" method="post">
+    <!--select下拉式選單;
+    選項須用option標籤;
+    multiple多選;
+    size顯示最大個數-->
+    <p>省分：</p>
+    <select name="region">
+        <!--selected默認勾選-->
+        <option value="1">北京</option>
+        <option value="2">南京</option>
+        <option value="3" selected="selected">廣東</option>
+    </select>
+
+    <p>多選省分：</p>
+    <select name="multiregion" multiple="multiple" size="5">
+        <option value="1">北京</option>
+        <option value="2">南京</option>
+        <option value="3">廣東</option>
+    </select>
+
+    <p>城市：</p>
+    <select name="city">
+        <optgroup label="台灣">
+            <option value="1">台北</option>
+            <option value="2">台南</option>
+        </optgroup>
+        <optgroup label="日本">
+            <option value="3">東京</option>
+            <option value="4">北海道</option>
+        </optgroup>
+    </select>
+
+    <p>簡介：</p>
+    <!--textarea文本框-->
+    <textarea name="desc"></textarea>
+
+</form>
+</body>
+</html>

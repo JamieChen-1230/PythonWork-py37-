@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="" id="form1">
+    <input type="text" name="user">
+    <input type="submit" value="提交">
+</form>
+
+<script>
+    var ele=document.getElementById('form1');  // 是綁定在form表單上
+    // 不會影響到原submit功能，且會先執行onsubmit事件
+    ele.onsubmit=function () {
+        alert('hello');
+        // onsubmit命名的事件函數,可以接受返回值.其中返回false表示攔截表單提交.其他為放行
+        return false;
+
+    };
+</script>
+</body>
+</html>

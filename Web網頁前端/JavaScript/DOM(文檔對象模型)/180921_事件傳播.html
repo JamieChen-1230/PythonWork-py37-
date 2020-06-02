@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .outer{
+            width: 300px;
+            height: 300px;
+            background: #ffee33;
+        }
+        .inner{
+            width: 100px;
+            height: 100px;
+            background: #99aecd;
+        }
+    </style>
+</head>
+<body>
+
+<div class="outer" onclick="fo()">
+    <!--fi傳入event參數-->
+    <div class="inner" onclick="fi(event)"></div>
+</div>
+
+<script>
+    function fi(e) {
+        alert('inner');
+        e.stopPropagation();  // 防止事件傳播，這樣就不會執行alert('outer');
+    }
+    function fo() {
+        alert('outer');
+    }
+</script>
+</body>
+</html>

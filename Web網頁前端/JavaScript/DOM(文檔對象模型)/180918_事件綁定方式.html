@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="div1">
+        <!--this參數代表此標籤對象-->
+        <p id="p1" onclick="f(this)">pppp</p>
+        <div class="div2">ddddd</div>
+        <h2 class="h1">h22222</h2>
+        <h2 class="h1">h22222</h2>
+        <h2 class="h1">h22222</h2>
+    </div>
+
+<script>
+    // 第一種(在標籤上綁定事件)
+    function f(obj) {
+        console.log(obj); // p標籤對象
+        console.log(obj.parentNode);
+    }
+
+    // 第二種(透過節點對象去綁定事件)(優)
+    var ele = document.getElementsByClassName('div2')[0];
+    ele.onclick = function () {
+        alert('div222222');
+        console.log(this);  // 可直接獲取this，this代表此標籤對象
+    };
+
+    var ele2 = document.getElementsByClassName('h1');
+    for (var i=0; i<ele2.length; i++){
+        ele2[i].onclick = function () {
+            alert('h222222');
+        };
+    }
+
+</script>
+</body>
+</html>

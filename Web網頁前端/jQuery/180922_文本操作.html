@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .div1{
+            margin-top: 10px;
+            width: 400px;
+            height: 400px;
+            border: #396bb3 1px solid;
+        }
+    </style>
+</head>
+<body>
+<button class="inner_add">inner_add</button>
+<button class="outer_add">outer_add</button>
+<button class="replace">replace</button>
+<button class="del">delete</button>
+
+<div class="div1">
+    <p>div1_p</p>
+</div>
+
+<script src="jquery-3.3.1.js"></script>
+<script>
+    // ---------------內部插入---------------
+    $(".inner_add").click(function () {
+        var $ele=$("<h1></h1>");  // 創建<h1></h1>
+        $ele.html("div_h1").css("color","red");  //<h1 style="color:red">div_h1</h1>
+        // 方式一 (直接寫死)
+        // $(".div1").append("<h1>div_h1</h1>")
+        // 方式二 (從後面加入)
+        $(".div1").append($ele);
+        // 方式三 (從後面加入)
+        // $ele.appendTo(".div1");
+        // 方式四 (從前面加入)
+        // $(".div1").prepend($ele);
+        // 方式五 (從前面加入)
+        // $ele.prependTo(".div1");
+    });
+
+    // ---------------外部插入---------------
+    $(".outer_add").click(function () {
+        var $ele=$("<h1></h1>");
+        $ele.html("h1").css("color","red");
+        // 之後插入
+        $('.div1').after($ele);
+        // 之前插入
+        // $('.div1').before($ele);
+    });
+
+    // ---------------替換---------------
+    $(".replace").click(function () {
+        $(".div1 p").replaceWith("<h1>div_h1</h1>");
+    });
+
+    // ---------------刪除---------------
+    $(".del").click(function () {
+        // 清空(把內容刪除)
+        $(".div1").empty();
+        // 根除(把本身也刪了)
+        // $(".div1").remove();
+    });
+
+</script>
+</body>
+</html>

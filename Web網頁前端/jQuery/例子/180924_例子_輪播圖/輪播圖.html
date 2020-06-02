@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .outer{
+            width: 800px;
+            height: 500px;
+            margin: 110px auto;
+            position: relative;
+        }
+        .img a{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        .num{
+            position: absolute;
+            bottom: 15px;
+            left: 265px;
+            list-style: none;
+        }
+        .num li{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: white;
+            /*邊框弧度*/
+            border-radius: 100%;
+            margin-left: 10px;
+        }
+        .btn{
+            position: absolute;
+            top: 50%;
+            margin-top: -30px;
+            width: 40px;
+            height: 60px;
+            background: black;
+            color: white;
+            text-align: center;
+            line-height: 60px;
+            font-size: 30px;
+            /*透明度*/
+            opacity: 0.5;
+            display: none;
+            /*鼠標樣式*/
+            cursor: pointer;
+        }
+        .left{
+            left: 0px;
+        }
+        .right{
+            right: 0px;
+        }
+        .outer:hover .btn{
+            display: block;
+        }
+        .num .active{
+            background: red;
+        }
+        .hide{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="outer">
+    <div class="img">
+        <a href="#" ><img src="1.jpg"></a>
+        <a href="#" ><img src="2.jpg"></a>
+        <a href="#" ><img src="3.jpg"></a>
+        <a href="#" ><img src="4.jpg"></a>
+        <a href="#" ><img src="5.jpg"></a>
+    </div>
+
+    <ul class="num">
+        <!--<li class="active"></li>-->
+        <!--<li></li>-->
+        <!--<li></li>-->
+        <!--<li></li>-->
+        <!--<li></li>-->
+    </ul>
+
+    <div class="left btn"> < </div>
+    <div class="right btn"> > </div>
+</div>
+<!--<button onclick="ch_forward()">向前</button>-->
+<!--<button onclick="ch_back()">向後</button>-->
+
+
+<script src="jquery-3.3.1.js"></script>
+<script>
+    // 透過js自動創建按鈕條標籤
+    var $img_num=$(".img a").length;
+    for (var i=0; i<$img_num; i++){
+        $(".num").append("<li></li>");
+    }
+    $(".num li").eq(0).addClass("active");
+
+    // 自動輪播
+    var clock=setInterval(go_r, 1500);
+    var i=-1;
+    function go_r() {
+        i++;
+        $(".num li").eq(i).addClass("active").siblings().removeClass("active");
+        $(".img a").eq(i).stop().fadeIn().siblings().stop().fadeOut();
+        if (i==$img_num-1){
+            i=-1;
+        }
+    }
+    // 移到圖片上停止輪播
+    // hover參數一函式為移到元素上執行，參數二是離開元素執行
+    $(".outer").hover(function () {
+        clearInterval(clock);
+    },function () {
+        clock = window.setInterval(go_r, 1500);
+    });
+
+    // 按鈕條標籤手動輪播
+    $(".num li").mouseover(function () {
+        var index=$(this).index();
+        $(this).addClass("active");
+        $(this).siblings().removeClass("active");
+        // .stop()前面動作停掉
+        $(".img a").eq(index).stop().fadeIn(500).siblings().stop().fadeOut(500);
+        i=index;
+    });
+
+    // 手動按鈕標籤
+    $(".right").click(go_r);
+    function go_l() {
+        i--;
+        $(".num li").eq(i).addClass("active").siblings().removeClass("active");
+        $(".img a").eq(i).stop().fadeIn().siblings().stop().fadeOut();
+        if (i==-1){
+            i=$img_num-1;
+        }
+    }
+    $(".left").click(go_l);
+
+
+
+
+
+    // function ch_forward() {
+    //     var judge=0
+    //     $('a').each(function (x,y) {
+    //         if (!$(y).attr('class')){
+    //            $(y).addClass('hide');
+    //            judge=x+1;
+    //            if (judge==5)
+    //                judge=0;
+    //            console.log(judge);
+    //            console.log($('a').eq(judge).html());
+    //            $('a').eq(judge).removeClass('hide');
+    //            return false;
+    //         }
+    //     });
+    // }
+    //
+    // function ch_back() {
+    //     var judge=0
+    //     $('a').each(function (x,y) {
+    //         if (!$(y).attr('class')){
+    //            $(y).addClass('hide');
+    //            judge=x-1;
+    //            if (judge==-1)
+    //                judge=4;
+    //            console.log(judge);
+    //            console.log($('a').eq(judge).html());
+    //            $('a').eq(judge).removeClass('hide');
+    //            return false;
+    //         }
+    //     });
+    // }
+
+    // var clock1;
+    // clock1 = window.setInterval(ch_forward, 1500);
+    // $(".outer").mouseover(function () {
+    //     clearInterval(clock1);
+    //     clock1=undefined;
+    // });
+    //
+    // $(".outer").mouseleave(function () {
+    //     // 為防止開啟多個計時器
+    //     if (clock1==undefined){
+    //         clock1 = window.setInterval(ch_forward, 1500);
+    //     }
+    // });
+
+</script>
+</body>
+</html>

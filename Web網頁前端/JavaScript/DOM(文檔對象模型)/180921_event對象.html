@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+
+<form action="" id="form1">
+    <input type="text" name="user">
+    <input type="submit" value="提交">
+</form>
+
+<script>
+    var ele=document.getElementById('form1');
+    //Event 對象代表事件的狀態，比如事件在其中發生的元素、鍵盤、鼠標的狀態
+    ele.onsubmit=function (event) {
+        alert('hello');
+        event.preventDefault() // 禁止默認行為，這樣也能攔截表單提交
+    };
+</script>
+</body>
+</html>

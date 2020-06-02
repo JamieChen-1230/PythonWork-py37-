@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .div1{
+            width: 300px;
+            height: 300px;
+            background: #d757ff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="div1"></div>
+
+<script>
+    var ele = document.getElementsByClassName("div1")[0];
+    // 鼠標移到元素上觸發
+    ele.onmouseover=function () {
+        ele.innerHTML="HELLO";
+    };
+
+    // 鼠標離開元素觸發
+    // ele.onmouseout=function () {
+    //     ele.innerHTML="";
+    // };
+
+    // 鼠標離開元素觸發
+    ele.onmouseleave=function () {
+        ele.innerHTML="";
+    };
+
+    // 鼠標點擊元素時觸發
+    ele.onmousedown=function () {
+        ele.innerHTML="鼠標點擊元素時觸發";
+    };
+
+    // 鼠標在元素上移動時觸發
+    ele.onmousemove=function () {
+        console.log("鼠標在元素上移動時觸發");
+   };
+
+
+</script>
+</body>
+</html>

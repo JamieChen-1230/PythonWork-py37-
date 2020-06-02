@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .div1,.div2,.div3,.div4{
+            width: 100px;
+            height: 50px;
+            float: left;
+        }
+        .div1{
+            background: #ffee33;
+        }
+        .div2{
+            background: #99aecd;
+        }
+        .div3{
+            background: #84a42b;
+        }
+        .div4{
+            background: red;
+        }
+        .div5{
+            width: 500px;
+            height: 500px;
+            border: #99aecd solid 1px;
+            float: left;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="div1">
+    <button onclick="add()">add</button>
+</div>
+<div class="div2">
+    <button onclick="del()">del</button>
+</div>
+<div class="div3">
+    <button onclick="change()">change</button>
+</div>
+<div class="div4">
+    <button onclick="change_css()">change_css</button>
+</div>
+<div class="div5">
+    <p>hello div 5</p>
+</div>
+
+<script>
+    function add() {
+        // 創建標籤
+        var ele = document.createElement("p");  // <p></p>
+        ele.innerHTML="I am p";  // <p>I am p</p>
+        var div5 = document.getElementsByClassName('div5')[0];
+        div5.appendChild(ele);  // 只能從父節點添加
+    }
+
+    function del() {
+        var div5 = document.getElementsByClassName('div5')[0];
+        var div5_p = div5.getElementsByTagName('p')[0];
+        div5.removeChild(div5_p);
+    }
+
+    function change() {
+        // 第一種
+        var a = document.createElement("a"); // <a></a>
+        a.innerHTML="youtube"; // <a>youtube</a>
+        a.href="https://www.youtube.com/?gl=TW&hl=zh-tw";  // <a href="">youtube</a>
+
+        var div5 = document.getElementsByClassName('div5')[0];
+        var div5_p = div5.getElementsByTagName('p')[0];
+
+        div5.replaceChild(a, div5_p);  // 1:新的, 2:舊的
+    }
+
+    function change_css() {
+        var div5 = document.getElementsByClassName('div5')[0];
+        div5.style.backgroundColor='gray';
+        div5.style.fontSize='25px';
+    }
+</script>
+</body>
+</html>

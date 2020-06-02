@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<button onclick="selectAll()">全選</button>
+<button onclick="inverse()">反選</button>
+<button onclick="selectNo()">取消</button>
+<hr>
+<table border="1px">
+    <tr>
+        <td><input type="checkbox"></td>
+        <td>111</td>
+        <td>111</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"></td>
+        <td>222</td>
+        <td>222</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"></td>
+        <td>333</td>
+        <td>333</td>
+    </tr>
+
+</table>
+
+<script>
+    function selectAll() {
+        var ele_input = document.getElementsByTagName('input');
+
+        for (var i=0; i<ele_input.length; i++){
+            ele_input[i].checked=true;
+        }
+    }
+
+    function selectNo() {
+        var ele_input = document.getElementsByTagName('input');
+        for (var i=0; i<ele_input.length; i++){
+            ele_input[i].checked=false;
+        }
+    }
+
+    function inverse() {
+        var ele_input = document.getElementsByTagName('input');
+        for (var i=0; i<ele_input.length; i++){
+            ele_input[i].checked = !ele_input[i].checked; // 反轉
+        }
+    }
+</script>
+</body>
+</html>
