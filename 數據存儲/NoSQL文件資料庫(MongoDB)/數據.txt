@@ -1,0 +1,9 @@
+db.stu.insert([
+{name: "jamie2", age: 18, gender: true, home: "TW"},
+{name: "jj", age: 30, gender: true, home: "TW"},
+{name: "joke", age: 40, gender: true, home: "CH"},
+{name: "jack", age: 18, gender: true, home: "US"},
+{name: "Eric", age: 18, gender: true, home: "TW"},
+{name: "Momo", age: 15, gender: false, home: "US"},
+{name: "Vicky", age: 23, gender: false, home: "TW"}
+])

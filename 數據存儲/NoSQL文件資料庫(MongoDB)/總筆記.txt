@@ -1,0 +1,212 @@
+NoSQL數據庫： 非關係數據庫(non-relation SQL)，不像關係型數據庫表和表之間有關聯。
+
+
+基礎指令：
+    - 查看當前數據庫： db
+    - 刪除當前的數據庫： db.dropDatabase()
+    - 查看所有數據庫： show databases 或 show dbs
+    - 切換數據庫(無此數據庫時，則會創建)： use <db_name>
+
+
+數據類型：
+    Object ID： 文檔ID(MongoDB會自動生成)，保證文檔的唯一性，(每個文檔可理解為一個字典)
+    String： 字符串，須為有效的utf-8
+    Boolean： 布林
+    Integer： 整數
+    Double： 浮點數
+    Arrays： 數組或列表
+    Object： 文檔對象，相當於另外一個文檔(格式可以理解為json, dict)
+    Null: Null
+    Timestamp： 時間戳(從1970/1/1到現在的總秒數)
+    Date： 當前時間或日期
+
+
+集合基礎命令(MongoDB中沒有表的概念)：
+    ※ 可以不手動創建集合，當向不存在集合插入數據時，集合會自動被創建。
+    - 手動創建集合： db.createCollection(<name>, <options>)
+        - 範例：
+            db.createCollection("stu")
+            db.createCollection("stu", {capped:true, size:10})   # {capped:true, size:10} 表示要設置數據上限(10)
+    - 查看集合： show collections
+    - 刪除集合： db.<集合名>.drop()
+    - 向集合內插入數據： db.<集合名>.insert(<數據>)
+    - 查看集合內數據： db.<集合名>.find(<篩選條件>)
+        - 範例：
+            db.sss.find()  # 無條件，表示找全部
+            db.sss.find({age: 18})
+            db.sss.find({age: 18}).pretty()  # .pretty()可以美化輸出
+    - 查看集合內第一條數據： db.<集合名>.findOne(<篩選條件>)
+        - 範例：
+            db.sss.findOne({age: 18})
+    - 修改或創建數據： db.<集合名>.save(<數據>)，<數據>中須包含_id
+    - 更新集合內數據： db.<集合名>.update(<篩選條件>, <更新操作>, {multi: true})  # {multi: true} 表示更新所有符合條件之數據，false表示只更新第一條數據
+        - 範例：
+            db.sss.update({age: 18}, {name: "jj", age: 22})   # 一條數據，全部更新，此種寫法會把所有值覆蓋成{name: "jj", age: 22}
+            db.sss.update({age: 18}, {$set:{name: "jj", age: 22}})   # 一條數據，加了$set之後就能局部更新了
+            db.sss.update({age: 18}, {$set:{name: "jj", age: 22}}, {multi: true})   # 多條數據，使用{multi: true}必須搭配$(不能全部更新)
+    - 刪除集合內數據： db.<集合名>.remove(<篩選條件>, {justOne: true})   # {justOne: true} 表示更只刪除第一條數據，false表示刪除所有符合之數據
+        - 範例：
+            db.sss.remove({age: 18})  # 默認刪除所有符合條件之數據
+
+
+比較運算符：
+    - 運算符：
+        等於： 默認就是等於
+        小於： $lt
+        小於等於： $lte
+        大於： $gt
+        大於等於： $gte
+        不等於： $ne
+        在範圍內的： $in
+        不在範圍內的： $nin
+    - 範例：
+        db.sss.find({age:{$gte:18}})
+        db.sss.find({name:{$ne:"kk"}})
+        db.sss.find({age:{$in:[11,18,55]}})
+
+
+邏輯運算符：
+    - AND：
+        db.sss.find({age:{$gte:18}, qq:123})
+    - OR：
+        db.sss.find({$or:[{age:{$gte:18}}, {name:"jamie"}]})
+
+
+正則表達式：
+    - $regex：
+        db.sss.find({name:{$regex:"^j"}})
+        db.sss.find({name:{$regex:"j\\w+"}})   # 要使用 \\ 來轉義，EX: \\w 所有字母和數字
+        db.sss.find({name:{$regex:"j\\w+1"}})
+
+
+limit和skip：
+    - limit(<int>)： 限制出現前幾條
+        db.sss.find().limit(2)
+    - skip(<int>)： 忽略前面幾條
+        db.sss.find().skip(2)
+    - 可以搭配使用：
+        db.sss.find().skip(2).limit(1)
+
+
+自定義查詢(語法為JavaScript)：
+    ※ this表示被遍歷到的跳一條文檔
+    - $where：
+       db.sss.find({
+            $where:function(){
+                return this.age>30;
+            }
+       })
+
+
+投影，只顯示想要的字段：
+     - db.<集合名>.find(<篩選條件>, <想顯示的字段名設為1>)
+        - 範例一：
+            db.sss.find(
+            {age:{$gte:18}},
+            {name:1}
+            )
+        - _id會默認顯示，不想顯示的話把它設為0：
+            db.sss.find(
+            {age:{$gte:18}},
+            {name:1, _id:0}
+            )
+
+
+SORT排序：
+    - 照age升序：
+        db.sss.find().sort({age:1})
+    - 照age降序：
+        db.sss.find().sort({age:-1})
+
+
+COUNT：
+    db.sss.find({age:{$gte:18}}).count()
+
+
+去重，顯示有幾個布一樣的值：
+    - db.<集合名>.distinct(<字段名>, <篩選條件>)
+        - 範例：
+            db.sss.distinct("name")
+            db.sss.distinct("name", {age:{$gte:18}})
+
+
+數據備份與恢復(在終端機運行，非mongo運行空間)：
+    - 備份：
+        指令： mongodump -h <主機> -d <db_name> -o <備份數據的保存位置>
+        範例： mongodump -h localhost -d test1 -o .   # . 表當前目錄
+    - 恢復：
+        指令： mongorestore -h <主機> -d <db_name> --dir <備份目錄的位置>
+        範例： mongorestore -h localhost -d test123 --dir ./test1   # . 表當前目錄
+
+
+聚合aggregate：是基於數據處理的聚合管道，管道裡有多個階段管道，可以對每個階段進行過濾或分組。
+    指令： db.<集合名>.aggregate({<管道>:{<表達式>}})
+    常用管道：
+        $group： 將集合中的文檔分組
+        $match： 過濾數據
+        $project： 修改輸入文檔結構，EX：重命名、增加刪除字段
+        $sort： 排序
+        $limit： 限制輸出數
+        $skip： 忽略前面幾條文檔
+        $unwind： 將數組類型字段進行拆分
+    表達式：
+        $sum： 和，$sum:1 表示以一倍計數(通常用來當count使用)
+        $avg： 平均值
+        $min、$max： 極值
+        $push： 在結果文檔中插入值到一個數組中
+        $first： 根據資源文檔的排序，獲取第一個文檔
+        $last： 根據資源文檔的排序，獲取最後一個文檔
+    範例：
+        - $group：
+            ※ 第一個field要使用_id當作key，表示是用什麼進行分組
+            ※ 要使用字段前面要加$，EX： $age
+            ※ $group也能拿來去重，只要第一次分組時把所有字段都當成分組條件即可
+            - 照性別分組：
+                db.stu.aggregate(
+                {$group:{_id:"$gender"}}
+                )
+            - 照性別分組，並計算各自文檔數量：
+                db.stu.aggregate(
+                {$group:{_id:"$gender", count_num:{$sum:1}}}
+                )
+            - 照性別分組，並計算各自文檔數量和年齡平均值：
+                db.stu.aggregate(
+                {$group:{_id:"$gender", count_num:{$sum:1}, age_avg:{$avg:"$age"}}}
+                )
+            - 照家鄉進行分組，並計算年齡平均值：
+                db.stu.aggregate(
+                {$group:{_id:"$home", age:{$avg:"$age"}}}
+                )
+            - 求學生總人數和平均年齡(_id:null 表示所有文檔都是同一組)：
+                db.stu.aggregate(
+                {$group:{_id:null, stu_num:{$sum:1}, mean_age:{$avg:"$age"}}}
+                )
+            - 同時按照家鄉和性別一起進行分組並計算數量：
+                db.stu.aggregate(
+                {$group:{
+                _id:{home:"$home", gender:"$gender"},
+                count:{$sum:1}}}
+                )
+            - 去重(把所有字段都當成分組條件)，再進行性別分組並計算數量：
+                db.stu.aggregate(
+                {$group:{_id:{home:"$home", gender:"$gender", name:"$name", age:"$age"}, count:{$sum:1}}},
+                {$group:{_id:"$_id.gender", count:{$sum:1}}}
+                )
+
+        - $project：
+            - 1.照家鄉進行分組，並計算年齡平均值
+              2.創建一個字段hometown來裝_id的值，並讓age繼續顯示，_id不顯示
+                db.stu.aggregate(
+                {$group:{_id:"$home", age:{$avg:"$age"}}},
+                {$project:{hometown:"$_id", age:1, _id:0}}
+                )
+
+        - $match：
+            - 1.先將年齡大於等於18的挑選出來
+              2.照家鄉進行分組，並計算年齡平均值
+              3.創建一個字段hometown來裝_id的值，並讓age繼續顯示，_id不顯示
+                db.stu.aggregate(
+                {$match:{age:{$gte:18}}},
+                {$group:{_id:"$home", age:{$avg:"$age"}}},
+                {$project:{hometown:"$_id", age:1, _id:0}}
+                )

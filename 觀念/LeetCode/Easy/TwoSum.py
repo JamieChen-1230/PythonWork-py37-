@@ -5,7 +5,7 @@
 from typing import List
 
 
-# 爛爆了(自己寫的QQ)
+# 自己寫的(效率爛爆了)
 # class Solution:
 #     def twoSum(self, nums: List[int], target: int) -> List[int]:
 #         if len(nums) >= 2:
