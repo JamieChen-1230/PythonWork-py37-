@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ff1e8a4e-9f45-4d3b-9949-a27f16c94dbc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/數據存儲/NoSQL資料庫(Redis)/200514_RedisByPython.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/數據存儲/NoSQL資料庫(Redis)/publish.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/數據存儲/NoSQL資料庫(Redis)/redis-cli持久化筆記.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/數據存儲/NoSQL資料庫(Redis)/redis-cli筆記.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/觀念/LeetCode/AddTwoNumbers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/觀念/LeetCode/TwoSum.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/觀念/面試觀念題.txt" beforeDir="false" afterPath="$PROJECT_DIR$/觀念/面試觀念題.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/數據存儲/NoSQL文件資料庫(MongoDB)/總筆記.txt" beforeDir="false" afterPath="$PROJECT_DIR$/數據存儲/NoSQL文件資料庫(MongoDB)/總筆記.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -118,20 +112,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/數據存儲/NoSQL文件資料庫(MongoDB)/總筆記.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-238">
-              <caret line="194" selection-start-line="194" selection-end-line="194" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/觀念/面試觀念題.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="220" column="45" lean-forward="true" selection-start-line="220" selection-start-column="45" selection-end-line="220" selection-end-column="45" />
+            <state relative-caret-position="252">
+              <caret line="230" column="71" selection-start-line="230" selection-start-column="71" selection-end-line="230" selection-end-column="71" />
             </state>
           </provider>
         </entry>
@@ -208,8 +193,8 @@
         <option value="$PROJECT_DIR$/觀念/LeetCode/Easy/TwoSum.py" />
         <option value="$PROJECT_DIR$/觀念/LeetCode/Easy/PalindromeNumber.py" />
         <option value="$PROJECT_DIR$/觀念/LeetCode/Easy/ReverseInteger.py" />
-        <option value="$PROJECT_DIR$/數據存儲/NoSQL文件資料庫(MongoDB)/總筆記.txt" />
         <option value="$PROJECT_DIR$/觀念/面試觀念題.txt" />
+        <option value="$PROJECT_DIR$/數據存儲/NoSQL文件資料庫(MongoDB)/總筆記.txt" />
       </list>
     </option>
   </component>
@@ -231,6 +216,17 @@
             <path>
               <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
+              <item name="數據存儲" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
+              <item name="數據存儲" type="462c0819:PsiDirectoryNode" />
+              <item name="NoSQL文件資料庫(MongoDB)" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
@@ -442,7 +438,7 @@
       <workItem from="1590712475798" duration="27655000" />
       <workItem from="1590977111354" duration="13785000" />
       <workItem from="1591061040800" duration="20349000" />
-      <workItem from="1591145192722" duration="21305000" />
+      <workItem from="1591145192722" duration="23240000" />
     </task>
     <servers />
   </component>
@@ -479,7 +475,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="298970000" />
+    <option name="totallyTimeSpent" value="300905000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -876,17 +872,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/數據存儲/NoSQL文件資料庫(MongoDB)/總筆記.txt">
+    <entry file="file://$PROJECT_DIR$/觀念/面試觀念題.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-238">
-          <caret line="194" selection-start-line="194" selection-end-line="194" />
+        <state relative-caret-position="-784">
+          <caret line="220" column="45" lean-forward="true" selection-start-line="220" selection-start-column="45" selection-end-line="220" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/觀念/面試觀念題.txt">
+    <entry file="file://$PROJECT_DIR$/數據存儲/NoSQL文件資料庫(MongoDB)/總筆記.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="220" column="45" lean-forward="true" selection-start-line="220" selection-start-column="45" selection-end-line="220" selection-end-column="45" />
+        <state relative-caret-position="252">
+          <caret line="230" column="71" selection-start-line="230" selection-start-column="71" selection-end-line="230" selection-end-column="71" />
         </state>
       </provider>
     </entry>

@@ -202,6 +202,7 @@ COUNT：
                 )
 
         - $match：
+            ※ $match篩選方法跟find相似
             - 1.先將年齡大於等於18的挑選出來
               2.照家鄉進行分組，並計算年齡平均值
               3.創建一個字段hometown來裝_id的值，並讓age繼續顯示，_id不顯示
@@ -210,3 +211,26 @@ COUNT：
                 {$group:{_id:"$home", age:{$avg:"$age"}}},
                 {$project:{hometown:"$_id", age:1, _id:0}}
                 )
+
+        - $sort：
+            ※ $sort使用時字段不須加$
+            - 1.照性別分組，並計算各自文檔數量
+              2.依照人數進行排序
+                db.stu.aggregate(
+                {$group:{_id:"$gender", count:{$sum:1}}},
+                {$sort:{count:-1}}
+                )
+
+        - $limit：
+            db.stu.aggregate({$limit:2})
+
+        - $skip：
+            db.stu.aggregate({$skip:2})
+
+        - $unwind：
+            ※ 有一個preserveNullAndEmptyArrays：true表示保留沒有拆分字段的文檔；false則是丟棄
+            db.item.insert({name:"shirt", size:["S", "M", "L", "XL"]})
+                - db.item.aggregate({$unwind:"$size"})
+                - db.item.aggregate({$unwind:
+                    {path:"$size", preserveNullAndEmptyArrays:true}}
+                    )
