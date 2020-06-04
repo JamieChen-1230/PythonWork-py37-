@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff1e8a4e-9f45-4d3b-9949-a27f16c94dbc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/基礎/200429_迭代器&amp;生成器.py" beforeDir="false" afterPath="$PROJECT_DIR$/基礎/200429_迭代器&amp;生成器.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/演算法/排序/Bubble_Sort(泡沫排序).py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/演算法/排序/Insert_Sort(插入排序).py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/演算法/排序/Merge_Sort(合併排序).py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/演算法/排序/Selection_Sort(選擇排序).py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/演算法/搜尋/Binary(二分搜尋).py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/演算法/搜尋/Line_Search(線性搜尋).py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/觀念/LeetCode/Easy/Valid_Parentheses(正確的括號).py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/觀念/面試觀念題.txt" beforeDir="false" afterPath="$PROJECT_DIR$/觀念/面試觀念題.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,93 +19,47 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$200510_test_sample.coverage" NAME="200510_test_sample Coverage Results" MODIFIED="1590213629688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$receive__1_.coverage" NAME="receive (1) Coverage Results" MODIFIED="1590550525268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200525_初試_2" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$ReverseInteger.coverage" NAME="ReverseInteger Coverage Results" MODIFIED="1591150637637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/觀念/LeetCode/Easy" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_test_demo_test_two.coverage" NAME="pytest for test_demo.test_two Coverage Results" MODIFIED="1590232489538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_fixture_test/使用conftest" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_test_demo_py.coverage" NAME="pytest in test_demo.py Coverage Results" MODIFIED="1590232646547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_fixture_test/使用conftest" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for__2_2_MyTestCase.coverage" NAME="pytest for 基本使用_2-2優化.MyTestCase Coverage Results" MODIFIED="1590729490087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200525_入門" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_200521_fixture_test_TestCase.coverage" NAME="pytest for 200521_fixture_test.TestCase Coverage Results" MODIFIED="1590220735634" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_fixture_test" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_200510_sample_test_test_one.coverage" NAME="pytest for 200510_sample_test.test_one Coverage Results" MODIFIED="1590216783762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$TwoSum.coverage" NAME="TwoSum Coverage Results" MODIFIED="1591245470328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/觀念/LeetCode/Easy" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_test_param1_TestParam1_test_param_1.coverage" NAME="pytest for test_param1.TestParam1.test_param_1 Coverage Results" MODIFIED="1590306484170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200523_django_test/tests" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$Bucket_Sort__.coverage" NAME="Bucket_Sort(桶子排序) Coverage Results" MODIFIED="1591291358060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/演算法/排序" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_demo_py.coverage" NAME="pytest in demo.py Coverage Results" MODIFIED="1590732399425" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_3(數據分離)" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$Valid_Parentheses__.coverage" NAME="Valid_Parentheses(正確的括號) Coverage Results" MODIFIED="1591264568482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/觀念/LeetCode/Easy" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$200502___.coverage" NAME="200502_(內建)緩存裝飾器 Coverage Results" MODIFIED="1590393161636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎/200425_裝飾器" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$PalindromeNumber.coverage" NAME="PalindromeNumber Coverage Results" MODIFIED="1591150195170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/觀念/LeetCode/Easy" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_test_demo_TestCase_test_three.coverage" NAME="pytest for test_demo.TestCase.test_three Coverage Results" MODIFIED="1590232481114" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_fixture_test/使用conftest" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$12.coverage" NAME="12 Coverage Results" MODIFIED="1591073665306" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/觀念" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_200521_fixture_test_TestCase_test_two.coverage" NAME="pytest for 200521_fixture_test.TestCase.test_two Coverage Results" MODIFIED="1590220657338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_fixture_test" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_first_demo_MyTestCase.coverage" NAME="pytest for first_demo.MyTestCase Coverage Results" MODIFIED="1590726547285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200525_入門" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$receive2__1_.coverage" NAME="receive2 (1) Coverage Results" MODIFIED="1590550527788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200525_初試_2" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for__2_2_MyTestCase_test_b.coverage" NAME="pytest for 基本使用_2-2優化.MyTestCase.test_b Coverage Results" MODIFIED="1590729697095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200525_入門" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$200501___.coverage" NAME="200501_模仿計時裝飾器(多層裝飾器) Coverage Results" MODIFIED="1590392709974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎/200425_裝飾器" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$publish.coverage" NAME="publish Coverage Results" MODIFIED="1590118801479" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NoSQL資料庫(Redis)" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$send.coverage" NAME="send Coverage Results" MODIFIED="1590544170130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200525_初試" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$200510_sample_test.coverage" NAME="200510_sample_test Coverage Results" MODIFIED="1590217757452" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_200527_skip_py.coverage" NAME="pytest in 200527_skip.py Coverage Results" MODIFIED="1590741372569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for__2_2_MyTestCase_test_a.coverage" NAME="pytest for 基本使用_2-2優化.MyTestCase.test_a Coverage Results" MODIFIED="1590728777416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200525_入門" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_DDTfile_data_py__1_.coverage" NAME="pytest in DDT提供的file_data.py (1) Coverage Results" MODIFIED="1590738165396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_3(數據分離)/yml使用" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_test_sample3_py.coverage" NAME="pytest in test_sample3.py Coverage Results" MODIFIED="1590293673152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200522_fixture" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for__2_MyTestCase.coverage" NAME="pytest for 基本使用_2.MyTestCase Coverage Results" MODIFIED="1590727906363" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200525_入門" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$200430_.coverage" NAME="200430_解析式 Coverage Results" MODIFIED="1590397549382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for__2___MyTestCase_test_a.coverage" NAME="pytest for 基本使用_2(多個參數).MyTestCase.test_a Coverage Results" MODIFIED="1590730822585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_test_sample1_py.coverage" NAME="pytest in test_sample1.py Coverage Results" MODIFIED="1590292538827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200522_fixture" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$receive.coverage" NAME="receive Coverage Results" MODIFIED="1590553410057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200526_消息發布與訂閱/fanout(廣播)" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in__2_2_py.coverage" NAME="pytest in 基本使用_2-2優化.py Coverage Results" MODIFIED="1590729756389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200525_入門" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_200510_sample_test_TestCase_test_three.coverage" NAME="pytest for 200510_sample_test.TestCase.test_three Coverage Results" MODIFIED="1590216741569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$demo.coverage" NAME="demo Coverage Results" MODIFIED="1590732380934" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_3(數據分離)" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_200510_test_sample_py.coverage" NAME="pytest in 200510_test_sample.py Coverage Results" MODIFIED="1590213634806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$LongestCommonPrefix.coverage" NAME="LongestCommonPrefix Coverage Results" MODIFIED="1591245027367" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/觀念/LeetCode/Easy" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$200520_.coverage" NAME="200520_更多操作技巧 Coverage Results" MODIFIED="1590714552128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Selenium" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_test_param_splite_py__1_.coverage" NAME="pytest in test_param_splite.py (1) Coverage Results" MODIFIED="1590310501367" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200523_django_test/tests/test_param_splite" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$200501__.coverage" NAME="200501_內置函數&amp;反射 Coverage Results" MODIFIED="1590397960865" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$send__1_.coverage" NAME="send (1) Coverage Results" MODIFIED="1590550490181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200525_初試_2" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_test_param_splite_py.coverage" NAME="pytest in test_param_splite.py Coverage Results" MODIFIED="1590309632287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200523_django_test/tests" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$Merge_Sort__.coverage" NAME="Merge_Sort(合併排序) Coverage Results" MODIFIED="1591274972431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/演算法/排序" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$Line_Search__.coverage" NAME="Line_Search(線性搜尋) Coverage Results" MODIFIED="1591275736605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/演算法/搜尋" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$AddTwoNumbers.coverage" NAME="AddTwoNumbers Coverage Results" MODIFIED="1591078428853" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/觀念/LeetCode" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_DDTfile_data_MyTestCase_test_2.coverage" NAME="pytest for DDT提供的file_data.MyTestCase.test_2 Coverage Results" MODIFIED="1590738218797" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_3(數據分離)" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_200521_fixture_test_py.coverage" NAME="pytest in 200521_fixture_test.py Coverage Results" MODIFIED="1590232685325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_fixture_test" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$200519_.coverage" NAME="200519_窗口切換 Coverage Results" MODIFIED="1590131403257" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Selenium" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$200523_.coverage" NAME="200523_用戶登入 Coverage Results" MODIFIED="1590721786091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Selenium" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$Selection_Sort__.coverage" NAME="Selection_Sort(選擇排序) Coverage Results" MODIFIED="1591274246036" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/演算法/排序" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_200510_sample_test_py.coverage" NAME="pytest in 200510_sample_test.py Coverage Results" MODIFIED="1590217530584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$200429_Python_.coverage" NAME="200429_Python之傳值&amp;傳址 Coverage Results" MODIFIED="1590397148076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎/200429_對象引用" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$receive2.coverage" NAME="receive2 Coverage Results" MODIFIED="1590553411929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200526_消息發布與訂閱/fanout(廣播)" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$200429__.coverage" NAME="200429_迭代器&amp;生成器 Coverage Results" MODIFIED="1591261225080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_200521_fixture_test_test_three.coverage" NAME="pytest for 200521_fixture_test.test_three Coverage Results" MODIFIED="1590221030072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_fixture_test" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$Bubble_Sort__.coverage" NAME="Bubble_Sort(泡沫排序) Coverage Results" MODIFIED="1591271737421" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/演算法/排序" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$Binary__.coverage" NAME="Binary(二分搜尋) Coverage Results" MODIFIED="1591276356187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/演算法/搜尋" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$.coverage" NAME="不用除法求商和餘 Coverage Results" MODIFIED="1591257563834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/觀念/LeetCode/Easy" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$client.coverage" NAME="client Coverage Results" MODIFIED="1590563984137" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200527_消息RPC" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$pymongo.coverage" NAME="pymongo操作 Coverage Results" MODIFIED="1591253358518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/數據存儲/NoSQL文件資料庫(MongoDB)" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$AddTwoNumbers__.coverage" NAME="AddTwoNumbers(鏈結數字串列相加) Coverage Results" MODIFIED="1591258160046" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/觀念/LeetCode/Medium" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_DDTfile_data_py.coverage" NAME="pytest in DDT提供的file_data.py Coverage Results" MODIFIED="1590738220693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_3(數據分離)" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in___py.coverage" NAME="pytest in 基本使用_斷言.py Coverage Results" MODIFIED="1590739974507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$200521_xpath.coverage" NAME="200521_xpath Coverage Results" MODIFIED="1590195728451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Selenium" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$run.coverage" NAME="run Coverage Results" MODIFIED="1591061306153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200528_測試套件(suite)" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$200514_RedisByPython.coverage" NAME="200514_RedisByPython Coverage Results" MODIFIED="1589595365325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NoSQL資料庫(Redis)" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$200518_First_demo.coverage" NAME="200518_First_demo Coverage Results" MODIFIED="1590124371734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Selenium" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for__2_MyTestCase_test_a.coverage" NAME="pytest for 基本使用_2.MyTestCase.test_a Coverage Results" MODIFIED="1590727323197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200525_入門" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$Insert_Sort__.coverage" NAME="Insert_Sort(插入排序) Coverage Results" MODIFIED="1591273993231" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/演算法/排序" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$server.coverage" NAME="server Coverage Results" MODIFIED="1590563980916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200527_消息RPC" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in__2___py.coverage" NAME="pytest in 基本使用_2(多個參數).py Coverage Results" MODIFIED="1590730825139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$get_data.coverage" NAME="get_data Coverage Results" MODIFIED="1590310182085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200523_django_test/tests/utils" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$main.coverage" NAME="main Coverage Results" MODIFIED="1590570344982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/異步/celery/200526_初試" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in__2_py.coverage" NAME="pytest in 基本使用_2.py Coverage Results" MODIFIED="1590728350067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200525_入門" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_200521_fixture_test_test_one.coverage" NAME="pytest for 200521_fixture_test.test_one Coverage Results" MODIFIED="1590220614627" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_fixture_test" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$run__1_.coverage" NAME="run (1) Coverage Results" MODIFIED="1591062769251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200529_測試報告" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in__py.coverage" NAME="pytest in 基本使用.py Coverage Results" MODIFIED="1590730249378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200526_ddt使用" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_200521_setup_test_TestCase.coverage" NAME="pytest for 200521_setup_test.TestCase Coverage Results" MODIFIED="1590218722612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_200429___test.coverage" NAME="pytest for 200429_迭代器&amp;生成器.test Coverage Results" MODIFIED="1591260224577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$send__2_.coverage" NAME="send (2) Coverage Results" MODIFIED="1590553413917" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200526_消息發布與訂閱/fanout(廣播)" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in__skip_py.coverage" NAME="pytest in 基本使用_skip.py Coverage Results" MODIFIED="1590740861128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$200429_.coverage" NAME="200429_深淺複製 Coverage Results" MODIFIED="1590397194386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎/200429_對象引用" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$RomanToInteger.coverage" NAME="RomanToInteger Coverage Results" MODIFIED="1591236151478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/觀念/LeetCode/Easy" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_test_sample2_test_some_data.coverage" NAME="pytest for test_sample2.test_some_data Coverage Results" MODIFIED="1590292196301" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200522_fixture" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_200510_sample_test_TestCase.coverage" NAME="pytest for 200510_sample_test.TestCase Coverage Results" MODIFIED="1590216326242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$demo__1_.coverage" NAME="demo (1) Coverage Results" MODIFIED="1590737876667" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_3(數據分離)/yml使用" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$200409_.coverage" NAME="200409_賦值 Coverage Results" MODIFIED="1590397106360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎/200429_對象引用" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$conftest.coverage" NAME="conftest Coverage Results" MODIFIED="1590232642268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_fixture_test/使用conftest" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_200521_setup_test_py.coverage" NAME="pytest in 200521_setup_test.py Coverage Results" MODIFIED="1590218866739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門" />
@@ -105,6 +67,57 @@
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_DDTfile_data_MyTestCase_test_a.coverage" NAME="pytest for DDT提供的file_data.MyTestCase.test_a Coverage Results" MODIFIED="1590735104151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_3(數據分離)" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$200519_frame.coverage" NAME="200519_frame切換 Coverage Results" MODIFIED="1590129862910" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Selenium" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$200520_radio.coverage" NAME="200520_radio選擇框 Coverage Results" MODIFIED="1590135133130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Selenium" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$200510_test_sample.coverage" NAME="200510_test_sample Coverage Results" MODIFIED="1590213629688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$receive__1_.coverage" NAME="receive (1) Coverage Results" MODIFIED="1590550525268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200525_初試_2" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_test_demo_test_two.coverage" NAME="pytest for test_demo.test_two Coverage Results" MODIFIED="1590232489538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_fixture_test/使用conftest" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_200510_sample_test_test_one.coverage" NAME="pytest for 200510_sample_test.test_one Coverage Results" MODIFIED="1590216783762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$TwoSum.coverage" NAME="TwoSum Coverage Results" MODIFIED="1591245470328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/觀念/LeetCode/Easy" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$Linked_List__.coverage" NAME="Linked_List(鏈表) Coverage Results" MODIFIED="1591295424781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/進階/資料結構" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$200502___.coverage" NAME="200502_(內建)緩存裝飾器 Coverage Results" MODIFIED="1590393161636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎/200425_裝飾器" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_test_demo_TestCase_test_three.coverage" NAME="pytest for test_demo.TestCase.test_three Coverage Results" MODIFIED="1590232481114" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_fixture_test/使用conftest" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_first_demo_MyTestCase.coverage" NAME="pytest for first_demo.MyTestCase Coverage Results" MODIFIED="1590726547285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200525_入門" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$receive2__1_.coverage" NAME="receive2 (1) Coverage Results" MODIFIED="1590550527788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200525_初試_2" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for__2_2_MyTestCase_test_b.coverage" NAME="pytest for 基本使用_2-2優化.MyTestCase.test_b Coverage Results" MODIFIED="1590729697095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200525_入門" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$200501___.coverage" NAME="200501_模仿計時裝飾器(多層裝飾器) Coverage Results" MODIFIED="1590392709974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎/200425_裝飾器" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$Doctests_in_Quick_Sort__.coverage" NAME="Doctests in Quick_Sort(快速排序) Coverage Results" MODIFIED="1591291884571" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/演算法/排序" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$publish.coverage" NAME="publish Coverage Results" MODIFIED="1590118801479" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NoSQL資料庫(Redis)" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$200510_sample_test.coverage" NAME="200510_sample_test Coverage Results" MODIFIED="1590217757452" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_200527_skip_py.coverage" NAME="pytest in 200527_skip.py Coverage Results" MODIFIED="1590741372569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for__2_2_MyTestCase_test_a.coverage" NAME="pytest for 基本使用_2-2優化.MyTestCase.test_a Coverage Results" MODIFIED="1590728777416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200525_入門" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$200430_.coverage" NAME="200430_解析式 Coverage Results" MODIFIED="1590397549382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for__2___MyTestCase_test_a.coverage" NAME="pytest for 基本使用_2(多個參數).MyTestCase.test_a Coverage Results" MODIFIED="1590730822585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$receive.coverage" NAME="receive Coverage Results" MODIFIED="1590553410057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200526_消息發布與訂閱/fanout(廣播)" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$demo.coverage" NAME="demo Coverage Results" MODIFIED="1590732380934" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_3(數據分離)" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_200510_test_sample_py.coverage" NAME="pytest in 200510_test_sample.py Coverage Results" MODIFIED="1590213634806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$LongestCommonPrefix.coverage" NAME="LongestCommonPrefix Coverage Results" MODIFIED="1591245027367" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/觀念/LeetCode/Easy" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$200520_.coverage" NAME="200520_更多操作技巧 Coverage Results" MODIFIED="1590714552128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Selenium" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_test_param_splite_py__1_.coverage" NAME="pytest in test_param_splite.py (1) Coverage Results" MODIFIED="1590310501367" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200523_django_test/tests/test_param_splite" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$200501__.coverage" NAME="200501_內置函數&amp;反射 Coverage Results" MODIFIED="1590397960865" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_test_param_splite_py.coverage" NAME="pytest in test_param_splite.py Coverage Results" MODIFIED="1590309632287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200523_django_test/tests" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$Merge_Sort__.coverage" NAME="Merge_Sort(合併排序) Coverage Results" MODIFIED="1591274972431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/演算法/排序" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$Line_Search__.coverage" NAME="Line_Search(線性搜尋) Coverage Results" MODIFIED="1591275736605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/演算法/搜尋" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$AddTwoNumbers.coverage" NAME="AddTwoNumbers Coverage Results" MODIFIED="1591078428853" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/觀念/LeetCode" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_200510_sample_test_py.coverage" NAME="pytest in 200510_sample_test.py Coverage Results" MODIFIED="1590217530584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$200429_Python_.coverage" NAME="200429_Python之傳值&amp;傳址 Coverage Results" MODIFIED="1590397148076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎/200429_對象引用" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$Quick_Sort__.coverage" NAME="Quick_Sort(快速排序) Coverage Results" MODIFIED="1591291895355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/演算法/排序" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_200521_fixture_test_test_three.coverage" NAME="pytest for 200521_fixture_test.test_three Coverage Results" MODIFIED="1590221030072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_fixture_test" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$Bubble_Sort__.coverage" NAME="Bubble_Sort(泡沫排序) Coverage Results" MODIFIED="1591271737421" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/演算法/排序" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$Binary__.coverage" NAME="Binary(二分搜尋) Coverage Results" MODIFIED="1591276356187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/演算法/搜尋" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$Binary_Tree__.coverage" NAME="Binary_Tree(二元樹) Coverage Results" MODIFIED="1591293753457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/進階/資料結構" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$client.coverage" NAME="client Coverage Results" MODIFIED="1590563984137" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200527_消息RPC" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pymongo.coverage" NAME="pymongo操作 Coverage Results" MODIFIED="1591253358518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/數據存儲/NoSQL文件資料庫(MongoDB)" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$200521_xpath.coverage" NAME="200521_xpath Coverage Results" MODIFIED="1590195728451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Selenium" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$200518_First_demo.coverage" NAME="200518_First_demo Coverage Results" MODIFIED="1590124371734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Selenium" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$server.coverage" NAME="server Coverage Results" MODIFIED="1590563980916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200527_消息RPC" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in__2___py.coverage" NAME="pytest in 基本使用_2(多個參數).py Coverage Results" MODIFIED="1590730825139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$main.coverage" NAME="main Coverage Results" MODIFIED="1590570344982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/異步/celery/200526_初試" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$run__1_.coverage" NAME="run (1) Coverage Results" MODIFIED="1591062769251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200529_測試報告" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in__py.coverage" NAME="pytest in 基本使用.py Coverage Results" MODIFIED="1590730249378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200526_ddt使用" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_200521_setup_test_TestCase.coverage" NAME="pytest for 200521_setup_test.TestCase Coverage Results" MODIFIED="1590218722612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_200429___test.coverage" NAME="pytest for 200429_迭代器&amp;生成器.test Coverage Results" MODIFIED="1591260224577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$RomanToInteger.coverage" NAME="RomanToInteger Coverage Results" MODIFIED="1591236151478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/觀念/LeetCode/Easy" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_test_sample2_test_some_data.coverage" NAME="pytest for test_sample2.test_some_data Coverage Results" MODIFIED="1590292196301" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200522_fixture" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$demo__1_.coverage" NAME="demo (1) Coverage Results" MODIFIED="1590737876667" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_3(數據分離)/yml使用" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_200510_sample_test_TestCase_test_two.coverage" NAME="pytest for 200510_sample_test.TestCase.test_two Coverage Results" MODIFIED="1590216774812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_first_demo_py.coverage" NAME="pytest in first_demo.py Coverage Results" MODIFIED="1590725912812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200525_入門" />
   </component>
@@ -125,19 +138,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/演算法/搜尋/Binary(二分搜尋).py">
+        <entry file="file://$PROJECT_DIR$/觀念/面試觀念題.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-453">
-              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/演算法/搜尋/Line_Search(線性搜尋).py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+            <state relative-caret-position="131">
+              <caret line="108" column="14" selection-start-line="108" selection-start-column="14" selection-end-line="108" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -165,12 +169,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Web網頁框架/框架(Django)/200502_cookie&amp;session/mysite/mysite/settings.py" />
-        <option value="$PROJECT_DIR$/Web網頁框架/框架(Django)/200502_admin操作/mysite/mysite/urls.py" />
-        <option value="$PROJECT_DIR$/Web網頁框架/框架(Django)/200502_admin操作/mysite/mysite/__init__.py" />
-        <option value="$PROJECT_DIR$/Web網頁框架/框架(Django)/200502_admin操作/mysite/mysite/settings.py" />
-        <option value="$PROJECT_DIR$/Web網頁框架/框架(Django)/200502_admin操作/mysite/app01/models.py" />
-        <option value="$PROJECT_DIR$/Web網頁框架/框架(Django)/200502_admin操作/筆記.txt" />
         <option value="$PROJECT_DIR$/Web網頁前端/Html/180903_img&amp;a&amp;列表.html" />
         <option value="$PROJECT_DIR$/Web網頁前端/Html/180902_基本標籤.html" />
         <option value="$PROJECT_DIR$/Web網頁前端/Html/180908_form之input標籤.html" />
@@ -192,7 +190,6 @@
         <option value="$PROJECT_DIR$/觀念/LeetCode/TwoSum.py" />
         <option value="$PROJECT_DIR$/觀念/LeetCode/AddTwoNumbers.py" />
         <option value="$PROJECT_DIR$/數據存儲/NoSQL資料庫(MongoDB)/總筆記.txt" />
-        <option value="$PROJECT_DIR$/觀念/面試觀念題.txt" />
         <option value="$PROJECT_DIR$/觀念/LeetCode/Easy/RomanToInteger.py" />
         <option value="$PROJECT_DIR$/觀念/LeetCode/Easy/PalindromeNumber.py" />
         <option value="$PROJECT_DIR$/觀念/LeetCode/Easy/ReverseInteger.py" />
@@ -207,15 +204,22 @@
         <option value="$PROJECT_DIR$/基礎/200429_跌代器&amp;生成器.py" />
         <option value="$PROJECT_DIR$/基礎/200429_迭代器&amp;生成器.py" />
         <option value="$PROJECT_DIR$/觀念/LeetCode/Easy/Valid_Parentheses(正確的括號).py" />
-        <option value="$PROJECT_DIR$/演算法/排序/Bubble_Sort(泡沫排序).py" />
-        <option value="$PROJECT_DIR$/演算法/排序/Insert_Sort(插入排序).py" />
-        <option value="$PROJECT_DIR$/演算法/排序/Selection_Sort(選擇排序).py" />
-        <option value="$PROJECT_DIR$/演算法/排序/Merge_Sort(合併排序).py" />
         <option value="$PROJECT_DIR$/演算法/搜尋/Liner_Search.py" />
         <option value="$PROJECT_DIR$/演算法/搜尋/Line_Search.py" />
         <option value="$PROJECT_DIR$/演算法/搜尋/Binary(二進制搜尋).py" />
         <option value="$PROJECT_DIR$/演算法/搜尋/Line_Search(線性搜尋).py" />
         <option value="$PROJECT_DIR$/演算法/搜尋/Binary(二分搜尋).py" />
+        <option value="$PROJECT_DIR$/演算法/排序/Bucket_Sort(桶子排序).py" />
+        <option value="$PROJECT_DIR$/演算法/搜尋/Simple_Binary_Search(簡易二分搜尋).py" />
+        <option value="$PROJECT_DIR$/演算法/搜尋/Linear_Search(線性搜尋).py" />
+        <option value="$PROJECT_DIR$/演算法/排序/Bubble_Sort(泡沫排序).py" />
+        <option value="$PROJECT_DIR$/演算法/排序/Insert_Sort(插入排序).py" />
+        <option value="$PROJECT_DIR$/演算法/排序/Merge_Sort(合併排序).py" />
+        <option value="$PROJECT_DIR$/演算法/排序/Quick_Sort(快速排序).py" />
+        <option value="$PROJECT_DIR$/演算法/排序/Selection_Sort(選擇排序).py" />
+        <option value="$PROJECT_DIR$/進階/資料結構/Binary_Tree(二元樹).py" />
+        <option value="$PROJECT_DIR$/進階/資料結構/Linked_List(鏈表).py" />
+        <option value="$PROJECT_DIR$/觀念/面試觀念題.txt" />
       </list>
     </option>
   </component>
@@ -230,6 +234,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -240,19 +245,23 @@
             <path>
               <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
-              <item name="演算法" type="462c0819:PsiDirectoryNode" />
+              <item name="觀念" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
-              <item name="演算法" type="462c0819:PsiDirectoryNode" />
-              <item name="搜尋" type="462c0819:PsiDirectoryNode" />
+              <item name="進階" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
+              <item name="進階" type="462c0819:PsiDirectoryNode" />
+              <item name="資料結構" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -276,7 +285,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Binary(二分搜尋)">
+  <component name="RunManager" selected="Python.Linked_List(鏈表)">
     <configuration name="200510_sample_test" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="PythonWork(py37)" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -299,7 +308,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Binary(二分搜尋)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Binary_Tree(二元樹)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonWork(py37)" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -307,12 +316,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/演算法/搜尋" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/進階/資料結構" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/演算法/搜尋/Binary(二分搜尋).py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/進階/資料結構/Binary_Tree(二元樹).py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -321,7 +330,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Insert_Sort(插入排序)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Bucket_Sort(桶子排序)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonWork(py37)" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -334,7 +343,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/演算法/排序/Insert_Sort(插入排序).py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/演算法/排序/Bucket_Sort(桶子排序).py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -343,7 +352,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Line_Search(線性搜尋)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Linked_List(鏈表)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonWork(py37)" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -351,12 +360,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/演算法/搜尋" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/進階/資料結構" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/演算法/搜尋/Line_Search(線性搜尋).py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/進階/資料結構/Linked_List(鏈表).py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -365,29 +374,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Merge_Sort(合併排序)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PythonWork(py37)" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/演算法/排序" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/演算法/排序/Merge_Sort(合併排序).py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Selection_Sort(選擇排序)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Quick_Sort(快速排序)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonWork(py37)" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -400,30 +387,49 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/演算法/排序/Selection_Sort(選擇排序).py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/演算法/排序/Quick_Sort(快速排序).py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Doctests in Quick_Sort(快速排序)" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
+      <module name="PythonWork(py37)" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/演算法/排序" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/演算法/排序/Quick_Sort(快速排序).py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Python.200510_sample_test" />
-      <item itemvalue="Python.Insert_Sort(插入排序)" />
-      <item itemvalue="Python.Selection_Sort(選擇排序)" />
-      <item itemvalue="Python.Merge_Sort(合併排序)" />
-      <item itemvalue="Python.Line_Search(線性搜尋)" />
-      <item itemvalue="Python.Binary(二分搜尋)" />
+      <item itemvalue="Python.Bucket_Sort(桶子排序)" />
+      <item itemvalue="Python tests.Doctests in Quick_Sort(快速排序)" />
+      <item itemvalue="Python.Quick_Sort(快速排序)" />
+      <item itemvalue="Python.Binary_Tree(二元樹)" />
+      <item itemvalue="Python.Linked_List(鏈表)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Binary(二分搜尋)" />
-        <item itemvalue="Python.Line_Search(線性搜尋)" />
-        <item itemvalue="Python.Merge_Sort(合併排序)" />
-        <item itemvalue="Python.Selection_Sort(選擇排序)" />
-        <item itemvalue="Python.Insert_Sort(插入排序)" />
+        <item itemvalue="Python.Linked_List(鏈表)" />
+        <item itemvalue="Python.Binary_Tree(二元樹)" />
+        <item itemvalue="Python.Quick_Sort(快速排序)" />
+        <item itemvalue="Python tests.Doctests in Quick_Sort(快速排序)" />
+        <item itemvalue="Python.Bucket_Sort(桶子排序)" />
       </list>
     </recent_temporary>
   </component>
@@ -455,17 +461,12 @@
       <workItem from="1590977111354" duration="13785000" />
       <workItem from="1591061040800" duration="20349000" />
       <workItem from="1591145192722" duration="24021000" />
-      <workItem from="1591233153089" duration="32346000" />
+      <workItem from="1591233153089" duration="32989000" />
+      <workItem from="1591290485427" duration="5961000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_in_基本使用_skip_py - 2020.05.29 at 16h 23m 27s.xml">
-      <configuration name="pytest in 基本使用_skip.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_基本使用_skip_py - 2020.05.29 at 16h 24m 51s.xml">
-      <configuration name="pytest in 基本使用_skip.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="pytest_in_基本使用_skip_py - 2020.05.29 at 16h 27m 29s.xml">
       <configuration name="pytest in 基本使用_skip.py" configurationId="tests" />
     </history-entry>
@@ -490,9 +491,15 @@
     <history-entry file="pytest_for_200429_迭代器&amp;生成器_test - 2020.06.04 at 16h 43m 47s.xml">
       <configuration name="pytest for 200429_迭代器&amp;生成器.test" configurationId="tests" />
     </history-entry>
+    <history-entry file="Doctests_in_Quick_Sort(快速排序) - 2020.06.05 at 01h 31m 13s.xml">
+      <configuration name="Doctests in Quick_Sort(快速排序)" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_Quick_Sort(快速排序) - 2020.06.05 at 01h 31m 24s.xml">
+      <configuration name="Doctests in Quick_Sort(快速排序)" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="334032000" />
+    <option name="totallyTimeSpent" value="340636000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -507,12 +514,12 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.80133927" visible="true" weight="0.22520107" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.80133927" visible="true" weight="0.22788204" />
       <window_info id="Structure" order="1" sideWeight="0.19866072" side_tool="true" weight="0.21715818" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34135976" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.34135976" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -521,7 +528,7 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.36827195" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.36775106" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -576,43 +583,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Web網頁前端/jQuery/180922_循環.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Testing/Selenium/200518_First_demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1176" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web網頁前端/jQuery/180923_css操作/position.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web網頁前端/jQuery/180923_擴展與插件.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web網頁前端/jQuery/180922_文本操作.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="63" column="7" lean-forward="true" selection-start-line="63" selection-start-column="7" selection-end-line="63" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web網頁前端/jQuery/180923_事件綁定&amp;委託.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="34" column="18" selection-start-line="34" selection-start-column="13" selection-end-line="42" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web網頁前端/jQuery/180921_選擇器.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1136" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Web網頁前端/jQuery/180922_屬性操作.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="616">
@@ -694,49 +664,12 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/數據存儲/NoSQL資料庫(MongoDB)/總筆記.txt" />
-    <entry file="file://$PROJECT_DIR$/觀念/面試觀念題.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-784">
-          <caret line="220" column="45" lean-forward="true" selection-start-line="220" selection-start-column="45" selection-end-line="220" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/觀念/LeetCode/Easy/PalindromeNumber.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/觀念/LeetCode/Easy/ReverseInteger.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/觀念/LeetCode/Easy/TwoSum.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2">
-          <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/觀念/LeetCode/Medium/AddTwoNumbers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-336" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/觀念/LeetCode/Easy/RomanToInteger.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-140">
-          <caret line="10" column="15" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/數據存儲/NoSQL文件資料庫(MongoDB)/pymongo.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/觀念/LeetCode/Easy/PalindromeNumber.py" />
+    <entry file="file://$PROJECT_DIR$/觀念/LeetCode/Easy/ReverseInteger.py" />
+    <entry file="file://$PROJECT_DIR$/觀念/LeetCode/Easy/TwoSum.py" />
+    <entry file="file://$PROJECT_DIR$/觀念/LeetCode/Medium/AddTwoNumbers.py" />
+    <entry file="file://$PROJECT_DIR$/觀念/LeetCode/Easy/RomanToInteger.py" />
+    <entry file="file://$PROJECT_DIR$/數據存儲/NoSQL文件資料庫(MongoDB)/pymongo.py" />
     <entry file="file://$PROJECT_DIR$/數據存儲/NoSQL文件資料庫(MongoDB)/總筆記.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-840">
@@ -751,27 +684,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/觀念/LeetCode/Easy/LongestCommonPrefix.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-56">
-          <caret line="43" column="17" lean-forward="true" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/觀念/LeetCode/Easy/不用除法求商和餘.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/觀念/LeetCode/Medium/AddTwoNumbers(鏈結數字串列相加).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/觀念/LeetCode/Easy/LongestCommonPrefix.py" />
+    <entry file="file://$PROJECT_DIR$/觀念/LeetCode/Easy/不用除法求商和餘.py" />
     <entry file="file://$PROJECT_DIR$/觀念/LeetCode/Easy/MyDivision(不用除法求商和餘).py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -782,13 +696,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/基礎/200429_跌代器&amp;生成器.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="3" column="28" lean-forward="true" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/基礎/200429_跌代器&amp;生成器.py" />
     <entry file="file://$PROJECT_DIR$/基礎/200429_迭代器&amp;生成器.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
@@ -817,47 +725,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/演算法/排序/Selection_Sort(選擇排序).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/演算法/排序/Insert_Sort(插入排序).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/演算法/排序/Bubble_Sort(泡沫排序).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/演算法/排序/Merge_Sort(合併排序).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-448">
-          <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/演算法/搜尋/Liner_Search.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/演算法/搜尋/Line_Search.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/演算法/搜尋/Binary(二進制搜尋).py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/演算法/搜尋/Liner_Search.py" />
+    <entry file="file://$PROJECT_DIR$/演算法/搜尋/Line_Search.py" />
+    <entry file="file://$PROJECT_DIR$/演算法/搜尋/Binary(二進制搜尋).py" />
     <entry file="file://$PROJECT_DIR$/演算法/搜尋/Line_Search(線性搜尋).py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="56">
@@ -867,8 +737,97 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/演算法/搜尋/Binary(二分搜尋).py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-453">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        <state relative-caret-position="163">
+          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/演算法/搜尋/Simple_Binary_Search(簡易二分搜尋).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/演算法/搜尋/Linear_Search(線性搜尋).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/演算法/排序/Quick_Sort(快速排序).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/演算法/排序/Selection_Sort(選擇排序).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/演算法/排序/Bubble_Sort(泡沫排序).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="4" column="8" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/演算法/排序/Bucket_Sort(桶子排序).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/演算法/排序/Merge_Sort(合併排序).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/演算法/排序/Insert_Sort(插入排序).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/觀念/LeetCode/Medium/AddTwoNumbers(鏈結數字串列相加).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="45" column="18" lean-forward="true" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/進階/資料結構/Binary_Tree(二元樹).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1680">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/進階/演算法/排序/Quick_Sort(快速排序).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-252" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/進階/資料結構/Linked_List(鏈表).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/觀念/面試觀念題.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="108" column="14" selection-start-line="108" selection-start-column="14" selection-end-line="108" selection-end-column="14" />
         </state>
       </provider>
     </entry>
