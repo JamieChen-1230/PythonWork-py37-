@@ -15,8 +15,9 @@ allure-pytest==2.8.15  (用來生成更友好測試報告，還需要額外安�
 ddt==1.4.1  (用於unittest參數數據傳輸)
 pyaml==20.4.0  (為了使python可以讀取yml文件)
 
-緩存：
+數據存儲：
 redis==3.2.0 (redis==2.10.6版本太低)
+pymongo==3.10.1  (要使用python操作MongoDB)
 
 消息對列(RabbitMQ)：
 要先載erlang(RabbitMQ需要的環境)，再載(RabbitMQ，

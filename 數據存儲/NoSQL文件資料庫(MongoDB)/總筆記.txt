@@ -1,5 +1,7 @@
 NoSQL數據庫： 非關係數據庫(non-relation SQL)，不像關係型數據庫表和表之間有關聯。
 
+使用python操作MongoDB：
+    - pip install pymongo
 
 基礎指令：
     - 查看當前數據庫： db
@@ -234,3 +236,45 @@ COUNT：
                 - db.item.aggregate({$unwind:
                     {path:"$size", preserveNullAndEmptyArrays:true}}
                     )
+
+創建索引：
+    - 建立測試數據：
+        ※ MongoDB可以使用Js語法
+        for(i=0;i<=100000;i++){
+            db.index.insert({name:"test"+i, num:i})
+        }
+
+    - 建立索引：
+        - 建立一般索引：
+            db.<集合名>.ensureIndex({<字段名>:1})  # 1代表升序；-1代表降序
+                - 範例： db.index.ensureIndex({name:1})
+        - 建立一般索引並設為唯一索引：
+            db.<集合名>.ensureIndex({<字段名>:1}, {unique:true})   # {unique:true} 建立唯一索引，當建立唯一索引後，此字段將不能有重複值
+                - 範例： db.index.ensureIndex({name:-1}, {unique:true})
+        - 建立聯合索引：
+            db.<集合名>.ensureIndex({<字段名>:1, <字段名>:1...})
+                - 範例： db.index.ensureIndex({name:1, age:1}, {unique:true})
+
+    - 查尋所有索引：
+        db.<集合名>.getIndexes()
+
+    - 刪除索引：
+        db.<集合名>.dropIndex(<索引名稱>)
+            - 範例：
+                db.index.ensureIndex("name_1")  # 根據索引名稱刪除
+                db.index.ensureIndex({name:1})  # 根據創建條件刪除
+
+    - 查詢測試：
+        ※ .explain('executionStats') 顯示查詢的相關數據
+        - 建立索引前：
+            db.index.find({name:"test100000"}).explain('executionStats')
+            # "executionTimeMillis" : 37  => 花費37ms
+        - 建立索引後：
+            db.index.ensureIndex({name:1})
+            db.index.find({name:"test100000"}).explain('executionStats')
+            # "executionTimeMillis" : 1  => 花費1ms
+
+實務設計：
+    - 爬蟲數據去重：
+        - 使用數據庫建立唯一索引進行去重
+        - 根據url地址進行去重：

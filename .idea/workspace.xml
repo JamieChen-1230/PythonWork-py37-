@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff1e8a4e-9f45-4d3b-9949-a27f16c94dbc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/觀念/LeetCode/Easy/PalindromeNumber.py" beforeDir="false" afterPath="$PROJECT_DIR$/觀念/LeetCode/Easy/PalindromeNumber.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/觀念/LeetCode/Easy/ReverseInteger.py" beforeDir="false" afterPath="$PROJECT_DIR$/觀念/LeetCode/Easy/ReverseInteger.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/觀念/LeetCode/Easy/TwoSum.py" beforeDir="false" afterPath="$PROJECT_DIR$/觀念/LeetCode/Easy/TwoSum.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/安裝套件.txt" beforeDir="false" afterPath="$PROJECT_DIR$/安裝套件.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/數據存儲/NoSQL文件資料庫(MongoDB)/總筆記.txt" beforeDir="false" afterPath="$PROJECT_DIR$/數據存儲/NoSQL文件資料庫(MongoDB)/總筆記.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,6 +65,7 @@
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_200521_fixture_test_test_three.coverage" NAME="pytest for 200521_fixture_test.test_three Coverage Results" MODIFIED="1590221030072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_fixture_test" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$.coverage" NAME="測試使用 Coverage Results" MODIFIED="1590731444331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/觀念" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$client.coverage" NAME="client Coverage Results" MODIFIED="1590563984137" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200527_消息RPC" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$pymongo.coverage" NAME="pymongo操作 Coverage Results" MODIFIED="1591252583089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/數據存儲/NoSQL文件資料庫(MongoDB)" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_DDTfile_data_py.coverage" NAME="pytest in DDT提供的file_data.py Coverage Results" MODIFIED="1590738220693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_3(數據分離)" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in___py.coverage" NAME="pytest in 基本使用_斷言.py Coverage Results" MODIFIED="1590739974507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$200521_xpath.coverage" NAME="200521_xpath Coverage Results" MODIFIED="1590195728451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Selenium" />
@@ -116,11 +115,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/觀念/LeetCode/Easy/LongestCommonPrefix.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/數據存儲/NoSQL文件資料庫(MongoDB)/總筆記.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="38" column="49" selection-start-line="38" selection-start-column="49" selection-end-line="38" selection-end-column="49" />
+            <state relative-caret-position="-840">
+              <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/數據存儲/NoSQL文件資料庫(MongoDB)/pymongo操作.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="32">
+              <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -148,8 +156,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Web網頁框架/框架(Django)/200425_基礎筆記/Django_ORM/Django_ORM_增減改查.txt" />
-        <option value="$PROJECT_DIR$/Web網頁框架/框架(Django)/200426_url控制/mysite/app01/urls.py" />
         <option value="$PROJECT_DIR$/Web網頁框架/框架(Django)/200426_url控制/mysite/mysite/urls.py" />
         <option value="$PROJECT_DIR$/Web網頁框架/框架(Django)/200426_url控制/筆記.txt" />
         <option value="$PROJECT_DIR$/Web網頁框架/框架(Django)/200427_模板數據顯示/mysite/mysite/urls.py" />
@@ -193,12 +199,14 @@
         <option value="$PROJECT_DIR$/觀念/LeetCode/AddTwoNumbers.py" />
         <option value="$PROJECT_DIR$/數據存儲/NoSQL資料庫(MongoDB)/總筆記.txt" />
         <option value="$PROJECT_DIR$/觀念/面試觀念題.txt" />
-        <option value="$PROJECT_DIR$/數據存儲/NoSQL文件資料庫(MongoDB)/總筆記.txt" />
         <option value="$PROJECT_DIR$/觀念/LeetCode/Easy/RomanToInteger.py" />
         <option value="$PROJECT_DIR$/觀念/LeetCode/Easy/PalindromeNumber.py" />
         <option value="$PROJECT_DIR$/觀念/LeetCode/Easy/ReverseInteger.py" />
         <option value="$PROJECT_DIR$/觀念/LeetCode/Easy/TwoSum.py" />
         <option value="$PROJECT_DIR$/觀念/LeetCode/Easy/LongestCommonPrefix.py" />
+        <option value="$PROJECT_DIR$/數據存儲/NoSQL文件資料庫(MongoDB)/pymongo.py" />
+        <option value="$PROJECT_DIR$/數據存儲/NoSQL文件資料庫(MongoDB)/總筆記.txt" />
+        <option value="$PROJECT_DIR$/數據存儲/NoSQL文件資料庫(MongoDB)/pymongo操作.py" />
       </list>
     </option>
   </component>
@@ -223,20 +231,13 @@
             <path>
               <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
-              <item name="觀念" type="462c0819:PsiDirectoryNode" />
+              <item name="數據存儲" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
-              <item name="觀念" type="462c0819:PsiDirectoryNode" />
-              <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
-              <item name="觀念" type="462c0819:PsiDirectoryNode" />
-              <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
-              <item name="Easy" type="462c0819:PsiDirectoryNode" />
+              <item name="數據存儲" type="462c0819:PsiDirectoryNode" />
+              <item name="NoSQL文件資料庫(MongoDB)" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -266,7 +267,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.TwoSum">
+  <component name="RunManager" selected="Python.pymongo操作">
     <configuration name="200510_sample_test" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="PythonWork(py37)" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -303,28 +304,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/觀念/LeetCode/Easy/LongestCommonPrefix.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="PalindromeNumber" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PythonWork(py37)" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/觀念/LeetCode/Easy" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/觀念/LeetCode/Easy/PalindromeNumber.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -399,21 +378,43 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="pymongo操作" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PythonWork(py37)" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/數據存儲/NoSQL文件資料庫(MongoDB)" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/數據存儲/NoSQL文件資料庫(MongoDB)/pymongo操作.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.200510_sample_test" />
       <item itemvalue="Python.ReverseInteger" />
-      <item itemvalue="Python.PalindromeNumber" />
       <item itemvalue="Python.RomanToInteger" />
       <item itemvalue="Python.LongestCommonPrefix" />
       <item itemvalue="Python.TwoSum" />
+      <item itemvalue="Python.pymongo操作" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.pymongo操作" />
         <item itemvalue="Python.TwoSum" />
         <item itemvalue="Python.LongestCommonPrefix" />
         <item itemvalue="Python.RomanToInteger" />
         <item itemvalue="Python.ReverseInteger" />
-        <item itemvalue="Python.PalindromeNumber" />
       </list>
     </recent_temporary>
   </component>
@@ -445,7 +446,7 @@
       <workItem from="1590977111354" duration="13785000" />
       <workItem from="1591061040800" duration="20349000" />
       <workItem from="1591145192722" duration="24021000" />
-      <workItem from="1591233153089" duration="10335000" />
+      <workItem from="1591233153089" duration="16079000" />
     </task>
     <servers />
   </component>
@@ -482,7 +483,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="312021000" />
+    <option name="totallyTimeSpent" value="317765000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -497,12 +498,12 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.80133927" visible="true" weight="0.22520107" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.80133927" visible="true" weight="0.22520107" />
       <window_info id="Structure" order="1" sideWeight="0.19866072" side_tool="true" weight="0.21715818" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3371105" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.34135976" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -511,7 +512,7 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.36827195" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.36827195" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -566,20 +567,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django)/200501_ORM深度查詢/筆記.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="1" column="4" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django)/200502_admin操作/mysite/app01/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django)/200502_admin操作/筆記.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2017">
@@ -833,13 +820,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/數據存儲/NoSQL文件資料庫(MongoDB)/總筆記.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="179" column="46" selection-start-line="179" selection-start-column="46" selection-end-line="179" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/觀念/LeetCode/Easy/PalindromeNumber.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
@@ -875,8 +855,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/觀念/LeetCode/Easy/LongestCommonPrefix.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="38" column="49" selection-start-line="38" selection-start-column="49" selection-end-line="38" selection-end-column="49" />
+        <state relative-caret-position="530">
+          <caret line="43" column="17" lean-forward="true" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/數據存儲/NoSQL文件資料庫(MongoDB)/pymongo.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/數據存儲/NoSQL文件資料庫(MongoDB)/總筆記.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-840">
+          <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/數據存儲/NoSQL文件資料庫(MongoDB)/pymongo操作.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
         </state>
       </provider>
     </entry>
