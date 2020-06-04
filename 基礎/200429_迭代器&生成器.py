@@ -84,7 +84,7 @@
 # print(res.send('傳值給yield'))  # => 2，傳值給yield讓x能接到值，並繼續執行到下個yield(相當於執行一個next())
 
 
-#  ------迭代器只能使用一次------
+# ------迭代器只能使用一次------
 # li = (i for i in range(5))
 # for i in li:
 #     print(i, end='')  # => 01234
