@@ -1,3 +1,8 @@
+"""
+相加兩個數字鏈表
+"""
+
+
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, val=0, next=None):
@@ -6,6 +11,9 @@ class ListNode:
 
 
 # 高手寫的
+# 思路：
+#   - 透過指針去操縱鏈表(不影響原鏈表)
+#   - 從尾數開始相加，並計算進位值
 class Solution:
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
         # 先設定一個虛假起始點
@@ -32,7 +40,7 @@ class Solution:
 
 
 l1 = ListNode(2, ListNode(4, ListNode(3)))
-l2 = ListNode(5, ListNode(6, ListNode(4)))
+l2 = ListNode(5, ListNode(6))
 ret = Solution().addTwoNumbers(l1, l2)
 while ret:
     print(ret.val)
