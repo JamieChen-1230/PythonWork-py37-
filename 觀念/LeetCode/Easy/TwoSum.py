@@ -6,22 +6,22 @@ from typing import List
 
 
 # 自己寫的(效率爛爆了)
-# class Solution:
-#     def twoSum(self, nums: List[int], target: int) -> List[int]:
-#         if len(nums) >= 2:
-#             for n1 in nums:
-#                 # 同一個值只能使用一次
-#                 nums2 = list(nums)
-#                 nums2.remove(n1)
-#                 for n2 in nums2:
-#                     if n1 + n2 == target:
-#                         if n1 == n2:
-#                             return [nums.index(n1), nums.index(n2, nums.index(n1)+1)]
-#                         return [nums.index(n1), nums.index(n2)]
-#             return []
-#         else:
-#             print('num list length must be two or more')
-#             return []
+class Solution_ByMe:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        if len(nums) >= 2:
+            for n1 in nums:
+                # 同一個值只能使用一次
+                nums2 = list(nums)
+                nums2.remove(n1)
+                for n2 in nums2:
+                    if n1 + n2 == target:
+                        if n1 == n2:
+                            return [nums.index(n1), nums.index(n2, nums.index(n1)+1)]
+                        return [nums.index(n1), nums.index(n2)]
+            return []
+        else:
+            # print('num list length must be two or more')
+            return []
 
 
 # 高手的
@@ -33,15 +33,15 @@ class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         traversed_nums = {}
         # enumerate() 會返回元素的下標和值
-        for id, n in enumerate(nums):
+        for index, n in enumerate(nums):
             # 互補值
             difference = target - n
             if difference in traversed_nums:  # 判斷之前此互補值是否有出現過
-                return [traversed_nums[difference], id]
+                return [traversed_nums[difference], index]
             # 元素值設為key，下標設為value
-            traversed_nums.setdefault(n, id)
+            traversed_nums.setdefault(n, index)
 
 
-ret = Solution().twoSum([3, 3], 6)
+ret = Solution().twoSum([3, 2, 3], 6)
 print(ret)
 

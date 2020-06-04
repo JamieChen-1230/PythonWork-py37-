@@ -5,20 +5,20 @@
 
 
 # 自己寫的(OK)
-# class Solution:
-#     def reverse(self, x: int) -> int:
-#         minus = None
-#         # 轉為list
-#         x_list = list(str(x))
-#         if x_list[0] == '-':
-#             minus = x_list.pop(0)
-#         # 反轉list
-#         x_list = list(reversed(x_list))
-#         if minus:
-#             x_list.insert(0, minus)
-#         # 先轉為字符串再轉為整數
-#         x = int("".join(x_list))
-#         return x if (-2 ** 31 < x < 2 ** 31 - 1) else 0
+class Solution_ByMe:
+    def reverse(self, x: int) -> int:
+        minus = None
+        # 轉為list
+        x_list = list(str(x))
+        if x_list[0] == '-':
+            minus = x_list.pop(0)
+        # 反轉list
+        x_list = list(reversed(x_list))
+        if minus:
+            x_list.insert(0, minus)
+        # 先轉為字符串再轉為整數
+        x = int("".join(x_list))
+        return x if (-2 ** 31 < x < 2 ** 31 - 1) else 0
 
 
 # 別人寫的(更為簡潔)
