@@ -200,9 +200,10 @@ MTV架構：
 
 
 對restful api的認識：
-    其實它本質上是一個規範，讓我們寫API時，可以更好的去做區分，也更容易讓後臺去處理，
-    也讓前端工程師也更容易的去記住URL，並透過URL體現出API的操作。
-    他通常會包括版本號、狀態碼、method等等，而我有接觸的是Django Rest FrameWork，他可以輕易幫我們做到....
+    其實它本質上是一個規範，讓我們寫API時，可以更好的去做區分，也能讓前後端工程師彼此更好的溝通。
+    它通常會規範URL的形式、傳輸或表現的數據形式(json)等、CRUD操作對應著GET,POST,PUT,DELETE還有狀態碼涵義等，
+    它本身是無狀態的，所以從 Client 到 Server 的所有請求，都要包含『 用於理解此請求 』的相關信息(EX:token、身份認證之類的)，
+    也可以透過設置緩存來提高回應速度。
     https://www.cnblogs.com/wupeiqi/articles/7805382.html
 
 

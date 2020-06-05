@@ -1,0 +1,48 @@
+輸入書局代碼[:shop_id]->得到擁有借書的讀者跟借閱的書
+ex:
+bookshop/:shop_id/
+->
+[
+    {
+        "user_id":1,
+        "user_name":"user_AAA",
+        "lend_books":[
+            {
+                "book_id":1,
+                "book_name":"book_AAA",
+            },
+            {
+                "book_id":2,
+                "book_name":"book_BBB",
+            }
+        ]     
+    },
+    {
+        "user_id":2,
+        "user_name":"user_BBB",
+        "lend_books":[
+            {
+                "book_id":1,
+                "book_name":"book_AAA",
+            },
+            {
+                "book_id":3,
+                "book_name":"book_CCC",
+            }
+        ]
+    }
+]
+
+然後輸入書局代碼[:shop_id]跟書本代碼[:book_id]->得到擁有借書的讀者
+ex:
+bookshop/:shop_id/book/:book_id/
+[
+    {
+        "user_id":2,
+        "user_name":"user_BBB"
+    },
+    {
+        "user_id":4,
+        "user_name":"user_DDD"
+    },
+]

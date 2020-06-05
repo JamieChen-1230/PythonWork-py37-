@@ -1,6 +1,6 @@
 在D:\Programming\Python\Anaconda3\envs\py37\Lib\site-packages\django\views中的debug.py
 
-設定成了utf-8(已改回來)
+設定成了utf-8
 def get_traceback_html(self):
        """Return HTML version of debug 500 HTTP error page."""
        # with Path(CURRENT_DIR, 'templates', 'technical_500.html').open() as fh:

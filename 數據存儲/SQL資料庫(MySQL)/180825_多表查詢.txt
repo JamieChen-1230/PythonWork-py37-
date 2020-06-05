@@ -1,42 +1,45 @@
 範例數據在 練習範例數據(多表).txt 中
 
 1.笛卡爾積查詢
-- 產生len(person)*len(dept)行
-指令範例：SELECT * From person, dept;
+    - 產生len(person)*len(dept)行
+    指令範例： SELECT * From person, dept;
 
 2.多表聯合查詢(等同於內連接查詢)
-- 只篩選出有意義的數據(沒用到的部門或人不會出現)
-指令範例：
-SELECT * From person as p, dept as d WHERE p.dept_id=d.did;  -- 多表聯合查詢
-SELECT * From person as p INNER JOIN dept as d ON p.dept_id=d.did;  -- 內連接查詢
+    - 只篩選出有意義的數據(沒用到的部門或人不會出現)
+    指令範例：
+        SELECT * From person as p, dept as d WHERE p.dept_id=d.did;  -- 多表聯合查詢
+        SELECT * From person as p INNER JOIN dept as d ON p.dept_id=d.did;  -- 內連接查詢
 
 3.外連接查詢(左連接查詢)
-- 以左表為基礎，若遇到無法和右表對應之數據照樣顯示，但對應的資訊為null。(在內連接的基礎上增加左邊有右邊沒有的結果)
-指令範例：SELECT * From person as p LEFT JOIN dept as d ON p.dept_id=d.did;
+    - 以左表為基礎，若遇到無法和右表對應之數據照樣顯示，但對應的資訊為null。(在內連接的基礎上增加左邊有右邊沒有的結果)
+    指令範例：
+        SELECT * From person as p LEFT JOIN dept as d ON p.dept_id=d.did;
 
 4.外連接查詢(右連接查詢)
-- 以右表為基礎，若遇到無法和左表對應之數據照樣顯示，但對應的資訊為null。(在內連接的基礎上增加右邊有左邊沒有的結果)
-指令範例：SELECT * From person as p RIGHT JOIN dept as d ON p.dept_id=d.did;
+    - 以右表為基礎，若遇到無法和左表對應之數據照樣顯示，但對應的資訊為null。(在內連接的基礎上增加右邊有左邊沒有的結果)
+    指令範例：
+        SELECT * From person as p RIGHT JOIN dept as d ON p.dept_id=d.did;
 
 5.全連接查詢
-- mysql不支持全外連接FULL JOIN，mysql可以使用union間接實現全外連接。(注意union與union all的區別：union會去掉相同的紀錄)
-指令範例：
-SELECT * From person as p LEFT JOIN dept as d ON p.dept_id=d.did
-UNION
-SELECT * From person as p RIGHT JOIN dept as d ON p.dept_id=d.did;
+    - mysql不支持全外連接FULL JOIN，mysql可以使用union間接實現全外連接。(注意union與union all的區別：union會去掉相同的紀錄)
+    指令範例：
+        SELECT * From person as p LEFT JOIN dept as d ON p.dept_id=d.did
+        UNION
+        SELECT * From person as p RIGHT JOIN dept as d ON p.dept_id=d.did;
 
 6.子語句查詢(嵌套查詢)
-    -- 子查詢是將一個查詢語句嵌套在另一個查詢語句中，內層查詢語句的查詢結果，可以為外層查詢語句提供查詢條件。
-    -- 子查詢中可以包含：IN、NOT IN、ANY、ALL、EXISTS和NOT EXISTS等關鍵字，還可以包含比較運算符：=, !=, >, <等。
-- 作为表名使用
-指令範例：SELECT * FROM (SELECT * FROM person) AS p;  -- 需給他取別名，這樣系統才會把它當作一張表
-- 求最大工资那个人的姓名和薪水
-錯誤示範：SELECT name, MAX(salary) FROM person;  -- 這樣顯示出來的name不是我們要的，他只是把第一筆資料的name拿出來
-指令範例：SELECT * FROM person WHERE salary=(SELECT MAX(salary) FROM person);
-- 求工资高于所有人员平均工资的人员
-指令範例：SELECT * FROM person WHERE salary>(SELECT AVG(salary) FROM person);
-- 查询平均年龄在20岁以上的部门名
-指令範例：SELECT * FROM dept WHERE dept.did in (SELECT dept_id FROM person GROUP BY dept_id HAVING AVG(age)>20);
+    介紹：
+        - 子查詢是將一個查詢語句嵌套在另一個查詢語句中，內層查詢語句的查詢結果，可以為外層查詢語句提供查詢條件。
+        - 子查詢中可以包含：IN、NOT IN、ANY、ALL、EXISTS和NOT EXISTS等關鍵字，還可以包含比較運算符：=, !=, >, <等。
+    作为表名使用：
+        指令範例：SELECT * FROM (SELECT * FROM person) AS p;  -- 需給他取別名，這樣系統才會把它當作一張表
+    求最大工资那个人的姓名和薪水：
+        錯誤示範：SELECT name, MAX(salary) FROM person;  -- 這樣顯示出來的name不是我們要的，他只是把第一筆資料的name拿出來
+        指令範例：SELECT * FROM person WHERE salary=(SELECT MAX(salary) FROM person);
+    求工资高于所有人员平均工资的人员：
+        指令範例：SELECT * FROM person WHERE salary>(SELECT AVG(salary) FROM person);
+    查询平均年龄在20岁以上的部门名：
+        指令範例：SELECT * FROM dept WHERE dept.did in (SELECT dept_id FROM person GROUP BY dept_id HAVING AVG(age)>20);
 
 7.關鍵字查詢
 (1) ANY

@@ -3,18 +3,18 @@ create table account(
         name varchar(20),
         deposit double
 );
-insert into account values (1, 'jamie', 8000),
-                           (2, 'sb', 8000);
+insert into account values (1, 'jamie', 8000), (2, 'sb', 8000);
 
---事務指邏輯上的一組操作，組成這組操作的各個單元，要不全部成功，要不全部不成功
-    --start transaction開啟事務
-    --Rollback回滾事務,即撤銷指定的sql語句(只能回退insert delete update語句)，回滾到上一次commit的位置
-    --Commit提交事務，提交未存儲的事務
-    --savepoint保留點，事務處理中設置的臨時佔位符你可以對它發布回退(與整個事務回退不同)
+事務：
+    - 指邏輯上的一組操作，組成這組操作的各個單元，要不全部成功，要不全部不成功
+        - start transaction： 開啟事務
+        - Rollback： 回滾事務，即撤銷指定的sql語句(只能回退insert delete update語句)，回滾到上一次commit的位置
+        - Commit： 提交事務，提交未存儲的事務
+        - savepoint： 保留點，事務處理中設置的臨時佔位符你可以對它發布回退(與整個事務回退不同)
 
---jamie給sb 5000
-start transaction;
-update account set deposit=deposit-5000 where name='jamie';
-update account set deposit=deposit+5000 where name='sb';
-commit;  --完成動作後要提交，不然數據庫並沒有真正改變
+範例： jamie給sb 5000
+    start transaction;
+    update account set deposit=deposit-5000 where name='jamie';
+    update account set deposit=deposit+5000 where name='sb';
+    commit;  -- 完成動作後要提交，不然數據庫並沒有真正改變
 

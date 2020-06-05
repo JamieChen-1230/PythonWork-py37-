@@ -1,49 +1,46 @@
---id本身就一個索引
---create table test1(
---        id int primary key auto_increment,
---        name varchar(20),
---        salary int default 1000
---);
---
---insert into test1(name) values ('jamie1'),
---                               ('jamie2'),
---                               ('jamie3'),
---                               ('jamie4');
+id本身就一個索引：
+    create table test1(
+           id int primary key auto_increment,
+            name varchar(20),
+            salary int default 1000
+    );
+
+    insert into test1(name) values ('jamie1'), ('jamie2'), ('jamie3'), ('jamie4');
 
 
--- --------普通索引--------
---index_name 索引名，不取默認為原名
-create table key_test(
-        id int,
-        name varchar(20),
-        key index_name (name)
-);
+普通索引：
+    - index_name 索引名，不取默認為原名
+        create table key_test(
+                id int,
+                name varchar(20),
+                key index_name (name)
+        );
 
--- --------唯一索引--------
-create table unique_test(
-        id int,
-        name varchar(20),
-        unique key (name)
-);
+唯一索引：
+    create table unique_test(
+            id int,
+            name varchar(20),
+            unique key (name)
+    );
 
--- --------全文索引--------
-create table fulltext_test(
-        id int,
-        name varchar(20),
-        resume varchar(50),
-        fulltext key (resume)
-);
+全文索引：
+    create table fulltext_test(
+            id int,
+            name varchar(20),
+            resume varchar(50),
+            fulltext key (resume)
+    );
 
--- --------多例索引--------
-create table multi_test(
-        id int,
-        name varchar(20),
-        resume varchar(50),
-        key index_name_resume (name, resume)
-);
+多例索引：
+    create table multi_test(
+            id int,
+            name varchar(20),
+            resume varchar(50),
+            key index_name_resume (name, resume)
+    );
 
--- --------新增索引--------
---alter table tab_name add [unique|fulltext] key (字段名);
+新增索引：
+    alter table tab_name add [unique|fulltext] key (字段名);
 
--- --------刪除索引--------
---drop index 索引名 on 表名
+刪除索引：
+    drop index 索引名 on 表名
