@@ -39,7 +39,7 @@
 					        ser = self.get_serializer(instance=page_roles, many=True)
 					        return Response(ser.data)
 
-    	- 有一點點用：
+    	- 有用(當想大量自訂製查詢時能使用)：
     		4. class MyView(GenericViewSet)。
     			繼承： GenericViewSet(ViewSetMixin, generics.GenericAPIView)
     			路由：re_path(r'^(?P<version>[v1|v2]+)/roles/$', views.RolesView.as_view({'get': 'list', 'post': 'create'}))  # GenericViewSet要額外設置路由映射

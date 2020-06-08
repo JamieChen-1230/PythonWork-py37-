@@ -9,5 +9,11 @@ router.register(r'bookshops', viewset=views.BookshopsView)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    re_path(r'api/bookshops/(?P<pk>\d+)/books/$', views.BookshopsBooksView.as_view({
+        'get': 'list',  # 獲取單條數據
+    })),
+    re_path(r'api/bookshops/(?P<pk>\d+)/books/(?P<book_id>\d+)/$', views.BookshopsBooksView.as_view({
+        'get': 'retrieve',  # 獲取單條數據
+    })),
     re_path(r'api/', include(router.urls)),
 ]
