@@ -13,3 +13,8 @@ import math
 
 print(math.log(100, 5))
 5*(5*2)
+
+
+# --------篩選值-----------
+li = None or [] or [1, 2]
+print(li)
