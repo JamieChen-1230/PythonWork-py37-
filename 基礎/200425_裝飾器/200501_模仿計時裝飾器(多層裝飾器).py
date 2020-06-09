@@ -11,6 +11,7 @@ def auth(func):
         password = input("密碼 ").strip()
         if username == "jamie" and password == "123":
             print("歡迎登入【%s】" % username)
+            print(func)
             res = func(*args, **kwargs)
             return res
         else:
@@ -24,6 +25,7 @@ def clock(fmt=DEFAULT_FMT):
         def wrapper(*args, **kwargs):
             print("使用clock裝飾器")
             start = time.time()
+            print(func)
             res = func(*args, **kwargs)
             end = time.time()
             elapsed = end - start
