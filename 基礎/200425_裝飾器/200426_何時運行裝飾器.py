@@ -4,8 +4,8 @@
         二、裝飾器在被裝飾函數定義時就會執行，這通常是發生在加載模塊時。
 """
 
-
 registry = []
+
 
 def deco(func):
     print("running deco. ------> 模塊加載時就會運行")
