@@ -1,15 +1,10 @@
 # ---------------- 作用域 ----------------
 # # ※ 函數運行方式 => 函數內存位置+()
-#
-#
 # def foo():
 #     print("in the test")
 #     return foo_1  # 返回test_1內存位置
-#
-#
 # def foo_1():
 #     print("in the test_1")
-#
 #
 # res = foo()  # => in the test，res獲取test_1函數位置
 # res_1 = res()  # => in the test_1，res()=test_1()
@@ -17,20 +12,15 @@
 
 # # 作用域
 # name = "jamie"
-#
-#
 # def a():
 #     name = "aaa"
-#
 #     def b():
 #         name = "bbb"
-#
 #         def c():
 #             name = "ccc"
 #             print(name)
 #         return c
 #     return b
-#
 #
 # res = a()  # 運行a()，並獲取b()內存位置
 # print(res)  # b()內存位置

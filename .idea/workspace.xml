@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff1e8a4e-9f45-4d3b-9949-a27f16c94dbc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/基礎/200425_裝飾器/200425_基礎知識.py" beforeDir="false" afterPath="$PROJECT_DIR$/基礎/200425_裝飾器/200425_基礎知識.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/基礎/200425_裝飾器/200426_何時運行裝飾器.py" beforeDir="false" afterPath="$PROJECT_DIR$/基礎/200425_裝飾器/200426_何時運行裝飾器.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/基礎/200427_函數作用域&amp;匿名函數.py" beforeDir="false" afterPath="$PROJECT_DIR$/基礎/200427_函數作用域&amp;匿名函數.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +43,7 @@
     <SUITE FILE_PATH="coverage/PythonWork_py37_$Selection_Sort__.coverage" NAME="Selection_Sort(選擇排序) Coverage Results" MODIFIED="1591274246036" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/演算法/排序" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$receive2.coverage" NAME="receive2 Coverage Results" MODIFIED="1590553411929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200526_消息發布與訂閱/fanout(廣播)" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$200429__.coverage" NAME="200429_迭代器&amp;生成器 Coverage Results" MODIFIED="1591261225080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$.coverage" NAME="管道 Coverage Results" MODIFIED="1591682179919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/進階/作業系統(Operating System)/程序間通訊(IPC)" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$.coverage" NAME="文件處理 Coverage Results" MODIFIED="1591767437779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎/200404_文件處理" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$AddTwoNumbers__.coverage" NAME="AddTwoNumbers(鏈結數字串列相加) Coverage Results" MODIFIED="1591258160046" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/觀念/LeetCode/Medium" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_DDTfile_data_py.coverage" NAME="pytest in DDT提供的file_data.py Coverage Results" MODIFIED="1590738220693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_3(數據分離)" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in___py.coverage" NAME="pytest in 基本使用_斷言.py Coverage Results" MODIFIED="1590739974507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用" />
@@ -51,7 +51,7 @@
     <SUITE FILE_PATH="coverage/PythonWork_py37_$200514_RedisByPython.coverage" NAME="200514_RedisByPython Coverage Results" MODIFIED="1589595365325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NoSQL資料庫(Redis)" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for__2_MyTestCase_test_a.coverage" NAME="pytest for 基本使用_2.MyTestCase.test_a Coverage Results" MODIFIED="1590727323197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200525_入門" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$Insert_Sort__.coverage" NAME="Insert_Sort(插入排序) Coverage Results" MODIFIED="1591273993231" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/演算法/排序" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$200426_.coverage" NAME="200426_何時運行裝飾器 Coverage Results" MODIFIED="1591686032749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎/200425_裝飾器" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$200426_.coverage" NAME="200426_全局、局部變量 Coverage Results" MODIFIED="1591764412787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$get_data.coverage" NAME="get_data Coverage Results" MODIFIED="1590310182085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200523_django_test/tests/utils" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in__2_py.coverage" NAME="pytest in 基本使用_2.py Coverage Results" MODIFIED="1590728350067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200525_入門" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_200521_fixture_test_test_one.coverage" NAME="pytest for 200521_fixture_test.test_one Coverage Results" MODIFIED="1590220614627" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_fixture_test" />
@@ -71,6 +71,7 @@
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_test_demo_test_two.coverage" NAME="pytest for test_demo.test_two Coverage Results" MODIFIED="1590232489538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_fixture_test/使用conftest" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_200510_sample_test_test_one.coverage" NAME="pytest for 200510_sample_test.test_one Coverage Results" MODIFIED="1590216783762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$TwoSum.coverage" NAME="TwoSum Coverage Results" MODIFIED="1591245470328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/觀念/LeetCode/Easy" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$bin.coverage" NAME="bin Coverage Results" MODIFIED="1591765754467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎/180715_模塊基本架構介紹/一般導入方式" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$Linked_List__.coverage" NAME="Linked_List(鏈表) Coverage Results" MODIFIED="1591295424781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/進階/資料結構" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$200428_.coverage" NAME="200428_內置函數 Coverage Results" MODIFIED="1591686906640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$200502___.coverage" NAME="200502_(內建)緩存裝飾器 Coverage Results" MODIFIED="1590393161636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎/200425_裝飾器" />
@@ -91,6 +92,7 @@
     <SUITE FILE_PATH="coverage/PythonWork_py37_$demo.coverage" NAME="demo Coverage Results" MODIFIED="1590732380934" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_3(數據分離)" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_200510_test_sample_py.coverage" NAME="pytest in 200510_test_sample.py Coverage Results" MODIFIED="1590213634806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$LongestCommonPrefix.coverage" NAME="LongestCommonPrefix Coverage Results" MODIFIED="1591245027367" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/觀念/LeetCode/Easy" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$180727_.coverage" NAME="180727_動態導入模塊 Coverage Results" MODIFIED="1591766388863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎/180715_模塊基本架構介紹/動態導入模塊" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$200520_.coverage" NAME="200520_更多操作技巧 Coverage Results" MODIFIED="1590714552128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Selenium" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_test_param_splite_py__1_.coverage" NAME="pytest in test_param_splite.py (1) Coverage Results" MODIFIED="1590310501367" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200523_django_test/tests/test_param_splite" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$200501__.coverage" NAME="200501_內置函數&amp;反射 Coverage Results" MODIFIED="1590397960865" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎" />
@@ -115,7 +117,7 @@
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in__2___py.coverage" NAME="pytest in 基本使用_2(多個參數).py Coverage Results" MODIFIED="1590730825139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$Remove_Duplicates_from_Sorted_List__.coverage" NAME="Remove_Duplicates_from_Sorted_List(去除列表重複元素) Coverage Results" MODIFIED="1591688561063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/觀念/LeetCode/Easy" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$180803_TCPclient.coverage" NAME="180803_TCPclient Coverage Results" MODIFIED="1591684464055" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/進階/作業系統(Operating System)/程序間通訊(IPC)/套接字(Socket)通訊" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$main.coverage" NAME="main Coverage Results" MODIFIED="1590570344982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/異步/celery/200526_初試" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$main.coverage" NAME="main Coverage Results" MODIFIED="1591765691296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎/180715_模塊基本架構介紹/一般導入方式/my_module" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$run__1_.coverage" NAME="run (1) Coverage Results" MODIFIED="1591062769251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200529_測試報告" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in__py.coverage" NAME="pytest in 基本使用.py Coverage Results" MODIFIED="1590730249378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200526_ddt使用" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_200521_setup_test_TestCase.coverage" NAME="pytest for 200521_setup_test.TestCase Coverage Results" MODIFIED="1590218722612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門" />
@@ -141,17 +143,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/基礎/200401_數據類型/set(集合).py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -175,15 +167,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/觀念/LeetCode/Medium/AddTwoNumbers(鏈結數字串列相加).py" />
-        <option value="$PROJECT_DIR$/基礎/200429_跌代器&amp;生成器.py" />
-        <option value="$PROJECT_DIR$/基礎/200429_迭代器&amp;生成器.py" />
-        <option value="$PROJECT_DIR$/觀念/LeetCode/Easy/Valid_Parentheses(正確的括號).py" />
-        <option value="$PROJECT_DIR$/演算法/搜尋/Liner_Search.py" />
-        <option value="$PROJECT_DIR$/演算法/搜尋/Line_Search.py" />
-        <option value="$PROJECT_DIR$/演算法/搜尋/Binary(二進制搜尋).py" />
-        <option value="$PROJECT_DIR$/演算法/搜尋/Line_Search(線性搜尋).py" />
-        <option value="$PROJECT_DIR$/演算法/搜尋/Binary(二分搜尋).py" />
         <option value="$PROJECT_DIR$/演算法/排序/Bucket_Sort(桶子排序).py" />
         <option value="$PROJECT_DIR$/演算法/搜尋/Simple_Binary_Search(簡易二分搜尋).py" />
         <option value="$PROJECT_DIR$/演算法/搜尋/Linear_Search(線性搜尋).py" />
@@ -221,11 +204,20 @@
         <option value="$PROJECT_DIR$/基礎/200425_裝飾器/200425_基礎知識.py" />
         <option value="$PROJECT_DIR$/基礎/200425_裝飾器/200426_何時運行裝飾器.py" />
         <option value="$PROJECT_DIR$/基礎/200428_內置函數.py" />
-        <option value="$PROJECT_DIR$/基礎/200427_函數作用域&amp;匿名函數.py" />
         <option value="$PROJECT_DIR$/觀念/LeetCode/Easy/Remove_Duplicates_from_Sorted_List(去除列表重複元素).py" />
         <option value="$PROJECT_DIR$/基礎/200410_字符串格式化.py" />
         <option value="$PROJECT_DIR$/基礎/200401_數據類型/數據類型(全).py" />
         <option value="$PROJECT_DIR$/基礎/200401_數據類型/set(集合).py" />
+        <option value="$PROJECT_DIR$/基礎/200401_數據類型/dict(字典).py" />
+        <option value="$PROJECT_DIR$/基礎/200427_函數作用域&amp;匿名函數.py" />
+        <option value="$PROJECT_DIR$/基礎/200426_全局、局部變量.py" />
+        <option value="$PROJECT_DIR$/基礎/180715_模塊基本架構介紹/一般導入方式/bin.py" />
+        <option value="$PROJECT_DIR$/基礎/180715_模塊基本架構介紹/一般導入方式/my_module/main.py" />
+        <option value="$PROJECT_DIR$/基礎/180715_模塊基本架構介紹/一般導入方式/模塊基本架構介紹.py" />
+        <option value="$PROJECT_DIR$/基礎/180715_模塊基本架構介紹/動態導入模塊/module/t.py" />
+        <option value="$PROJECT_DIR$/基礎/180715_模塊基本架構介紹/動態導入模塊/180727_動態導入模塊.py" />
+        <option value="$PROJECT_DIR$/基礎/200404_文件處理/test2.txt" />
+        <option value="$PROJECT_DIR$/基礎/200404_文件處理/文件處理.py" />
       </list>
     </option>
   </component>
@@ -240,7 +232,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -256,8 +247,7 @@
             <path>
               <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
-              <item name="基礎" type="462c0819:PsiDirectoryNode" />
-              <item name="200401_數據類型" type="462c0819:PsiDirectoryNode" />
+              <item name="進階" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
@@ -267,6 +257,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -290,8 +281,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Remove_Duplicates_from_Sorted_List(去除列表重複元素)">
-    <configuration name="200426_何時運行裝飾器" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.文件處理">
+    <configuration name="模塊基本架構介紹" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonWork(py37)" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -299,12 +290,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/基礎/200425_裝飾器" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/基礎/180715_模塊基本架構介紹/一般導入方式" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/基礎/200425_裝飾器/200426_何時運行裝飾器.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/基礎/180715_模塊基本架構介紹/一般導入方式/模塊基本架構介紹.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -313,7 +304,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="200427_函數作用域&amp;匿名函數" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="180727_動態導入模塊" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonWork(py37)" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -321,12 +312,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/基礎" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/基礎/180715_模塊基本架構介紹/動態導入模塊" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/基礎/200427_函數作用域&amp;匿名函數.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/基礎/180715_模塊基本架構介紹/動態導入模塊/180727_動態導入模塊.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -335,7 +326,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="200428_內置函數" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="文件處理" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonWork(py37)" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -343,34 +334,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/基礎" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/基礎/200404_文件處理" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/基礎/200428_內置函數.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="200501_模仿計時裝飾器(多層裝飾器)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PythonWork(py37)" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/基礎/200425_裝飾器" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/基礎/200425_裝飾器/200501_模仿計時裝飾器(多層裝飾器).py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/基礎/200404_文件處理/文件處理.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -401,7 +370,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Remove_Duplicates_from_Sorted_List(去除列表重複元素)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="bin" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonWork(py37)" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -409,12 +378,34 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/觀念/LeetCode/Easy" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/基礎/180715_模塊基本架構介紹/一般導入方式" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/觀念/LeetCode/Easy/Remove_Duplicates_from_Sorted_List(去除列表重複元素).py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/基礎/180715_模塊基本架構介紹/一般導入方式/bin.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PythonWork(py37)" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/基礎/180715_模塊基本架構介紹/一般導入方式/my_module" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/基礎/180715_模塊基本架構介紹/一般導入方式/my_module/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -425,19 +416,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.200510_sample_test" />
-      <item itemvalue="Python.200501_模仿計時裝飾器(多層裝飾器)" />
-      <item itemvalue="Python.200426_何時運行裝飾器" />
-      <item itemvalue="Python.200428_內置函數" />
-      <item itemvalue="Python.200427_函數作用域&amp;匿名函數" />
-      <item itemvalue="Python.Remove_Duplicates_from_Sorted_List(去除列表重複元素)" />
+      <item itemvalue="Python.模塊基本架構介紹" />
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.bin" />
+      <item itemvalue="Python.180727_動態導入模塊" />
+      <item itemvalue="Python.文件處理" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Remove_Duplicates_from_Sorted_List(去除列表重複元素)" />
-        <item itemvalue="Python.200427_函數作用域&amp;匿名函數" />
-        <item itemvalue="Python.200428_內置函數" />
-        <item itemvalue="Python.200426_何時運行裝飾器" />
-        <item itemvalue="Python.200501_模仿計時裝飾器(多層裝飾器)" />
+        <item itemvalue="Python.文件處理" />
+        <item itemvalue="Python.180727_動態導入模塊" />
+        <item itemvalue="Python.模塊基本架構介紹" />
+        <item itemvalue="Python.bin" />
+        <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
@@ -473,7 +464,8 @@
       <workItem from="1591290485427" duration="6010000" />
       <workItem from="1591314275425" duration="21781000" />
       <workItem from="1591597511320" duration="8241000" />
-      <workItem from="1591676274914" duration="13523000" />
+      <workItem from="1591676274914" duration="14587000" />
+      <workItem from="1591754388252" duration="4960000" />
     </task>
     <servers />
   </component>
@@ -510,7 +502,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="384230000" />
+    <option name="totallyTimeSpent" value="390254000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -523,9 +515,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.80133927" visible="true" weight="0.23793566" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.80133927" visible="true" weight="0.24128686" />
       <window_info id="Structure" order="1" sideWeight="0.19866072" side_tool="true" weight="0.21715818" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -539,8 +530,8 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.36402267" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49932975" weight="0.36402267" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50067025" side_tool="true" weight="0.36402267" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -549,7 +540,7 @@
       <window_info anchor="right" id="Database" order="4" weight="0.15817694" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.80133927" visible="true" weight="0.23123324" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.80133927" visible="true" weight="0.24128686" />
       <window_info id="Structure" order="1" sideWeight="0.19866072" side_tool="true" weight="0.21715818" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -563,8 +554,8 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.36685553" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49932975" weight="0.36402267" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50067025" side_tool="true" weight="0.36402267" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -594,160 +585,11 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200511_DRF(路由、渲染器)/mysite/api/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="8" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200505_DRF(版本、解析器)/mysite/mysite/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200505_DRF(版本、解析器)/mysite/api/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200505_DRF(版本、解析器)/mysite/api/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-168">
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200506_DRF(序列化)/mysite/api/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-453">
-          <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200506_DRF(序列化)/mysite/api/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200510_DRF(視圖)/mysite/api/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/觀念/LeetCode/Easy/(X)Valid_Parentheses(正確的括號).py" />
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200504_DRF用戶登入(認證、權限、節流)/mysite/mysite/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200506_DRF(序列化)/mysite/api/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200511_DRF(路由、渲染器)/mysite/api/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django)/200430_ORM多對多操作/筆記.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="74" column="40" selection-start-line="74" selection-start-column="40" selection-end-line="74" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200506_DRF(序列化)/序列化筆記.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200605_圖書系統/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200510_DRF(視圖)/mysite/api/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5">
-          <caret line="22" column="30" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200510_DRF(視圖)/視圖筆記.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="43" column="47" lean-forward="true" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200511_DRF(路由、渲染器)/路由筆記.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/觀念/LeetCode/Easy/TwoSum(列表元素兩者之和).py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/觀念/LeetCode/Easy/MyDivision(不用除法求商和餘).py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/觀念/LeetCode/Easy/LongestCommonPrefix(最大共同前綴).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/觀念/LeetCode/Medium/AddTwoNumbers(鏈結數字串列相加).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/觀念/LeetCode/Easy/LongestCommonPrefix(最大共同前綴).py" />
+    <entry file="file://$PROJECT_DIR$/觀念/LeetCode/Medium/AddTwoNumbers(鏈結數字串列相加).py" />
     <entry file="file://$PROJECT_DIR$/觀念/測試使用.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="331">
@@ -781,13 +623,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/進階/作業系統(Operating System)/程序間通訊(IPC).txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/進階/作業系統(Operating System)/程序間通訊(IPC).txt" />
     <entry file="file://$PROJECT_DIR$/../PythonWork/SelfLearn/框架(Django_rest_framework)/200503_restful規範/筆記.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -798,16 +634,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/進階/作業系統(Operating System)/程序間通訊(IPC)/管道.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-812">
-          <caret line="1" column="51" lean-forward="true" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
-          <folding>
-            <element signature="e#175#216#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/進階/作業系統(Operating System)/程序間通訊(IPC)/管道.py" />
     <entry file="file://$PROJECT_DIR$/進階/作業系統(Operating System)/程序間通訊(IPC)/管道(Pipe)通訊.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-448">
@@ -820,20 +647,8 @@
         <state relative-caret-position="-145" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/進階/作業系統(Operating System)/程序間通訊(IPC)/套接字(Socket)通訊/180803_TCPclient.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/進階/作業系統(Operating System)/程序間通訊(IPC)/套接字(Socket)通訊/180803_TCPserver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/進階/作業系統(Operating System)/程序間通訊(IPC)/套接字(Socket)通訊/180803_TCPclient.py" />
+    <entry file="file://$PROJECT_DIR$/進階/作業系統(Operating System)/程序間通訊(IPC)/套接字(Socket)通訊/180803_TCPserver.py" />
     <entry file="file://$PROJECT_DIR$/基礎/200425_裝飾器/200430_模仿認證功能裝飾器(有參數).py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
@@ -904,13 +719,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/基礎/200427_函數作用域&amp;匿名函數.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1792">
-          <caret line="64" column="33" lean-forward="true" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/觀念/LeetCode/Easy/Merge_Two_Sorted_LinkedLists(合併兩鏈表).py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1484">
@@ -942,10 +750,111 @@
     <entry file="file://$PROJECT_DIR$/基礎/200401_數據類型/list(列表).py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/基礎/200401_數據類型/bool(布林值).py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基礎/200401_數據類型/dict(字典).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基礎/200401_數據類型/tuple(元組).py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基礎/200401_數據類型/str(字符串).py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/基礎/200401_數據類型/set(集合).py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="27" column="29" lean-forward="true" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基礎/200426_全局、局部變量.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="863">
+          <caret line="109" column="42" selection-start-line="109" selection-start-column="42" selection-end-line="109" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基礎/200427_函數作用域&amp;匿名函數.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1288">
+          <caret line="46" column="6" lean-forward="true" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基礎/180715_模塊基本架構介紹/一般導入方式/180715_模塊基本架構介紹.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="6" column="31" lean-forward="true" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基礎/180715_模塊基本架構介紹/一般導入方式/cal.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基礎/180715_模塊基本架構介紹/一般導入方式/my_module/my_module2/cal2.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基礎/180715_模塊基本架構介紹/一般導入方式/bin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基礎/180715_模塊基本架構介紹/一般導入方式/my_module/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基礎/180715_模塊基本架構介紹/一般導入方式/模塊基本架構介紹.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-173">
+          <caret line="49" column="28" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基礎/180715_模塊基本架構介紹/模塊基本架構介紹.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基礎/180715_模塊基本架構介紹/動態導入模塊/module/t.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基礎/180715_模塊基本架構介紹/動態導入模塊/180727_動態導入模塊.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
-          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基礎/200404_文件處理/筆記.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基礎/200404_文件處理/test2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="3" lean-forward="true" selection-start-column="3" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基礎/200404_文件處理/test.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基礎/200404_文件處理/文件處理.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2380">
+          <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
         </state>
       </provider>
     </entry>
