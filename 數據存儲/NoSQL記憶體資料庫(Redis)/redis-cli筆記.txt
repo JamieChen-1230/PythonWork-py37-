@@ -1,6 +1,8 @@
 Redis：
+    - 是一個in-memory的非關係型數據庫。
     - 是以字典結構（key-value鍵值對結構）存儲數據，並允許其他應用通過TCP協議讀寫字典中的內容。
     - Redis是一個key-value存儲系統，或者說是一個key-value數據庫。
+    - 常常被用在需要快取一些資料的場合，可以減輕許多後端資料庫的壓力。
 
 Redis命令：
     http://redisdoc.com/index.html
@@ -9,13 +11,13 @@ Redis命令：
     - redis-cli：
         - 整體操作：
             - 連接上redis-server：
-                redis-cli -h <IP> -p <端口>： redis-cli -h 127.0.0.1 -p 6379\
+                redis-cli -h <IP> -p <端口>： redis-cli -h 127.0.0.1 -p 6379
             - 設置密碼：
                 到配置文件(redis.conf)中找到requirepass，並設置密碼。(默認是被註釋的) requirepass 851230
                 ※ windows中配置文件為redis.windows-service.conf
             - 重啟服務(在更改配置文件後，要重啟服務才能生效)：
                 linux：service redis-server restart
-                windows：開工作管理員中的服務
+                windows：用工作管理員中的服務項目重啟
             - 登入後開權限：
                 auth <password>： auth 851230
             - 登入時開權限：
