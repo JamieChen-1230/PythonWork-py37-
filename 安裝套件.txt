@@ -32,5 +32,10 @@ requests==2.23.0
 celery==4.3.0
 eventlet==0.25.2 (因為windows不支持celery4，所以要額外安裝它)
 
+Heroku：
+部署Django應用：
+gunicorn==20.0.4
+django-heroku==0.3.1
+
 
 
