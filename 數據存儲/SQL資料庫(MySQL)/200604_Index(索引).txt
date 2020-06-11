@@ -1,0 +1,50 @@
+SQL索引：
+    - 索引是數據庫的搜索引擎使用，能減少磁碟I/O及邏輯讀取的消耗，並以此來提升 SELECT 語句的查詢效能。
+    - 索引分類：
+        - 聚(叢)集索引：
+            - 聚(叢)集索引將資料表或檢視中的資料列依其索引鍵值排序與儲存。
+            - 聚(叢)集索引決定了資料的物理儲存形態，所以一張表上只能有一個聚集索引。
+            - 如果資料表沒有任何叢集索引，它的資料列就儲存在未排序的結構中，這個結構稱為堆積。
+            - 通常會建立在PRIMARY KEY上。
+        - 非聚(叢)集索引：
+            - 非叢集索引有一個與資料列完全分開的結構。
+            - 非叢集索引包含非叢集索引鍵值，而每個索引鍵值項目都有一個指標，指向包含索引鍵值的資料列。
+        - 過濾索引：
+            - 類似於一個帶著 WHERE 子句的非聚集索引。
+            - 常規的索引都是對整張表的每條資料進行索引，而過濾索引僅僅對滿足特定條件的記錄進行索引。
+            - 適當地使用能減少索引的儲存尺寸及維護消耗，同時提高查詢效能。
+        - 普通索引：
+            - 下面的index_name為索引名，不寫的話默認為原名
+            create table key_test(
+                id int,
+                name varchar(20),
+                key index_name (name)
+            );
+        - 主鍵索引：
+            - 當建立primary key時就會自動創建主鍵索引。
+            create table test1(
+                id int primary key auto_increment,
+                name varchar(20),
+                salary int default 1000
+            );
+        - 唯一索引：
+            - 當建立建立了唯一約束，系統將自動建立唯一索引。
+            create table unique_test(
+                id int,
+                name varchar(20) unique,
+            );
+        - 全文索引：
+            - 全文檢索搜尋可讓使用者針對資料表中以字元為主的資料，執行全文檢索查詢。
+            create table fulltext_test(
+                id int,
+                name varchar(20),
+                resume varchar(50),
+                fulltext key (resume)
+            );
+    - 索引的新增或刪除：
+        新增索引：
+            指令範例： alter table tab_name add [unique|fulltext等] index 索引名 (字段名);
+            ※ 此時字段名就等於索引名
+            指令範例二： alter table tab_name add [unique|fulltext等] key (字段名);
+        刪除索引：
+            指令範例： drop index 索引名 on 表名

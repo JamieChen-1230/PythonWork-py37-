@@ -1,0 +1,38 @@
+Foreign Key(外鍵)：
+    - 當兩張表存在關聯字段的時候，利用外鍵可以保證主表和從表的一致性和完整性。
+    - 但是由於外鍵是Constraint(約束)，肯定會降低對表的新增刪除修改產生性能的影響，所以到底使不使用需慎重考慮。
+
+如何建立外鍵：
+    一、創建表時一起建立外鍵：
+        create table balance(
+           user_id INT,
+           其他字段...,
+           ※ FOREIGN KEY建立在「多」的一方
+           ※ FOREIGN KEY(要關聯的字段) REFERENCES 被關聯的表(被關聯的字段) ON 刪改 約束
+           FOREIGN KEY(user_id) REFERENCES  user(id) on DELETE CASCADE on UPDATE SET NULL
+        )
+    二、如果表已經建好了，則透過Alter創建外鍵：
+        ALTER TABLE 子表 ADD CONSTRAINT 外鍵名 FOREIGN KEY (子表外鍵列名) REFERENCES 主表(主表外鍵列名) ON 刪改 約束;
+        指令範例： ALTER TABLE balance add constraint fk_id foreign key(uid) references user(id) on DELETE CASCADE on UPDATE CASCADE;
+    ※ 注意：
+        1. 外鍵字段在創建的時候就應該與主表的類型完全一致(包括長度等)，否則會報錯
+        2. 外鍵創建中關鍵字的references不是reference
+        3. 主表子表的存儲引擎必須都是InnoDB類型的表(InnoDB為一種資料庫引擎，目前MySQL只有此引擎支持外鍵)
+        建議：(1) 如果需要外鍵約束，最好創建表同時創建外鍵約束
+              (2) 如果需要設置級聯關系，刪除時最好設置為SET NULL
+
+四種外鍵約束：
+    - RESTRICT： 同no action，都是立即檢查外鍵約束
+    - NO ACTION： 如果子表中有匹配的記錄，則不允許對父表對應候選鍵進行update/delete操作
+        刪除：從表記錄不存在時，主表才可以刪除。
+        更新：從表記錄不存在時，主表才可以更新。
+    - CASCADE： 在父表上update/delete記錄時，同步update/delete掉子表的匹配記錄
+        刪除：刪除主表記錄時自動刪除從表記錄。
+        更新：更新主表記錄時自動更新從表記錄。
+    - SET NULL： 在父表上update/delete記錄時，將子表上匹配記錄的列設為null(要注意子表的外鍵列不能設為not null)
+        刪除：刪除主表記錄時自動更新從表值為NULL。
+        更新：更新主表記錄時自動更新從表值為NULL。
+
+刪除外鍵：
+    ALTER TABLE 表 DROP FOREIGN KEY 外鍵名;
+    指令範例： ALTER TABLE person DROP FOREIGN KEY fk_id;

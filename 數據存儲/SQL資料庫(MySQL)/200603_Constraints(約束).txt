@@ -1,0 +1,74 @@
+SQL約束：
+    - 約束用於限制加入表的數據的類型。
+    - 可以在創建表時規定約束（在CREATE TABLE語句中定義），或者在表創建之後約束也可以（通過ALTER TABLE語句）。
+
+
+非空約束：
+    關鍵字: NOT NULL
+    定義： 表示不可為空(不接受NULL值)，如果不向此字段添加值，就無法插入新記錄或者更新記錄
+    指令範例：
+        create table t1(
+            id int(10) primary key,
+            name varchar(100) not null,
+            age int(10) null
+        );
+
+唯一約束：
+    關鍵字： UNIQUE
+    定義：
+        - 它規定一張表中指定的一列的值必須不能有重復值，即這一列每個值都是唯一的。
+        - 當INSERT語句新插入的數據和已有數據重復時，且如果有UNIQUE約束，則INSERT失敗。
+    指令範例：
+        create table t4(
+            id int(10) not null,
+            name varchar(255) unique,
+        );
+    額外添加刪除範例：
+        - 添加唯一约束
+            指令範例： alter table t4 add unique id_name(id, name);
+        - 刪除唯一约束
+            指令範例： alter table t4 drop index id_name;
+
+主鍵約束：
+    關鍵字： primary key
+    定義：
+        - 主鍵的數據不能重復且不能為空。
+    指令範例：
+        create table t2(
+            id int(10) not null primary key
+        );
+    複合主鍵指令範例：
+        create table t3(
+            id int(10) not null,
+            name varchar(100) ,
+            primary key(id,name)
+        );
+
+外鍵約束：
+    關鍵字： FOREIGN KEY
+    定義： 當兩張表存在關聯字段的時候，利用外鍵可以保證主表和從表的一致性和完整性。
+    指令範例：
+        ※ FOREIGN KEY(要關聯的字段) REFERENCES 被關聯的表(被關聯的字段) ON 刪改 約束
+        create table balance(
+            id int primary key,
+            user_id int,
+            FOREIGN KEY(user_id) REFERENCES user(id) on DELETE CASCADE on UPDATE SET NULL
+        )
+
+CHECK約束：
+    關鍵字： CHECK
+    定義： 用於限制列中的值的範圍。
+    指令範例：
+        create table balance(
+            id int primary key,
+            num int CHECK (num>10),
+        )
+
+默認值約束：
+    關鍵字： DEFAULT
+    定義： INSERT語句執行時，如果被DEFAULT約束的位置沒有值，那麼這個位置將會被DEFAULT的值填充。
+    指令範例：
+        create table t5(
+            id int(10) not null primary key,
+            name varchar(255) default 'jamie'
+        );
