@@ -1,3 +1,10 @@
+版本控制重要性：
+    1. 可以備份代碼
+    2. 可以保護彼此的代碼不會被覆蓋後找不回來
+    3. 可以透過指令輕易比較出文件的修改
+    4. 可以輕易的切換回舊版本
+    5. 團隊開發時能保持代碼的一致性
+
 Git原理：
     - HASH(哈希、雜湊)算法：
         - 分為Hash Function(雜湊函數)和Hash Table(雜湊表)
@@ -113,7 +120,7 @@ Git倉庫的初始化(即讓Git知道需要他來管理這個目錄)：
     - 暫存區和倉庫HEAD的比較
         git diff --cached
     - 兩個版本間的文件比較
-        git diff 舊的版本 新的版本
+        git diff <舊的版本> <新的版本>
         範例：
             git diff HEAD^ HEAD
             git diff HEAD^..HEAD  => 可以用..分開，更容易識別
@@ -153,16 +160,31 @@ Git倉庫的初始化(即讓Git知道需要他來管理這個目錄)：
         影片教學：https://www.bilibili.com/video/BV1sJ411D7xN?p=12
         具體實現在https://blog.csdn.net/jiahuan_/article/details/105933423
 
+
 額外指令：
-    檢視遠端版本庫的「簡稱」：
-        ※ 如果你clone了一個遠端版本庫，你至少看得到一個「origin」(它是Git的預設簡稱，用來代表被克隆的來源)。
-        git remote -v
-    新增遠端版本庫：
-        git remote add <簡稱> <url>
-        EX: git remote add demo https://github.com/silencejamie/git_test.git
-    檢視遠端：
-        git remote show <簡稱>
-        EX: git remote show origin
+    - 遠端版本庫地址別名：
+        檢視遠端版本庫的地址「別名」：
+            ※ 如果你clone了一個遠端版本庫，你至少看得到一個「origin」(它是Git的預設簡稱，用來代表被克隆的來源)。
+            git remote -v
+        新增遠端版本庫地址別名：
+            git remote add <別名> <url>
+            EX: git remote add demo https://github.com/silencejamie/git_test.git
+        檢視遠端別名：
+            git remote show <別名>
+            EX: git remote show origin
+
+    - 拉取並更新本地代碼：
+        ※ pull = fetch + merge
+        拉取遠程代碼：
+            ※ 抓取下來時，我們在本地目錄還看不到修改的文件，
+               可以先透過 git checkout <遠程倉庫別名>/<要拉的遠程分支名>，到這個分支看修改的檔案，如果ok，就切回主分支並merge。
+            git fetch <遠程倉庫別名> <要拉的遠程分支名>
+        合併拉取的遠程代碼：
+            git merge <遠程倉庫別名>/<要拉的遠程分支名>
+        拉取並合併遠程代碼：
+            ※ 通常如果更改的不多，可以就直接用pull就好；但如果更改的較多且複雜，可以先用fetch評估是否要合併。
+            git pull <遠程倉庫別名> <要拉的遠程分支名>
+
 
 ====================================-分支操作(本地)-====================================
 分支的優點：
@@ -175,20 +197,20 @@ Git倉庫的初始化(即讓Git知道需要他來管理這個目錄)：
 
 創建分支(在哪個分支上創建分支，就會以該分支為基礎創建)：
 ※ 創造分支的當下主分支和子分支的內容是相同的
-    git branch 分支名
+    git branch <分支名>
 刪除分支(要被刪的分支不能處於使用中)：
-    git branch -d 分支名
+    git branch -d <分支名>
 
 切換分支：
-    git checkout 分支名
-    git checkout -b 分支名  =>  創建並切換分支
+    git checkout <分支名>
+    git checkout -b <分支名>  =>  創建並切換分支
 
 合併分支：
     ※ 不同分支之間是互不影響的。
         EX：在新的分支裡添加完並commit到本地倉庫後，再切回master分支，會發現工作目錄下剛剛在分支更改的東西消失了。
             => 所以才需要合併分支。
     ※ 要先切換到欲合併其他分支的主分支下。
-        git merge 分支名
+        git merge <分支名>
 
 
 ==================================-git bush的vim編輯器-==================================

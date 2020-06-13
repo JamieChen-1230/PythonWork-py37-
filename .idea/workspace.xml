@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff1e8a4e-9f45-4d3b-9949-a27f16c94dbc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Git/Git筆記.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Git/Git筆記.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/觀念/面試觀念題.txt" beforeDir="false" afterPath="$PROJECT_DIR$/觀念/面試觀念題.txt" afterDir="false" />
     </list>
@@ -149,8 +148,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/觀念/面試觀念題.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
+            <state relative-caret-position="1993">
+              <caret line="203" lean-forward="true" selection-start-line="203" selection-end-line="203" />
             </state>
           </provider>
         </entry>
@@ -158,8 +157,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Git/Git筆記.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="36" column="69" selection-start-line="36" selection-start-column="69" selection-end-line="36" selection-end-column="69" />
+            <state relative-caret-position="299">
+              <caret line="238" column="12" selection-start-line="238" selection-start-column="12" selection-end-line="238" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -263,11 +262,7 @@
             <path>
               <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
-              <item name="Git" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="觀念" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -508,7 +503,7 @@
       <workItem from="1591852422360" duration="18547000" />
       <workItem from="1591917031846" duration="3664000" />
       <workItem from="1591922541187" duration="830000" />
-      <workItem from="1592008909896" duration="13942000" />
+      <workItem from="1592008909896" duration="18058000" />
     </task>
     <servers />
   </component>
@@ -545,7 +540,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="439415000" />
+    <option name="totallyTimeSpent" value="443531000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -894,20 +889,20 @@
         <state relative-caret-position="-84" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/觀念/面試觀念題.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Git/筆記.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/觀念/面試觀念題.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1993">
+          <caret line="203" lean-forward="true" selection-start-line="203" selection-end-line="203" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Git/Git筆記.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="36" column="69" selection-start-line="36" selection-start-column="69" selection-end-line="36" selection-end-column="69" />
+        <state relative-caret-position="299">
+          <caret line="238" column="12" selection-start-line="238" selection-start-column="12" selection-end-line="238" selection-end-column="12" />
         </state>
       </provider>
     </entry>
