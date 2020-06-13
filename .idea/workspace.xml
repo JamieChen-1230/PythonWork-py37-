@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ff1e8a4e-9f45-4d3b-9949-a27f16c94dbc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/200604_Index(索引).txt" beforeDir="false" afterPath="$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/200604_Index(索引).txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Git/Git筆記.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Git/Git筆記.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/觀念/面試觀念題.txt" beforeDir="false" afterPath="$PROJECT_DIR$/觀念/面試觀念題.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -145,21 +145,21 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/觀念/面試觀念題.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="119" column="12" selection-start-line="119" selection-start-column="12" selection-end-line="119" selection-end-column="77" />
+            <state relative-caret-position="319">
+              <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/200604_Index(索引).txt">
+        <entry file="file://$PROJECT_DIR$/Git/Git筆記.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+            <state relative-caret-position="336">
+              <caret line="36" column="69" selection-start-line="36" selection-start-column="69" selection-end-line="36" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -188,7 +188,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/測試.py" />
         <option value="$PROJECT_DIR$/進階/作業系統(Operating System)/Program,Process,Thread比較.txt" />
         <option value="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200506_DRF(序列化)/mysite/api/serializers.py" />
         <option value="$PROJECT_DIR$/觀念/LeetCode/Easy/(X)Valid_Parentheses(正確的括號).py" />
@@ -237,8 +236,9 @@
         <option value="$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/200603_Constraints(約束).txt" />
         <option value="$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/200604_Index(索引)" />
         <option value="$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/200110_用戶權限.txt" />
-        <option value="$PROJECT_DIR$/觀念/面試觀念題.txt" />
         <option value="$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/200604_Index(索引).txt" />
+        <option value="$PROJECT_DIR$/觀念/面試觀念題.txt" />
+        <option value="$PROJECT_DIR$/Git/Git筆記.txt" />
       </list>
     </option>
   </component>
@@ -253,7 +253,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -264,18 +263,7 @@
             <path>
               <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
-              <item name="數據存儲" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
-              <item name="數據存儲" type="462c0819:PsiDirectoryNode" />
-              <item name="SQL資料庫(MySQL)" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
-              <item name="觀念" type="462c0819:PsiDirectoryNode" />
+              <item name="Git" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
@@ -285,6 +273,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -516,7 +505,10 @@
       <workItem from="1591676274914" duration="14587000" />
       <workItem from="1591754388252" duration="4960000" />
       <workItem from="1591833673904" duration="3092000" />
-      <workItem from="1591852422360" duration="14207000" />
+      <workItem from="1591852422360" duration="18547000" />
+      <workItem from="1591917031846" duration="3664000" />
+      <workItem from="1591922541187" duration="830000" />
+      <workItem from="1592008909896" duration="13942000" />
     </task>
     <servers />
   </component>
@@ -553,7 +545,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="416639000" />
+    <option name="totallyTimeSpent" value="439415000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -568,7 +560,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.80133927" visible="true" weight="0.1930295" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.80133927" visible="true" weight="0.21581769" />
       <window_info id="Structure" order="1" sideWeight="0.19866072" side_tool="true" weight="0.21715818" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -637,42 +629,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/基礎/200401_數據類型/str(字符串).py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/基礎/200401_數據類型/set(集合).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="27" column="29" lean-forward="true" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/基礎/200426_全局、局部變量.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="863">
-          <caret line="109" column="42" selection-start-line="109" selection-start-column="42" selection-end-line="109" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/基礎/200427_函數作用域&amp;匿名函數.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1288">
-          <caret line="46" column="6" lean-forward="true" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/基礎/180715_模塊基本架構介紹/一般導入方式/180715_模塊基本架構介紹.py" />
-    <entry file="file://$PROJECT_DIR$/基礎/180715_模塊基本架構介紹/一般導入方式/cal.py" />
-    <entry file="file://$PROJECT_DIR$/基礎/180715_模塊基本架構介紹/一般導入方式/my_module/my_module2/cal2.py" />
-    <entry file="file://$PROJECT_DIR$/基礎/180715_模塊基本架構介紹/一般導入方式/bin.py" />
-    <entry file="file://$PROJECT_DIR$/基礎/180715_模塊基本架構介紹/一般導入方式/my_module/main.py" />
-    <entry file="file://$PROJECT_DIR$/基礎/180715_模塊基本架構介紹/一般導入方式/模塊基本架構介紹.py" />
-    <entry file="file://$PROJECT_DIR$/基礎/180715_模塊基本架構介紹/模塊基本架構介紹.py" />
-    <entry file="file://$PROJECT_DIR$/基礎/180715_模塊基本架構介紹/動態導入模塊/module/t.py" />
-    <entry file="file://$PROJECT_DIR$/基礎/180715_模塊基本架構介紹/動態導入模塊/180727_動態導入模塊.py" />
-    <entry file="file://$PROJECT_DIR$/基礎/200404_文件處理/筆記.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/基礎/200404_文件處理/test2.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -816,16 +772,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/180825_事務.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/180825_事務.txt" />
     <entry file="file://$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/180823_數據庫操作.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="840">
@@ -833,87 +781,133 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/180826_外鍵約束.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="25" column="45" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="25" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/180823_數據表紀錄操作.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="980">
-          <caret line="44" column="20" lean-forward="true" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/180826_外鍵約束.txt" />
+    <entry file="file://$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/200111_其他約束.txt" />
+    <entry file="file://$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/200604_Index(索引)" />
+    <entry file="file://$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/180824_索引.txt" />
     <entry file="file://$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/180823_數據表操作.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
+        <state relative-caret-position="397">
           <caret line="88" column="36" lean-forward="true" selection-start-line="88" selection-start-column="36" selection-end-line="88" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/200111_其他約束.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="980">
-          <caret line="35" column="6" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/200604_Index(索引)">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/200602_Foreign Key(外鍵).txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/200601_Transaction(事務、交易).txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1428">
-          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/180824_索引.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="10" selection-start-line="10" selection-end-line="16" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/200110_用戶權限.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
+        <state relative-caret-position="1223">
           <caret line="48" column="33" lean-forward="true" selection-start-line="48" selection-start-column="33" selection-end-line="48" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web網頁前端/jQuery/180920_jQuery對象.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-271" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web網頁前端/jQuery/180921_選擇器.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1260" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web網頁前端/jQuery/180921_篩選器.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-672" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web網頁前端/jQuery/180922_循環.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-504" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web網頁前端/jQuery/180922_屬性操作.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-840" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/180823_數據表紀錄操作.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1232">
+          <caret line="44" column="20" lean-forward="true" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django)/200428_ORM單表操作/筆記.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1120">
+          <caret line="68" column="48" lean-forward="true" selection-start-line="68" selection-start-column="48" selection-end-line="68" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/200601_Transaction(事務、交易).txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-812">
+          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/200602_Foreign Key(外鍵).txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-219">
+          <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/200603_Constraints(約束).txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="41" column="32" lean-forward="true" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/觀念/面試觀念題.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="119" column="12" selection-start-line="119" selection-start-column="12" selection-end-line="119" selection-end-column="77" />
+        <state relative-caret-position="-1400">
+          <caret line="13" column="10" lean-forward="true" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/200604_Index(索引).txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
+        <state relative-caret-position="-1073">
           <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/180825_pymysql.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基礎/200428_內置函數.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2231" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基礎/200425_裝飾器/200429_裝飾器基本架構.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1503" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基礎/200425_裝飾器/200430_模仿認證功能裝飾器(有參數).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-420">
+          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django)/200425_基礎筆記/MTV概念/MTV流程.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django)/200425_基礎筆記/MTV概念/MTV筆記.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-84" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/觀念/面試觀念題.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Git/筆記.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Git/Git筆記.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="36" column="69" selection-start-line="36" selection-start-column="69" selection-end-line="36" selection-end-column="69" />
         </state>
       </provider>
     </entry>
