@@ -145,13 +145,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django)/200614_Line聊天機器人/my_linebot/app01/views.py">
+        <entry file="file://$PROJECT_DIR$/Git/Git筆記.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-              <folding>
-                <element signature="e#0#83#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-973">
+              <caret line="231" column="5" lean-forward="true" selection-start-line="231" selection-start-column="5" selection-end-line="231" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -175,12 +172,11 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Web網頁框架/框架(Django)/200614_Line聊天機器人/my_linebot" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200506_DRF(序列化)/mysite/api/serializers.py" />
         <option value="$PROJECT_DIR$/觀念/LeetCode/Easy/(X)Valid_Parentheses(正確的括號).py" />
         <option value="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200510_DRF(視圖)/視圖筆記.txt" />
         <option value="$PROJECT_DIR$/觀念/LeetCode/Easy/Merge_Two_Sorted_LinkedLists(合併兩鏈表).py" />
@@ -231,6 +227,7 @@
         <option value="$PROJECT_DIR$/Git/Git筆記.txt" />
         <option value="$PROJECT_DIR$/觀念/測試使用.py" />
         <option value="$PROJECT_DIR$/Web網頁框架/框架(Django)/200614_Line聊天機器人/my_linebot/app01/views.py" />
+        <option value="$PROJECT_DIR$/Web網頁框架/框架(Django)/200614_Line聊天機器人/my_linebot/my_linebot/settings.py" />
       </list>
     </option>
   </component>
@@ -256,7 +253,24 @@
             <path>
               <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
-              <item name="Web網頁框架" type="462c0819:PsiDirectoryNode" />
+              <item name="Git" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
+              <item name="Git" type="462c0819:PsiDirectoryNode" />
+              <item name="git_demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
+              <item name="Git" type="462c0819:PsiDirectoryNode" />
+              <item name="git_test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
+              <item name="進階" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -498,7 +512,7 @@
       <workItem from="1591922541187" duration="830000" />
       <workItem from="1592008909896" duration="18288000" />
       <workItem from="1592097818311" duration="5746000" />
-      <workItem from="1592111021461" duration="550000" />
+      <workItem from="1592111021461" duration="1490000" />
     </task>
     <servers />
   </component>
@@ -535,7 +549,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="450057000" />
+    <option name="totallyTimeSpent" value="450997000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -549,7 +563,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.80133927" visible="true" weight="0.22117962" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.80133927" visible="true" weight="0.22117962" />
       <window_info id="Structure" order="1" sideWeight="0.19866072" side_tool="true" weight="0.21715818" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -563,8 +577,8 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49932975" visible="true" weight="0.3385269" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50067025" side_tool="true" weight="0.36402267" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49865952" visible="true" weight="0.3385269" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5013405" side_tool="true" weight="0.3385269" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -623,16 +637,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django)/200502_admin操作/mysite/app01/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="22" column="25" lean-forward="true" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200605_圖書系統/mysite/mysite/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="274">
@@ -912,20 +916,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Git/Git筆記.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1309">
-          <caret line="231" column="5" lean-forward="true" selection-start-line="231" selection-start-column="5" selection-end-line="231" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django)/200614_Line聊天機器人/my_linebot/app01/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
+        <state relative-caret-position="336">
           <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
           <folding>
             <element signature="e#0#83#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django)/200614_Line聊天機器人/my_linebot/my_linebot/settings.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Git/Git筆記.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-973">
+          <caret line="231" column="5" lean-forward="true" selection-start-line="231" selection-start-column="5" selection-end-line="231" selection-end-column="5" />
         </state>
       </provider>
     </entry>
