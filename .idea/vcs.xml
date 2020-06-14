@@ -4,5 +4,7 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Git/git_demo" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Git/git_test" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Git/測試忽略.git" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Git/測試忽略git資料夾" vcs="Git" />
   </component>
 </project>
