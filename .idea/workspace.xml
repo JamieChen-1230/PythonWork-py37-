@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff1e8a4e-9f45-4d3b-9949-a27f16c94dbc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django)/200614_Line聊天機器人/my_linebot/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django)/200614_Line聊天機器人/my_linebot/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django)/200614_Line聊天機器人/my_linebot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django)/200614_Line聊天機器人/my_linebot/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django)/200614_Line聊天機器人/my_linebot/app01/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django)/200614_Line聊天機器人/my_linebot/app01/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django)/200614_Line聊天機器人/my_linebot/app01/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django)/200614_Line聊天機器人/my_linebot/app01/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django)/200614_Line聊天機器人/my_linebot/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django)/200614_Line聊天機器人/my_linebot/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/安裝套件.txt" beforeDir="false" afterPath="$PROJECT_DIR$/安裝套件.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -146,20 +151,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Git/Git筆記.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="287" lean-forward="true" selection-start-line="287" selection-end-line="287" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django)/200428_ORM單表操作/筆記.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+            <state relative-caret-position="-420">
+              <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
             </state>
           </provider>
         </entry>
@@ -264,12 +260,20 @@
             <path>
               <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
-              <item name="Git" type="462c0819:PsiDirectoryNode" />
+              <item name="Web網頁框架" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
-              <item name="進階" type="462c0819:PsiDirectoryNode" />
+              <item name="Web網頁框架" type="462c0819:PsiDirectoryNode" />
+              <item name="框架(Django)" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
+              <item name="Web網頁框架" type="462c0819:PsiDirectoryNode" />
+              <item name="框架(Django)" type="462c0819:PsiDirectoryNode" />
+              <item name="200428_ORM單表操作" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -281,7 +285,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200605_圖書系統/mysite" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Publish/Heroku/200614_Line聊天機器人/my_linebot" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
@@ -511,7 +515,7 @@
       <workItem from="1591922541187" duration="830000" />
       <workItem from="1592008909896" duration="18288000" />
       <workItem from="1592097818311" duration="5746000" />
-      <workItem from="1592111021461" duration="2435000" />
+      <workItem from="1592111021461" duration="5666000" />
     </task>
     <servers />
   </component>
@@ -548,7 +552,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="451942000" />
+    <option name="totallyTimeSpent" value="455173000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -563,7 +567,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.80133927" visible="true" weight="0.22117962" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.80133927" visible="true" weight="0.22117962" />
       <window_info id="Structure" order="1" sideWeight="0.19866072" side_tool="true" weight="0.21715818" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -577,7 +581,7 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49865952" visible="true" weight="0.3385269" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49865952" visible="true" weight="0.3385269" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5013405" side_tool="true" weight="0.3385269" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -617,6 +621,8 @@
   <component name="VcsManagerConfiguration">
     <ignored-roots>
       <path value="$PROJECT_DIR$/Web網頁框架/框架(Django)/200614_Line聊天機器人/my_linebot" />
+      <path value="$PROJECT_DIR$/Git/測試忽略.git" />
+      <path value="$PROJECT_DIR$/Git/測試忽略git資料夾" />
     </ignored-roots>
   </component>
   <component name="XDebuggerManager">
@@ -637,23 +643,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200605_圖書系統/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="140">
-            <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/數據存儲/NoSQL記憶體資料庫(Redis)/publish.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/數據存儲/NoSQL記憶體資料庫(Redis)/redis-cli筆記.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
@@ -777,13 +766,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1232">
           <caret line="44" column="20" lean-forward="true" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django)/200428_ORM單表操作/筆記.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1120">
-          <caret line="68" column="48" lean-forward="true" selection-start-line="68" selection-start-column="48" selection-end-line="68" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -919,17 +901,36 @@
     <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django)/200614_Line聊天機器人/my_linebot/my_linebot/settings.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="58" selection-start-column="58" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Git/Git筆記.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
+        <state relative-caret-position="2023">
           <caret line="287" lean-forward="true" selection-start-line="287" selection-end-line="287" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/異步/celery/總筆記.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        <state relative-caret-position="1141">
+          <caret line="90" column="59" selection-start-line="90" selection-start-column="59" selection-end-line="90" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django)/200425_基礎筆記/Django基礎指令.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-252" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django)/200428_ORM單表操作/筆記.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-420">
+          <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
         </state>
       </provider>
     </entry>

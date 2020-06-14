@@ -1,6 +1,12 @@
 Django==2.2
 sqlparse==0.3.1
 gunicorn==20.0.4
+bs4==0.0.1
+requests==2.23.0
 django-heroku==0.3.1
+apscheduler==3.6.3
 line-bot-sdk==1.16.0
+django-heroku==0.3.1
+dj_database_url==0.5.0
+lxml==4.5.0
 psycopg2

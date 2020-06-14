@@ -27,17 +27,25 @@ pika==1.1.0 (python要連接rabbitMQ的套件)
 爬蟲：
 Scrapy==2.1.0
 requests==2.23.0
+bs4==0.0.1
+lxml==4.5.0
 
 異步任務：
 celery==4.3.0
 eventlet==0.25.2 (因為windows不支持celery4，所以要額外安裝它)
 
+定時任務框架：
+apscheduler==3.6.3
+
 Heroku：
 部署Django應用：
 gunicorn==20.0.4
 django-heroku==0.3.1
+dj_database_url==0.5.0
 
 Linebot：
 line-bot-sdk==1.16.0
+
+
 
 
