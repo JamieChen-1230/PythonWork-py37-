@@ -1,0 +1,6 @@
+Django==2.2
+sqlparse==0.3.1
+gunicorn==20.0.4
+django-heroku==0.3.1
+line-bot-sdk==1.16.0
+psycopg2
