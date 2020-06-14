@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff1e8a4e-9f45-4d3b-9949-a27f16c94dbc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django)/200614_Line聊天機器人/my_linebot" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django)/200614_Line聊天機器人/my_linebot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django)/200614_Line聊天機器人/my_linebot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django)/200614_Line聊天機器人/my_linebot/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django)/200614_Line聊天機器人/my_linebot/app01/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django)/200614_Line聊天機器人/my_linebot/app01/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -149,8 +147,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django)/200614_Line聊天機器人/my_linebot/app01/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="15" column="58" lean-forward="true" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
+            <state relative-caret-position="277">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
               <folding>
                 <element signature="e#0#83#0" expanded="true" />
               </folding>
@@ -247,6 +245,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -257,24 +256,12 @@
             <path>
               <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
-              <item name="Git" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
               <item name="Web網頁框架" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
-              <item name="Web網頁框架" type="462c0819:PsiDirectoryNode" />
-              <item name="框架(Django)" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -284,7 +271,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200605_圖書系統/mysite" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -511,6 +498,7 @@
       <workItem from="1591922541187" duration="830000" />
       <workItem from="1592008909896" duration="18288000" />
       <workItem from="1592097818311" duration="5746000" />
+      <workItem from="1592111021461" duration="550000" />
     </task>
     <servers />
   </component>
@@ -547,7 +535,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="449507000" />
+    <option name="totallyTimeSpent" value="450057000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -561,7 +549,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.80133927" visible="true" weight="0.21849866" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.80133927" visible="true" weight="0.22117962" />
       <window_info id="Structure" order="1" sideWeight="0.19866072" side_tool="true" weight="0.21715818" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -611,6 +599,11 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/Web網頁框架/框架(Django)/200614_Line聊天機器人/my_linebot" />
+    </ignored-roots>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -928,8 +921,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django)/200614_Line聊天機器人/my_linebot/app01/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="15" column="58" lean-forward="true" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
+        <state relative-caret-position="277">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
           <folding>
             <element signature="e#0#83#0" expanded="true" />
           </folding>
