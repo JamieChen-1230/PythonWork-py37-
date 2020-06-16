@@ -9,6 +9,7 @@ sched = BackgroundScheduler()
 
 
 def save(dic):
+    """數據存入db"""
     new_obj = models.News.objects.filter(title=dic.get("title")).first()
     # 資料已存在就不添加
     if new_obj:
@@ -68,10 +69,6 @@ def crawler():
 
 
 def run():
-    # li = models.News.objects.all().order_by('-post_date')[:3]
-    # message = ''
-    # for i in li:
-    #     message += i.title + '\n' + i.outline + '\n' + i.post_date + '\n' + i.url + '\n\n'
-    # print(message)
-    sched.start()
+    crawler()  # 啟動時先運行一次
+    sched.start()  # 定時任務啟動
 

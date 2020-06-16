@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff1e8a4e-9f45-4d3b-9949-a27f16c94dbc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django)/200614_Line聊天機器人/my_linebot/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django)/200614_Line聊天機器人/my_linebot/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django)/200614_Line聊天機器人/my_linebot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django)/200614_Line聊天機器人/my_linebot/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django)/200614_Line聊天機器人/my_linebot/app01/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django)/200614_Line聊天機器人/my_linebot/app01/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django)/200614_Line聊天機器人/my_linebot/app01/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django)/200614_Line聊天機器人/my_linebot/app01/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django)/200614_Line聊天機器人/my_linebot/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django)/200614_Line聊天機器人/my_linebot/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/安裝套件.txt" beforeDir="false" afterPath="$PROJECT_DIR$/安裝套件.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django)/200614_Line聊天機器人/my_linebot/app01/nba_crawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django)/200614_Line聊天機器人/my_linebot/app01/nba_crawler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django)/200614_Line聊天機器人/my_linebot/my_linebot/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django)/200614_Line聊天機器人/my_linebot/my_linebot/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/觀念/測試使用.py" beforeDir="false" afterPath="$PROJECT_DIR$/觀念/測試使用.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/觀念/面試觀念題.txt" beforeDir="false" afterPath="$PROJECT_DIR$/觀念/面試觀念題.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,6 +31,7 @@
     <SUITE FILE_PATH="coverage/PythonWork_py37_$PalindromeNumber.coverage" NAME="PalindromeNumber Coverage Results" MODIFIED="1591150195170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/觀念/LeetCode/Easy" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$12.coverage" NAME="12 Coverage Results" MODIFIED="1591073665306" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/觀念" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_200521_fixture_test_TestCase_test_two.coverage" NAME="pytest for 200521_fixture_test.TestCase.test_two Coverage Results" MODIFIED="1590220657338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_fixture_test" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$re__.coverage" NAME="re模塊(正則表達式) Coverage Results" MODIFIED="1592197937959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/常用模塊" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$send.coverage" NAME="send Coverage Results" MODIFIED="1590544170130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200525_初試" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_DDTfile_data_py__1_.coverage" NAME="pytest in DDT提供的file_data.py (1) Coverage Results" MODIFIED="1590738165396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_3(數據分離)/yml使用" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_test_sample3_py.coverage" NAME="pytest in test_sample3.py Coverage Results" MODIFIED="1590293673152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200522_fixture" />
@@ -41,8 +39,10 @@
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_test_sample1_py.coverage" NAME="pytest in test_sample1.py Coverage Results" MODIFIED="1590292538827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200522_fixture" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$UDPclient.coverage" NAME="UDPclient Coverage Results" MODIFIED="1591684632303" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/進階/作業系統(Operating System)/程序間通訊(IPC)/套接字(Socket)通訊" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in__2_2_py.coverage" NAME="pytest in 基本使用_2-2優化.py Coverage Results" MODIFIED="1590729756389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200525_入門" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$Queue__.coverage" NAME="Queue(隊列) Coverage Results" MODIFIED="1592194776194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/進階/資料結構" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_200510_sample_test_TestCase_test_three.coverage" NAME="pytest for 200510_sample_test.TestCase.test_three Coverage Results" MODIFIED="1590216741569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$send__1_.coverage" NAME="send (1) Coverage Results" MODIFIED="1590550490181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200525_初試_2" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$Stack__.coverage" NAME="Stack(堆疊、棧) Coverage Results" MODIFIED="1592190050170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/進階/資料結構" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_DDTfile_data_MyTestCase_test_2.coverage" NAME="pytest for DDT提供的file_data.MyTestCase.test_2 Coverage Results" MODIFIED="1590738218797" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_3(數據分離)" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_200521_fixture_test_py.coverage" NAME="pytest in 200521_fixture_test.py Coverage Results" MODIFIED="1590232685325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_fixture_test" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$200519_.coverage" NAME="200519_窗口切換 Coverage Results" MODIFIED="1590131403257" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Selenium" />
@@ -50,10 +50,11 @@
     <SUITE FILE_PATH="coverage/PythonWork_py37_$Selection_Sort__.coverage" NAME="Selection_Sort(選擇排序) Coverage Results" MODIFIED="1591274246036" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/演算法/排序" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$receive2.coverage" NAME="receive2 Coverage Results" MODIFIED="1590553411929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/數據存儲/消息對列(RabbitMQ)/200526_消息發布與訂閱/fanout(廣播)" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$200429__.coverage" NAME="200429_迭代器&amp;生成器 Coverage Results" MODIFIED="1591261225080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎" />
-    <SUITE FILE_PATH="coverage/PythonWork_py37_$.coverage" NAME="測試使用 Coverage Results" MODIFIED="1592102743590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/觀念" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$.coverage" NAME="測試使用 Coverage Results" MODIFIED="1592189588302" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/觀念" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$AddTwoNumbers__.coverage" NAME="AddTwoNumbers(鏈結數字串列相加) Coverage Results" MODIFIED="1591258160046" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/觀念/LeetCode/Medium" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_DDTfile_data_py.coverage" NAME="pytest in DDT提供的file_data.py Coverage Results" MODIFIED="1590738220693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用/基本使用_3(數據分離)" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in___py.coverage" NAME="pytest in 基本使用_斷言.py Coverage Results" MODIFIED="1590739974507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200526_DDT使用" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$ListStack.coverage" NAME="使用List建立Stack Coverage Results" MODIFIED="1592191390056" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/進階/資料結構/Stack(堆疊、棧)" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$run.coverage" NAME="run Coverage Results" MODIFIED="1591061306153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200528_測試套件(suite)" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for__2_MyTestCase_test_a.coverage" NAME="pytest for 基本使用_2.MyTestCase.test_a Coverage Results" MODIFIED="1590727323197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Unittest/200525_入門" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$Insert_Sort__.coverage" NAME="Insert_Sort(插入排序) Coverage Results" MODIFIED="1591273993231" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/演算法/排序" />
@@ -110,6 +111,7 @@
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_in_200510_sample_test_py.coverage" NAME="pytest in 200510_sample_test.py Coverage Results" MODIFIED="1590217530584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$200429_Python_.coverage" NAME="200429_Python之傳值&amp;傳址 Coverage Results" MODIFIED="1590397148076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基礎/200429_對象引用" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$Quick_Sort__.coverage" NAME="Quick_Sort(快速排序) Coverage Results" MODIFIED="1591291895355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/演算法/排序" />
+    <SUITE FILE_PATH="coverage/PythonWork_py37_$Stack.coverage" NAME="自己建立Stack Coverage Results" MODIFIED="1592191369487" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/進階/資料結構/Stack(堆疊、棧)" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$pytest_for_200521_fixture_test_test_three.coverage" NAME="pytest for 200521_fixture_test.test_three Coverage Results" MODIFIED="1590221030072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testing/Pytest/200521_入門/200521_fixture_test" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$Bubble_Sort__.coverage" NAME="Bubble_Sort(泡沫排序) Coverage Results" MODIFIED="1591271737421" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/演算法/排序" />
     <SUITE FILE_PATH="coverage/PythonWork_py37_$Binary__.coverage" NAME="Binary(二分搜尋) Coverage Results" MODIFIED="1591276356187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/演算法/搜尋" />
@@ -151,11 +153,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django)/200428_ORM單表操作/筆記.txt">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/觀念/面試觀念題.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-420">
-              <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
+            <state relative-caret-position="56">
+              <caret line="279" column="14" selection-start-line="279" selection-start-column="14" selection-end-line="279" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/進階/作業系統(Operating System)/HTTP協議.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="721">
+              <caret line="112" column="58" selection-start-line="112" selection-start-column="58" selection-end-line="112" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200505_DRF(版本、解析器)/解析器筆記.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -176,6 +196,8 @@
     <findStrings>
       <find>ws</find>
       <find>set</find>
+      <find>clea</find>
+      <find>pop</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -184,16 +206,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200510_DRF(視圖)/視圖筆記.txt" />
-        <option value="$PROJECT_DIR$/觀念/LeetCode/Easy/Merge_Two_Sorted_LinkedLists(合併兩鏈表).py" />
-        <option value="$PROJECT_DIR$/進階/作業系統(Operating System)/存儲裝置.txt" />
-        <option value="$PROJECT_DIR$/進階/作業系統(Operating System)/程序間通訊(IPC).txt" />
-        <option value="$PROJECT_DIR$/進階/作業系統(Operating System)/程序間通訊(IPC)/管道.py" />
-        <option value="$PROJECT_DIR$/進階/作業系統(Operating System)/程序間通訊(IPC)/套接字(Socket)通訊/tcpclient.py" />
-        <option value="$PROJECT_DIR$/進階/作業系統(Operating System)/程序間通訊(IPC)/套接字(Socket)通訊/tcpserver.py" />
-        <option value="$PROJECT_DIR$/進階/作業系統(Operating System)/程序間通訊(IPC)/套接字(Socket)通訊/180803_TCPclient.py" />
-        <option value="$PROJECT_DIR$/進階/作業系統(Operating System)/程序間通訊(IPC)/套接字(Socket)通訊/180803_TCPserver.py" />
-        <option value="$PROJECT_DIR$/進階/作業系統(Operating System)/程序間通訊(IPC)/套接字(Socket)通訊/TCPserver.py" />
         <option value="$PROJECT_DIR$/進階/作業系統(Operating System)/程序間通訊(IPC)/套接字(Socket)通訊/UDPserver.py" />
         <option value="$PROJECT_DIR$/進階/作業系統(Operating System)/程序間通訊(IPC)/套接字(Socket)通訊/UDPclient.py" />
         <option value="$PROJECT_DIR$/基礎/200425_裝飾器/200501_模仿計時裝飾器(多層裝飾器).py" />
@@ -229,12 +241,22 @@
         <option value="$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/200604_Index(索引)" />
         <option value="$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/200110_用戶權限.txt" />
         <option value="$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/200604_Index(索引).txt" />
-        <option value="$PROJECT_DIR$/觀念/面試觀念題.txt" />
         <option value="$PROJECT_DIR$/Git/Git筆記.txt" />
-        <option value="$PROJECT_DIR$/觀念/測試使用.py" />
         <option value="$PROJECT_DIR$/Web網頁框架/框架(Django)/200614_Line聊天機器人/my_linebot/app01/views.py" />
-        <option value="$PROJECT_DIR$/Web網頁框架/框架(Django)/200614_Line聊天機器人/my_linebot/my_linebot/settings.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Web網頁框架/框架(Django)/200614_Line聊天機器人/my_linebot/my_linebot/settings.py" />
+        <option value="$PROJECT_DIR$/進階/資料結構/Stack(堆疊、棧).py" />
+        <option value="$PROJECT_DIR$/進階/資料結構/Stack(堆疊、棧)/Stack(堆疊、棧).py" />
+        <option value="$PROJECT_DIR$/觀念/測試使用.py" />
+        <option value="$PROJECT_DIR$/進階/資料結構/Stack(堆疊、棧)/使用List建立Stack.py" />
+        <option value="$PROJECT_DIR$/進階/資料結構/Stack(堆疊、棧)/自己建立Stack.py" />
+        <option value="$PROJECT_DIR$/進階/資料結構/Queue(隊列).py" />
+        <option value="$PROJECT_DIR$/Web網頁框架/框架(Django)/200614_Line聊天機器人/my_linebot/app01/nba_crawler.py" />
+        <option value="$PROJECT_DIR$/常用模塊/re模塊(正則表達式).py" />
+        <option value="$PROJECT_DIR$/進階/作業系統(Operating System)/網頁開發架構.txt" />
+        <option value="$PROJECT_DIR$/進階/作業系統(Operating System)/網頁開發理論.txt" />
+        <option value="$PROJECT_DIR$/觀念/面試觀念題.txt" />
+        <option value="$PROJECT_DIR$/進階/作業系統(Operating System)/HTTP協議.txt" />
       </list>
     </option>
   </component>
@@ -266,14 +288,35 @@
               <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
               <item name="Web網頁框架" type="462c0819:PsiDirectoryNode" />
-              <item name="框架(Django)" type="462c0819:PsiDirectoryNode" />
+              <item name="框架(Django Rest Framework)" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
               <item name="Web網頁框架" type="462c0819:PsiDirectoryNode" />
-              <item name="框架(Django)" type="462c0819:PsiDirectoryNode" />
-              <item name="200428_ORM單表操作" type="462c0819:PsiDirectoryNode" />
+              <item name="框架(Django Rest Framework)" type="462c0819:PsiDirectoryNode" />
+              <item name="200505_DRF(版本、解析器)" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
+              <item name="數據存儲" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
+              <item name="觀念" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
+              <item name="進階" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
+              <item name="進階" type="462c0819:PsiDirectoryNode" />
+              <item name="作業系統(Operating System)" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -302,8 +345,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.測試使用">
-    <configuration name="測試使用" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.re模塊(正則表達式)">
+    <configuration name="文件處理" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonWork(py37)" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -311,56 +354,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/觀念" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/基礎/200404_文件處理" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/觀念/測試使用.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="180727_動態導入模塊" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PythonWork(py37)" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/基礎/180715_模塊基本架構介紹/動態導入模塊" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/基礎/180715_模塊基本架構介紹/動態導入模塊/180727_動態導入模塊.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="200502_類的共享屬性" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PythonWork(py37)" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/基礎" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/基礎/200502_類的共享屬性.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/基礎/200404_文件處理/文件處理.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -391,7 +390,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="200514_RedisByPython" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="使用List建立Stack" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonWork(py37)" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -399,12 +398,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/數據存儲/NoSQL記憶體資料庫(Redis)" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/進階/資料結構/Stack(堆疊、棧)" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/數據存儲/NoSQL記憶體資料庫(Redis)/200514_RedisByPython.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/進階/資料結構/Stack(堆疊、棧)/使用List建立Stack.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -413,7 +412,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="文件處理" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Queue(隊列)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonWork(py37)" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -421,12 +420,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/基礎/200404_文件處理" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/進階/資料結構" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/基礎/200404_文件處理/文件處理.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/進階/資料結構/Queue(隊列).py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -435,7 +434,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="publish" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="自己建立Stack" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonWork(py37)" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -443,12 +442,56 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/數據存儲/NoSQL記憶體資料庫(Redis)" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/進階/資料結構/Stack(堆疊、棧)" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/數據存儲/NoSQL記憶體資料庫(Redis)/publish.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/進階/資料結構/Stack(堆疊、棧)/自己建立Stack.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Stack(堆疊、棧)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PythonWork(py37)" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/進階/資料結構" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/進階/資料結構/Stack(堆疊、棧).py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="re模塊(正則表達式)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PythonWork(py37)" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/常用模塊" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/常用模塊/re模塊(正則表達式).py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -459,19 +502,20 @@
     </configuration>
     <list>
       <item itemvalue="Python.200510_sample_test" />
-      <item itemvalue="Python.180727_動態導入模塊" />
-      <item itemvalue="Python.200514_RedisByPython" />
-      <item itemvalue="Python.publish" />
-      <item itemvalue="Python.200502_類的共享屬性" />
-      <item itemvalue="Python.測試使用" />
+      <item itemvalue="Python.文件處理" />
+      <item itemvalue="Python.Stack(堆疊、棧)" />
+      <item itemvalue="Python.使用List建立Stack" />
+      <item itemvalue="Python.自己建立Stack" />
+      <item itemvalue="Python.Queue(隊列)" />
+      <item itemvalue="Python.re模塊(正則表達式)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.測試使用" />
-        <item itemvalue="Python.200502_類的共享屬性" />
-        <item itemvalue="Python.publish" />
-        <item itemvalue="Python.200514_RedisByPython" />
-        <item itemvalue="Python.180727_動態導入模塊" />
+        <item itemvalue="Python.re模塊(正則表達式)" />
+        <item itemvalue="Python.Queue(隊列)" />
+        <item itemvalue="Python.使用List建立Stack" />
+        <item itemvalue="Python.自己建立Stack" />
+        <item itemvalue="Python.Stack(堆疊、棧)" />
       </list>
     </recent_temporary>
   </component>
@@ -515,7 +559,9 @@
       <workItem from="1591922541187" duration="830000" />
       <workItem from="1592008909896" duration="18288000" />
       <workItem from="1592097818311" duration="5746000" />
-      <workItem from="1592111021461" duration="5666000" />
+      <workItem from="1592111021461" duration="7587000" />
+      <workItem from="1592188383369" duration="9821000" />
+      <workItem from="1592267465463" duration="4682000" />
     </task>
     <servers />
   </component>
@@ -552,7 +598,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="455173000" />
+    <option name="totallyTimeSpent" value="471597000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -567,7 +613,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.80133927" visible="true" weight="0.22117962" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.80133927" visible="true" weight="0.22654155" />
       <window_info id="Structure" order="1" sideWeight="0.19866072" side_tool="true" weight="0.21715818" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -643,93 +689,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/數據存儲/NoSQL記憶體資料庫(Redis)/redis-cli筆記.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="125" column="24" lean-forward="true" selection-start-line="125" selection-start-column="24" selection-end-line="126" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/數據存儲/NoSQL記憶體資料庫(Redis)/200514_RedisByPython.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1400">
-          <caret line="50" column="38" lean-forward="true" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/190515_資料庫三范式.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/180825_多表查詢.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-420" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web網頁前端/Html/180902_基本標籤.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-252" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/進階/作業系統(Operating System)/Program,Process,Thread比較.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/進階/作業系統(Operating System)/作業系統.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-140">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/進階/作業系統(Operating System)/存儲裝置.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-168" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/進階/作業系統(Operating System)/程序的基本和異常狀態.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/進階/作業系統(Operating System)/程序間通訊(IPC)/程序間通訊(IPC).txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="6" column="38" lean-forward="true" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/基礎/200502_類的共享屬性.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="835">
-          <caret line="112" column="25" selection-start-line="112" selection-start-column="25" selection-end-line="112" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/180825_事務.txt" />
-    <entry file="file://$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/180823_數據庫操作.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="30" column="26" lean-forward="true" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/180826_外鍵約束.txt" />
-    <entry file="file://$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/200111_其他約束.txt" />
-    <entry file="file://$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/200604_Index(索引)" />
-    <entry file="file://$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/180824_索引.txt" />
-    <entry file="file://$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/180823_數據表操作.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="88" column="36" lean-forward="true" selection-start-line="88" selection-start-column="36" selection-end-line="88" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/200110_用戶權限.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1223">
@@ -797,9 +756,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/180825_pymysql.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/基礎/200428_內置函數.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2231" />
@@ -827,20 +783,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Git/筆記.txt">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/觀念/測試使用.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/觀念/面試觀念題.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="203" selection-start-line="203" selection-end-line="203" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200505_DRF(版本、解析器)/mysite/api/views.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -898,9 +840,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django)/200614_Line聊天機器人/my_linebot/my_linebot/settings.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -927,10 +866,147 @@
         <state relative-caret-position="-252" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django)/200614_Line聊天機器人/my_linebot/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django)/200428_ORM單表操作/筆記.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-420">
-          <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
+        <state relative-caret-position="28">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基礎/200401_數據類型/list(列表).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="62" column="12" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/進階/資料結構/Stack(堆疊、棧).py" />
+    <entry file="file://$PROJECT_DIR$/進階/資料結構/Stack(堆疊、棧)/Stack(堆疊、棧).py" />
+    <entry file="file://$PROJECT_DIR$/進階/資料結構/Linked_List(鏈表).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/觀念/測試使用.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/queue.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/進階/資料結構/Queue(隊列).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="50" column="19" lean-forward="true" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/進階/資料結構/Stack(堆疊、棧)/自己建立Stack.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="719">
+          <caret line="60" column="23" lean-forward="true" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/進階/資料結構/Stack(堆疊、棧)/使用List建立Stack.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="3" selection-start-column="3" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/進階/資料結構/Binary_Tree(二元樹).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="36" column="25" lean-forward="true" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django)/200614_Line聊天機器人/my_linebot/my_linebot/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="110" column="23" lean-forward="true" selection-start-line="110" selection-start-column="23" selection-end-line="110" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django)/200614_Line聊天機器人/my_linebot/app01/nba_crawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="42" column="22" lean-forward="true" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/常用模塊/re模塊(正則表達式).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="149" column="29" selection-start-line="149" selection-start-column="29" selection-end-line="149" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/180825_pymysql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-929" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/180825_多表查詢.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="8" column="9" lean-forward="true" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/進階/作業系統(Operating System)/程序間通訊(IPC)/程序間通訊(IPC).txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/進階/作業系統(Operating System)/網頁開發架構.txt" />
+    <entry file="file://$PROJECT_DIR$/進階/作業系統(Operating System)/網頁開發理論.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/觀念/面試觀念題.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="279" column="14" selection-start-line="279" selection-start-column="14" selection-end-line="279" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200506_DRF(序列化)/序列化筆記.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-924" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200505_DRF(版本、解析器)/解析器筆記.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/進階/作業系統(Operating System)/HTTP協議.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="721">
+          <caret line="112" column="58" selection-start-line="112" selection-start-column="58" selection-end-line="112" selection-end-column="58" />
         </state>
       </provider>
     </entry>
