@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        ul{
+            list-style-type: none;
+        }
+        li{
+            float: left;
+            padding-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    {{ user }}
+    <ul>
+        {% for i in menu %}
+            <li>
+                <a href="#">{{ i.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
