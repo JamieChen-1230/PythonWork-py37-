@@ -1,3 +1,4 @@
+from django.db.models import Prefetch
 from rest_framework.response import Response
 from rest_framework.viewsets import ModelViewSet, GenericViewSet
 from app01 import serializers
@@ -13,13 +14,22 @@ class BookshopsView(ModelViewSet):
     # /api/bookshops/<shop_id>/頁面，用來顯示這家店所有借閱者資料(包含借了什麼書)
     def retrieve(self, request, *args, **kwargs):
         bookshop_id = self.get_object().id
-        user_list = models.Users.objects.filter(lend_books__shop_id=bookshop_id).distinct().values('id', 'name')
+        # 方法一(效率差)
+        # user_list = models.Users.objects.filter(lend_books__shop_id=bookshop_id).distinct().values('id', 'name')
+        # # print(list(user_list))
+        # for user in user_list:
+        #     book_list = models.Books.objects.filter(shop_id=bookshop_id, users=models.Users.objects.get(id=user['id']))
+        #     print(book_list)
+        #     user.setdefault('lend_books', book_list)
         # print(list(user_list))
-        for user in user_list:
-            book_list = models.Books.objects.filter(shop_id=bookshop_id, users=models.Users.objects.get(id=user['id']))
-            # print(book_list)
-            user.setdefault('lend_books', book_list)
-        serializer = serializers.UsersSerializer(instance=list(user_list), many=True)
+        # serializer = serializers.UsersSerializer(instance=list(user_list), many=True)
+
+        # 方法二(透過聯表提升效率)
+        # Prefetch方法可以讓我們再聯表時進行篩選
+        user_list = models.Users.objects.filter(lend_books__shop_id=bookshop_id).distinct().prefetch_related(
+            Prefetch('lend_books', queryset=models.Books.objects.filter(shop_id=bookshop_id))
+        )
+        serializer = serializers.UsersSerializer(instance=user_list, many=True)
         return Response(serializer.data)
 
 
@@ -44,7 +54,7 @@ class BookshopsBooksView(GenericViewSet):
         # print(self.kwargs)
         user_list = models.Users.objects.filter(lend_books__shop_id=bookshop_id, lend_books=self.kwargs['book_id']).distinct().values('id', 'name')
         # print(list(user_list))
-        serializer = serializers.UsersSerializer(instance=list(user_list), many=True)
+        serializer = serializers.UsersSerializer2(instance=list(user_list), many=True)
         return Response(serializer.data)
 
 
