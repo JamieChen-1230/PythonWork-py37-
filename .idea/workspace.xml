@@ -4,12 +4,9 @@
     <list default="true" id="ff1e8a4e-9f45-4d3b-9949-a27f16c94dbc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200605_圖書系統/mysite/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200605_圖書系統/mysite/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200605_圖書系統/mysite/app01/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200605_圖書系統/mysite/app01/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200605_圖書系統/mysite/app01/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200605_圖書系統/mysite/app01/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200605_圖書系統/mysite/app01/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200605_圖書系統/mysite/app01/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/200604_Index(索引).txt" beforeDir="false" afterPath="$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/200604_Index(索引).txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/觀念/面試觀念題.txt" beforeDir="false" afterPath="$PROJECT_DIR$/觀念/面試觀念題.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/進階/作業系統(Operating System)/程序間通訊(IPC)/程序間通訊(IPC).txt" beforeDir="false" afterPath="$PROJECT_DIR$/進階/作業系統(Operating System)/程序間通訊(IPC)/程序間通訊(IPC).txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200605_圖書系統/mysite/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200605_圖書系統/mysite/mysite/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -157,11 +154,11 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/觀念/面試觀念題.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8394">
+            <state relative-caret-position="13216">
               <caret line="472" column="78" selection-start-line="472" selection-start-column="78" selection-end-line="472" selection-end-column="78" />
             </state>
           </provider>
@@ -170,10 +167,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django)/200429_ORM一對多操作/mysite/app01/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
-              <caret line="57" column="46" lean-forward="true" selection-start-line="57" selection-start-column="46" selection-end-line="57" selection-end-column="46" />
+            <state relative-caret-position="360">
+              <caret line="57" column="46" selection-start-line="57" selection-start-column="46" selection-end-line="57" selection-end-column="46" />
               <folding>
                 <element signature="e#0#59#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200605_圖書系統/mysite/app01/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-168">
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -182,17 +190,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django)/200428_ORM單表操作/筆記.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="66" column="17" selection-start-line="66" selection-start-column="10" selection-end-line="66" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200605_圖書系統/測試小系統.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="15" column="26" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="26" />
+            <state relative-caret-position="140">
+              <caret line="59" column="25" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -225,7 +224,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/觀念/LeetCode/Easy/Remove_Duplicates_from_Sorted_List(去除列表重複元素).py" />
         <option value="$PROJECT_DIR$/基礎/200410_字符串格式化.py" />
         <option value="$PROJECT_DIR$/基礎/200401_數據類型/數據類型(全).py" />
         <option value="$PROJECT_DIR$/基礎/200401_數據類型/set(集合).py" />
@@ -276,6 +274,7 @@
         <option value="$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/200604_Index(索引).txt" />
         <option value="$PROJECT_DIR$/觀念/面試觀念題.txt" />
         <option value="$PROJECT_DIR$/進階/作業系統(Operating System)/程序間通訊(IPC)/程序間通訊(IPC).txt" />
+        <option value="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200605_圖書系統/mysite/app01/views.py" />
       </list>
     </option>
   </component>
@@ -290,7 +289,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -351,7 +349,48 @@
               <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
               <item name="Web網頁框架" type="462c0819:PsiDirectoryNode" />
               <item name="框架(Django Rest Framework)" type="462c0819:PsiDirectoryNode" />
+              <item name="200511_DRF(路由、渲染器)" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
+              <item name="Web網頁框架" type="462c0819:PsiDirectoryNode" />
+              <item name="框架(Django Rest Framework)" type="462c0819:PsiDirectoryNode" />
+              <item name="200511_DRF(路由、渲染器)" type="462c0819:PsiDirectoryNode" />
+              <item name="mysite" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
+              <item name="Web網頁框架" type="462c0819:PsiDirectoryNode" />
+              <item name="框架(Django Rest Framework)" type="462c0819:PsiDirectoryNode" />
+              <item name="200511_DRF(路由、渲染器)" type="462c0819:PsiDirectoryNode" />
+              <item name="mysite" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
+              <item name="Web網頁框架" type="462c0819:PsiDirectoryNode" />
+              <item name="框架(Django Rest Framework)" type="462c0819:PsiDirectoryNode" />
               <item name="200605_圖書系統" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
+              <item name="Web網頁框架" type="462c0819:PsiDirectoryNode" />
+              <item name="框架(Django Rest Framework)" type="462c0819:PsiDirectoryNode" />
+              <item name="200605_圖書系統" type="462c0819:PsiDirectoryNode" />
+              <item name="mysite" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
+              <item name="Web網頁框架" type="462c0819:PsiDirectoryNode" />
+              <item name="框架(Django Rest Framework)" type="462c0819:PsiDirectoryNode" />
+              <item name="200605_圖書系統" type="462c0819:PsiDirectoryNode" />
+              <item name="mysite" type="462c0819:PsiDirectoryNode" />
+              <item name="app01" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
@@ -384,6 +423,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -603,7 +643,8 @@
       <workItem from="1592267465463" duration="8943000" />
       <workItem from="1592299067235" duration="5776000" />
       <workItem from="1592354206510" duration="11681000" />
-      <workItem from="1592379283111" duration="3076000" />
+      <workItem from="1592379283111" duration="3614000" />
+      <workItem from="1592440740514" duration="1262000" />
     </task>
     <servers />
   </component>
@@ -640,7 +681,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="496391000" />
+    <option name="totallyTimeSpent" value="498191000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -655,7 +696,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.80133927" visible="true" weight="0.23592493" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.80133927" visible="true" weight="0.23927614" />
       <window_info id="Structure" order="1" sideWeight="0.19866072" side_tool="true" weight="0.21715818" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -669,7 +710,7 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49865952" weight="0.33994335" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49865952" visible="true" weight="0.33994335" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5013405" side_tool="true" weight="0.3385269" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -731,8 +772,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/進階/資料結構/Stack(堆疊、棧).py" />
-    <entry file="file://$PROJECT_DIR$/進階/資料結構/Stack(堆疊、棧)/Stack(堆疊、棧).py" />
     <entry file="file://$PROJECT_DIR$/進階/資料結構/Linked_List(鏈表).py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
@@ -1022,37 +1061,55 @@
         <state relative-caret-position="-2184" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django)/200429_ORM一對多操作/mysite/app01/models.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200605_圖書系統/測試小系統.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/觀念/面試觀念題.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8394">
+        <state relative-caret-position="13216">
           <caret line="472" column="78" selection-start-line="472" selection-start-column="78" selection-end-line="472" selection-end-column="78" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django)/200429_ORM一對多操作/mysite/app01/models.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django)/200429_ORM一對多操作/mysite/app01/views.py">
+    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200511_DRF(路由、渲染器)/mysite/api/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="57" column="46" lean-forward="true" selection-start-line="57" selection-start-column="46" selection-end-line="57" selection-end-column="46" />
+        <state relative-caret-position="-756">
           <folding>
-            <element signature="e#0#59#0" expanded="true" />
+            <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django)/200428_ORM單表操作/筆記.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="66" column="17" selection-start-line="66" selection-start-column="10" selection-end-line="66" selection-end-column="17" />
+        <state relative-caret-position="140">
+          <caret line="59" column="25" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200605_圖書系統/測試小系統.txt">
+    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django)/200429_ORM一對多操作/mysite/app01/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="26" />
+        <state relative-caret-position="360">
+          <caret line="57" column="46" selection-start-line="57" selection-start-column="46" selection-end-line="57" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200605_圖書系統/mysite/app01/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-168">
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
