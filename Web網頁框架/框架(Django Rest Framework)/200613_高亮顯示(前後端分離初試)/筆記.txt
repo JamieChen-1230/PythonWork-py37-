@@ -1,0 +1,6 @@
+project資料夾：
+    - 後端api程序(DRF)：
+    - 代碼皆複製於https://www.django-rest-framework.org/tutorial/1-serialization/
+
+front資料夾：
+    - 前端頁面

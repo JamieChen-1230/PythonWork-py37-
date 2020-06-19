@@ -4,6 +4,7 @@ sqlparse==0.3.1
 mysqlclient==1.4.6 (在django中要使用mysql，django2開始不支持pymysql了)
 djangorestframework==3.11.0
 django-celery-beat==2.0.0 (為了在django中能使用celery定時任務)
+pygments==2.6.1  (為了能使用代碼的高亮顯示)
 
 web測試：
 selenium==3.141.0
@@ -14,6 +15,7 @@ pytest-html==2.1.1  (用來生成測試報告)
 allure-pytest==2.8.15  (用來生成更友好測試報告，還需要額外安裝allure)
 ddt==1.4.1  (用於unittest參數數據傳輸)
 pyaml==20.4.0  (為了使python可以讀取yml文件)
+
 
 數據存儲：
 redis==3.2.0 (redis==2.10.6版本太低)
