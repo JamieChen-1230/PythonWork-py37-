@@ -1,0 +1,256 @@
+INFO:django.utils.autoreload:D:\Programming\WorkPlace\PythonWork(py37)\Web網頁框架\框架(Django Rest Framework)\200614_電商系統(前後端分離初試)\eshop\eshop\eshop\computerapp\urls.py changed, reloading.
+INFO:django.utils.autoreload:D:\Programming\WorkPlace\PythonWork(py37)\Web網頁框架\框架(Django Rest Framework)\200614_電商系統(前後端分離初試)\eshop\eshop\eshop\computerapp\admin.py changed, reloading.
+INFO:django.utils.autoreload:D:\Programming\WorkPlace\PythonWork(py37)\Web網頁框架\框架(Django Rest Framework)\200614_電商系統(前後端分離初試)\eshop\eshop\eshop\computerapp\views.py changed, reloading.
+WARNING:django.request:Forbidden: /computer/user_info/
+INFO:django.utils.autoreload:D:\Programming\WorkPlace\PythonWork(py37)\Web網頁框架\框架(Django Rest Framework)\200614_電商系統(前後端分離初試)\eshop\eshop\eshop\eshop\urls.py changed, reloading.
+INFO:django.utils.autoreload:D:\Programming\WorkPlace\PythonWork(py37)\Web網頁框架\框架(Django Rest Framework)\200614_電商系統(前後端分離初試)\eshop\eshop\eshop\eshop\urls.py changed, reloading.
+WARNING:django.request:Not Found: /media/product/uploads/2017/10/18/dell_2.jpg
+WARNING:django.request:Not Found: /media/product/uploads/2017/10/18/dell_server_XAbN7M6.jpg
+WARNING:django.request:Not Found: /media/product/uploads/2017/10/18/asus_pad.jpg
+WARNING:django.request:Not Found: /media/product/uploads/2017/10/16/dell1.jpg
+WARNING:django.request:Not Found: /media/product/uploads/2017/10/18/dell_one.jpg
+WARNING:django.request:Not Found: /media/product/uploads/2017/10/18/hp1.jpg
+WARNING:django.request:Not Found: /media/product/uploads/2017/10/18/acer1.jpg
+WARNING:django.request:Not Found: /media/product/uploads/2017/10/16/asus1.jpg
+WARNING:django.request:Not Found: /media/product/uploads/2017/10/18/dell_xps.jpg
+WARNING:django.request:Not Found: /media/product/uploads/2017/10/18/dell_one.jpg
+WARNING:django.request:Not Found: /media/product/uploads/2017/10/18/asus_pad.jpg
+WARNING:django.request:Not Found: /media/product/uploads/2017/10/16/dell1.jpg
+WARNING:django.request:Not Found: /media/product/uploads/2017/10/18/dell_server_XAbN7M6.jpg
+WARNING:django.request:Not Found: /media/product/uploads/2017/10/18/hp1.jpg
+WARNING:django.request:Not Found: /media/product/uploads/2017/10/18/dell_2.jpg
+WARNING:django.request:Not Found: /media/product/uploads/2017/10/18/dell_xps.jpg
+WARNING:django.request:Not Found: /media/product/uploads/2017/10/16/asus1.jpg
+WARNING:django.request:Not Found: /media/product/uploads/2017/10/18/acer1.jpg
+INFO:django.utils.autoreload:D:\Programming\WorkPlace\PythonWork(py37)\Web網頁框架\框架(Django Rest Framework)\200614_電商系統(前後端分離初試)\eshop\eshop\eshop\eshop\urls.py changed, reloading.
+INFO:django.utils.autoreload:D:\Programming\WorkPlace\PythonWork(py37)\Web網頁框架\框架(Django Rest Framework)\200614_電商系統(前後端分離初試)\eshop\eshop\eshop\eshop\settings.py changed, reloading.
+INFO:django.utils.autoreload:D:\Programming\WorkPlace\PythonWork(py37)\Web網頁框架\框架(Django Rest Framework)\200614_電商系統(前後端分離初試)\eshop\eshop\eshop\eshop\settings.py changed, reloading.
+WARNING:django.request:Forbidden: /computer/user_info/
+WARNING:django.request:Not Found: /
+INFO:django.utils.autoreload:D:\Programming\WorkPlace\PythonWork(py37)\Web網頁框架\框架(Django Rest Framework)\200614_電商系統(前後端分離初試)\eshop\eshop\eshop\computerapp\views.py changed, reloading.
+INFO:django.utils.autoreload:D:\Programming\WorkPlace\PythonWork(py37)\Web網頁框架\框架(Django Rest Framework)\200614_電商系統(前後端分離初試)\eshop\eshop\eshop\computerapp\views.py changed, reloading.
+INFO:django.utils.autoreload:D:\Programming\WorkPlace\PythonWork(py37)\Web網頁框架\框架(Django Rest Framework)\200614_電商系統(前後端分離初試)\eshop\eshop\eshop\computerapp\views.py changed, reloading.
+INFO:django.utils.autoreload:D:\Programming\WorkPlace\PythonWork(py37)\Web網頁框架\框架(Django Rest Framework)\200614_電商系統(前後端分離初試)\eshop\eshop\eshop\computerapp\views.py changed, reloading.
+INFO:django.utils.autoreload:D:\Programming\WorkPlace\PythonWork(py37)\Web網頁框架\框架(Django Rest Framework)\200614_電商系統(前後端分離初試)\eshop\eshop\eshop\computerapp\views.py changed, reloading.
+INFO:django.utils.autoreload:D:\Programming\WorkPlace\PythonWork(py37)\Web網頁框架\框架(Django Rest Framework)\200614_電商系統(前後端分離初試)\eshop\eshop\eshop\computerapp\views.py changed, reloading.
+INFO:django.utils.autoreload:D:\Programming\WorkPlace\PythonWork(py37)\Web網頁框架\框架(Django Rest Framework)\200614_電商系統(前後端分離初試)\eshop\eshop\eshop\computerapp\views.py changed, reloading.
+INFO:django.utils.autoreload:D:\Programming\WorkPlace\PythonWork(py37)\Web網頁框架\框架(Django Rest Framework)\200614_電商系統(前後端分離初試)\eshop\eshop\eshop\computerapp\views.py changed, reloading.
+INFO:django.utils.autoreload:D:\Programming\WorkPlace\PythonWork(py37)\Web網頁框架\框架(Django Rest Framework)\200614_電商系統(前後端分離初試)\eshop\eshop\eshop\computerapp\views.py changed, reloading.
+INFO:django.utils.autoreload:D:\Programming\WorkPlace\PythonWork(py37)\Web網頁框架\框架(Django Rest Framework)\200614_電商系統(前後端分離初試)\eshop\eshop\eshop\computerapp\views.py changed, reloading.
+INFO:django.utils.autoreload:D:\Programming\WorkPlace\PythonWork(py37)\Web網頁框架\框架(Django Rest Framework)\200614_電商系統(前後端分離初試)\eshop\eshop\eshop\computerapp\views.py changed, reloading.
+INFO:django.utils.autoreload:D:\Programming\WorkPlace\PythonWork(py37)\Web網頁框架\框架(Django Rest Framework)\200614_電商系統(前後端分離初試)\eshop\eshop\eshop\computerapp\views.py changed, reloading.
+INFO:django.utils.autoreload:D:\Programming\WorkPlace\PythonWork(py37)\Web網頁框架\框架(Django Rest Framework)\200614_電商系統(前後端分離初試)\eshop\eshop\eshop\computerapp\views.py changed, reloading.
+INFO:django.utils.autoreload:D:\Programming\WorkPlace\PythonWork(py37)\Web網頁框架\框架(Django Rest Framework)\200614_電商系統(前後端分離初試)\eshop\eshop\eshop\computerapp\views.py changed, reloading.
+INFO:django.utils.autoreload:D:\Programming\WorkPlace\PythonWork(py37)\Web網頁框架\框架(Django Rest Framework)\200614_電商系統(前後端分離初試)\eshop\eshop\eshop\computerapp\views.py changed, reloading.
+INFO:django.utils.autoreload:D:\Programming\WorkPlace\PythonWork(py37)\Web網頁框架\框架(Django Rest Framework)\200614_電商系統(前後端分離初試)\eshop\eshop\eshop\eshop\settings.py changed, reloading.
+INFO:django.utils.autoreload:D:\Programming\WorkPlace\PythonWork(py37)\Web網頁框架\框架(Django Rest Framework)\200614_電商系統(前後端分離初試)\eshop\eshop\eshop\eshop\settings.py changed, reloading.
+INFO:django.utils.autoreload:D:\Programming\WorkPlace\PythonWork(py37)\Web網頁框架\框架(Django Rest Framework)\200614_電商系統(前後端分離初試)\eshop\eshop\eshop\computerapp\views.py changed, reloading.
+INFO:django.utils.autoreload:D:\Programming\WorkPlace\PythonWork(py37)\Web網頁框架\框架(Django Rest Framework)\200614_電商系統(前後端分離初試)\eshop\eshop\eshop\computerapp\views.py changed, reloading.
+INFO:django.utils.autoreload:D:\Programming\WorkPlace\PythonWork(py37)\Web網頁框架\框架(Django Rest Framework)\200614_電商系統(前後端分離初試)\eshop\eshop\eshop\computerapp\views.py changed, reloading.
+INFO:django.utils.autoreload:D:\Programming\WorkPlace\PythonWork(py37)\Web網頁框架\框架(Django Rest Framework)\200614_電商系統(前後端分離初試)\eshop\eshop\eshop\computerapp\views.py changed, reloading.
+INFO:django.utils.autoreload:D:\Programming\WorkPlace\PythonWork(py37)\Web網頁框架\框架(Django Rest Framework)\200614_電商系統(前後端分離初試)\eshop\eshop\eshop\computerapp\views.py changed, reloading.
+INFO:django.utils.autoreload:D:\Programming\WorkPlace\PythonWork(py37)\Web網頁框架\框架(Django Rest Framework)\200614_電商系統(前後端分離初試)\eshop\eshop\eshop\computerapp\views.py changed, reloading.
+WARNING:django.request:Not Found: /computer/user_profile_ru
+WARNING:django.request:Forbidden: /computer/user_profile_ru/1/
+WARNING:django.request:Not Found: /accounts/profile/
+WARNING:django.request:Not Found: /computer/user_profile_ru
+ERROR:django.request:Internal Server Error: /computer/user_profile_ru/1/
+Traceback (most recent call last):
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\rest_framework\generics.py", line 252, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "D:\Programming\WorkPlace\PythonWork(py37)\Web網頁框架\框架(Django Rest Framework)\200614_電商系統(前後端分離初試)\eshop\eshop\eshop\computerapp\views.py", line 98, in get_object
+    obj = UserProfile.objects.get(user=user)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\django\db\models\query.py", line 408, in get
+    self.model._meta.object_name
+computerapp.models.UserProfile.DoesNotExist: UserProfile matching query does not exist.
+ERROR:django.request:Internal Server Error: /computer/user_profile_ru/30/
+Traceback (most recent call last):
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\rest_framework\generics.py", line 252, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "D:\Programming\WorkPlace\PythonWork(py37)\Web網頁框架\框架(Django Rest Framework)\200614_電商系統(前後端分離初試)\eshop\eshop\eshop\computerapp\views.py", line 98, in get_object
+    obj = UserProfile.objects.get(user=user)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\django\db\models\query.py", line 408, in get
+    self.model._meta.object_name
+computerapp.models.UserProfile.DoesNotExist: UserProfile matching query does not exist.
+ERROR:django.request:Internal Server Error: /computer/user_profile_ru/27/
+Traceback (most recent call last):
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\rest_framework\generics.py", line 252, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "D:\Programming\WorkPlace\PythonWork(py37)\Web網頁框架\框架(Django Rest Framework)\200614_電商系統(前後端分離初試)\eshop\eshop\eshop\computerapp\views.py", line 98, in get_object
+    obj = UserProfile.objects.get(user=user)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\django\db\models\query.py", line 408, in get
+    self.model._meta.object_name
+computerapp.models.UserProfile.DoesNotExist: UserProfile matching query does not exist.
+ERROR:django.request:Internal Server Error: /computer/user_profile_ru/26/
+Traceback (most recent call last):
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\rest_framework\generics.py", line 252, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "D:\Programming\WorkPlace\PythonWork(py37)\Web網頁框架\框架(Django Rest Framework)\200614_電商系統(前後端分離初試)\eshop\eshop\eshop\computerapp\views.py", line 98, in get_object
+    obj = UserProfile.objects.get(user=user)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\django\db\models\query.py", line 408, in get
+    self.model._meta.object_name
+computerapp.models.UserProfile.DoesNotExist: UserProfile matching query does not exist.
+WARNING:django.request:Not Found: /computer/
+WARNING:django.request:Not Found: /computer/product_retrieve
+ERROR:django.request:Internal Server Error: /computer/user_profile_ru/27/
+Traceback (most recent call last):
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\rest_framework\generics.py", line 252, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "D:\Programming\WorkPlace\PythonWork(py37)\Web網頁框架\框架(Django Rest Framework)\200614_電商系統(前後端分離初試)\eshop\eshop\eshop\computerapp\views.py", line 98, in get_object
+    obj = UserProfile.objects.get(user=user)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\django\db\models\query.py", line 408, in get
+    self.model._meta.object_name
+computerapp.models.UserProfile.DoesNotExist: UserProfile matching query does not exist.
+ERROR:django.request:Internal Server Error: /computer/user_profile_ru/26/
+Traceback (most recent call last):
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\rest_framework\generics.py", line 252, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "D:\Programming\WorkPlace\PythonWork(py37)\Web網頁框架\框架(Django Rest Framework)\200614_電商系統(前後端分離初試)\eshop\eshop\eshop\computerapp\views.py", line 98, in get_object
+    obj = UserProfile.objects.get(user=user)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\Programming\Python\Anaconda3\envs\py37\lib\site-packages\django\db\models\query.py", line 408, in get
+    self.model._meta.object_name
+computerapp.models.UserProfile.DoesNotExist: UserProfile matching query does not exist.
+WARNING:django.request:Not Found: /
+WARNING:django.request:Not Found: /computer/user_profile_ru/
+WARNING:django.request:Not Found: /computer/user_info/1
+WARNING:django.request:Not Found: /computer/user_profile_ru/
+INFO:django.utils.autoreload:D:\Programming\WorkPlace\PythonWork(py37)\Web網頁框架\框架(Django Rest Framework)\200614_電商系統(前後端分離初試)\eshop\eshop\eshop\computerapp\urls.py changed, reloading.
+WARNING:django.request:Not Found: /computer/
+INFO:django.utils.autoreload:D:\Programming\WorkPlace\PythonWork(py37)\Web網頁框架\框架(Django Rest Framework)\200614_電商系統(前後端分離初試)\eshop\eshop\eshop\computerapp\serializers.py changed, reloading.
+INFO:django.utils.autoreload:D:\Programming\WorkPlace\PythonWork(py37)\Web網頁框架\框架(Django Rest Framework)\200614_電商系統(前後端分離初試)\eshop\eshop\eshop\computerapp\serializers.py changed, reloading.
+INFO:django.utils.autoreload:D:\Programming\WorkPlace\PythonWork(py37)\Web網頁框架\框架(Django Rest Framework)\200614_電商系統(前後端分離初試)\eshop\eshop\eshop\computerapp\serializers.py changed, reloading.
+INFO:django.utils.autoreload:D:\Programming\WorkPlace\PythonWork(py37)\Web網頁框架\框架(Django Rest Framework)\200614_電商系統(前後端分離初試)\eshop\eshop\eshop\computerapp\serializers.py changed, reloading.
+INFO:django.utils.autoreload:D:\Programming\WorkPlace\PythonWork(py37)\Web網頁框架\框架(Django Rest Framework)\200614_電商系統(前後端分離初試)\eshop\eshop\eshop\computerapp\serializers.py changed, reloading.
+INFO:django.utils.autoreload:D:\Programming\WorkPlace\PythonWork(py37)\Web網頁框架\框架(Django Rest Framework)\200614_電商系統(前後端分離初試)\eshop\eshop\eshop\computerapp\urls.py changed, reloading.
