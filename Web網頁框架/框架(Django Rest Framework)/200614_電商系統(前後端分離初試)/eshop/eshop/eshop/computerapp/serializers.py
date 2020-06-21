@@ -22,13 +22,17 @@ class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ('id', 'username', 'password', 'email', 'first_name', 'last_name',)
+        # 添加額外關鍵字參數
+        # 把密碼設為唯寫
         extra_kwargs = {'password': {'write_only': True}}
 
+    # 覆寫create方法，為了要對密碼加密和同時創建UserProfile關聯數據
     def create(self, validated_data):
-        user = User(**validated_data)  # 接受前端传过来的用户名和密码
-        user.set_password(validated_data['password'])  # 通过字典方式调用
-        user.save()  # 保存到内存中
-        user_profile = UserProfile(user=user)
+        # validated_data存放著前端傳來的數據
+        user = User(**validated_data)
+        user.set_password(validated_data['password'])  # 對密碼進行加密並設置
+        user.save()  # 數據持久化
+        user_profile = UserProfile(user=user)  # 同時創建UserProfile關聯數據
         user_profile.save()
         return user
 
@@ -63,7 +67,6 @@ class ProductRetrieveSerializer(serializers.ModelSerializer):
 
 class DeliveryAddressSerilizer(serializers.ModelSerializer):
     """收貨地址"""
-
     class Meta:
         model = DeliveryAddress
         fields = ('id', 'user', 'contact_person', 'contact_mobile_phone', 'delivery_address', 'created', 'updated',)

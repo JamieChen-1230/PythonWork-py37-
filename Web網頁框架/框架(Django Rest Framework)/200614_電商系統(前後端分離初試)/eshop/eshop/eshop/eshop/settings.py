@@ -27,8 +27,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    # 'rest_framework.authtoken',
-    # 'django_filters',
+    'rest_framework.authtoken',   # 註冊DRF認證，要加在'rest_framework',之後
+    # 'django_filters',  # 不知道是啥
     'corsheaders',  # 跨域請求設置
     'computerapp.apps.ComputerappConfig',
 ]
@@ -125,10 +125,10 @@ MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'eshop/media')
 REST_FRAMEWORK = {
     'PAGE_SIZE': 6,
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
-    # 'DEFAULT_AUTHENTICATION_CLASSES': (
-    #     'rest_framework.authentication.BasicAuthentication',
-    #     'rest_framework.authentication.SessionAuthentication',
-    #     'rest_framework.authentication.TokenAuthentication',
-    # ),
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        # 'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',  # DRF API頁面所用的認證
+        'rest_framework.authentication.TokenAuthentication',  # 這裡前端使用認證
+    ),
 }
 

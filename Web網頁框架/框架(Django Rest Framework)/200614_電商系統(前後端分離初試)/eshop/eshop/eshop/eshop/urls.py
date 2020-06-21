@@ -8,7 +8,9 @@ from rest_framework.authtoken import views
 urlpatterns = [
     re_path(r'^admin/', admin.site.urls),
     re_path(r'^computer/', include('computerapp.urls')),
+    # obtain_auth_token本質上也是一個View，只是DRF幫我們處理好了
     re_path(r'^api-token-auth/', views.obtain_auth_token),
+    # DRF登入
     re_path(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
 ]
 

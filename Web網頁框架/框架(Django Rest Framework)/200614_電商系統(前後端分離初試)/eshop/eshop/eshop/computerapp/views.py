@@ -82,17 +82,20 @@ class UserInfoView(APIView):
     """用戶基本信息"""
     permission_classes = (permissions.IsAuthenticated,)
 
+    # 自定義get(因為只能看自己的用戶信息)
     def get(self, request, format=None):
+        # user會被設定為當前用戶，因為只能看自己的用戶信息(不這樣設置的話，就能通過id看別人的信息)
         user = self.request.user
         serializer = UserInfoSerializer(user)
         return Response(serializer.data)
 
 
 class UserProfileRUView(generics.RetrieveUpdateAPIView):
-    """用戶其他信息"""
+    """用戶其他信息RetrieveUpdate"""
     serializer_class = UserProfileSerializer
     permission_classes = (permissions.IsAuthenticated,)
 
+    # 覆寫get_object，只能看自己的用戶信息
     def get_object(self):
         user = self.request.user
         obj = UserProfile.objects.get(user=user)
@@ -105,32 +108,36 @@ class UserCreateView(generics.CreateAPIView):
 
 
 class DeliveryAddressLCView(generics.ListCreateAPIView):
-    '''收货地址LC'''
+    """收貨地址ListCreate"""
     serializer_class = DeliveryAddressSerilizer
     permission_classes = (permissions.IsAuthenticated,)
+
+    # 覆寫get_queryset，只能看自己的收貨地址信息
     def get_queryset(self):
         user = self.request.user
-        queryset= DeliveryAddress.objects.filter(user=user)
+        queryset = DeliveryAddress.objects.filter(user=user)
         return queryset
 
+    # 覆寫perform_create，因為要把這新增的地址關連到當前登入用戶
     def perform_create(self, serializer):
-        user=self.request.user
-        s=serializer.save(user=user)
-        profile=user.profile_of
-        profile.delivery_address=s
+        user = self.request.user
+        s = serializer.save(user=user)
+        profile = user.profile_of
+        profile.delivery_address = s
         profile.save()
 
 
 class DeliveryAddressRUDView(generics.RetrieveUpdateDestroyAPIView):
-    '''收货地址RUD'''
+    """收貨地址RetrieveUpdateDestroy"""
     serializer_class = DeliveryAddressSerilizer
     permission_classes = (permissions.IsAuthenticated,)
 
+    # 覆寫get_object，只能操作自己的收貨地址信息
     def get_object(self):
         user = self.request.user
         # obj =DeliveryAddress.objects.get(user=user)
         try:
-            obj=DeliveryAddress.objects.get(id=self.kwargs['pk'],user=user)
+            obj = DeliveryAddress.objects.get(id=self.kwargs['pk'], user=user)
         except Exception as e:
             raise NotFound('no found')
         return obj
