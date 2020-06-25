@@ -1,0 +1,7 @@
+查詢MySQL資料庫支援的字元集資訊：
+    SHOW CHARACTER SET;
+    
+指令查詢MySQL支援的Collat​​ion資訊：
+    - 每個字元集都可以依照實際需要，搭配不同的Collat​​ion設定。
+    SHOW COLLATION;
+

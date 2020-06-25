@@ -1,0 +1,14 @@
+REPLACE：(要在表中有UNIQUE索引或主鍵的情況下才可使用)
+    在主鍵衝突的情況下(主鍵已存在)，REPLACE = UPDATE；
+    在主鍵正常的情況下，REPLACE = INSERT
+
+IGNORE關鍵字：
+    INSERT：
+        UNIQUE索引發生衝突時，可以讓指令不報錯、也不執行此插入指令。
+        EX: INSERT IGNORE INTO <表名> VALUES (<字段值>);
+    UPDATE：
+        UNIQUE索引發生衝突時，可以讓指令不報錯、也不執行此更新指令。
+        EX: UPDATE IGNORE <表名> SET <字段名>=<字段值>;
+        ※ 但倘若是一般字段發生錯誤(EX:輸入類型不符等)，就會造成意料之外的結果(發生衝突的值會被改變但不會報錯)。
+
+「TRUNCATE」敘述在執行刪除紀錄的時候，會比使用「DELETE」敘述的效率好一些，尤其是表格中的紀錄非常多的時候會更明顯。

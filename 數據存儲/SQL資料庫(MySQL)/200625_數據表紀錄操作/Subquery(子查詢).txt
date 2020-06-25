@@ -1,0 +1,28 @@
+子查詢(subquery)：
+    - 子查詢是一個放在左右刮號中的「SELECT」敘述，而這個查詢敘述會放在另一個SQL敘述中
+    - 在WHERE和HAVING條件中使用子查詢
+        - 範例：
+            -- 找出比美國人數還多的國家
+            SELECT Name, Population FROM country WHERE Population>(SELECT Population FROM country WHERE Code='USA');
+            -- 查詢GNP最大的國家
+            SELECT Name, GNP FROM country WHERE GNP=(SELECT MAX(GNP) FROM country);
+            -- 找出有城市人口超過九百萬的國家
+            SELECT Name, Population FROM country WHERE Code in (SELECT CountryCode FROM city WHERE Population>9000000);
+    - 在FROM中使用子查詢
+        - 範例：
+            -- 國家的官方語言與人口比例
+            SELECT c.Name, cl.Language, c.Population*cl.Percentage FROM
+            country as c, (SELECT * FROM countrylanguage WHERE IsOfficial='T') as cl
+            WHERE c.code=cl.CountryCode;
+    - 運算子ALL和ANY：
+        - 範例：
+            -- ANY關鍵字代表任一，在此例當中意思為Code等於任一個CountryCode
+            -- 找出有城市人口超過九百萬的國家
+            SELECT Name, Population FROM country WHERE Code = ANY(SELECT CountryCode FROM city WHERE Population>9000000);
+            -- ALL代表所有，在此例當中意思為GNP大於等於所有國家的GNP
+            -- 查詢GNP最大的國家
+            SELECT Name, GNP FROM country WHERE GNP>=All(SELECT GNP FROM country);
+            -- 找出亞洲且為共和統治的城市
+            SELECT Name, Continent, GovernmentForm FROM country WHERE (Continent, GovernmentForm)=('Asia', 'Republic');
+
+

@@ -1,6 +1,6 @@
 SQL索引：
     - 索引是數據庫的搜索引擎使用，能減少磁碟I/O及邏輯讀取的消耗，並以此來提升 SELECT 語句的查詢效能。
-    - 索引原理結構：
+    - 索引演篹法種類：
         HASH：
             一、Hash索引僅僅能滿足等於(=)、在其中(IN)和不等於(<=>)之查詢，不能使用範圍查詢。
                 - 因為Hash索引是利用Hash值來比較，所以它只能用於等值的過濾，不能用於範圍的過濾。
@@ -65,9 +65,37 @@ SQL索引：
                 fulltext key (resume)
             );
     - 索引的新增或刪除：
+        ※ []內為可加可不加；<>內為必加
+        創建表時建立索引：
+            CREATE TABLE <表名>(
+                <字段欄位定義>,
+                ...,
+                PRIMARY KEY (<字段們>) [USING 索引種類(BTREE|Hash)],
+                UNIQUE KEY [索引名稱(若沒設定會等同於字段名)] (<字段們>) [USING 索引種類(BTREE|Hash)],
+                INDEX [索引名稱(若沒設定會等同於字段名)] (<字段們>) [USING 索引種類(BTREE|Hash)],
+                FULLTEXT INDEX [索引名稱(若沒設定會等同於字段名)] (<字段們>) [USING 索引種類(BTREE|Hash)],
+            );
+            範例：
+                CREATE TABLE book(
+                    id INT AUTO_INCREMENT,
+                    title VARCHAR(32),
+                    context TEXT,
+                    PRIMARY KEY (id),
+                    UNIQUE KEY title_context_index (title, context) USING HASH,
+                    FULLTEXT INDEX (context),
+                );
         新增索引：
-            指令範例： alter table tab_name add [unique|fulltext等] index 索引名 (字段名);
-            ※ 此時字段名就等於索引名
-            指令範例二： alter table tab_name add [unique|fulltext等] key (字段名);
+            指令：
+                ALTER TABLE <表名>
+                 ADD PRIMARY KEY (<字段們>) [USING 索引種類(BTREE|Hash)]
+                | ADD UNIQUE KEY [索引名稱] (<字段們>) [USING 索引種類]
+                | ADD INDEX [索引名稱] (<字段們>) [USING 索引種類]
+                | ADD FULLTEXT INDEX [索引名稱] (<字段們>) [USING 索引種類];
+            範例：
+                ALTER TABLE book
+                  ADD PRIMARY KEY (id)
+                | ADD INDEX (context)
+                | ADD UNIQUE KEY title_context_index (title, context) USING HASH;
         刪除索引：
-            指令範例： drop index 索引名 on 表名
+            指令： DROP INDEX <索引名> ON <表名>
+            範例： DROP INDEX title_context_index ON book

@@ -1,0 +1,71 @@
+資源：
+https://justcode.ikeepstudying.com/2016/08/mysql-%E8%B6%85%E6%96%B0%E6%89%8B%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B%E7%B3%BB%E5%88%97/
+https://github.com/macdidi5/MySQLTutorial/blob/master/resources/cmdev.sql
+
+切換資料庫：
+    use <資料庫名>;
+
+select基礎：
+    若有切換到該資料庫：
+        select <字段名> from <表名>;
+    若無切換到該資料庫：
+        select <字段名> from <資料庫名>.<表名>;
+    可對字段進行數學運算：
+        EX: select ename, salary, salary DIV 10 from cmdev.emp;
+    可對字段添加別名：
+        EX: select ename, salary, salary*12 as yearsalary from cmdev.emp;
+        若別名為sql關鍵字或帶有空格的話，需使用''：
+            EX: select ename, salary, salary*12 as 'Aunnal salary' from cmdev.emp;
+    
+邏輯運算子(數字為優先級)：
+    1	NOT	非
+    2	&&	而且
+    2	AND	而且
+    3	||	或
+    3	OR	或
+    3	XOR	互斥
+    範例：
+        select * from city where NOT CountryCode='TWN';
+        select * from city where CountryCode='TWN' and Population<100000;
+        要注意優先級：
+            這裡會是Continent='Africa' and Population<100000先執行，因為AND優先級較高：
+                select Name, Population, Continent from country 
+                where Continent='Europe' or Continent='Africa' and Population<100000;
+            若想先執行前面，加()：
+                select Name, Population, Continent from country 
+                where (Continent='Europe' or Continent='Africa') and Population<100000;
+
+其他條件運算子：
+    BETWEEN … AND …： 範圍比較
+        EX: select * from city where Population BETWEEN 80000 AND 90000;
+    IN (…)： 成員比較
+        EX: select * from city where CountryCode in ('TWD', 'USA');
+    IS： 是
+        -- 要判斷NULL的話，要使用IS或是使用<=>(等同於=加IS)
+        EX: select Name, Population, LifeExpectancy from country where LifeExpectancy is NULL;
+    IS NOT： 不是
+        EX: select Name, Population, LifeExpectancy from country where LifeExpectancy is not NULL;
+    LIKE： 像
+        %：0到多个任何字元
+        _：一个任何字元
+        EX: select Name from city where Name LIKE 'w%';
+
+排序：
+    ASC：順序
+    DESC：倒序
+    先依CountryCode排序，若相同的話再依Name排序：
+        EX: select CountryCode, Name from city order by CountryCode, Name ASC;
+        也可以指定不同字段的順倒序：
+            EX: select CountryCode, Name from city order by CountryCode DESC, Name ASC;
+    用數字表示第幾個字段排序：
+        -- 2表示第二個字段
+        EX: select ename, salary from cmdev.emp order by 2;
+
+LIMIT限制：
+    -- 前三條
+    EX: select ename, salary from cmdev.emp order by salary LIMIT 3;
+    -- 跳過前三條，再顯示五條數據
+    EX: select ename, salary from cmdev.emp order by salary LIMIT 3, 5;
+
+DISTINCT去重：
+    EX: select DISTINCT Continent from country;

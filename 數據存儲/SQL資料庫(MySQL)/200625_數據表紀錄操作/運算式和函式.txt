@@ -1,0 +1,156 @@
+值的表示方法：
+    數值：可以用來執行算數運算的數值，包含整數與小數，分為精確值與近似值兩種
+        精確值：整數與小數
+        近似值：
+            5E+3與5E3： 5000
+            5E-3： 0.005
+    字串：使用單引號或雙引號包圍的文字
+    日期/時間：使用單引號或雙引號包圍的日期或時間
+        日期(年年年年-月月-日日)： 2007-01-01
+        日期時間(年年年年-月月-日日時時:分分:秒秒)： 2007-01-01 12:00:00
+        時間(時時:分分:秒秒)： 12:00:00
+        日期/時間的加減： <日期/時間> <+/-> INTERVAL <數字> <單位關鍵字>
+            單位關鍵字：
+                YEAR：年
+                QUARTER：季
+                MONTH：月
+                DAY：日
+                HOUR：時
+                MINUTE：分
+                SECOND：秒
+    空值：使用「NULL」表示的值
+    布林值：「TRUE」或「1」表示「真」，「FALSE」或「0」表示「假」
+
+
+
+MySQL中的函式： <函數名>(<參數們>)
+    日期函式：
+        CURDATE()：取得目前日期，相同功能：CURRENT_DATE、CURRENT_DATE()
+        CURTIME()：取得目前時間，相同功能：CURRENT_TIME、CURRENT_TIME()
+        YEAR(日期)：傳回[日期]的年
+        MONTH(日期) 數字傳回[日期]的月
+        DAY(日期)：傳回[日期]的日，相同功能：DAYOFMONTH()
+        MONTHNAME(日期)：傳回[日期]的月份名稱
+        DAYNAME(日期)：傳回[日期]的星期名稱
+        DAYOFWEEK(日期)：傳回[日期]的星期，1到7的數字，表示星期日、一、二…
+        DAYOFYEAR(日期)：傳回[日期]的日數，1到366的數字，表示一年中的第幾天
+        QUARTER(日期)：傳回[日期]的季，1到4的數字，代表春、夏、秋、冬
+        EXTRACT(單位FROM 日期/時間)：傳回[日期]中指定的[單位]資料
+        HOUR(時間)：傳回[時間]的時
+        MINUTE(時間)：傳回[時間]的分
+        SECOND(時間)：傳回[時間]的秒
+        計算日期與時間的函式：
+            DDDATE(日期, 天數)：傳回[日期]在指定[天數] 以後的日期
+            ADDDATE(日期, INTERVAL 數字單位)：傳回[日期]在指定[數字]的[單位]以後的日期
+            ADDTIME(日期時間, INTERVAL數字單位)：傳回[日期時間]在指定[數字]的[單位]以後的日期時間
+            SUBDATE(日期, 天數)：傳回[日期]在指定[天數] 以前的日期
+            SUBDATE(日期, INTERVAL 數字單位)：傳回[日期]在指定[數字]的[單位]以前的日期
+            SUBTIME(日期時間, INTERVAL數字單位)：傳回[日期時間]在指定[數字]的[單位]以前的日期時間
+            DATEDIFF(日期1, 日期2)：計算兩個日期差異的天數
+                EX: select ename , hiredate, DATEDIFF('2007-01-01', hiredate) as days from cmdev.emp;
+
+    字串函式：
+        LOWER(字串)：將[字串]轉換為小寫
+        UPPER(字串)：將[字串]轉換為大寫
+        LPAD(字串1, 長度, 字串2)：如果[字串1]的長度小於指定的[長度]，就在[字串1]左邊使用[字串2]補滿
+            EX: select LPAD(Name, 50, ' ') from country where Continent='Antarctica';
+        RPAD(字串1, 長度, 字串2)：如果[字串1]的長度小於指定的[長度]，就在[字串1]右邊使用[字串2]補滿
+            EX: select RPAD(Name, 50, ' ') from country where Continent='Antarctica';
+        LTRIM(字串)：移除[字串]左邊的空白
+        RTRIM(字串)：移除[字串]右邊的空白
+        TRIM(字串)：移除[字串]左、右的空白
+        REPEAT(字串, 個數)：重複[字串]指定的[個數]
+        REPLACE(字串1, 字串2, 字串3)：將[字串1]中的[字串2]替換為[字串3]
+        截取字串內容的函式：
+            LEFT(字串, 長度)：傳回[字串]左邊指定[長度]的內容
+            RIGHT(字串, 長度)：傳回[字串]右邊指定[長度]的內容
+            SUBSTRING(字串, 位置)：傳回[字串]中從指定的[位置]開始到結尾的內容
+            SUBSTRING(字串,位置,長度)：傳回[字串]中從指定的[位置]開始，到指定[長度]的內容
+            EX: select LEFT('ABCDE', 2), RIGHT('ABCDE', 2), SUBSTRING('ABCDE', 2), SUBSTRING('ABCDE', 2, 3);
+        連接字串的函式：
+            CONCAT(參數[,…])： 傳回所有參數連接起來的字串
+                EX: select CONCAT(Name, Continent) from country;
+            CONCAT_WS(分隔字串, 參數[,…])： 傳回所有參數連接起來的字串，參數之間插入指定的[分隔字串]
+                EX: select CONCAT_WS(', ', Name, Continent) from country;
+            ※ 「CONCAT」函式的參數中如果有「NULL」值，結果會是「NULL」；「CONCAT_WS」函式的參數中如果有「NULL」值，「NULL」值會被忽略。
+        取得字串資訊的函式：
+            LENGTH(字串)：傳回[字串]的長度(bytes)
+                EX: select Name, LENGTH(Name) as length from country order by length;
+            CHAR_LENGTH(字串)：傳回[字串]的長度(字元個數)
+                EX: select Name, CHAR_LENGTH(Name) as length from country order by length;
+            LOCATE(字串1, 字串2)：傳回第一個[字串1]在[字串2]中的位置，如果[字串2]中沒有[字串1]指定的內容就傳回0
+                -- 找出有包含空白的Name，並顯示空白前的部分
+                EX: select Name, LEFT(Name, LOCATE(' ', Name)-1) from country where LOCATE(' ', Name) <> 0;
+    
+    數值函式：
+        ROUND(數字)：四捨五入到整數
+        ROUND(數字, 位數)：四捨五入到指定的小數位數
+        CEIL(數字)、CEILING(數字)：進位到整數
+        FLOOR(數字)：捨去所有小數
+        EX: select ROUND(3.14159), ROUND(3.14159, 3), CEIL(3.14159), FLOOR(3.14159);
+        TRUNCATE(數字, 位數)：將指定的[數字]捨去指定的[小數位數]
+            -- TRUNCATE(123.14159, 3)，若為正數，則會保留到小數點後的指定位數 => 123.141
+            -- TRUNCATE(123.14159, 0)，若為0，則移除所有小數 => 123
+            -- TRUNCATE(123.14159, -2)，若為負數，則會將到整數的指定位數設為0 => 100
+            EX: select TRUNCATE(123.14159, 3), TRUNCATE(123.14159, 0), TRUNCATE(123.14159, -2);
+        算數運算的函式：
+            PI()：圓周率
+            POW(數字1, 數字2)、POWER(數字, 數字2)：[數字1]的[數字2次方]
+                -- => 8
+                EX: select POW(2, 3);
+            RAND()：亂數(傳回一個大於等於0而且小於等於1的小數數字)
+                EX: select RAND()*10;
+                    select TRUNCATE(RAND()*10, 1);
+            SQRT(數字)：[數字]的正平方根
+                EX select SQRT(3);
+
+    流程控制函式：
+        IF：
+            -- 1985前來的員工為資深，反之為一般
+            EX: select ename, hiredate, IF(YEAR(hiredate)<1985, '資深', '一般') as grade from cmdev.emp;
+            -- 1985前來的員工為資深，反之為一般(資深員工薪水*2)
+            EX: select ename, hiredate, salary, salary*IF(YEAR(hiredate)<1985, 2, 1) as grade from cmdev.emp;
+        CASE:
+            -- 薪水分級ABC
+            EX: select ename, salary,
+                CASE
+                    WHEN salary>=3000 THEN 'A'
+                    WHEN salary<1500 THEN 'C'
+                    ELSE 'B'
+                END as salary_grade
+                from cmdev.emp;
+            -- 依照薪水分級漲薪水
+            EX: select ename, salary,
+                salary* CASE
+                            WHEN salary>=3000 THEN 2
+                            WHEN salary<1500 THEN 0.5
+                            ELSE 1
+                        END as salary_grade
+                from cmdev.emp;
+
+    其他函式：
+        IFNULL(參數, 運算式)：如果[參數]為NULL就傳回[運算式]的值；否則傳回[參數]的值
+            -- 因為有的人comm為null，若直接加會導致total也變為null
+            EX: select ename, salary, comm , salary+IFNULL(comm, 0) as total from cmdev.emp;
+        ISNULL(參數)：如果[參數]為NULL就傳回TRUE；否則傳回FALSE
+
+    聚合函數：
+        MAX(運算式)：最大值
+        MIN(運算式)：最小值
+        SUM(運算式)：合計
+        AVG(運算式)：平均
+        COUNT([DISTINCT]*|運算式)：使用「DISTINCT」時，重複的資料不會計算；使用[*]時，計算表格紀錄的數量：使用[運算式]時，計算的數量不會包含「 NULL」值
+        GROUP_CONCAT([DISTINCT] <字段名> [order by <字段名>] [SEPARATOR <要用來分隔的運算式>])
+            EX: select GROUP_CONCAT(DISTINCT dname) from cmdev.dept;
+                select GROUP_CONCAT(DISTINCT dname order by dname SEPARATOR '...') from cmdev.dept;
+
+GROUP BY與HAVING子句：
+    GROUP BY <字段名> [ASC|DESC] [WITH ROLLUP]
+        -- 使用分組時，select字段只能為有被分組的字段和聚合函數
+        EX: select Continent, sum(Population) from country GROUP BY Continent;
+        -- 使用WITH ROLLUP會多出一個NULL欄位
+            select Continent, sum(Population) from country GROUP BY Continent WITH ROLLUP;
+            select Continent, region, sum(Population) from country GROUP BY Continent, region WITH ROLLUP;
+    HAVING子句： 跟Where類似，但是在分組之後運行，條件裡可以使用聚合函數
+        EX: select Continent, sum(Population) from country GROUP BY Continent HAVING sum(Population)>100000000; 
+

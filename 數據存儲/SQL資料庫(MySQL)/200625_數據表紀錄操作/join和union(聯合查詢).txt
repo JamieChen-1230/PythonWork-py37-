@@ -1,0 +1,34 @@
+
+使用時機：
+    如果你想查詢的資料是「包含部門名稱的員工資料，可是沒有分派部門的員工就不用出現了」，
+    那使用「內部結合」就可以完成你的工作了；
+    可是如果你想要查詢的資料是「包含部門名稱的員工資料，沒有分派部門的員工也要出現」，
+    那你就要使用「外部結合」。
+
+內部結合查詢：
+    ※ 「內部結合」的查詢，一定要符合「結合條件」的資料才會出現(所以若有出現NULL等狀況，就會少資料)
+    Inner Join:
+        - 結合條件通常寫在from中
+        -- select <字段> from <表1> INNER JION <表2> ON <結合條件>
+        EX: select country.Name as 'country', country.Continent, city.Name as 'city' from country inner join city on country.Capital=city.id;
+    使用wherer條件進行連結：
+        -- select <字段> from <表1>, <表2> WHERE <結合條件>
+        EX: select country.Name as 'country', country.Continent, city.Name as 'city' from country, city where country.Capital=city.id;
+
+外部結合查詢：
+    LEFT OUTER JOIN：
+        -- 跟Inner Join比起來，會多了左表有右表卻沒有的資訊
+        EX: select country.Name as 'country', country.Continent, city.Name as 'city' from country LEFT join city on country.Capital=city.id;
+    RIGHT OUTER JOIN：
+        -- 跟Inner Join比起來，會多了左表有右表卻沒有的資訊
+        EX: select country.Name as 'country', country.Continent, city.Name as 'city' from country RIGHT join city on country.Capital=city.id;
+
+「合併、UNION」查詢：
+    - 指的是把一個以上的查詢敘述所得到的結果合併為一個，有這樣的需求時，你會在多個查詢敘述之間使用「UNION」關鍵字
+    - select ... union select ...
+    -- 找出Southeast Asia和Eastern Asia且人數大於100000的城市
+    EX: select Region, Name, Population from country where Region='Southeast Asia' and Population>100000 UNION
+        select Region, Name, Population from country where Region='Eastern Asia' and Population>100000;
+    -- 查出部門號為20和其他部門的總薪水和人數
+    EX: (select deptno, count(*), sum(salary) from cmdev.emp where deptno=20) union
+        (select GROUP_CONCAT(distinct deptno) as 'deptno', count(*), sum(salary) from cmdev.emp where deptno<>20);
