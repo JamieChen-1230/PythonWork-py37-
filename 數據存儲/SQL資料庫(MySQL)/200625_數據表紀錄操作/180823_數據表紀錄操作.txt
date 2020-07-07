@@ -1,0 +1,229 @@
+新增表記錄：
+    - 增加一條記錄insert
+        - insert［into］tab_name (field1,filed2,.......) values (value1,value2,.......);
+        指令範例： insert into employee(id, name, age, gender) values (1, 'jamie', 18, 1);
+    - 可不加列名，但要全填值且按順序
+        指令範例： insert into employee values (10, 22, 'qq', 0);
+    - 用set添加
+        指令範例： insert into employee set name='sb';
+    - 增加多條記錄insert
+        指令範例：
+            insert into employee(name, age, gender) values ('a1', 18, 1), ('a2', 18, 1), ('a3', 18, 1);
+
+修改表記錄：
+    - update tab_name set field1=value1,field2=value2,... [where條件語句]
+        指令範例： update employee set name='jamie666', age=age+10 where id=1;
+    - 不加where代表全部
+        指令範例： update employee set name='jamie666', age=age+10;
+
+
+刪除表紀錄：
+    - delete from tab_name [where條件語句]
+        指令範例： delete from employee where name='jamie' OR age>18;
+    - 刪除所有表紀錄
+        指令範例： delete from employee;
+    - 刪除所有表紀錄
+        - TRUNCATE tab_name;
+        指令範例： TRUNCATE employee;
+    - 「TRUNCATE」敘述在執行刪除紀錄的時候，會比使用「DELETE」敘述的效率好一些，尤其是表格中的紀錄非常多的時候會更明顯
+
+
+查詢表紀錄(範例表數據在"練習範例數據.txt"中)：
+    - 語句：
+        SELECT field1,filed2,... FROM tab_name
+                        WHERE 條件
+                        GROUP  BY field  分組
+                        HAVING 篩選
+                        ORDER  BY field  排序
+                        LIMIT 限制條數
+
+    - Select操作基礎：
+        若有切換到該資料庫：
+            select <字段名> from <表名>;
+        若無切換到該資料庫：
+            select <字段名> from <資料庫名>.<表名>;
+
+    - *代表全部
+        指令範例： select * from person;
+
+    - 部分查詢
+        指令範例： select name, sex from person;
+
+    - DISTINCT去重，若SELECT中有多個字段，則需每個字段都相同才去重
+        - select [distinct] field1, field2,... from tab_name
+        指令範例： select distinct name from exam;
+
+    - Select也可以使用表達式
+        - 所有人薪水加200
+            指令範例： select name, salary+200 from person;
+        - 在所有學生分數上加10分特長分顯示
+            指令範例： select name,JS+10 ,Django+10 ,OpenStack+10 from exam;
+        - 統計每個學生的總分
+            指令範例： select name, JS + Django + OpenStack from exam;
+
+    - 別名：
+        指令範例： select ename, salary, salary*12 as yearsalary from cmdev.emp;
+        - 若別名為sql關鍵字或帶有空格的話，需使用''：
+            指令範例： select ename, salary, salary*12 as 'Aunnal salary' from cmdev.emp;
+
+    - 使用where子句，進行過濾查詢
+        - 查詢英語成績大於90分的同學
+        指令範例： select id, name, JS from Exam where JS > 90;
+
+    - 邏輯運算符：
+        運算符： NOT, AND, OR, XOR
+        優先級： NOT > AND > OR = XOR
+        指令範例：
+            select * from city where NOT CountryCode='TWN';
+            select * from city where CountryCode='TWN' and Population<100000;
+            - 要注意優先級：
+                這裡會是Continent='Africa' and Population<100000先執行，因為AND優先級較高：
+                    select Name, Population, Continent from country 
+                    where Continent='Europe' or Continent='Africa' and Population<100000;
+                若想先執行前面，加()：
+                    select Name, Population, Continent from country 
+                    where (Continent='Europe' or Continent='Africa') and Population<100000;
+
+    - 比較運算符：
+        運算符： >,  <,  >=,  <=,  <>,  !=
+        指令範例：
+            select id, name, JS from Exam where JS <> 88;
+
+    - 其他條件運算符：
+        BETWEEN … AND …： 範圍比較
+            指令範例： select * from city where Population BETWEEN 80000 AND 90000;
+        IN (…)： 成員比較
+            指令範例： select * from city where CountryCode in ('TWD', 'USA');
+        IS： 是
+            -- 要判斷NULL的話，要使用IS或是使用<=>(等同於=加IS)
+            指令範例： select Name, Population, LifeExpectancy from country where LifeExpectancy is NULL;
+        IS NOT： 不是
+            指令範例： select Name, Population, LifeExpectancy from country where LifeExpectancy is not NULL;
+        LIKE： 像
+            %：0到多个任何字元
+            _：一个任何字元
+            指令範例： select Name from city where Name LIKE 'w%';
+        EXISTS: 存在
+            -- 找出有存在CountryCode並人口大於8000000的城市
+            指令範例： select Name from country as c where EXISTS (select * from city where CountryCode=c.Code and Population>8000000);
+
+    - Order By 指定排序的列，排序的列即可是表中的列名，也可以是select語句後指定的別名
+        - ASC：順序，DESC：倒序
+        - 對總分進行排序
+            指令範例： select name, js+django+OpenStack as 總成績 from exam order by 總成績 desc;
+        - 可以指定不同字段的順倒序
+            指令範例： select CountryCode, Name from city order by CountryCode DESC, Name ASC;
+        - 使用ifnull判斷如果為null，就當作0
+            指令範例：
+                select name ,(ifnull(JS, 0) + ifnull(Django, 0) + ifnull(OpenStack, 0))
+                    as 總成績 from exam where name like 'a%' order by 總成績 desc;
+        - 用數字表示第幾個字段排序(2表示第二個字段)
+            指令範例： select ename, salary from cmdev.emp order by 2;
+
+    - GROUP BY分組查詢(注意，按分組條件分組後每一組只會顯示第一條記錄)
+        - 語句： GROUP BY <字段名> [ASC|DESC] [WITH ROLLUP]
+        - 不能選擇分組以外的列名
+            指令範例：
+                select name from exam group by name;  --成功
+                select name, js from exam group by name;  --不成功
+        - 聚合函數中列名不包含在內(注意先分組再聚合函數)
+            指令範例： select name, sum(js), sum(django) from exam group by name;  --成功
+        - 使用WITH ROLLUP會多出一個NULL欄位
+            指令範例： select Continent, sum(Population) from country GROUP BY Continent WITH ROLLUP;
+        - HAVING和WHERE兩者都可以對查詢結果進行進一步的過濾，差別有：
+            <1> WHERE語句只能用在分組之前的篩選，HAVING可以用在分組之後的篩選
+            <2> 使用WHERE語句的地方都可以用HAVING進行替換(通常WHERE較快)
+            <3> HAVING中可以用聚合函數，WHERE中就不行
+                指令範例： select name, sum(js), sum(django) from exam group by name having sum(js)>150;
+
+    - 聚合函數
+        - COUNT(列名)：統計行的個數
+            指令範例：
+                select count(*) from exam;
+                select count(name) from exam where js>80;
+        - SUM(列名)：統計滿足條件的行的內容和
+            指令範例：
+                select sum(JS) as JS總成績 from Exam;
+                select sum(ifnull(JS, 0) + ifnull(Django, 0)) as 總成績 from Exam;
+        - AVG(列名)：平均值(不計算null)
+            指令範例： select avg(js) from exam;
+        - Max、Min
+            指令範例：
+                select max(js) from exam;
+                select max(Js+Django) from exam;
+        - GROUP_CONCAT(列名)：列出group裡的所有人
+            語句： GROUP_CONCAT([DISTINCT] <字段名> [order by <字段名>] [SEPARATOR <要用來分隔的運算式>])
+            指令範例： select GROUP_CONCAT(name), js from exam group by js;   =>  照js成績分組，並列出各成績中各有誰
+    
+    - 其他函式：
+        IFNULL(參數, 運算式)：如果[參數]為NULL就傳回[運算式]的值；否則傳回[參數]的值
+            -- 因為有的人comm為null，若直接加會導致total也變為null
+            指令範例： select ename, salary, comm , salary+IFNULL(comm, 0) as total from cmdev.emp;
+        ISNULL(參數)：如果[參數]為NULL就傳回TRUE；否則傳回FALSE
+
+    - LIMIT限制
+        - 限制前三條
+            指令範例： SELECT * from Exam limit 3;
+        - js>80並限制前三條
+            指令範例： SELECT * from Exam where js>80 limit 3;
+        - 跳過前兩條顯示接下來的四條紀錄(從0開始算，跳過第0,1條，從第2條開始)
+            指令範例： SELECT * from Exam limit 2,4;
+
+    - 使用正則表達式查詢
+        指令範例：
+            select * from exam where name regexp '^j';
+            select * from exam where name regexp 'ie$';
+
+	- 子查詢(subquery)
+	    - 子查詢是一個放在左右刮號中的「SELECT」敘述，而這個查詢敘述會放在另一個SQL敘述中
+	    - 在WHERE和HAVING條件中使用子查詢
+	        - 範例：
+	            -- 找出比美國人數還多的國家
+	            SELECT Name, Population FROM country WHERE Population>(SELECT Population FROM country WHERE Code='USA');
+	            -- 查詢GNP最大的國家
+	            SELECT Name, GNP FROM country WHERE GNP=(SELECT MAX(GNP) FROM country);
+	            -- 找出有城市人口超過九百萬的國家
+	            SELECT Name, Population FROM country WHERE Code in (SELECT CountryCode FROM city WHERE Population>9000000);
+	    - 在FROM中使用子查詢
+	        - 範例：
+	            -- 國家的官方語言與人口比例
+	            SELECT c.Name, cl.Language, c.Population*cl.Percentage FROM
+	            country as c, (SELECT * FROM countrylanguage WHERE IsOfficial='T') as cl
+	            WHERE c.code=cl.CountryCode;
+	    - 運算子ALL和ANY：
+	        - 範例：
+	            -- ANY關鍵字代表任一，在此例當中意思為Code等於任一個CountryCode
+	            -- 找出有城市人口超過九百萬的國家
+	            SELECT Name, Population FROM country WHERE Code = ANY(SELECT CountryCode FROM city WHERE Population>9000000);
+	            -- ALL代表所有，在此例當中意思為GNP大於等於所有國家的GNP
+	            -- 查詢GNP最大的國家
+	            SELECT Name, GNP FROM country WHERE GNP>=All(SELECT GNP FROM country);
+	            -- 找出亞洲且為共和統治的城市
+	            SELECT Name, Continent, GovernmentForm FROM country WHERE (Continent, GovernmentForm)=('Asia', 'Republic');
+	            
+
+------------------------※ 重點：執行順序------------------------
+    Mysql在執行sql語句時的執行順序：FROM -> WHERE -> GROUP BY -> 聚合函數 -> HAVING -> SELECT -> ORDER BY -> LIMIT　
+        分析:
+            select JS as JS成績 from Exam where JS成績> 70;   --不成功(因為會先執行where，而此時JS成績還沒被設定)
+            select JS as JS成績 from Exam having JS成績> 90;  --成功
+            select JS as JS成績 from Exam order by JS成績;    --成功
+
+    查詢練習：求姓名不同人員之最高工資，並要求最高薪資要大於5000，且按照最大工資進行排序，並取出前五條
+        select name, max(salary)
+        from person
+        where name is not null
+        group by name
+        having max(salary) > 5000
+        order by max(salary)
+        limit 0,5
+
+        執行順序：
+            (1) 執行FROM語句，從person表中取數據
+            (2) 執行WHERE語句，篩選出name不為空的數據
+            (3) 執行GROUP BY語句，照name進行分組
+            (4) 執行聚合函數，max(salary)計算最大工資
+            (5) 執行HAVING語句，篩選出最大工資大於5000者
+            (6) 執行SELECT語句，查找數據
+            (7) 執行ORDER BY語句，按最大工資進行排序
+            (8) 執行LIMIT語句，篩選出前五條數據

@@ -1,0 +1,52 @@
+窗口函數：
+    - 基本語法： <窗口函數>() over (partition by <用於分組的列名> order by <用於排序的列名>)
+        <窗口函數>的位置，可以為兩種函數：
+        - 專用窗口函數： rank, dense_rank, row_number等
+        - 聚合函數： sum. avg, count, max, min等
+    - 用途： 對資料庫數據進行「實時」分析處理
+    - 窗口函數是對where或者group by子句處理後的結果進行操作，所以窗口函數原則上只能寫在select子句中
+    - 同時具有分組和排序的功能，但不會減少原表的行數
+
+
+LEAD()函數：
+    - 為一窗口函數
+    - <>為必填；[]為可選
+    - 用途： 可調用出後x行的值(x為offset值，默認為1)
+    - 語法： LEAD(<表達式或字段> [,offset] [,default_value]) OVER (
+                PARTITION BY <表達式或字段>
+                ORDER BY <表達式或字段> [ASC|DESC]
+            )
+    - 取自：https://www.begtut.com/mysql/mysql-lead-function.html
+
+
+LAG()函數：
+    - 為一窗口函數
+    - <>為必填；[]為可選
+    - 用途： 可調用出前x行的值(x為offset值，默認為1)
+    - 語法： LAG(<表達式或字段> [,offset] [,default_value]) OVER (
+                PARTITION BY <表達式或字段>
+                ORDER BY <表達式或字段> [ASC|DESC]
+            )
+    - 取自：https://www.begtut.com/mysql/mysql-lag-function.html
+
+
+RANK()函數：
+    - 為一窗口函數
+    - <>為必填；[]為可選
+    - 用途： 用於排序，當遇到相同值排名時，會保留名次空缺(EX: 1, 1, 1, 4, 5, 6)
+    - 語法： RANK() OVER (
+                PARTITION BY <表達式或字段>
+                ORDER BY <表達式或字段> [ASC|DESC]
+            ) 
+    - 取自：https://www.begtut.com/mysql/mysql-rank-function.html
+
+
+DENSE_RANK()函數：
+    - 為一窗口函數
+    - <>為必填；[]為可選
+    - 用途： 用於排序，當遇到相同值排名時，不會保留名次空缺(EX: 1, 1, 1, 2, 3, 4)
+    - 語法： DENSE_RANK() OVER (
+                PARTITION BY <表達式或字段>
+                ORDER BY <表達式或字段> [ASC|DESC]
+            ) 
+    - 取自：https://www.begtut.com/mysql/mysql-dense_rank-function.html
