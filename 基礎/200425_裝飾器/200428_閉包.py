@@ -1,6 +1,6 @@
 """
 閉包(Closure)：
-        假設有個巢狀函式，最外層的函式把自己內層嵌套另外一個函式，將這個嵌套的函式作為回傳值傳遞出去，便會形成一個Closure。
+    假設有個巢狀函式，最外層的函式把自己內層嵌套另外一個函式，將這個嵌套的函式作為回傳值傳遞出去，便會形成一個Closure。
 """
 
 
@@ -35,11 +35,11 @@ def student():
         nonlocal height
         nonlocal weight
         height += 1
-        weight -= 1
+        weight += 1
         print("my height is {}.".format(height))
         print("my weight is {}.".format(weight))
     return info
 
 
 s = student()
-print(s)
+s()

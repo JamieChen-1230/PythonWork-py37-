@@ -60,4 +60,12 @@ def snooze_3(t):
 
 # snooze(1)
 # snooze_2(1.5)
+
 snooze_3(1)
+# snooze_3(1)執行順序：
+#   (1) 執行auth.wrapper，
+#       此時wrapper中的func為clock(fmt=DEFAULT_FMT)(snooze_3)，也就是clock.decorate.wrapper
+#   (2) 執行auth.wrapper中的func，相當於執行clock.decorate.wrapper
+#   (3) 執行clock.decorate.wrapper下的func，相當於執行snooze_3本身
+#   (4) 執行完(3)之後，return res，res相當於snooze_3的返回值
+#   (5) 步驟(4)的res會先回傳給auth.wrapper下的res，最後回傳給用戶

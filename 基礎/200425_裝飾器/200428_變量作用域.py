@@ -1,10 +1,10 @@
 """
 Python的作用域（Scope）規則：
-        一、Scope在查找時是按照LEGB做查找：Local -> Enclosed -> Global -> Built-in
-                    Local：於function或是class內宣告的變數名
-                    Enclosed：位於巢狀層次的function結構，常用於Closure
-                    Global：最上層位於模組(module)的全域變數名稱
-                    Build-in：內建模組(module)的名稱，例如print, abs()這樣的函式等等
+    一、Scope在查找時是按照LEGB做查找：Local -> Enclosed -> Global -> Built-in
+        - Local：於function或是class內宣告的變數名
+        - Enclosed：位於巢狀層次的function結構，常用於Closure
+        - Global：最上層位於模組(module)的全域變數名稱
+        - Build-in：內建模組(module)的名稱，例如print, abs()這樣的函式等等
 """
 
 
@@ -26,7 +26,7 @@ def scope1():
     b = 1
 
 scope1()
-print(b)  # => b
+print(b)  # => hello b
 
 # 若要讓local scope內的變數讓外部進行存取，可以在目標變數的前面宣告一個global。
 c = "hello c"
@@ -48,7 +48,7 @@ def outer(a):
 
         def inner_inner(b):
             k = b+c
-            return b+c
+            return k
         return inner_inner
     return inner
 
