@@ -168,7 +168,7 @@ Git倉庫的初始化(即讓Git知道需要他來管理這個目錄)：
             git remote -v
         新增遠端版本庫地址別名：
             git remote add <別名> <url>
-            EX: git remote add demo https://github.com/silencejamie/git_test.git
+            EX: git remote add origin https://github.com/JamieChen-1230/PythonWork-py37-.git
         檢視遠端別名：
             git remote show <別名>
             EX: git remote show origin
