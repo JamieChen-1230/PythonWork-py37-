@@ -1,0 +1,247 @@
+題目：https://zhuanlan.zhihu.com/p/32137597
+
+(1) 查詢" 01 "課程比" 02 "課程成績高的學生的信息及課程分數：
+    select * from student inner join
+        (select t01.sid, t01.score as 01score, t02.score as 02score from 
+            (select * from sc where cid='01') as t01 inner join (select * from sc where cid='02') as t02
+            on t01.sid=t02.sid
+            where t01.score>t02.score
+        ) as t
+    on student.sid=t.sid;
+
+    (1.1) 查詢同時存在" 01 "課程和" 02 "課程的情況：
+        select t01.sid, t01.score as 01score, t02.score as 02score from 
+            (select * from sc where cid='01') as t01 inner join (select * from sc where cid='02') as t02
+            on t01.sid=t02.sid;
+
+    (1.2) 查詢存在" 01 "課程但可能不存在" 02 "課程的情況(不存在時顯示為null)：
+        select t01.sid, t01.score as 01score, t02.score as 02score from 
+            (select * from sc where cid='01') as t01 left join (select * from sc where cid='02') as t02
+            on t01.sid=t02.sid;
+
+(2) 查詢平均成績大於等於60分的同學的學生編號和學生姓名和平均成績：
+    select student.*, mean from student inner join 
+        (select sid, avg(score) as mean from sc group by sid Having avg(score)>60) as t
+        on student.sid=t.sid;
+
+(3) 查詢在SC表存在成績的學生信息：
+    select * from student where sid in (select distinct sid from sc);
+
+(4) 查詢所有同學的學生編號、學生姓名、選課總數、所有課程的總成績(沒成績的顯示為null)：
+    select student.sid, Sname, course_num, total_score from student left join 
+        (select sid, count(cid) as course_num, sum(score) as total_score from sc group by sid) as t
+    on student.sid=t.sid;
+    (4.1) 查有成績的學生信息：
+        select * from student where exists (select * from sc where sc.sid=student.sid);
+        
+(5) 查詢「李」姓老師的數量：
+    select count(*) from teacher where tname like '李%';
+
+(6) 查詢學過「張三」老師授課的同學的信息：
+    方法一(多重子查詢)：
+        select * from student where student.sid in 
+            (select sid from sc where sc.cid in 
+                (select cid from course where tid=(select tid from teacher where tname='张三')));
+    方法二(聯4張表)：
+        select *
+            from teacher, course, student, sc
+            where teacher.Tname='张三'
+                and teacher.TId=course.TId
+                and course.CId=sc.CId
+                and sc.SId=student.SId;
+
+(7) 查詢沒有學全所有課程的同學的信息：
+    思路(全部學生 - 學全的學生)：
+        -- 有學全的學生們
+        select sid from sc group by sid Having count(cid)=(select count(*) from course);
+        -- 沒有學全所有課程的同學信息
+        select * from student where sid not in (
+            select sid from sc group by sid Having count(cid)=(select count(*) from course)
+            );
+
+(8) 查詢至少有一門課與學號為"01"的同學所學相同的同學的信息：
+    -- 01同學有學的課程
+    select cid from sc where sid='01';
+    -- 至少有一門課與學號為"01"的同學所學相同的同學信息
+    select * from student where sid in (
+        select distinct sid from sc where cid in (select cid from sc where sid='01') and sid!='01'
+        );
+
+(9) 查詢和"01"號的同學學習的課程完全相同的其他同學的信息：
+    -- 01同學所有課程
+    select GROUP_CONCAT(cid) as all_cid from sc where sid='01';
+    -- 答案
+    select *, GROUP_CONCAT(cid) as all_cid from sc group by sid Having all_cid=(
+        select GROUP_CONCAT(cid) as all_cid from sc where sid='01'
+    );
+
+(10) 查詢沒學過"張三"老師講授的任一門課程的學生姓名：
+    select * from student where sid not in(
+        select distinct sid from sc where cid in (
+            select cid from course where tid=(select tid from teacher where tname='张三')
+        )
+    );
+
+(11) 查詢兩門及其以上不及格課程的同學的學號，姓名及其平均成績：
+    -- select sid, count(*) from sc where score<60 group by sid Having count(*)>=2;
+    select student.*, t2.avgscore from 
+        student inner join (
+            select sc.sid as id, avg(score) as avgscore from sc inner join (
+                select sid, count(*) from sc where score<60 group by sid Having count(*)>=2
+            ) as t on sc.sid=t.sid group by sc.sid
+        ) as t2 on student.sid=t2.id;
+    
+(12) 檢索"01"課程分數小於60，按分數升序排列的學生信息：
+    select student.*, t.score from student inner join (
+        select sid, score from sc where cid='01' and score<60) as t
+        on student.sid=t.sid order by t.score;
+
+(13) 按平均成績從高到低顯示所有學生的所有課程的成績以及平均成績：
+    select sid, group_concat(score), avg(score) as avgscore from sc group by sid order by avgscore desc;
+
+(14) 查詢各科成績最高分、最低分和平均分：
+        - 以如下形式顯示：課程ID，課程名，最高分，最低分，平均分，選課人數，及格率，中等率，優良率，優秀率
+        - 及格為>=60，中等為：70-80，優良為：80-90，優秀為：>=90
+        - 要求輸出課程號和選修人數，查詢結果按人數降序排列，若人數相同，按課程號升序排列
+    select sc.cid as 課程ID, course.cname as 課程名, max(score) as 最高分, min(score) as 最低分, avg(score) as 平均分, count(*) as 選課人數,
+    sum(case when sc.score>=60 then 1 else 0 end)/count(*) as 及格率,
+    sum(case when sc.score>=70 and sc.score<80 then 1 else 0 end )/count(*) as 中等率,
+    sum(case when sc.score>=80 and sc.score<90 then 1 else 0 end )/count(*) as 優良率,
+    sum(case when sc.score>=90 then 1 else 0 end)/count(*) as 優秀率 
+    from sc inner join course on sc.cid=course.cid
+    group by sc.cid
+    order by 選課人數 desc, 課程ID asc;
+        
+(15) 按各科成績進行排序，並顯示排名，Score重複時保留名次空缺：
+    -- RANK()over(條件)
+    -- 條件： PARTITION BY用於分組；order by用於依照什麼做排名依據
+    select *, RANK()over(PARTITION BY cid order by score desc) as 排名 from SC;
+
+    (15.1) 按各科成績進行排序，並顯示排名，Score重複時不保留名次空缺：
+        方式一：
+            select *, DENSE_RANK()over(PARTITION BY cid order by score desc)排名 from SC;
+        方式二：
+            select sc.SId, sc.CId, 
+            CASE 
+                when @pre_parent_code=sc.CId then (
+                    CASE 
+                        when @prefontscore=sc.score then @curRank 
+                        when @prefontscore:=sc.score then @curRank:=@curRank+1 
+                    END) 
+                -- 當換至另一門課程時，重置排名和設定前一個成績
+                when @pre_parent_code:=sc.CId then @curRank:=1 and @prefontscore:=sc.score
+            END as 排名 , sc.score
+            from (select @curRank:=0, @pre_parent_code:='', @prefontscore:=null) as t, sc
+            ORDER by sc.CId, sc.score desc;
+
+    (15.2) 按各科成績進行排序，並顯示排名，排名不重複：
+        select sc.SId, sc.CId,
+        CASE 
+            when @pre_parent_code=sc.CId then @curRank:=@curRank+1
+            -- 當換至另一門課程時，重置排名
+            when @pre_parent_code:=sc.CId then @curRank:=1  
+        END as 排名, sc.score
+        -- 使用變數必須宣告初始值(變數前面需加@)
+        from (select @curRank:=0,@pre_parent_code:='') as t, sc
+        ORDER by sc.CId, sc.score desc;
+    
+(16) 查詢學生的總成績，並進行排名，總分重複時保留名次空缺：
+    -- 也能這樣寫 select sid, sum(score), RANK()over(order by sum(score) desc) as 排名 from sc group by sid;
+    select t.*, RANK()over(order by t.sumscore desc) as 排名 from 
+        (select sid, sum(score) as sumscore from sc group by sid) as t;
+
+    (16.1) 查詢學生的總成績，並進行排名，排名不重複：
+        select t.*, (@curRank:=@curRank+1) as 排名 from (
+            select sid, sum(score) as sumscore from sc group by sc.sid order by sum(score) desc
+        ) as t, (select @curRank:=0) as val;
+
+    (16.2) 查詢學生的總成績，並進行排名，總分重複時不保留名次空缺：
+        select t.*, DENSE_RANK()over(order by sumscore desc) as 排名 from(
+            select sid, sum(score) as sumscore from sc group by sid) as t;
+        
+(17) 統計各科成績各分數段人數：課程編號，課程名稱，[100-85]，[85-70]，[70-60]，[60-0] 及所佔百分比：
+    select cname as 課程名稱, t.* from course inner join (
+        select cid as 課程編號,
+        sum(CASE WHEN score<=100 and score>85 THEN 1 ELSE 0 END) as '[100-85]',
+        sum(CASE WHEN score<=100 and score>85 THEN 1 ELSE 0 END)/count(*) as '[100-85]%',
+        sum(CASE WHEN score<=85 and score>70 THEN 1 ELSE 0 END) as '[85-70]',
+        sum(CASE WHEN score<=70 and score>60 THEN 1 ELSE 0 END) as '[70-60]',
+        sum(CASE WHEN score<=60 THEN 1 ELSE 0 END) as '[60-0]'
+        from sc group by cid
+    ) as t on course.cid=t.課程編號;
+    
+(18) 查詢各科成績前三名的記錄：
+    方法一：
+        select * from (
+            select *, RANK()over(PARTITION by cid order by score desc) as ranks from sc
+        ) as t where t.ranks<=3;
+    方法二：
+        -- 思路：前三名轉化為若大於此成績的數量少於3即為前三名
+        select * from sc  
+        where (select count(*) from sc as a where sc.CId=a.CId and  sc.score<a.score )<3
+        ORDER BY CId asc, sc.score desc
+
+(19) 查詢每門課程被選修的學生數：
+    select cid, count(*) from sc group by cid;
+
+(20) 查詢出只選修兩門課程的學生學號和姓名：
+    select sid, sname from student where sid in (
+        select sid from sc group by sid Having count(cid)=2);
+
+(21) 查詢學生男生、女生人數：
+    select ssex, count(*) from student group by ssex;
+
+(22) 查詢名字中含有「風」字的學生信息：
+    select * from student where sname like '%风%';
+
+(23) 查詢同名同姓學生名單，並統計同名人數：
+    select sname, count(*) as 同名人數 from student as stu1 where exists (
+        select * from student as stu2 where stu1.sid!=stu2.sid and stu1.sname=stu2.sname);
+
+(24) 查詢1990年出生的學生名單：
+    select * from student where YEAR(sage)=1990;
+
+(25) 查詢每門課程的平均成績，結果按平均成績降序排列，平均成績相同時，按課程編號升序排列：
+    select cid, avg(score) as avgscore from sc group by cid order by avgscore desc, cid asc;
+
+(26) 查詢平均成績大於等於85的所有學生的學號、姓名和平均成績：
+    select student.*, t.avgscore from student inner join (
+        select sid, avg(score) as avgscore from sc group by sid Having avgscore>85
+        ) as t on student.sid=t.sid;
+            
+(27) 查詢課程名稱為「數學」，且分數低於60的學生姓名和分數：
+    select * from student inner join (
+        select sid from sc where cid=(select cid from course where cname='数学') and score<60
+    ) as t on student.sid=t.sid;
+
+(28) 查詢所有學生的課程及分數情況（存在學生沒成績，沒選課的情況）：
+    select * from student left join sc on student.sid=sc.sid;
+
+(29) 查詢課程成績在70分以上的姓名、課程名稱和分數：
+    select student.sname, course.cname, t.score 
+    from student, course, (select sid, cid, score from sc where score>70) as t 
+    where student.sid=t.sid and t.cid=course.cid;
+    
+(30) 查詢存在不及格的課程：
+    select * from course where cid in (select cid from sc where score<60);
+
+(31) 查詢課程編號為01且課程成績在80分以上的學生的學號和姓名：
+    select * from student where sid in (select sid from sc where cid='01' and score>=80);
+    
+(32) 成績不重複，查詢選修「張三」老師所授課程的學生中，成績最高的學生信息及其成績：
+    select student.*, t.score from student inner join (
+        select sid, score from sc where cid in (
+            select cid from course where tid=(select tid from teacher where tname='张三')
+        ) order by score desc limit 1
+    ) as t on student.sid=t.sid;
+    
+    (32.1) 成績有重複的情況下，查詢選修「李四」老師所授課程的學生中，成績最高的學生信息及其成績：
+        select student.* from student inner join (
+            select *, RANK()over(order by score desc) as ranks from sc where cid in (
+                select cid from course where tid=(select tid from teacher where tname='李四'))
+        ) as t on student.sid=t.sid where t.ranks=1;
+
+(33) 查詢不同課程成績相同的學生的學生編號、課程編號、學生成績：
+    select * from sc where exists (
+        select * from sc as sc2 where sc.sid=sc2.sid and sc.cid!=sc2.cid and sc.score=sc2.score);
+    
