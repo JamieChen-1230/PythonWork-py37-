@@ -1,0 +1,32 @@
+abstract = True/False 
+    - 定義當前的模型是不是一個抽象類(抽象類不會對應到數據庫表)。
+    - 抽象類一般用來歸納一些公共屬性字段，然後繼承它。
+
+db_table = <表名>
+    - 用來自定義資料庫中的表名。
+    - 默認表名: 使用模型的名稱和包含此模型的app名稱來生成表名。
+
+managed = True/False 
+    - 默認值為True，這意味著Django可以使用syncdb和reset命令來創建或移除對應的數據庫。
+
+ordering = [<字段>]
+    - 設定Django模型對象返回的記錄結果集是按照哪個字段排序的。
+    - 加"-"號為降序；不加為正序。
+    - 範例：
+        ordering = ['stno', '-ObsTime']  # 先照stno正序排，再依ObsTime降序排
+
+unique_together = ((<字段1>, <字段2>))
+    - 當需要通過兩個字段保持唯一性時使用。(EX: 假設你希望，一個Person的FirstName和LastName兩者的組合為唯一性)
+    - 一個ManyToManyField不能包含在unique_together中。
+    - 範例：
+        unique_together = (("first_name","last_name"),)
+
+verbose_name = <admin中的類名>
+    - 就是給模型類起一個更可讀的名字(一般定義為中文)
+    - 範例：
+        verbose_name_plural="學校"
+
+verbose_name_plural = <admin中的類名>
+    - 給模型的複數形式起一個更可讀的名字(一般定義為中文)
+    - 範例：
+        verbose_name_plural="學校"

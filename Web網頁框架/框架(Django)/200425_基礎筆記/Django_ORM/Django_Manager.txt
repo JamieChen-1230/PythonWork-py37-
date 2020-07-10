@@ -1,0 +1,85 @@
+在Book.objects.all()中，objects是一個特殊的屬性，我們需要通過它來操作資料庫。(而objects其實是一個Django默認的模型manager)
+
+模組manager：
+    - 為一個物件，Django模型需要通過它來操作數據庫。
+    - 可以自定義manager，通常是為了要增加額外的manager方法，或修改manager的初始QuerySet時使用。
+        - 自定義manager通常是為了添加「表級別的功能」時的首選方式。
+        - 而倘若是要對「行級別的功能」(也就是對於表紀錄的操作)則通常是透過自定義模型方法實現。
+
+範例一(增加額外的manager方法)：
+    - 為Book模型添加一個title_count()的manger方法，title_count()會接收一個keyword，並返回title中包含keyword的書籍數量
+    - 模型：
+        class BookManager(models.Manager):
+            def title_count(self, keyword):
+                return self.filter(title_icountains=keyword).count()
+
+        class Book(models.Model):
+            title = models.CharField(max_length=100)
+            authors = models.ManyToManyField(Author)
+            ...
+            objects = BookManager()  # 使用BookManager()，取代模型的默認manager(objects)，把它命名為objects是為了與默認的manager保持一致
+
+            def __str__(self):
+                return self.title
+    - 調用：
+        Books.objects.title_count('django')  # 使用自定義manager中的查詢方法
+        Books.objects.filter(title__icontains='django').count()  # 默認的查詢方法依然可用
+    - 為什麼要新增一個title_count()方法呢？
+        是為了將經常使用的查詢進行封裝，這樣就不必重複編碼。
+
+範例二(修改初始Manager的Queryset)：
+    - manager的基礎Queryset返回系統中的所有對象，EX:Book.objects.all()返回book數據庫中的所有書籍。
+    - 而可以通過覆蓋Manager.get_queryset()方法來自定義返回的初始Queryset。
+    - 模型：       
+        # 首先，定義一個Manager的子類
+        class DahlBookManager(models.Manager):
+            def get_queryset(self):
+                return super(DahlBookManager, self).get_queryset().filter(author='Roald Dahl')
+
+        # 將它顯式地加入到Book模型中
+        class Book(models.Model):
+            title = models.CharField(max_length=100)
+            author = models.CharField(max_length=50)
+            ...
+            objects = models.Manager()  # 默認Manager，通常還是要加上默認的Manager，因為這樣才能實作以往的功能，且這行要加在其他Manager之上
+            dahl_objects = DahlBookManager()  # 自定義的特殊Manager
+    - 調用：
+        Book.objects.all()  # 返回所有書籍
+        Book.dahl_objects.all()  # 僅返回作者為Roald Dahl的所有書籍
+
+範例三(自定義模型方法)：
+    - 為了添加一個行級功能，所以定義一個自定義方法(鑒於manager經常被用來用一些表操作(table-wide)，所以模型方法應該只對特殊模型實例起作用)。
+    - 模型：
+        class Person(models.Model):
+            first_name = models.CharField(max_length=50)
+            last_name = models.CharField(max_length=50)
+            birth_date = models.DateField()
+
+            def baby_boomer_status(self):
+                # Returns the person's baby_boomer status
+                import datetime
+                if self.birth_date < datetime.date(1945, 8, 1):
+                    return 'Pre-boomer'
+                elif self.birth_date < datetime.date(1965, 1, 1):
+                    return 'Baby boomer'
+                else:
+                    return 'Post-boomer'
+
+            def _get_full_name(self):
+                # Return the person's full name
+                return f'{self.first_name} {self.last_name}'
+            full_name = property(_get_full_name)    # 將類方法包裝為屬性
+    - 調用：
+        p = Person.objects.get(first_name='Barack', last_name='Obama')
+        p.baby_boomer_status()  # => Baby boomer
+        p.full_name  # => Barack Obama，注意這不是一個方法，它被視為一個屬性
+
+範例四(覆寫模型方法)：
+    - 模型：
+        class Blog(models.Model):
+            name = models.CharField(max_length=100)
+            tagline = models.TextField()
+
+            def save(self, *args, **kwargs):  # 覆寫save()方法
+                do_something()  # 自定義操作
+                super(Blog, self).save(*args, **kwargs) # 呼叫父類save方法
