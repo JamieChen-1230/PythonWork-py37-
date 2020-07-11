@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff1e8a4e-9f45-4d3b-9949-a27f16c94dbc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200510_DRF(視圖)/mysite/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200510_DRF(視圖)/mysite/api/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200610_nba焦點新聞/mysite" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200610_nba焦點新聞/mysite" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200610_nba焦點新聞/mysite/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200610_nba焦點新聞/mysite/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200610_nba焦點新聞/mysite/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200610_nba焦點新聞/mysite/.idea/dataSources.xml" afterDir="false" />
@@ -164,7 +166,65 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200510_DRF(視圖)/視圖筆記.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="54" column="16" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200510_DRF(視圖)/GenericAPIView詳解.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="467">
+              <caret line="43" column="68" selection-start-line="43" selection-start-column="68" selection-end-line="43" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200510_DRF(視圖)/mysite/api/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="134">
+              <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+              <folding>
+                <element signature="e#0#22#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../Python/Anaconda3/envs/py37/Lib/site-packages/rest_framework/viewsets.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="202">
+              <caret line="208" column="41" selection-start-line="208" selection-start-column="41" selection-end-line="208" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../Python/Anaconda3/envs/py37/Lib/site-packages/rest_framework/mixins.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="37" column="51" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../Python/Anaconda3/envs/py37/Lib/site-packages/rest_framework/generics.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-361">
+              <caret line="128" lean-forward="true" selection-start-line="128" selection-end-line="128" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -184,6 +244,7 @@
       <find>pop</find>
       <find>do</find>
       <find>sess</find>
+      <find>get_queryset</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -192,8 +253,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/基礎/180715_模塊基本架構介紹/一般導入方式/bin.py" />
-        <option value="$PROJECT_DIR$/基礎/180715_模塊基本架構介紹/一般導入方式/my_module/main.py" />
         <option value="$PROJECT_DIR$/基礎/180715_模塊基本架構介紹/一般導入方式/模塊基本架構介紹.py" />
         <option value="$PROJECT_DIR$/基礎/180715_模塊基本架構介紹/動態導入模塊/module/t.py" />
         <option value="$PROJECT_DIR$/基礎/180715_模塊基本架構介紹/動態導入模塊/180727_動態導入模塊.py" />
@@ -243,12 +302,14 @@
         <option value="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200613_高亮顯示(前後端分離初試)/筆記.txt" />
         <option value="$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/200604_Index(索引).txt" />
         <option value="$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/200625_數據表紀錄操作/Subquery(子查詢).txt" />
+        <option value="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200510_DRF(視圖)/mysite/api/views.py" />
+        <option value="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200510_DRF(視圖)/GenericAPIView詳解.txt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="310" />
-    <option name="y" value="86" />
+    <option name="y" value="85" />
     <option name="width" value="1090" />
     <option name="height" value="515" />
   </component>
@@ -269,20 +330,37 @@
             <path>
               <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
-              <item name="數據存儲" type="462c0819:PsiDirectoryNode" />
+              <item name="Web網頁框架" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
-              <item name="數據存儲" type="462c0819:PsiDirectoryNode" />
-              <item name="SQL資料庫(MySQL)" type="462c0819:PsiDirectoryNode" />
+              <item name="Web網頁框架" type="462c0819:PsiDirectoryNode" />
+              <item name="框架(Django Rest Framework)" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
-              <item name="數據存儲" type="462c0819:PsiDirectoryNode" />
-              <item name="SQL資料庫(MySQL)" type="462c0819:PsiDirectoryNode" />
-              <item name="200625_數據表紀錄操作" type="462c0819:PsiDirectoryNode" />
+              <item name="Web網頁框架" type="462c0819:PsiDirectoryNode" />
+              <item name="框架(Django Rest Framework)" type="462c0819:PsiDirectoryNode" />
+              <item name="200510_DRF(視圖)" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
+              <item name="Web網頁框架" type="462c0819:PsiDirectoryNode" />
+              <item name="框架(Django Rest Framework)" type="462c0819:PsiDirectoryNode" />
+              <item name="200510_DRF(視圖)" type="462c0819:PsiDirectoryNode" />
+              <item name="mysite" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
+              <item name="Web網頁框架" type="462c0819:PsiDirectoryNode" />
+              <item name="框架(Django Rest Framework)" type="462c0819:PsiDirectoryNode" />
+              <item name="200510_DRF(視圖)" type="462c0819:PsiDirectoryNode" />
+              <item name="mysite" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -294,7 +372,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200614_電商系統(前後端分離初試)/eshop/eshop/eshop" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CompanyWork/ncmf/ncmfweb" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
@@ -514,6 +592,8 @@
       <workItem from="1592618624888" duration="7608000" />
       <workItem from="1592702316882" duration="2208000" />
       <workItem from="1593063388345" duration="6027000" />
+      <workItem from="1594427503307" duration="624000" />
+      <workItem from="1594442049099" duration="4009000" />
     </task>
     <servers />
   </component>
@@ -550,7 +630,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="532399000" />
+    <option name="totallyTimeSpent" value="537032000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -564,7 +644,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.80133927" visible="true" weight="0.25603217" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.80133927" visible="true" weight="0.2627346" />
       <window_info id="Structure" order="1" sideWeight="0.19866072" side_tool="true" weight="0.21715818" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -578,7 +658,7 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49865952" visible="true" weight="0.22379604" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49865952" visible="true" weight="0.18271954" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5013405" side_tool="true" weight="0.3385269" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -641,35 +721,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200511_DRF(路由、渲染器)/mysite/api/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-756">
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django)/200429_ORM一對多操作/mysite/app01/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="57" column="46" selection-start-line="57" selection-start-column="46" selection-end-line="57" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200605_圖書系統/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="196">
-            <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/觀念/面試觀念題.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
@@ -747,20 +798,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Python/Anaconda3/envs/py37/Lib/site-packages/rest_framework/mixins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="17" column="49" lean-forward="true" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Python/Anaconda3/envs/py37/Lib/site-packages/rest_framework/viewsets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="216" column="37" selection-start-line="216" selection-start-column="37" selection-end-line="216" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200605_圖書系統/mysite/app01/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
@@ -822,11 +859,6 @@
     <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200612_HelloWorld/project/helloworld/quickstartapp/urls.py" />
     <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200612_HelloWorld/project/helloworld/quickstartapp/serializers.py" />
     <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200612_HelloWorld/project/helloworld/quickstartapp/views.py" />
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200510_DRF(視圖)/視圖筆記.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1008" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200511_DRF(路由、渲染器)/mysite/api/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-588">
@@ -955,9 +987,7 @@
         <state relative-caret-position="-654" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/200625_數據表紀錄操作/子查詢.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/200625_數據表紀錄操作/子查詢.txt" />
     <entry file="file://$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/200604_Index(索引).txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="56">
@@ -965,17 +995,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/200625_數據表紀錄操作/Select基礎.txt">
+    <entry file="file://$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/200625_數據表紀錄操作/Select基礎.txt" />
+    <entry file="file://$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/200625_數據表紀錄操作/Subquery(子查詢).txt" />
+    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200510_DRF(視圖)/視圖筆記.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="2" column="73" lean-forward="true" selection-start-line="2" selection-end-line="2" selection-end-column="73" />
+        <state>
+          <caret line="54" column="16" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/數據存儲/SQL資料庫(MySQL)/200625_數據表紀錄操作/Subquery(子查詢).txt">
+    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200510_DRF(視圖)/mysite/api/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        <state relative-caret-position="134">
+          <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Python/Anaconda3/envs/py37/Lib/site-packages/rest_framework/viewsets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="208" column="41" selection-start-line="208" selection-start-column="41" selection-end-line="208" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Python/Anaconda3/envs/py37/Lib/site-packages/rest_framework/mixins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="37" column="51" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Python/Anaconda3/envs/py37/Lib/site-packages/rest_framework/generics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-361">
+          <caret line="128" lean-forward="true" selection-start-line="128" selection-end-line="128" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200510_DRF(視圖)/GenericAPIView詳解.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="43" column="68" selection-start-line="43" selection-start-column="68" selection-end-line="43" selection-end-column="68" />
         </state>
       </provider>
     </entry>

@@ -18,6 +18,7 @@ class RolesView(GenericAPIView):
         return Response(ser.data)
 """
 
+from rest_framework.viewsets import GenericViewSet
 """
 from rest_framework.viewsets import GenericViewSet
 class RolesView(GenericViewSet):

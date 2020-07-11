@@ -1,0 +1,47 @@
+APIView(不常使用)：
+    - APIView與Django的View類似，業務類只需要繼承APIView
+    - URL傳遞過程中，只需調用APIView的as_view()方法即可，然後URL就會根據請求調用對應HTTP方法(EX: get, post, put, delete,...)
+    - 代碼：
+        class SnippetList(APIView):
+            def get(self, request, format=None):
+                return Response(...)
+            def post(self, request, format=None):
+                return Response(...)
+
+GenericAPIView(有點用)：
+    - GenericAPIView是繼承於APIView，而我們可以根據需求多繼承mixins的ListModelMixin, CreateModelMixin等類
+    - URL傳遞過程中，只需調用APIView的as_view()方法即可，然後URL就會根據請求調用對應HTTP方法(EX: get, post, put, delete,...)
+    - 基本代碼：
+        class SnippetList(mixins.ListModelMixin, mixins.CreateModelMixin, generics.GenericAPIView):
+            # 不過須定義初始queryset和serializer_class
+            queryset = Snippet.objects.all()
+            serializer_class = SnippetSerializer  # 指定視圖使用的序列化器
+            # 不需在get, post方法中去ORM調用以及序列化調用(因為都封裝到了list, create等方法，這些方法在mixins中)
+            def get(self, request, *args, **kwargs):
+                return self.list(*args, **kwargs)
+            def post(self, request, *args, **kwargs):
+                return self.create(*args, **kwargs)
+    - ORM調用是透過GenericAPIView下的get_queryset()方法使用
+    - 序列化對象則透過GenericAPIView下的方法：
+        get_serializer_class()：
+            - 返回序列化器類，默認返回serializer_class
+            - 也可通過覆寫get_serializer_class()方法來應對不同情況下，使用不同序列器類
+            - 覆寫範例：
+                def get_serializer_class(self):
+                    if self.request.user.is_staff:
+                        return FullAccountSerializer
+                    return BasicAccountSerializer
+        get_serializer_context()：
+            - 為Serializer對象封裝一個key為context的鍵值對
+            - 該方法在提供序列化器對象的時，會向序列化器對象的context屬性補充三個數據：request、format、view，這三個數據對象可以在定義序列化器時使用
+            - 源碼：
+                    def get_serializer_context(self):
+                        return {
+                            'request': self.request,
+                            'format': self.format_kwarg,
+                            'view': self }
+        get_serializer()：
+            - 裡面調用了get_serializer_context()和get_serializer_class()方法
+            - 返回序列化器對象，主要用來提供給Mixin擴展類使用，如果我們在視圖中想要獲取序列化器對象，也可以直接調用此方法。
+
+
