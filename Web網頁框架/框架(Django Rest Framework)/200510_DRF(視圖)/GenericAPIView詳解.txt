@@ -43,5 +43,29 @@ GenericAPIView(有點用)：
         get_serializer()：
             - 裡面調用了get_serializer_context()和get_serializer_class()方法
             - 返回序列化器對象，主要用來提供給Mixin擴展類使用，如果我們在視圖中想要獲取序列化器對象，也可以直接調用此方法。
+    特點整理：
+        - 定義類視圖使用的序列化器和查詢集（屬性）；
+            queryset： 列表視圖的查詢集（queryset = xxx）
+            serializer_class： 視圖使用的序列化器（serializer_class = sss）
+        - 分頁和過濾的控制（屬性）；
+            pagination_class： 分頁控制類
+            filter_backends： 過濾控制後端
+        - 配合get_obiect()使用的（屬性）；
+            lookup_field： 查詢單一數據庫對象時使用的條件字段，默認為'pk'
+            lookup_url_kwarg： 查詢單一數據時URL中的參數關鍵字名稱，默認與look_field相同
+        - 查詢集的獲取/更改：
+            get_queryset(self)： 默認返回queryset屬性，可以重寫成自己需要的查詢集；
+        - 獲取序列化器對象：
+            get_serializer()： 默認返回的是系列化器對象；
+            注意，在提供序列化器對象的時候，REST framework會向對象的context屬性補充三個數據：request、format、view，這三個數據對象可以在定義序列化器時使用，也就是說在序列化器類中，可以通過self.context['request']，獲取對應的請求對象
+        - context屬性：
+            get_serializer_context(self)：
+            這個是給序列化器返回的一個context屬性，context屬性裡面有'request'，'format'，'view'值可以在序列化器類中使用。與5中的描述相對應
+        - 獲取序列化器；
+            get_serializer_class(self)：獲取需要使用的序列化器，根據需求可以重寫獲取不同的序列化器；
+        - 獲取對應的模型類對象：
+            get_object(self)： 默認使用lookup_field參數來過濾queryset。
+            若詳情訪問的模型類對像不存在，會返回404。
+            該方法會默認使用APIView提供的check_object_permissions方法檢查當前對像是否有權限被訪問。
 
 
