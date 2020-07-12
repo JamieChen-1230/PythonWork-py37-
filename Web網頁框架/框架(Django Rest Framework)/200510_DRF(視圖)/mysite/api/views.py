@@ -19,6 +19,7 @@ class RolesView(GenericAPIView):
 """
 
 from rest_framework.viewsets import GenericViewSet
+from rest_framework.generics import ListAPIView
 """
 from rest_framework.viewsets import GenericViewSet
 class RolesView(GenericViewSet):
