@@ -93,3 +93,12 @@
         filter_backends = (OrderingFilter, SearchFilter,)  # 須加上這行，才能讓用戶進行排序和搜索
         ordering = ('-id',)  # 照id倒敘排序(默認)
         pagination_class = LimitOffsetPagination
+
+
+七、使用路由器最好要設basename：
+    # 要設basename，因為如果沒設basename，路由器會默認使用裡面定義的queryset當作名稱，
+    # 所以當沒設basename且有多個ViewSet的queryset相同時，路由給的url可能就會錯誤(會重複)
+    router.register(r'Rank/yr', Rank.views.RankYrViewSet, basename='r_yr')
+    router.register(r'Rank/mn', Rank.views.RankMnViewSet, basename='r_mn')
+    router.register(r'Rank/dy', Rank.views.RankDyViewSet, basename='r_dy')
+    router.register(r'Rank/tenday', Rank.views.RankTenDayViewSet, basename='r_tenday')
