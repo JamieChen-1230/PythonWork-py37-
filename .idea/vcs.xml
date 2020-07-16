@@ -2,8 +2,5 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Git/git_demo" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Git/git_test" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200610_nba焦點新聞/mysite" vcs="Git" />
   </component>
 </project>
