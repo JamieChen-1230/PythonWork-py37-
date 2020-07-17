@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff1e8a4e-9f45-4d3b-9949-a27f16c94dbc" name="Default Changelist" comment="" />
+    <list default="true" id="ff1e8a4e-9f45-4d3b-9949-a27f16c94dbc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/基礎/200715_類(詳解)/200715_類的共享屬性.py" beforeDir="false" afterPath="$PROJECT_DIR$/基礎/200715_類(詳解)/200715_類的共享屬性.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -332,11 +335,11 @@
     </configuration>
     <list>
       <item itemvalue="Python.200510_sample_test" />
-      <item itemvalue="Python.Queue(隊列)" />
-      <item itemvalue="Python.re模塊(正則表達式)" />
-      <item itemvalue="Python.TCPserver" />
-      <item itemvalue="Python.TCPclient" />
       <item itemvalue="Python.200710_初始化" />
+      <item itemvalue="Python.Queue(隊列)" />
+      <item itemvalue="Python.TCPclient" />
+      <item itemvalue="Python.TCPserver" />
+      <item itemvalue="Python.re模塊(正則表達式)" />
     </list>
     <recent_temporary>
       <list>
