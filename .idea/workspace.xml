@@ -2,23 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff1e8a4e-9f45-4d3b-9949-a27f16c94dbc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/338faa4b-5512-4078-9eaa-3aa1f1771897.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5c91c342-2524-4dfb-8ad2-ad77582c0b78.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e60d26cd-381b-474a-a428-fd54f4fb49c8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/efec610e-14ce-4e9e-b0b4-f6a834478d8f.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200510_DRF(視圖)/mysite/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200510_DRF(視圖)/mysite/api/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200610_nba焦點新聞/mysite" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200610_nba焦點新聞/mysite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200610_nba焦點新聞/mysite/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200610_nba焦點新聞/mysite/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200610_nba焦點新聞/mysite/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200610_nba焦點新聞/mysite/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200610_nba焦點新聞/mysite/.idea/dataSources/170a68b6-232a-42b8-b39c-d6537d75d608.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200610_nba焦點新聞/mysite/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200610_nba焦點新聞/mysite/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200610_nba焦點新聞/mysite/.idea/mysite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200610_nba焦點新聞/mysite/.idea/mysite.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200610_nba焦點新聞/mysite/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200610_nba焦點新聞/mysite/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200610_nba焦點新聞/mysite/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200610_nba焦點新聞/mysite/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200610_nba焦點新聞/mysite/Procfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200610_nba焦點新聞/mysite/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200610_nba焦點新聞/mysite/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200610_nba焦點新聞/mysite/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200610_nba焦點新聞/mysite/mysite/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200610_nba焦點新聞/mysite/nba/nba_crawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200610_nba焦點新聞/mysite/nba/nba_crawler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200610_nba焦點新聞/mysite/nba/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200610_nba焦點新聞/mysite/nba/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200610_nba焦點新聞/mysite/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200610_nba焦點新聞/mysite/runtime.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -182,7 +171,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -284,41 +273,6 @@
             <path>
               <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
-              <item name="Web網頁框架" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
-              <item name="Web網頁框架" type="462c0819:PsiDirectoryNode" />
-              <item name="框架(Django Rest Framework)" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
-              <item name="Web網頁框架" type="462c0819:PsiDirectoryNode" />
-              <item name="框架(Django Rest Framework)" type="462c0819:PsiDirectoryNode" />
-              <item name="200506_DRF(序列化)" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
-              <item name="Web網頁框架" type="462c0819:PsiDirectoryNode" />
-              <item name="框架(Django Rest Framework)" type="462c0819:PsiDirectoryNode" />
-              <item name="200506_DRF(序列化)" type="462c0819:PsiDirectoryNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
-              <item name="Web網頁框架" type="462c0819:PsiDirectoryNode" />
-              <item name="框架(Django Rest Framework)" type="462c0819:PsiDirectoryNode" />
-              <item name="200506_DRF(序列化)" type="462c0819:PsiDirectoryNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -552,7 +506,8 @@
       <workItem from="1593063388345" duration="6027000" />
       <workItem from="1594427503307" duration="624000" />
       <workItem from="1594442049099" duration="4009000" />
-      <workItem from="1594525635306" duration="11831000" />
+      <workItem from="1594525635306" duration="12385000" />
+      <workItem from="1594552500196" duration="4000" />
     </task>
     <servers />
   </component>
@@ -589,7 +544,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="548863000" />
+    <option name="totallyTimeSpent" value="549421000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -603,7 +558,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.80133927" visible="true" weight="0.2660858" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.80133927" visible="true" weight="0.269437" />
       <window_info id="Structure" order="1" sideWeight="0.19866072" side_tool="true" weight="0.21715818" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -617,7 +572,7 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49865952" visible="true" weight="0.2549575" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49865952" visible="true" weight="0.2549575" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5013405" side_tool="true" weight="0.3385269" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -660,6 +615,7 @@
       <path value="$PROJECT_DIR$/Git/測試忽略.git" />
       <path value="$PROJECT_DIR$/Git/測試忽略git資料夾" />
       <path value="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200610_nba焦點新聞" />
+      <path value="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200610_nba焦點新聞/mysite" />
     </ignored-roots>
   </component>
   <component name="XDebuggerManager">
@@ -957,13 +913,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200510_DRF(視圖)/GenericAPIView筆記.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1652">
-          <caret line="59" column="45" selection-start-line="59" selection-start-column="45" selection-end-line="59" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200510_DRF(視圖)/GenericAPIView筆記.py" />
     <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200510_DRF(視圖)/mysite/api/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
