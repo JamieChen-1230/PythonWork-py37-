@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff1e8a4e-9f45-4d3b-9949-a27f16c94dbc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/基礎/200715_類(詳解)/200715_類的共享屬性.py" beforeDir="false" afterPath="$PROJECT_DIR$/基礎/200715_類(詳解)/200715_類的共享屬性.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200504_DRF用戶登入(認證、權限、節流)/mysite/api/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200504_DRF用戶登入(認證、權限、節流)/mysite/api/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200504_DRF用戶登入(認證、權限、節流)/mysite/api/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200504_DRF用戶登入(認證、權限、節流)/mysite/api/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200504_DRF用戶登入(認證、權限、節流)/mysite/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200504_DRF用戶登入(認證、權限、節流)/mysite/api/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200504_DRF用戶登入(認證、權限、節流)/mysite/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200504_DRF用戶登入(認證、權限、節流)/mysite/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200504_DRF用戶登入(認證、權限、節流)/mysite/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200504_DRF用戶登入(認證、權限、節流)/mysite/mysite/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200504_DRF用戶登入(認證、權限、節流)/權限筆記.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200504_DRF用戶登入(認證、權限、節流)/權限筆記.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200504_DRF用戶登入(認證、權限、節流)/認證筆記.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200504_DRF用戶登入(認證、權限、節流)/認證筆記.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,12 +185,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="310" />
-    <option name="y" value="85" />
-    <option name="width" value="1090" />
-    <option name="height" value="515" />
-  </component>
   <component name="ProjectId" id="1ekOO0wrfrDmkefsBTGynetdfJS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -194,6 +195,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -408,38 +410,6 @@
       <workItem from="1594525635306" duration="11831000" />
     </task>
     <servers />
-  </component>
-  <component name="TestHistory">
-    <history-entry file="pytest_in_基本使用_skip_py - 2020.05.29 at 16h 27m 29s.xml">
-      <configuration name="pytest in 基本使用_skip.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_基本使用_skip_py - 2020.05.29 at 16h 27m 41s.xml">
-      <configuration name="pytest in 基本使用_skip.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_200527_skip_py - 2020.05.29 at 16h 30m 11s.xml">
-      <configuration name="pytest in 200527_skip.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_200527_skip_py - 2020.05.29 at 16h 32m 11s.xml">
-      <configuration name="pytest in 200527_skip.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_200527_skip_py - 2020.05.29 at 16h 35m 34s.xml">
-      <configuration name="pytest in 200527_skip.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_200527_skip_py - 2020.05.29 at 16h 35m 54s.xml">
-      <configuration name="pytest in 200527_skip.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_200527_skip_py - 2020.05.29 at 16h 36m 13s.xml">
-      <configuration name="pytest in 200527_skip.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_200429_迭代器&amp;生成器_test - 2020.06.04 at 16h 43m 47s.xml">
-      <configuration name="pytest for 200429_迭代器&amp;生成器.test" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Doctests_in_Quick_Sort(快速排序) - 2020.06.05 at 01h 31m 13s.xml">
-      <configuration name="Doctests in Quick_Sort(快速排序)" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Doctests_in_Quick_Sort(快速排序) - 2020.06.05 at 01h 31m 24s.xml">
-      <configuration name="Doctests in Quick_Sort(快速排序)" configurationId="tests" />
-    </history-entry>
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="548863000" />
