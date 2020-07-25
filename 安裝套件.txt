@@ -3,6 +3,7 @@ Django==2.2
 sqlparse==0.3.1
 mysqlclient==1.4.6 (在django中要使用mysql，django2開始不支持pymysql了)
 djangorestframework==3.11.0
+djangorestframework-jwt==1.11.0 (DRF中的jwt認證套件)
 django-celery-beat==2.0.0 (為了在django中能使用celery定時任務)
 django-cors-headers==3.4.0  (為了能使用跨域請求)
 django-filter==2.3.0  (為了能在drf或django中自定義高級過濾器)

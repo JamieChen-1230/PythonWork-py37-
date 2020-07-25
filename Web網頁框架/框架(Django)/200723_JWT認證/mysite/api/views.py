@@ -9,7 +9,7 @@ from django.core.exceptions import ObjectDoesNotExist
 測試工具： postman
 測試： 
     1.先用post登入到login中獲取token(只要有username即可，EX:jamie@kimo.com)
-    2.在用get到users頁面時，記得要在Headers中加入Authorization: yoyoyo <Signature>
+    2.在用get到users頁面時，記得要在Headers中加入 Authorization: yoyoyo <Signature>
 """
 
 
