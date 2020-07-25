@@ -1,4 +1,35 @@
 class Taiwanese:
+    """
+    類資料屬性：
+        - 屬於類本身，可以通過類名進行訪問/修改
+        - 也可以被類的所有實例對象訪問/修改
+        - 在類定義之後，可以通過類名動態新增類資料屬性，新增的類屬性也被類和所有例項共有
+        - 特殊的類屬性(對於所有的類，都有一組特殊的屬性)：
+            - __name__: 類名(string)
+            - __doc__: 類的文件(string)
+            - __bases__: 類的所有父類組成的元組(tuple)
+            - __dict__: 類的屬性組成的字典(dict)
+            - __module__: 類所屬的模組
+            - __class__: 類物件的型別
+    實例資料屬性：
+        - 只能通過實例對象訪問/修改
+        - 在實例生成後，還可以動態新增實例屬性，但是這些屬性只屬於該實例對象，不與其他對象共用
+    實例方法:
+        - 第一個引數必須是self，self表示實例對象本身
+        - 實例方法中，通過self可以訪問實例對象的相關屬性
+        - 只能通過實例對象進行訪問
+    類方法；
+        - 類方法以cls作為第一個引數，cls表示類本身，定義時使用@classmethod裝飾器
+        - 類方法中，通過cls可以訪問類的相關屬性
+        - 可以通過類名進行訪問
+        - 也可以通過實例對象進行訪問
+    靜態方法：
+        - 與實例方法和類方法不同，靜態方法沒有引數限制，既不需要self，也不需要cls，定義時使用@staticmethod裝飾器
+        - 方法體中不能使用類或實例的屬性和方法
+        - 主要是用來存放邏輯性的代碼，不會涉及到類中的屬性和方法的操作
+        - 可以通過類名進行訪問
+        - 也可以通過實例對象進行訪問
+    """
     # 類屬性
     species = "people"
     country = "TW"
@@ -8,7 +39,7 @@ class Taiwanese:
         self.name = name
         self.sex = sex
 
-    # 普通方法
+    # 實例方法
     def walk(self):
         print("%s is walking" % self.name)
 
@@ -25,7 +56,6 @@ class Taiwanese:
         print("I born in %s" % cls.country)
 
     # 靜態方法
-    # 如果你在定義類別時，希望某個方法不要作為實例的綁定方法，也就是不要將第一個參數綁定為self
     @staticmethod
     def my_sum(x, y):
         print(x + y)
@@ -51,7 +81,7 @@ class Taiwanese:
 # # print(Taiwanese.name)  # => 報錯(AttributeError: type object 'Taiwanese' has no attribute 'name')
 
 
-# 普通方法 => 共享，僅實例可調用
+# 實例方法 => 共享，僅實例可調用
 # p1 = Taiwanese("Jamie", "男")
 # p2 = Taiwanese("Candy", "女")
 # def walk(self):
