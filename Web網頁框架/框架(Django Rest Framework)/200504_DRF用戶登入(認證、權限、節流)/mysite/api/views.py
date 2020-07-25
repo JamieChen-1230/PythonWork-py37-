@@ -40,11 +40,12 @@ class AuthView(APIView):
 
     # 通常用戶登入是用post請求
     def post(self, request, *args, **kwargs):
-        self.dispatch()
+        # self.dispatch()
         ret = {'code': 1000, 'msg': None}
         try:
             user = request._request.POST.get('username')
             pwd = request._request.POST.get('password')
+            print(request.META)
             obj = models.UserInfo.objects.filter(username=user, password=pwd).first()
             if not obj:
                 ret['code'] = 1001
@@ -56,6 +57,7 @@ class AuthView(APIView):
             models.UserToken.objects.update_or_create(user=obj, defaults={'token': token})
             ret['token'] = token
         except Exception as e:
+            print(e)
             ret['code'] = 1002
             ret['msg'] = '請求錯誤'
 
@@ -71,6 +73,8 @@ class OrderView(APIView):
     # GET：取出訂單(一項或多項)
     def get(self, request, *args, **kwargs):
         ret = {'code': 1000, 'msg': None}
+        user = request.user  # 當通過authentication認證之後，MyAuthentication類會把user對象封裝在request.user
+        print(user.username, user.password, user.user_type)
         # 之後資料庫容易出錯，最好都用try包起來。
         try:
             ret['data'] = ORDER_DICT
