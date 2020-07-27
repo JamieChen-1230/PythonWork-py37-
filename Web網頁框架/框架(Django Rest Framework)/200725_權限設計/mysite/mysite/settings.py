@@ -25,7 +25,7 @@ SECRET_KEY = 'jl-#m4ls@%qrs4*53dw_z07rb_s0vm^&#ns^v_%b86$@dg8a!a'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'api.apps.ApiConfig',
     'rest_framework',
-    'rest_framework.authtoken',
+    'rest_framework.authtoken',  # 使用jwt時要加
 ]
 
 MIDDLEWARE = [
@@ -123,17 +123,22 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-# 自定義並覆寫原User表
+# 不使用原來的User表，改用自定義的User表
 AUTH_USER_MODEL = 'api.User'
 
 REST_FRAMEWORK = {
     # 全局設置的方法，也可在單個視圖中設置
-    "DEFAULT_AUTHENTICATION_CLASSES": ("rest_framework_jwt.authentication.JSONWebTokenAuthentication",)
+    # 認證
+    "DEFAULT_AUTHENTICATION_CLASSES": ("rest_framework_jwt.authentication.JSONWebTokenAuthentication",),
+    # 版本管理
+    'DEFAULT_VERSIONING_CLASS': 'rest_framework.versioning.URLPathVersioning',
+    'DEFAULT_VERSION': 'v1',  # 默認版本號
+    'ALLOWED_VERSIONS': ['v1', 'v2'],  # 允許的版本號
 }
 
 import datetime
 JWT_AUTH = {
-    'JWT_EXPIRATION_DELTA': datetime.timedelta(seconds=300),  # 設置 JWT Token的有效時間
+    'JWT_EXPIRATION_DELTA': datetime.timedelta(seconds=3000),  # 設置 JWT Token的有效時間
     'JWT_AUTH_HEADER_PREFIX': 'JWT',  # 設置請求頭中的前綴 (Authorization:JWT <your_token>)
     'JWT_ALLOW_REFRESH': True,  # 若要使用刷新權杖必須設定為True
 }
