@@ -34,19 +34,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ff1e8a4e-9f45-4d3b-9949-a27f16c94dbc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200725_權限設計/mysite/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200725_權限設計/mysite/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200725_權限設計/mysite/.idea/mysite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200725_權限設計/mysite/.idea/mysite.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200725_權限設計/mysite/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200725_權限設計/mysite/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200725_權限設計/mysite/api/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200725_權限設計/mysite/api/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200725_權限設計/mysite/api/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200725_權限設計/mysite/api/migrations/0002_auto_20200725_1525.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200725_權限設計/mysite/api/migrations/0003_auto_20200725_1704.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200725_權限設計/mysite/api/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200725_權限設計/mysite/api/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200725_權限設計/mysite/api/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200725_權限設計/mysite/api/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200725_權限設計/mysite/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200725_權限設計/mysite/api/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200725_權限設計/mysite/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200725_權限設計/mysite/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200725_權限設計/mysite/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200725_權限設計/mysite/mysite/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200725_權限設計/mysite/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200725_權限設計/mysite/mysite/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,19 +201,13 @@
       <list>
         <option value="Python Stub" />
         <option value="package.json" />
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="310" />
-    <option name="y" value="85" />
-    <option name="width" value="1090" />
-    <option name="height" value="515" />
   </component>
   <component name="ProjectId" id="1ekOO0wrfrDmkefsBTGynetdfJS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -241,7 +223,7 @@
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200725_權限設計/mysite" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
