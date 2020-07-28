@@ -129,11 +129,11 @@ AUTH_USER_MODEL = 'api.User'
 REST_FRAMEWORK = {
     # 全局設置的方法，也可在單個視圖中設置
     # 認證
-    "DEFAULT_AUTHENTICATION_CLASSES": ("rest_framework_jwt.authentication.JSONWebTokenAuthentication",),
+    # "DEFAULT_AUTHENTICATION_CLASSES": ("rest_framework_jwt.authentication.JSONWebTokenAuthentication",),
+    "DEFAULT_AUTHENTICATION_CLASSES": ("api.utils.jwt.MyJWTAuthentication",),  # 自定義
     # 版本管理
-    'DEFAULT_VERSIONING_CLASS': 'rest_framework.versioning.URLPathVersioning',
+    'DEFAULT_VERSIONING_CLASS': 'rest_framework.versioning.NamespaceVersioning',
     'DEFAULT_VERSION': 'v1',  # 默認版本號
-    'ALLOWED_VERSIONS': ['v1', 'v2'],  # 允許的版本號
 }
 
 import datetime
@@ -141,4 +141,5 @@ JWT_AUTH = {
     'JWT_EXPIRATION_DELTA': datetime.timedelta(seconds=3000),  # 設置 JWT Token的有效時間
     'JWT_AUTH_HEADER_PREFIX': 'JWT',  # 設置請求頭中的前綴 (Authorization:JWT <your_token>)
     'JWT_ALLOW_REFRESH': True,  # 若要使用刷新權杖必須設定為True
+    'JWT_RESPONSE_PAYLOAD_HANDLER': 'api.utils.jwt.jwt_response_payload_handler',
 }

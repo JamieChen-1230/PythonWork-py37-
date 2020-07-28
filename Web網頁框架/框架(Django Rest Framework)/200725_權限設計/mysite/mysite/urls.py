@@ -3,15 +3,11 @@ from django.urls import path, re_path, include
 from rest_framework_jwt.views import obtain_jwt_token
 from rest_framework_jwt.views import refresh_jwt_token
 from rest_framework_jwt.views import verify_jwt_token
-from api import views
-from rest_framework.routers import DefaultRouter
-
-router = DefaultRouter()
-router.register(r'users', viewset=views.UsersViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    re_path(r"^api/(?P<version>[v1|v2]+)/", include(router.urls)),
+    # include((<urls>, <應用名稱>), namespace=<實例命名空間>)
+    re_path(r"^api/v1/", include(('api.urls', "api"), namespace="v1")),
     # =========-JWT內建提供的功能-=========
     # 獲取權杖
     re_path(r"^login/", obtain_jwt_token),  # 請求：POST, data:{'username':jamie, 'password':'jamie851230'}

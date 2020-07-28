@@ -10,7 +10,6 @@ from api.utils import permission
 
 class UsersViewSet(ModelViewSet):
     # Headers須帶有{'Authorization': JWT <token>}才能訪問
-    authentication_classes = (authentication.JSONWebTokenAuthentication,)  # 使用JWT作為認證機制
     # IsAuthenticated 讓只有通過認證者才可使用
     permission_classes = (IsAuthenticated, permission.MyPermission, )
     queryset = models.User.objects.all()
