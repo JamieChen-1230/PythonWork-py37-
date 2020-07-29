@@ -1,4 +1,15 @@
-一、認證(Authentication)和授權(Authorization)：
+- REST API：
+    - 主要原則：
+        - REST API 是依照「資源」來設計的，而資源是指可由用戶端存取、任何類型的物件、資料或服務。
+            EX: https://xxx.com/orders/
+        - 資源具有「識別碼」，用來識別該資源。(通常是用id)
+            EX: https://xxx.com/orders/1/
+        - REST API 會使用統一的介面，有助於讓用戶端與服務實作分離，並依照不同的HTTP請求(GET、POST、PUT、PATCH和DELETE)做出不同操作。
+            EX: GET https://xxx.com/orders/  =>  獲取order列表
+                POST https://xxx.com/orders/  =>  新增一筆order
+
+
+- 認證(Authentication)和授權(Authorization)：
     - 比喻：
         1.情境一(登機)：
             我們登機時會需要機票和護照，
@@ -19,4 +30,3 @@
             認證(Authentication)： 我是誰？
             授權(Authorization)： 我能做什麼？
 
-    -
