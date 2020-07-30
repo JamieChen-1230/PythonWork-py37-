@@ -34,6 +34,16 @@
   <component name="ChangeListManager">
     <list default="true" id="ff1e8a4e-9f45-4d3b-9949-a27f16c94dbc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web網頁前端/JavaScript/ECMAScript/180913_js基本數據類型.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web網頁前端/JavaScript/ECMAScript/180913_js基礎規範.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web網頁前端/JavaScript/ECMAScript/180913_js引入方式/180913_js引入方式.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web網頁前端/JavaScript/ECMAScript/180913_js引入方式/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web網頁前端/JavaScript/ECMAScript/180916_js控制語句與循環.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web網頁前端/JavaScript/ECMAScript/180916_js運算符.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web網頁前端/JavaScript/ECMAScript/180917_js內建對象/函數對象.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web網頁前端/JavaScript/ECMAScript/180917_js內建對象/字符串對象.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web網頁前端/JavaScript/ECMAScript/180917_js內建對象/數組對象.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200725_權限設計/mysite/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200725_權限設計/mysite/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,7 +232,7 @@
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CompanyWork" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
@@ -491,10 +501,14 @@
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
-    <state x="541" y="167" key="FileChooserDialogImpl" timestamp="1595985364598">
+    <state x="478" y="213" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596097573657">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="541" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1595985364598" />
+    <state x="478" y="213" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1596097573657" />
+    <state x="541" y="167" key="FileChooserDialogImpl" timestamp="1596075897729">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="541" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1596075897729" />
     <state width="1515" height="219" key="GridCell.Tab.0.bottom" timestamp="1594866675194">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -515,6 +529,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1594862106935" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1596098588234">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1596098588234" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
