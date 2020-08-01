@@ -1,0 +1,91 @@
+- 定義需求：
+	- 是否有需要權限認證
+	- 有哪些資源需定義
+	- 會使用到那些方法(HTTP Method)
+
+- 設定資源來源：
+	- 資料庫
+		- 設計資料表
+	- 上游API
+
+- 設計API之路由和方法：
+	- 定義每個資源需要哪些方法
+		- EX: Users => GET, POST, PUT, DELETE
+			  Goods => GET
+	- 設計URL
+		- 對表級別的路由：
+			- https://xxx.com/api/<版本號>/<敘述>/<資源>/
+			    - 版本號：
+					- EX: v1, v2
+					- 讓之後API要更新時，可以讓用戶能有一個緩衝的時間
+				- 敘述：
+					- 可有可無
+					- 可以用應用名或是其他記號來區別資源
+				- 資源：
+					- 可以讓用戶輕易知道這是什麼
+					- EX: Goods, Orders, Observations
+				- 範例：
+					- https://xxx.com/api/v1/Rank/yr/Observations/  =>  排序的年觀測值
+					- https://xxx.com/api/v1/Orders/  =>  訂單
+		- 對紀錄級別的路由：
+			- https://xxx.com/api/<版本號>/<敘述>/<資源>/<唯一標識>/
+				- 版本號、敘述、資源 同上
+				- 唯一標識：
+					- 可以用於識別此紀錄的唯一標識
+					- EX: id
+				- 範例：
+					- https://xxx.com/api/v1/Users/1/  =>  用戶id為1的那筆紀錄
+	- 結合Method和URL
+		- 表級別的路由：
+			- GET URL：
+				- 返回資源列表
+				- 範例：
+					- GET https://xxx.com/api/v1/Users/  =>  返回用戶列表([user1, user2,...])
+			- POST URL：
+				- 對資源進行新增(Create)操作，並返回新增成功或失敗資訊
+				- 範例：
+					- POST https://xxx.com/api/v1/Users/  =>  新增一個用戶
+		- 紀錄級別的路由：
+			- GET URL：
+				- 返回此資源紀錄(一條紀錄)
+				- 範例：
+					- GET https://xxx.com/api/v1/Users/1/  =>  返回用戶id為1的資訊
+			- PUT/PATCH URL：
+				- 更新此資源紀錄(一條紀錄)，並返回更新成功或失敗資訊
+				- 範例：
+					- PUT https://xxx.com/api/v1/Users/1/  =>  更新用戶id為1的資料
+			- DELETE URL：
+				- 刪除此資源紀錄(一條紀錄)，並返回刪除成功或失敗資訊
+				- 範例：
+					- DELETE https://xxx.com/api/v1/Users/1/  =>  刪除用戶id為1的資料
+	- 設計權限(如果有需要的話)
+	    - 認證： 你是誰？
+		- 憑證： 使你能有權限的令牌。
+		- 授權： 授予憑證，並可帶著此憑證行使權限。
+		- 權限： 你能做什麼？
+		- 例子：
+            我們登機時會需要機票和護照，
+            機票相當於是登上飛機的門票，也就是說，持有機票就能擁有登機的權利，
+            護照或身分證則是為了驗證你是本人的，也就是說，當驗證成功後就能證明你是這張機票的合法持有人，
+            最後，你就可以帶著這張機票登上飛機。
+            認證(Authentication)： 驗證護照或身分證
+            授權(Authorization)： 給予你能登上飛機的權力
+            憑證(Credentials)： 機票
+    - 使用Swagger工具輔助開發
+        - 通過漂亮的UI介面可以幫助開發者更易於設計
+        - 可以產生API接口文檔，減少開發者編寫文檔的時間
+
+- 設計API之返回值：
+    {
+        "status": 狀態碼,
+        "errorCode": 錯誤狀態碼,
+        "errorMsg": 錯誤詳細敘述,
+        "response": 響應數據
+    }
+
+- 測試：
+	- 驗證資料正確性
+
+
+
+
