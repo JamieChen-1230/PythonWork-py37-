@@ -114,3 +114,16 @@ class RolePermission(models.Model):
     def __str__(self):
         return '%s | %s' % (self.permission_id, self.role_id)
 
+
+# error
+# class MyUser(models.Model):
+#     email = models.EmailField(unique=True)
+#     password = models.CharField(max_length=128)
+#     username = models.CharField(max_length=150)
+#     is_active = models.BooleanField(default=True)
+#
+#     USERNAME_FIELD = 'email'
+#     REQUIRED_FIELDS = ['username']
+#
+#     def __str__(self):
+#         return self.username

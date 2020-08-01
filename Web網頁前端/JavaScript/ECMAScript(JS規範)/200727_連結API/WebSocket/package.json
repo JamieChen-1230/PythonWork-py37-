@@ -1,0 +1,18 @@
+{
+  "name": "websocket",
+  "version": "1.0.0",
+  "description": "fetch ws api",
+  "main": "200727_連接websocket_api.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JamieChen-1230/npm.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ws": "^7.3.1"
+  }
+}

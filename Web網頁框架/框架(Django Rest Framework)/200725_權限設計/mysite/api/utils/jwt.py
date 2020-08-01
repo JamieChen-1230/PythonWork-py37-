@@ -45,10 +45,10 @@ class MyJWTAuthentication(BaseJSONWebTokenAuthentication):
             return None
 
         if len(auth) == 1:
-            msg = _('無效的Authorization請求頭，格式須為「前綴 token」')
+            msg = _('無效的Authorization請求頭，格式須為「JWT <token>」')
             raise exceptions.AuthenticationFailed(msg)
         elif len(auth) > 2:
-            msg = _('無效的Authorization請求頭，格式須為「前綴 token」')
+            msg = _('無效的Authorization請求頭，格式須為「JWT <token>」')
             raise exceptions.AuthenticationFailed(msg)
         return auth[1]
 

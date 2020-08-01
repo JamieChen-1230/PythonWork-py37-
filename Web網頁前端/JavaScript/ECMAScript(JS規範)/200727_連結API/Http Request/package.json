@@ -1,0 +1,19 @@
+{
+  "name": "http-request",
+  "version": "1.0.0",
+  "description": "fetch http api",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JamieChen-1230/npm.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "xmlhttprequest": "^1.8.0"
+  }
+}
