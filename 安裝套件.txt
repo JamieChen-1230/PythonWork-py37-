@@ -5,6 +5,7 @@ mysqlclient==1.4.6 (在django中要使用mysql，django2開始不支持pymysql�
 djangorestframework==3.11.0
 djangorestframework-jwt==1.11.0 (DRF中的jwt認證套件)
 drf-yasg==1.17.1  (法一:用來讓DRF生成Swagger文檔)
+drf-yasg[validation]  (法一:如果會用到權限認證則需要)
 django-rest-swagger==2.2.0  (法二:用來讓DRF生成Swagger文檔)
 django-celery-beat==2.0.0 (為了在django中能使用celery定時任務)
 django-cors-headers==3.4.0  (為了能使用跨域請求)
