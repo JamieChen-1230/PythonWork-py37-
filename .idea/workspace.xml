@@ -34,15 +34,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ff1e8a4e-9f45-4d3b-9949-a27f16c94dbc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web網頁前端/JavaScript/ECMAScript(JS規範)/180917_js內建對象/函數對象.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web網頁前端/JavaScript/ECMAScript(JS規範)/180917_js內建對象/字符串對象.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web網頁前端/JavaScript/ECMAScript(JS規範)/180917_js內建對象/數組對象.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web網頁前端/JavaScript/ECMAScript(JS規範)/200725_數據類型.js" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁前端/JavaScript/ECMAScript(JS規範)/200725_數據類型.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200725_權限設計/mysite/api/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200725_權限設計/mysite/api/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200725_權限設計/mysite/api/utils/jwt.py" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200725_權限設計/mysite/api/utils/jwt.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200725_權限設計/mysite/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200725_權限設計/mysite/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web網頁框架/API思路.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/API思路.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web網頁框架/API筆記.txt" beforeDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -203,9 +197,6 @@
     </expand>
     <select />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -219,60 +210,8 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200801_使用Swagger生成API文檔/mysite/mysite/settings.py" />
-        <option value="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200801_使用Swagger生成API文檔/mysite/app01/views.py" />
-        <option value="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200801_使用Swagger生成API文檔/mysite_2/mysite_2/settings.py" />
-        <option value="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200801_使用Swagger生成API文檔/mysite_2/mysite/urls.py" />
-        <option value="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200801_使用Swagger生成API文檔/mysite_2/mysite/settings.py" />
-        <option value="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200801_使用Swagger生成API文檔/mysite/mysite/urls.py" />
-        <option value="$PROJECT_DIR$/Web網頁框架/API思路.txt" />
-        <option value="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200801_使用Swagger生成API文檔/200725_權限設計/mysite/mysite/urls.py" />
-        <option value="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200801_使用Swagger生成API文檔/200725_權限設計/mysite/mysite/settings.py" />
-        <option value="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200801_使用Swagger生成API文檔/200725_權限設計+drf-yasg/mysite/mysite/settings.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="310" />
-    <option name="y" value="85" />
-    <option name="width" value="1090" />
-    <option name="height" value="515" />
-  </component>
   <component name="ProjectId" id="1ekOO0wrfrDmkefsBTGynetdfJS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
-              <item name="Web網頁框架" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonWork(py37)" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonWork(py37)" type="462c0819:PsiDirectoryNode" />
-              <item name="Web網頁框架" type="462c0819:PsiDirectoryNode" />
-              <item name="框架(Django Rest Framework)" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
-  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -289,18 +228,6 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Python.200710_初始化">
     <configuration name="200510_sample_test" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
@@ -527,32 +454,6 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2533512" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.36633664" />
-      <window_info anchor="bottom" id="Python Console" order="12" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -561,14 +462,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -587,6 +481,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
@@ -600,10 +495,10 @@
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
-    <state x="478" y="213" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596097573657">
+    <state x="478" y="213" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596420507282">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="478" y="213" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1596097573657" />
+    <state x="478" y="213" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1596420507282" />
     <state x="541" y="167" key="FileChooserDialogImpl" timestamp="1596075897729">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -628,10 +523,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1594862106935" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1596161875842">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1596426294143">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1596161875842" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1596426294143" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -649,108 +544,5 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200605_圖書系統/mysite/app01/models.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200511_DRF(路由、渲染器)/mysite/api/models.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200801_使用Swagger生成API文檔/mysite/app01/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-336">
-          <caret line="39" column="54" selection-start-line="39" selection-start-column="54" selection-end-line="39" selection-end-column="54" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/API筆記.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200801_使用Swagger生成API文檔/mysite_2/mysite_2/settings.py" />
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200801_使用Swagger生成API文檔/mysite_2/mysite/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200801_使用Swagger生成API文檔/mysite_2/mysite/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-27">
-          <caret line="41" column="44" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200801_使用Swagger生成API文檔/200725_權限設計/mysite/api/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200801_使用Swagger生成API文檔/mysite/mysite/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1721">
-          <caret line="51" column="61" lean-forward="true" selection-start-line="51" selection-start-column="61" selection-end-line="51" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200801_使用Swagger生成API文檔/mysite/mysite/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="27" column="60" lean-forward="true" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200801_使用Swagger生成API文檔/200725_權限設計/mysite/mysite/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-190">
-          <caret line="24" column="79" selection-start-line="24" selection-start-column="79" selection-end-line="24" selection-end-column="79" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200801_使用Swagger生成API文檔/200725_權限設計/mysite/api/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-694">
-          <caret selection-end-column="54" />
-          <folding>
-            <element signature="e#0#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200801_使用Swagger生成API文檔/200725_權限設計/mysite/mysite/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="156" column="6" selection-start-line="156" selection-start-column="6" selection-end-line="156" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/API思路.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="84" selection-start-line="84" selection-end-line="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200801_使用Swagger生成API文檔/200725_權限設計+drf-yasg/mysite/mysite/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-162">
-          <caret line="144" column="81" selection-start-line="144" selection-start-column="81" selection-end-line="144" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>

@@ -1,5 +1,5 @@
 - 定義需求：
-	- 是否有需要權限認證
+	- 是否有需要使用權限認證
 	- 有哪些資源需定義
 	- 會使用到那些方法(HTTP Method)
 
@@ -10,8 +10,8 @@
 
 - 設計API之路由和方法：
 	- 定義每個資源需要哪些方法
-		- EX: Users => GET, POST, PUT, DELETE
-			  Goods => GET
+		- EX: Users => GET(查), POST(增), PUT(改), DELETE(刪)
+			  Goods => GET(查)
 	- 設計URL
 		- 對表級別的路由：
 			- https://xxx.com/api/<版本號>/<敘述>/<資源>/
@@ -22,58 +22,64 @@
 					- 可有可無
 					- 可以用應用名或是其他記號來區別資源
 				- 資源：
+					- REST API 是依照「資源」來設計的，而資源是指可由用戶端存取、任何類型的物件、資料或服務
 					- 可以讓用戶輕易知道這是什麼
-					- EX: Goods, Orders, Observations
+					- EX: goods, orders, observations
 				- 範例：
-					- https://xxx.com/api/v1/Rank/yr/Observations/  =>  排序的年觀測值
-					- https://xxx.com/api/v1/Orders/  =>  訂單
+					- https://xxx.com/api/v1/Rank/yr/observations/  =>  排序的年觀測值
+					- https://xxx.com/api/v1/orders/  =>  訂單
 		- 對紀錄級別的路由：
 			- https://xxx.com/api/<版本號>/<敘述>/<資源>/<唯一標識>/
 				- 版本號、敘述、資源 同上
-				- 唯一標識：
-					- 可以用於識別此紀錄的唯一標識
+				- 識別碼：
+					- 用來識別該資源
 					- EX: id
 				- 範例：
-					- https://xxx.com/api/v1/Users/1/  =>  用戶id為1的那筆紀錄
+					- https://xxx.com/api/v1/users/1/  =>  用戶id為1的那筆紀錄
 	- 結合Method和URL
+		- REST API 會使用統一的介面，有助於讓用戶端與服務實作分離，並依照不同的HTTP請求(GET、POST、PUT、PATCH和DELETE)做出不同操作
 		- 表級別的路由：
 			- GET URL：
 				- 返回資源列表
 				- 範例：
-					- GET https://xxx.com/api/v1/Users/  =>  返回用戶列表([user1, user2,...])
+					- GET https://xxx.com/api/v1/users/  =>  返回用戶列表([user1, user2,...])
 			- POST URL：
 				- 對資源進行新增(Create)操作，並返回新增成功或失敗資訊
 				- 範例：
-					- POST https://xxx.com/api/v1/Users/  =>  新增一個用戶
+					- POST https://xxx.com/api/v1/users/  =>  新增一個用戶
 		- 紀錄級別的路由：
 			- GET URL：
 				- 返回此資源紀錄(一條紀錄)
 				- 範例：
-					- GET https://xxx.com/api/v1/Users/1/  =>  返回用戶id為1的資訊
+					- GET https://xxx.com/api/v1/users/1/  =>  返回用戶id為1的資訊
 			- PUT/PATCH URL：
 				- 更新此資源紀錄(一條紀錄)，並返回更新成功或失敗資訊
 				- 範例：
-					- PUT https://xxx.com/api/v1/Users/1/  =>  更新用戶id為1的資料
+					- PUT https://xxx.com/api/v1/users/1/  =>  更新用戶id為1的資料
 			- DELETE URL：
 				- 刪除此資源紀錄(一條紀錄)，並返回刪除成功或失敗資訊
 				- 範例：
-					- DELETE https://xxx.com/api/v1/Users/1/  =>  刪除用戶id為1的資料
+					- DELETE https://xxx.com/api/v1/users/1/  =>  刪除用戶id為1的資料
 	- 設計權限(如果有需要的話)
 	    - 認證： 你是誰？
-		- 憑證： 使你能有權限的令牌。
+		- 憑證： 使你能行使權限的令牌。
 		- 授權： 授予憑證，並可帶著此憑證行使權限。
 		- 權限： 你能做什麼？
-		- 例子：
+		- 範例：
             我們登機時會需要機票和護照，
-            機票相當於是登上飛機的門票，也就是說，持有機票就能擁有登機的權利，
-            護照或身分證則是為了驗證你是本人的，也就是說，當驗證成功後就能證明你是這張機票的合法持有人，
-            最後，你就可以帶著這張機票登上飛機。
+            機票相當於是登上飛機的憑證，也就是說，持有有效的機票就能擁有登機的權利，
+            護照或身分證則是為了驗證你的身分，也就是說，當身分驗證成功之後，就能證明你是這張機票的合法持有人且這張機票也會變成有效的憑證，
+            最後，你就可以帶著這張機票(憑證)行使登上飛機的權利。
             認證(Authentication)： 驗證護照或身分證
-            授權(Authorization)： 給予你能登上飛機的權力
+            授權(Authorization)： 給予你能登上飛機的權利
             憑證(Credentials)： 機票
     - 使用Swagger工具輔助開發
-        - 通過漂亮的UI介面可以幫助開發者更易於設計
-        - 可以產生API接口文檔，減少開發者編寫文檔的時間
+		- 優點：
+			- 通過UI介面可以幫助開發者更易於開發
+			- 可以產生API接口文檔，減少開發者編寫接口文檔的時間
+			- 可以避免改了程式碼，但接口文檔忘了改，解釋不明確帶來歧義的問題發生
+		- 缺點：
+			- 為了能夠實現自動生成接口文檔，需要在代碼中提前寫大量的註解，生成的接口文檔越清晰，寫的註解越多
 
 - 設計API之返回值：
     {
