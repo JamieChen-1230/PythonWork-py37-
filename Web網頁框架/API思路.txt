@@ -16,11 +16,13 @@
 		- 對表級別的路由：
 			- https://xxx.com/api/<版本號>/<敘述>/<資源>/
 			    - 版本號：
+					- 因為API一旦釋出上線，要改就不是這麼容易了，為了讓使用此API的人能有一個緩衝的時間能去更改程式，所以設置不同的版本
+					- 不是每一次改 API 都需要改版本號，盡量將API可以做成向後相容，就不需要跳版本
 					- EX: v1, v2
-					- 讓之後API要更新時，可以讓用戶能有一個緩衝的時間
 				- 敘述：
-					- 可有可無
 					- 可以用應用名或是其他記號來區別資源
+					- EX: https://xxx.com/api/v1/Rank/yr/observations/  =>  年度的排序觀測值
+						  https://xxx.com/api/v1/Rank/mn/observations/  =>  月份的排序觀測值
 				- 資源：
 					- REST API 是依照「資源」來設計的，而資源是指可由用戶端存取、任何類型的物件、資料或服務
 					- 可以讓用戶輕易知道這是什麼
@@ -81,16 +83,32 @@
 		- 缺點：
 			- 為了能夠實現自動生成接口文檔，需要在代碼中提前寫大量的註解，生成的接口文檔越清晰，寫的註解越多
 
-- 設計API之返回值：
+- 設計API之返回值格式：
     {
         "status": 狀態碼,
         "errorCode": 錯誤狀態碼,
         "errorMsg": 錯誤詳細敘述,
-        "response": 響應數據
+        "data": 響應數據
     }
 
 - 測試：
 	- 驗證資料正確性
+
+- 撰寫文件：
+	- 為了讓其他開發者能快速了解API的功能
+	- 範例：
+		- Request
+			- HTTP method 
+				- EX: GET, POST等
+			- HTTP content-type 
+				- EX: application/json等
+			- Parameters
+				- type: string? number? array? hash?
+				- required or optional
+		- Response
+			- HTTP status code
+			- Format
+			- Example
 
 
 
