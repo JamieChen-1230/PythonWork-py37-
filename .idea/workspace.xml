@@ -34,8 +34,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ff1e8a4e-9f45-4d3b-9949-a27f16c94dbc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web網頁框架/API思路.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/API思路.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200801_使用Swagger生成API文檔/200725_權限設計+drf-yasg/mysite/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁框架/框架(Django Rest Framework)/200801_使用Swagger生成API文檔/200725_權限設計+drf-yasg/mysite/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web網頁前端/JavaScript/ECMAScript(JS規範)/200803_Promise使用流程.js" beforeDir="false" afterPath="$PROJECT_DIR$/Web網頁前端/JavaScript/ECMAScript(JS規範)/200803_Promise使用流程.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web網頁框架/API思路.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
