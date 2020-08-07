@@ -96,6 +96,7 @@ Git倉庫的初始化(即讓Git知道需要他來管理這個目錄)：
 
 回滾(撤回、退回)：
     指令：
+	git reset --hard HEAD   =>  回復到最新提交版本
         git reset --hard HEAD^  =>  回滾到上一個版本
         git reset --hard HEAD~3  =>  回滾到往前推第三個版本
         git reset --hard fc25e782315b0a3f1674c78dabc081f2e29052cc  =>  回滾到此id(輸入前7碼即可)的版本，只要有id就能回滾
