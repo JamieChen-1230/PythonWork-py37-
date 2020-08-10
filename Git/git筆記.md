@@ -159,7 +159,7 @@
         - 獲取權限(修改.git/config文件中的url字段)：
             - 舊的：https://github.com/silencejamie/git_demo.git
                 在github.com前面加上「用戶名:密碼@」
-            - 新的：https://silencejamie:jamie851230@github.com/silencejamie/git_demo.git
+            - 新的：https://username:password@github.com/silencejamie/git_demo.git
     - 2. 先更新本地端代碼(因為有可能別人已先在遠程倉庫中新增了新的代碼)：
         - ※ 如果git pull時，工作目錄中有一些修改未提交到版本庫，此時禁止git pull，
         - ※ 需要先在工作區和版本庫中做一些一致性調整(要麼將工作目錄的修改提交到版本庫，要麼捨棄工作目錄的修改)。
