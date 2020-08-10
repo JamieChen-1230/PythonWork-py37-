@@ -70,7 +70,7 @@
 - 暫存區：暫時存取我們要從工作區傳到倉庫的文件。
 - (本地)倉庫區：最後決定要真正要保存到倉庫的文件，並成為一個新的版本。
     - 倉(版本)庫可理解為一個目錄，裡面的文件記錄著各種信息，而每個文件的修改Git都會進行追蹤並記錄，以便之後的追踪或還原。
-        版本庫創建： git init => 創建了一個隱藏的.git目錄當作版本庫
+        - 版本庫創建： git init => 創建了一個隱藏的.git目錄當作版本庫
 
 
 ## 本地操作
@@ -106,20 +106,21 @@
 
 ### 回滾(撤回、退回)：
 #### 指令：
-    git reset --hard HEAD   =>  回復到最新提交版本
-    git reset --hard HEAD^  =>  回滾到上一個版本
-    git reset --hard HEAD~3  =>  回滾到往前推第三個版本
-    git reset --hard fc25e782315b0a3f1674c78dabc081f2e29052cc  =>  回滾到此id(輸入前7碼即可)的版本，只要有id就能回滾，相當於 git reset --hard fc25e78
+- git reset --hard HEAD   =>  回復到最新提交版本
+- git reset --hard HEAD^  =>  回滾到上一個版本
+- git reset --hard HEAD~3  =>  回滾到往前推第三個版本
+- git reset --hard fc25e782315b0a3f1674c78dabc081f2e29052cc  
+    =>  回滾到此id(輸入前7碼即可)的版本，只要有id就能回滾，相當於 git reset --hard fc25e78
 #### reset參數：
-    --hard：
-        - 跳到指定的 commit，檔案狀態：取消所有變更(※ 表示工作目錄中修改的檔案不會保留，直接刪除修改部分)
-        - 在本地倉庫移動HEAD指針，且重置暫存區和工作區
-    --mixed：
-        - 跳到指定的 commit，檔案狀態：保留所有變更，變更不會幫你add(※ 表示工作目錄中修改的檔案還在，但不會幫你先add起來)
-        - 在本地倉庫移動HEAD指針，且重置暫存區
-    --soft：
-        - 跳到指定的 commit，檔案狀態：保留所有變更，變更會自動幫你add(※ 表示工作目錄中修改的檔案還在，且會幫你先add起來)
-        - 僅僅在本地倉庫移動HEAD指針
+- --hard：
+    - 跳到指定的 commit，檔案狀態：取消所有變更(※ 表示工作目錄中修改的檔案不會保留，直接刪除修改部分)
+    - 在本地倉庫移動HEAD指針，且重置暫存區和工作區
+- --mixed：
+    - 跳到指定的 commit，檔案狀態：保留所有變更，變更不會幫你add(※ 表示工作目錄中修改的檔案還在，但不會幫你先add起來)
+    - 在本地倉庫移動HEAD指針，且重置暫存區
+- --soft：
+    - 跳到指定的 commit，檔案狀態：保留所有變更，變更會自動幫你add(※ 表示工作目錄中修改的檔案還在，且會幫你先add起來)
+    - 僅僅在本地倉庫移動HEAD指針
 
 ### 文件比較：
 ※ 若還沒被添加到倉庫的文件不會被比較
@@ -158,18 +159,19 @@
         - 獲取權限(修改.git/config文件中的url字段)：
             - 舊的：https://github.com/silencejamie/git_demo.git
                 在github.com前面加上「用戶名:密碼@」
-            - 新的：https://silencejamie:jamie851230@github.com/silencejamie/git_demo.git
+            - 新的：https://username:password@github.com/silencejamie/git_demo.git
     - 2. 先更新本地端代碼(因為有可能別人已先在遠程倉庫中新增了新的代碼)：
-        ※ 如果git pull時，工作目錄中有一些修改未提交到版本庫，此時禁止git pull，
-        ※ 需要先在工作區和版本庫中做一些一致性調整(要麼將工作目錄的修改提交到版本庫，要麼捨棄工作目錄的修改)。
-        git pull
+        - ※ 如果git pull時，工作目錄中有一些修改未提交到版本庫，此時禁止git pull，
+        - ※ 需要先在工作區和版本庫中做一些一致性調整(要麼將工作目錄的修改提交到版本庫，要麼捨棄工作目錄的修改)。
+        - git pull
     - 3. 提交本地倉庫至遠程倉庫(但通常要push前最好先git pull，才不會造成遠程倉庫版本混亂)：
-        git push <遠程主機名> <本地分支名>:<遠程分支名>
-        EX: git push -u origin master:master   # -u表示他會記住我們現在傳遞的倉庫分支，這樣之後執行單git push就能達到同樣效果
+        - git push <遠程主機名> <本地分支名>:<遠程分支名>
+        - EX: git push -u origin master:master
+            - -u表示他會記住我們現在傳遞的倉庫分支，這樣之後執行單git push就能達到同樣效果
 
 #### 二、基於ssh協議(要額外使用生成公私鑰的套件)：
 - 影片教學：https://www.bilibili.com/video/BV1sJ411D7xN?p=12
-- 具體實現在https://blog.csdn.net/jiahuan_/article/details/105933423
+- 具體實現在 https://blog.csdn.net/jiahuan_/article/details/105933423
 
 
 ### 額外指令：
@@ -228,15 +230,18 @@
     --no-ff：這會為merge操作新創建一個commit，而不是只是指向被合併分支最後的commit
     範例：git merge <分支名> --no-ff
 #### 分支類型(通常會這樣分)：
-- Master主分支： 只負責管理發布的狀態，當準備好發佈指定版本(EX: Version1, Version2等)時，最後的提交會給予一個發布版本標籤。
-- Develop主分支： 針對日常開發的分支，所有新功能開發最終都會合併到這裡。
+- Master主分支： 
+    - 只負責管理發布的狀態，當準備好發佈指定版本(EX: Version1, Version2等)時，最後的提交會給予一個發布版本標籤。
+- Develop主分支： 
+    - 針對日常開發的分支，所有新功能開發最終都會合併到這裡。
 - Feature(Topic)分支：
     - 這個分支是新功能的開發或修復錯誤的時候從 develop 分支分開出來的。
     - Feature分支的操作基本上不需要共享，所以不需要在遠端數據庫建立分支，當完成開發後，合併回 develop 分支後發布。
 - Release分支：
     - 一般開發是在develop分支上進行，到了快要發布時候才會建立release分支，release分支主要是做發布前最後錯誤修復所建立的分支。
     - 通常這種分支的名稱最前面會加上"release-"。
-- Hot fix分支： 分支是在發布的產品需要緊急修改時，從 master 分支建立的分支。(通常會在分支名稱的最前面會加上"hotfix-")
+- Hot fix分支： 
+    - 分支是在發布的產品需要緊急修改時，從 master 分支建立的分支。(通常會在分支名稱的最前面會加上"hotfix-")
 
 
 ## git bush的vim編輯器
@@ -257,94 +262,99 @@
 ## 衝突的產生與解決
 ### 案件一：同事在更改了遠端倉庫，但我在操作本地倉庫前沒有使用git pull先更新本地代碼(且更改的是相同文件)。
 - 衝突原因：
-    在本地與遠端倉庫不一致的情況下直接更改本地內容(且更改的是相同文件)。
+    - 在本地與遠端倉庫不一致的情況下直接更改本地內容(且更改的是相同文件)。
 - 在git push遇到的錯誤：
-    error: failed to push some refs to 'https://silencejamie:jamie851230@github.com/silencejamie/git_demo.git'
+    - error: failed to push some refs to 'https://silencejamie:jamie851230@github.com/silencejamie/git_demo.git'
 - 解決方法：
-    (1) 先git pull。這時還沒有成功，打開衝突文件後會發現他會把衝突的地方標記出來，並標註是誰(commit_id)改的。
-        ※ 會顯示在哪裡起了衝突  =>  CONFLICT (content): Merge conflict in readme.txt
-    (2) 去詢問這是誰改的，並討論該留哪些代碼。
-    (3) 把改好的文件再重新提交到本地倉庫，最後push到遠端即可。
+    - (1) 先git pull。
+        - 這時還沒有成功，打開衝突文件後會發現他會把衝突的地方標記出來，並標註是誰(commit_id)改的。
+        - ※ 會顯示在哪裡起了衝突  =>  CONFLICT (content): Merge conflict in readme.txt
+    - (2) 去詢問這是誰改的，並討論該留哪些代碼。
+    - (3) 把改好的文件再重新提交到本地倉庫，最後push到遠端即可。
 
 
 ### 案件二：同案例一(但是更改的為不同的文件)。
 - 衝突原因：
-    在本地與遠端倉庫不一致的情況下直接更改本地內容(但更改的是不同的文件)。
+    - 在本地與遠端倉庫不一致的情況下直接更改本地內容(但更改的是不同的文件)。
 - 在git push遇到的錯誤(同案件一)：
-    error: failed to push some refs to 'https://silencejamie:jamie851230@github.com/silencejamie/git_demo.git'
+    - error: failed to push some refs to 'https://silencejamie:jamie851230@github.com/silencejamie/git_demo.git'
 - 解決方法：
-    (1) 先git pull。
-        這時會自動進入vim編輯器，要我們編寫本次merge的文檔。
-    (2) 編輯完文檔後，Git會自動幫我們merge起來。
-        (3) 最後再push即可。
+    - (1) 先git pull。
+        - 這時會自動進入vim編輯器，要我們編寫本次merge的文檔。
+    - (2) 編輯完文檔後，Git會自動幫我們merge起來。
+    - (3) 最後再push即可。
 
 ### 案件三：若自己在本地端遇到master分支和子分支同時修改了同一個檔案並都提交到本地倉庫中，接下來要merge兩個分支會遇到衝突。
 - 衝突原因：
-    兩個分支下同時修改同個文件的內容
+    - 兩個分支下同時修改同個文件的內容
 - 解決方法：
-    (1) Git會提示我哪個文件發生衝突了，並在衝突文件中顯示衝突點
-    (2) 修改那個文件，保留自己想要的
-    (3) 添加到本地倉庫(add和commit)
+    - (1) Git會提示我哪個文件發生衝突了，並在衝突文件中顯示衝突點
+    - (2) 修改那個文件，保留自己想要的
+    - (3) 添加到本地倉庫(add和commit)
 
 
 ## 忽略文件
-    在上傳時忽略掉某些文件(讓一些文件不上傳到遠程倉庫)：
-    (1) 在工作目錄中建立 .gitignore 文件：
-        touch .gitignore
-    (2) 編寫 .gitignore 文件。
-        常用規則如下：
-            1. 過濾整個資料夾      /mtk/
-            2. 過濾所有.zip文件    *.zip
-            3. 過濾某个具體文件    /mtk/a.txt
-            4. 不過濾具體某个文件  !index.php
+#### 在上傳時忽略掉某些文件(讓一些文件不上傳到遠程倉庫)：
+- (1) 在工作目錄中建立 .gitignore 文件：
+    - touch .gitignore
+- (2) 編寫 .gitignore 文件。
+    - 常用規則如下：
+        1. 過濾整個資料夾      /mtk/
+        2. 過濾所有.zip文件    *.zip
+        3. 過濾某个具體文件    /mtk/a.txt
+        4. 不過濾具體某个文件  !index.php
 
 
 ## 觀念釐清
 ### 觀念一： git init 和 git init --bare 的區別
-- git init：
-    - 創建了一個「Git普通庫」
-    - 目錄下有一個.git隱藏目錄，裏面包含各種信息，除了.git目錄之外，還可以看到庫中所包含的所有源文件，相當於擁有一個可以進行瀏覽和修改（添加，提交，刪除等）的本地庫(有工作目錄)
-    - 比較不適合作為遠端公共倉庫，因為當我們從本地git push到遠端普通庫時，可能會遇到遠端普通庫這正在用此分支，導致push不成功
-- git init --bare：
-    - 創建了一個「Git裸庫」
-    - 目錄下只有一個.git目錄，而沒有本地庫那樣的文件結構可以直接進行瀏覽和修改(沒有工作目錄)
-    - 主要應用場景是作為公共倉庫、遠端備份
-    - 慣用的命名方式是在庫名後加上.git
-        - 範例：
-            mkdir example.git 
-            cd example.git 
-            git init --bare
+#### git init：
+- 創建了一個「Git普通庫」
+- 目錄下有一個.git隱藏目錄，裏面包含各種信息，除了.git目錄之外，還可以看到庫中所包含的所有源文件，相當於擁有一個可以進行瀏覽和修改（添加，提交，刪除等）的本地庫(有工作目錄)
+- 比較不適合作為遠端公共倉庫，因為當我們從本地git push到遠端普通庫時，可能會遇到遠端普通庫這正在用此分支，導致push不成功
+#### git init --bare：
+- 創建了一個「Git裸庫」
+- 目錄下只有一個.git目錄，而沒有本地庫那樣的文件結構可以直接進行瀏覽和修改(沒有工作目錄)
+- 主要應用場景是作為公共倉庫、遠端備份
+- 慣用的命名方式是在庫名後加上.git
+    - 範例：
+        mkdir example.git 
+        cd example.git 
+        git init --bare
 
 ### 觀念二： 團隊開發中使用Git的基本流程
-- 文字敘述：
-    1. 克隆遠程版本庫
-    2. 基於遠程的develop分支建立本地的develop分支
-    3. 基於develop的分支建立本地特性分支feature
-    4. 在feature分支中編寫程序
-    5. 要提交前，先切換到develop分支，合併feature的修改
-    6. 把本地的develop分支的修改推到遠程的develop
-- 範例：
-    1. 克隆遠程版本庫
-        - 在master分支
-            git clone git@github.com:christian-tl/git-demo.git
-    2. 基於遠程的develop分支建立本地的develop分支
-        - 在master分支
-            cd git-demo
-            git checkout -b develop origin/develop
-    3. 基於develop的分支建立本地特性分支feature
-        - 在develop分支
-            git checkout -b feature develop
-    4. 在feature分支中編寫程序
-        - 在feature分支
-          vim README.md
-          git add README.md
-          git commit -m'change README.md'
-    5. 要提交前，先切換到develop分支，合併feature的修改
-        - 在feature分支
-            git checkout develop
-        - 在develop分支
-            git pull
-            git merge feature
-    6. 把本地的develop分支的修改推到遠程的develop
-        - 在develop分支
-            git push
+#### 文字敘述：
+1. 克隆遠程版本庫
+2. 基於遠程的develop分支建立本地的develop分支
+3. 基於develop的分支建立本地特性分支feature
+4. 在feature分支中編寫程序
+5. 要提交前，先切換到develop分支，合併feature的修改
+6. 把本地的develop分支的修改推到遠程的develop
+#### 範例：
+1. 克隆遠程版本庫
+    - 在master分支
+        - git clone git@github.com:christian-tl/git-demo.git
+2. 基於遠程的develop分支建立本地的develop分支
+    - 在master分支
+        - cd git-demo
+        - git checkout -b develop origin/develop
+3. 基於develop的分支建立本地特性分支feature
+    - 在develop分支
+        -  git checkout -b feature develop
+4. 在feature分支中編寫程序
+    - 在feature分支
+        - vim a.txt
+        - git add a.txt
+        - git commit -m "add a.txt"
+5. 要提交前，先切換到develop分支，合併feature的修改
+    - 在feature分支
+        - git checkout develop
+    - 在develop分支
+        - git pull
+        - git merge feature
+6. 把本地的develop分支的修改推到遠程的develop
+    - 在develop分支
+        - git push
+
+
+
+###### tags `GIT`
