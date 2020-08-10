@@ -276,6 +276,7 @@ o, i, a：
         (2) 修改那個文件，保留自己想要的
         (3) 添加到本地倉庫(add和commit)
 
+
 ====================================-忽略文件-====================================
 在上傳時忽略掉某些文件(讓一些文件不上傳到遠程倉庫)：
     (1) 在工作目錄中建立 .gitignore 文件：
@@ -286,3 +287,54 @@ o, i, a：
             2. 過濾所有.zip文件    *.zip
             3. 過濾某个具體文件    /mtk/a.txt
             4. 不過濾具體某个文件  !index.php
+
+
+====================================-觀念釐清-====================================
+觀念一： git init 和 git init --bare 的區別
+    - git init：
+        - 創建了一個「Git普通庫」
+        - 目錄下有一個.git隱藏目錄，裏面包含各種信息，除了.git目錄之外，還可以看到庫中所包含的所有源文件，相當於擁有一個可以進行瀏覽和修改（添加，提交，刪除等）的本地庫(有工作目錄)
+        - 比較不適合作為遠端公共倉庫，因為當我們從本地git push到遠端普通庫時，可能會遇到遠端普通庫這正在用此分支，導致push不成功
+    - git init --bare：
+        - 創建了一個「Git裸庫」
+        - 目錄下只有一個.git目錄，而沒有本地庫那樣的文件結構可以直接進行瀏覽和修改(沒有工作目錄)
+        - 主要應用場景是作為公共倉庫、遠端備份
+        - 慣用的命名方式是在庫名後加上.git
+            - 範例：
+                mkdir example.git 
+                cd example.git 
+                git init --bare
+
+觀念二： 團隊開發中使用Git的基本流程
+    - 文字敘述：
+        1. 克隆遠程版本庫
+        2. 基於遠程的develop分支建立本地的develop分支
+        3. 基於develop的分支建立本地特性分支feature
+        4. 在feature分支中編寫程序
+        5. 要提交前，先切換到develop分支，合併feature的修改
+        6. 把本地的develop分支的修改推到遠程的develop
+    - 範例：
+        1. 克隆遠程版本庫
+            - 在master分支
+                git clone git@github.com:christian-tl/git-demo.git
+        2. 基於遠程的develop分支建立本地的develop分支
+            - 在master分支
+                cd git-demo
+                git checkout -b develop origin/develop
+        3. 基於develop的分支建立本地特性分支feature
+            - 在develop分支
+                git checkout -b feature develop
+        4. 在feature分支中編寫程序
+            - 在feature分支
+                vim README.md
+                git add README.md
+                git commit -m'change README.md'
+        5. 要提交前，先切換到develop分支，合併feature的修改
+            - 在feature分支
+                git checkout develop
+            - 在develop分支
+                git pull
+                git merge feature
+        6. 把本地的develop分支的修改推到遠程的develop
+            - 在develop分支
+                git push
