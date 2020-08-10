@@ -12,8 +12,9 @@
 
 ## 設計API之路由和方法(採用Restful API規範)：
    - 定義每個資源需要哪些方法：
-      - EX: Users => GET(查), POST(增), PUT(改), PATCH(部分修改), DELETE(刪)
-            Goods => GET(查)
+       - 範例：
+          - Users => GET(查), POST(增), PUT(改), PATCH(部分修改), DELETE(刪)
+          - Goods => GET(查)
    - 設計URL
       - 對表級別的路由：
          - https://xxx.com/api/{版本號}/{敘述}/{資源}/
@@ -24,8 +25,9 @@
                - EX: v1, v2
             - 敘述：
                - 可以用應用名或是其他記號來區別資源
-               - EX: https://xxx.com/api/v1/Rank/yr/observations/  =>  年度的排序觀測值
-                     https://xxx.com/api/v1/Rank/mn/observations/  =>  月份的排序觀測值
+               - 範例: 
+                   - https://xxx.com/api/v1/Rank/yr/observations/  =>  年度的排序觀測值
+                   - https://xxx.com/api/v1/Rank/mn/observations/  =>  月份的排序觀測值
             - 資源：
                - REST API 是依照「資源」來設計的，而資源是指可由用戶端存取、任何類型的物件、資料或服務
                - 可以讓用戶輕易知道這是什麼
