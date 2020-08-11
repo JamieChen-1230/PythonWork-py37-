@@ -1,5 +1,8 @@
 # HTTP協議
 
+[![hackmd-github-sync-badge](https://hackmd.io/F7YMds7CSqihgPfV6M0HYA/badge)](https://hackmd.io/F7YMds7CSqihgPfV6M0HYA)
+
+
 ## Http(超文本傳輸協定)：
 ### 概述：
 - 是一種用來傳輸超媒體文件(像是HTML文件)的協定，被設計來讓瀏覽器和伺服器進行溝通。
@@ -156,4 +159,5 @@
 
 
 
-##### tags `HTTP` `OS`
+
+###### tags `OS` `HTTP` `網頁`
