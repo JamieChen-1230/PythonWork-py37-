@@ -1,5 +1,8 @@
 # Django Rest FrameWork基礎筆記
 
+[![hackmd-github-sync-badge](https://hackmd.io/Gx1LYIs3Tk2VFwyoizxYfQ/badge)](https://hackmd.io/Gx1LYIs3Tk2VFwyoizxYfQ)
+
+
 &emsp;
 ## 認證(EX:用戶登入)：【先做認證，在做權限】
 ### 一、使用：
@@ -751,5 +754,120 @@ class VerifyView(APIView):
             'django_filters',  # pip install django-filter
         ]
         ```
-				
+
+
+&emsp;
+## 實用技巧：
+1. 動態選擇使用序列器字段：
+    - 透過get_serializer傳參數時，添加額外參數，並在序列器的init方法中處理
+        ```python
+        class RankMNView(generics.ListAPIView):
+            def list(self, request, *args, **kwargs):
+                ...
+                # 此fields參數是自定義的，為了讓在序列化時能自定義字段
+                serializer = self.get_serializer(data,
+                                                 many=True,
+                                                 fields=('Stno', 'ObsTime', field, 'Year', 'Month', 'Day', 'TenDays'))
+        class RankMNSerializer(serializers.ModelSerializer):
+            ...
+            def __init__(self, *args, **kwargs):
+                # 「fields」中在「self.fields」中不存在的字段將無法被序列化，也就是說「fields」中的字段須定義為「self.fields」的子集
+                # 在super(父類init)執行之前，需先將「fields」參數從kwargs取出並剔除，不然傳給父類init會報錯(因為接收到了drf本身未定義的參數)
+                fields = kwargs.pop('fields', None)
+                super(RankMNSerializer, self).__init__(*args, **kwargs)
+                if fields is not None:
+                    # 從「self.fields」中剔除非「fields」中指定的字段
+                    # 原始self.fields中會包括的字段有資料表的欄位和在此RankMNSerializer中定義的字段(EX: Year)
+                    allowed = set(fields)
+                    existing = set(self.fields.keys())
+                    for field_name in existing - allowed:  # 先取差集，在剔除差集內的字段
+                        self.fields.pop(field_name)
+        ```
+
+2. 自定義字段：
+    - 可自定義資料表中沒有的字段欄位，這裡產生的字段也可以與(一)技巧共用
+        ```python
+        class RankMNSerializer(serializers.ModelSerializer):
+            # 自定義額外字段
+            Year = serializers.SerializerMethodField()
+            Month = serializers.SerializerMethodField()
+
+            def get_Year(self, queryset):  # DRF會自動調用get_<字段名>之方法去獲取字段值
+                # 此queryset是我們view下的list方法傳給Serializer的值，所以是[{紀錄字典},{},...]形式
+                return queryset.get('Year', None)
+            def get_Month(self, queryset):
+                return queryset.get('Month', None)
+            class Meta:
+                model = models.Mn
+                fields = '__all__'
+        ```
+
+3. 自定義返回的資料集：
+    - 通過覆寫list()方法
+        ```python
+        class RankMNSerializer(serializers.ModelSerializer):
+            ...
+            def list(self, request, *args, **kwargs):
+                # 篩選出想要的資料集
+                queryset = ...
+                serializer = self.get_serializer(queryset, many=True)
+                return Response(serializer.data)
+        ```
+4. 動態選擇不同序列器：
+    - 覆寫get_serializer_class()方法
+        ```python
+        class RankMNSerializer(serializers.ModelSerializer):
+            ...
+            def get_serializer_class(self):
+                if self.request.user.is_staff:
+                    return FullAccountSerializer
+                return BasicAccountSerializer
+        ```
+5. 序列器之間可互相嵌套：
+    - 當然這個字段(shop)的格式也必須符合嵌套之序列器(BookshopsSerializer)
+    - 此例的shop是一個外鍵，對應到Bookshops表
+        ```python
+        class BookshopsSerializer(serializers.ModelSerializer):
+            # 更改顯示之字段名，因為前端工程師可能會要求字段規格
+            shop_id = serializers.IntegerField(source='id')
+            shop_name = serializers.CharField(source='title')
+            class Meta:
+                model = models.Bookshops  # 關聯的表
+                fields = ['shop_id', 'shop_name']
+        class BooksSerializer(serializers.ModelSerializer):
+            ...
+            shop = BookshopsSerializer(many=False)  # 嵌套另一個Serializer
+            class Meta:
+                model = models.Books
+                fields = ['book_id', 'book_name', 'shop']
+        ```
+
+6. Views類屬性使用：
+    ```python
+    from rest_framework.filters import OrderingFilter, SearchFilter
+    from rest_framework.pagination import LimitOffsetPagination
+    class ProductListView(generics.ListAPIView):
+        # 必填屬性
+        queryset = Product.objects.all()
+        serializer_class = ProductListSerializer
+        # 可選屬性
+        permissin_classes = (permissions.AllowAny,)  # AllowAny誰都可以訪問，DRF默認也是這個權限
+        ordering_fields = ('category', 'manufacturer', 'created', 'sold',)  # 提供給用戶可以排序的字段
+        search_fields = ('description', 'model')  # 提供給用戶可以查詢的字段
+        filter_backends = (OrderingFilter, SearchFilter,)  # 須加上這行，才能讓用戶進行排序和搜索
+        ordering = ('-id',)  # 照id倒敘排序(默認)
+        pagination_class = LimitOffsetPagination
+    ```
+7. 使用路由器最好要設basename：
+    ```python
+    # 要設basename，因為如果沒設basename，路由器會默認使用裡面定義的queryset當作名稱，
+    # 所以當沒設basename且有多個ViewSet的queryset相同時，路由給的url可能就會錯誤(會重複)
+    router.register(r'Rank/yr', Rank.views.RankYrViewSet, basename='r_yr')
+    router.register(r'Rank/mn', Rank.views.RankMnViewSet, basename='r_mn')
+    router.register(r'Rank/dy', Rank.views.RankDyViewSet, basename='r_dy')
+    router.register(r'Rank/tenday', Rank.views.RankTenDayViewSet, basename='r_tenday') 
+    ```
+    
+    
+    
 ###### tags: `網頁` `API` `Django`
