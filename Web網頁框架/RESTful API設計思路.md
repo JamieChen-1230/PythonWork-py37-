@@ -1,5 +1,8 @@
 # RESTful API設計思路
 
+[![hackmd-github-sync-badge](https://hackmd.io/I5iW5JTFQCm5RW7sZvYNVQ/badge)](https://hackmd.io/I5iW5JTFQCm5RW7sZvYNVQ)
+
+
 ## 定義需求：
    - 是否有需要使用權限認證
    - 有哪些資源需定義
@@ -115,6 +118,6 @@
 
 
 
-###### tags `API` `網頁`
+###### tags `網頁` `API` 
 
 
