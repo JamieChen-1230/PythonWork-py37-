@@ -1,5 +1,8 @@
 # 約定(Promise)
 
+[![hackmd-github-sync-badge](https://hackmd.io/1UXaG3sMSd-39oYkq163wA/badge)](https://hackmd.io/1UXaG3sMSd-39oYkq163wA)
+
+
 ## Promise簡介
 ### 功能：
 - 主要是用來簡化非同步事件之間的嵌套(避免回調地獄)
@@ -40,6 +43,10 @@
 - 是一個Promise物件的內建方法
 - 回調函式不帶參數
 - 通常用來關閉連線(EX:資料庫)等操作
+
+### 流程圖
+![](https://i.imgur.com/PP64SI7.png)
+
 
 
 &emsp;
