@@ -174,7 +174,7 @@
 - 具體實現在 https://blog.csdn.net/jiahuan_/article/details/105933423
 
 
-### 額外指令：
+### 指令：
 #### 遠端版本庫地址別名：
 ###### 檢視遠端版本庫的地址「別名」：
     ※ 如果你clone了一個遠端版本庫，你至少看得到一個「origin」(它是Git的預設簡稱，用來代表被克隆的來源)。
@@ -199,6 +199,32 @@
     ※ 通常如果更改的不多，可以就直接用pull就好；但如果更改的較多且複雜，可以先用fetch評估是否要合併。
     git pull <遠程倉庫別名> <要拉的遠程分支名>
 
+#### 推到遠程倉庫：
+- 完整使用：
+    - git push <遠程主機名> <本地分支名>:<遠程分支名>
+        - 將本地的某分支推到遠程主機的某分支
+    - git push origin HEAD:master
+        - 將當前分支推到遠程的master分支
+- 不完整使用(容易搞混)：
+    - git push origin master
+        - 代表的是將本地的master分支推到遠程的master分支
+        - 而不是將本地的目前所在分支推到遠程的master分支
+    - git push origin HEAD
+        - 將本地的當前分支推到遠程的同名分支
+    - git push origin :master
+        - 推送一個空的本地分支到遠程master分支
+        - 所以等同於刪除了遠程master分支
+- 默認使用：
+    - git push -u origin master
+        - 使用-u，建立默認推送關係
+        - 所以以後使用git push，就相當於git push origin master
+- 其他使用：
+    - git push --all origin
+        - 不管是否存在對應的遠程分支，將所有本地分支都推送到origin主機
+    - git push --force origin
+        - 正常情況下，如果遠程主機的版本比本地版本更新，推送時Git會報錯，要求先在本地做git pull合並差異，然後再推送到遠程主機
+        - 但如果要無視版本直接推送的話，就要使用force
+        - 很危險，不建議使用
 
 ## 分支操作(本地)
 ### 分支的優點：
