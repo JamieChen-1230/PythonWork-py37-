@@ -72,7 +72,7 @@
     - 倉(版本)庫可理解為一個目錄，裡面的文件記錄著各種信息，而每個文件的修改Git都會進行追蹤並記錄，以便之後的追踪或還原。
         - 版本庫創建： git init => 創建了一個隱藏的.git目錄當作版本庫
 
-
+&emsp;
 ## 本地操作
 
 ### (全局配置)登入Git，讓大家知道這是誰傳的更新：
@@ -143,61 +143,40 @@
 - 要想回到未來，必須透過 git reflog 查看已被回滾的commit_id，再來使用 git reset --hard commit_id 來回到未來。
 - commit_id 至少輸入前7碼會比較穩。
 
-
-## 學習使用遠程倉庫(以 Github 為例)
-
-### 兩種常規使用方式：
-#### 一、基於https協議：
-- (1) 先到要存放目錄的位置(cd D:\Programming\WorkPlace\PythonWork(py37)\Git)。
-- (2) clone遠程倉庫到本地(後面的網址為遠程倉庫的地址)：
-    - git clone https://github.com/silencejamie/git_demo.git
-        => 會產生了一個跟遠程倉庫相同命名的資料夾            (D:\Programming\WorkPlace\PythonWork(py37)\Git\git_demo)，
-       裡面帶著所有代碼和.git版本庫。
-- (3) 之後這個資料夾就會變成所謂的工作區(工作目錄)，裡面可以做任何的本地git操作。
-- (4) 本地操作完後，提交到遠程倉庫：
-    - 1. 如果是首次提交，首先應獲取權限(否則會出現403的錯誤)。
-        - 獲取權限(修改.git/config文件中的url字段)：
-            - 舊的：https://github.com/silencejamie/git_demo.git
-                在github.com前面加上「用戶名:密碼@」
-            - 新的：https://username:password@github.com/silencejamie/git_demo.git
-    - 2. 先更新本地端代碼(因為有可能別人已先在遠程倉庫中新增了新的代碼)：
-        - ※ 如果git pull時，工作目錄中有一些修改未提交到版本庫，此時禁止git pull，
-        - ※ 需要先在工作區和版本庫中做一些一致性調整(要麼將工作目錄的修改提交到版本庫，要麼捨棄工作目錄的修改)。
-        - git pull
-    - 3. 提交本地倉庫至遠程倉庫(但通常要push前最好先git pull，才不會造成遠程倉庫版本混亂)：
-        - git push <遠程主機名> <本地分支名>:<遠程分支名>
-        - EX: git push -u origin master:master
-            - -u表示他會記住我們現在傳遞的倉庫分支，這樣之後執行單git push就能達到同樣效果
-
-#### 二、基於ssh協議(要額外使用生成公私鑰的套件)：
-- 影片教學：https://www.bilibili.com/video/BV1sJ411D7xN?p=12
-- 具體實現在 https://blog.csdn.net/jiahuan_/article/details/105933423
-
-
-### 指令：
+&emsp;
+## 遠程操作：
 #### 遠端版本庫地址別名：
-###### 檢視遠端版本庫的地址「別名」：
-    ※ 如果你clone了一個遠端版本庫，你至少看得到一個「origin」(它是Git的預設簡稱，用來代表被克隆的來源)。
-    git remote -v
-###### 新增遠端版本庫地址別名：
-    git remote add <別名> <網址>
-    EX: git remote add origin https://github.com/JamieChen-1230/PythonWork-py37-.git
-###### 檢視遠端別名：
-    git remote show <別名>
-    EX: git remote show origin
-###### 刪除別名：
-    git remote remove <別名>
+- 檢視遠端版本庫的地址「別名」：
+    - ※ 如果你clone了一個遠端版本庫，你至少看得到一個「origin」(它是Git的預設簡稱，用來代表被克隆的來源)。
+    - git remote -v
+-  新增遠端版本庫地址別名：
+    - git remote add <別名> <網址>
+        - git remote add origin https://github.com/JamieChen-1230/PythonWork-py37-.git
+- 檢視遠端別名：
+    - git remote show <別名>
+        - git remote show origin
+- 刪除別名：
+    - git remote remove <別名>
 
 #### 拉取並更新本地代碼：
-※ pull = fetch + merge
-###### 拉取遠程代碼：
-    ※ 抓取下來時，我們在本地目錄還看不到修改的文件，可以先透過 git checkout <遠程倉庫別名>/<要拉的遠程分支名>，到這個分支看修改的檔案，如果ok，就切回主分支並merge。
-    git fetch <遠程倉庫別名> <要拉的遠程分支名>
-###### 合併拉取的遠程代碼：
-    git merge <遠程倉庫別名>/<要拉的遠程分支名>
-###### 拉取並合併遠程代碼：
-    ※ 通常如果更改的不多，可以就直接用pull就好；但如果更改的較多且複雜，可以先用fetch評估是否要合併。
-    git pull <遠程倉庫別名> <要拉的遠程分支名>
+- pull 相當於 fetch + merge
+- 拉取遠程代碼：
+    - git fetch <遠端主機名> <遠端分支名>
+        - git fetch origin master
+    - git fetch通常用來檢視其他人的程序，因為它取回的程式碼對本地代碼不會有影響
+    - 欲查看所取回的代碼，需要checkout到本地的<遠端主機名/分支名>的分支查看
+        - git checkout origin/master
+- 合併拉取的遠程代碼：
+    - 先切換到想要合併更新的分支上
+        - git checkout master
+    - git merge <遠端主機名/分支名>
+        - git merge origin/master
+- 拉取並合併遠程代碼：
+    - 通常如果更改的不多，可以就直接用pull就好；但如果更改的較多且複雜，可以先用fetch評估是否要合併。
+    - git pull <遠端主機名> <遠端分支名>:<本地分支名>
+        - 抓取遠端的next分支，並合併到本地的master分支
+            - git pull origin next:master
+        
 
 #### 推到遠程倉庫：
 - 完整使用：
@@ -226,6 +205,36 @@
         - 但如果要無視版本直接推送的話，就要使用force
         - 很危險，不建議使用
 
+&emsp;
+## 使用遠程倉庫(以 Github 為例)
+### 兩種常規使用方式：
+#### 一、基於https協議：
+- (1) 先到要存放目錄的位置(cd D:\Programming\WorkPlace\PythonWork(py37)\Git)。
+- (2) clone遠程倉庫到本地(後面的網址為遠程倉庫的地址)：
+    - git clone https://github.com/silencejamie/git_demo.git
+        => 會產生了一個跟遠程倉庫相同命名的資料夾            (D:\Programming\WorkPlace\PythonWork(py37)\Git\git_demo)，
+       裡面帶著所有代碼和.git版本庫。
+- (3) 之後這個資料夾就會變成所謂的工作區(工作目錄)，裡面可以做任何的本地git操作。
+- (4) 本地操作完後，提交到遠程倉庫：
+    - 1. 如果是首次提交，首先應獲取權限(否則會出現403的錯誤)。
+        - 獲取權限(修改.git/config文件中的url字段)：
+            - 舊的：https://github.com/silencejamie/git_demo.git
+                在github.com前面加上「用戶名:密碼@」
+            - 新的：https://username:password@github.com/silencejamie/git_demo.git
+    - 2. 先更新本地端代碼(因為有可能別人已先在遠程倉庫中新增了新的代碼)：
+        - ※ 如果git pull時，工作目錄中有一些修改未提交到版本庫，此時禁止git pull，
+        - ※ 需要先在工作區和版本庫中做一些一致性調整(要麼將工作目錄的修改提交到版本庫，要麼捨棄工作目錄的修改)。
+        - git pull
+    - 3. 提交本地倉庫至遠程倉庫(但通常要push前最好先git pull，才不會造成遠程倉庫版本混亂)：
+        - git push <遠程主機名> <本地分支名>:<遠程分支名>
+        - EX: git push -u origin master:master
+            - -u表示他會記住我們現在傳遞的倉庫分支，這樣之後執行單git push就能達到同樣效果
+
+#### 二、基於ssh協議(要額外使用生成公私鑰的套件)：
+- 影片教學：https://www.bilibili.com/video/BV1sJ411D7xN?p=12
+- 具體實現在 https://blog.csdn.net/jiahuan_/article/details/105933423
+
+&emsp;
 ## 分支操作(本地)
 ### 分支的優點：
     - 可同時並行進行多個功能開法，提高效率。
@@ -269,7 +278,7 @@
 - Hot fix分支： 
     - 分支是在發布的產品需要緊急修改時，從 master 分支建立的分支。(通常會在分支名稱的最前面會加上"hotfix-")
 
-
+&emsp;
 ## git bush的vim編輯器
     按Esc：
         退出輸入模式，並進入到命令行模式(也是系統默認模式)。
@@ -285,6 +294,7 @@
         放棄所有修改，但不退出，回車後回到命令模式。
 
 
+&emsp;
 ## 衝突的產生與解決
 ### 案件一：同事在更改了遠端倉庫，但我在操作本地倉庫前沒有使用git pull先更新本地代碼(且更改的是相同文件)。
 - 衝突原因：
@@ -318,7 +328,7 @@
     - (2) 修改那個文件，保留自己想要的
     - (3) 添加到本地倉庫(add和commit)
 
-
+&emsp;
 ## 忽略文件
 #### 在上傳時忽略掉某些文件(讓一些文件不上傳到遠程倉庫)：
 - (1) 在工作目錄中建立 .gitignore 文件：
@@ -330,7 +340,7 @@
         3. 過濾某个具體文件    /mtk/a.txt
         4. 不過濾具體某个文件  !index.php
 
-
+&emsp;
 ## 觀念釐清
 ### 觀念一： git init 和 git init --bare 的區別
 #### git init：
