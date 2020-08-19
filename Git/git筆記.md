@@ -98,6 +98,12 @@
     ※ 註釋要寫的精簡且易懂。
     git commit -m "這邊寫註釋"  =>  告訴Git把此文件提交到(本地)版本庫
 
+### 修改上一次提交的commit：
+- 可以用來單純修改commit訊息，也可以新增提交的東西
+- 指令：
+    - git commit --amend
+
+
 ### 查看版本日誌：
     git log  =>  顯示每一次commit的信息(id, author, date)，便於我們找出要回滾的版本
     git log --pretty=oneline  => 【推薦】顯示每一次commit的信息(只有id)
@@ -110,7 +116,7 @@
 - git reset --hard HEAD^  =>  回滾到上一個版本
 - git reset --hard HEAD~3  =>  回滾到往前推第三個版本
 - git reset --hard fc25e782315b0a3f1674c78dabc081f2e29052cc  
-    =>  回滾到此id(輸入前7碼即可)的版本，只要有id就能回滾，相當於 git reset --hard fc25e78
+    - =>  回滾到此id(輸入前7碼即可)的版本，只要有id就能回滾，相當於 git reset --hard fc25e78
 #### reset參數：
 - --hard：
     - 跳到指定的 commit，檔案狀態：取消所有變更(※ 表示工作目錄中修改的檔案不會保留，直接刪除修改部分)
