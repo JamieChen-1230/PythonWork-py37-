@@ -9,19 +9,23 @@ function promise(num, timeout=500) {
 };
 
 async function run(){
-    const result_with_no_await = Promise.all([promise(1, 3000), promise(2), promise(3)])
-    .then(([res1, res2, res3]) => {
-        return [res1, res2, res3];
-    });
-    // 因為沒有使用await關鍵字去等待，result_with_no_await的結果還沒出來，所以會返回 Promise { <pending> }
-    console.log(result_with_no_await);
+    try {
+        const result_with_no_await = Promise.all([promise(1, 3000), promise(2), promise(3)])
+        .then(([res1, res2, res3]) => {
+            return [res1, res2, res3];
+        });
+        // 因為沒有使用await關鍵字去等待，result_with_no_await的結果還沒出來，所以會返回 Promise { <pending> }
+        console.log(result_with_no_await);
 
-    const result_with_await = await Promise.all([promise(1, 3000), promise(2), promise(3)])
-    .then(([res1, res2, res3]) => {
-        return [res1, res2, res3];
-    });
-    // 因為有使用await關鍵字，所以程序會等result_with_await回傳後再繼續進行，有接收到值[ '1成功', '2成功', '3成功' ]
-    console.log(result_with_await);
+        const result_with_await = await Promise.all([promise(1, 3000), promise(2), promise(3)])
+        .then(([res1, res2, res3]) => {
+            return [res1, res2, res3];
+        });
+        // 因為有使用await關鍵字，所以程序會等result_with_await回傳後再繼續進行，有接收到值[ '1成功', '2成功', '3成功' ]
+        console.log(result_with_await);
+    } catch (error) {
+        console.log(error);
+    }
 };
 
 run();
