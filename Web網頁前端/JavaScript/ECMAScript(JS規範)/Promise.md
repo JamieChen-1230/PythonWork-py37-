@@ -222,4 +222,65 @@ Promise.reject('result')
 ```
 
 
+&emsp;
+## Promise搭配Async/Await
+
+### 簡介：
+- Async
+    - 用來裝飾函數，使它變成一個異步函數
+    - async函數返回的是一個Promise對象，因此也可以使用.then方法
+        - 如果async函式回傳了一個值，Promise的狀態將為一個帶有該回傳值的resolved
+        - 如果async函式拋出例外或某個值，Promise的狀態將為一個帶有被拋出值的rejected
+- Await
+    - 只能用於異步函數中
+    - 使用await會暫停此async函數的執行，並且等待傳遞至表達式的Promise的解析，解析完之後會回傳解析值，並繼續此async函數的執行
+    - 使用await時，最好用try...catch包起來，因為有可能會是rejected
+
+### 範例：
+```javascript
+function promise(num, timeout=500) {
+    let p = new Promise((resolve, reject) => {
+        // setTimeout()的作用是在延遲了某段時間(單位為毫秒)之後，才去執行「一次」指定的程式碼
+        setTimeout(() => {
+            resolve(`${num}成功`)
+        }, timeout);
+    });
+  return p;
+};
+
+async function run(){
+    try {
+        const result_with_no_await = Promise.all([promise(1, 3000), promise(2), promise(3)])
+        .then(([res1, res2, res3]) => {
+            return [res1, res2, res3];
+        });
+        // 因為沒有使用await關鍵字去等待，result_with_no_await的結果還沒出來，所以會返回 Promise { <pending> }
+        console.log(result_with_no_await);
+
+        const result_with_await = await Promise.all([promise(1, 3000), promise(2), promise(3)])
+        .then(([res1, res2, res3]) => {
+            return [res1, res2, res3];
+        });
+        // 因為有使用await關鍵字，所以程序會等result_with_await回傳後再繼續進行，有接收到值[ '1成功', '2成功', '3成功' ]
+        console.log(result_with_await);
+    } catch (error) {
+        console.log(error);
+    }
+};
+
+run();
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 ###### tags: `JavaScript`
