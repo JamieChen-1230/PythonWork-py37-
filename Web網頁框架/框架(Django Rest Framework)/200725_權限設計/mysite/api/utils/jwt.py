@@ -23,7 +23,10 @@ class MyJWTAuthentication(BaseJSONWebTokenAuthentication):
     def get_jwt_value(request):
         """
         Description:
-            用於獲取前端傳來的認證權杖(token)
+            用於獲取前端傳來的認證權杖(token)，這邊設置了三種方式：
+                - Header中的Authorization (要prefix+token)
+                - GET請求參數中的token (只要token)
+                - Cookie中獲取 (不清楚)
         Parameters:
             request: DRF.request對象
         return:
@@ -34,10 +37,11 @@ class MyJWTAuthentication(BaseJSONWebTokenAuthentication):
         # 在setting.py中，可以自定義設定，auth_header_prefix => jwt
         auth_header_prefix = api_settings.JWT_AUTH_HEADER_PREFIX.lower()
 
-        if not auth:
-            # 若在Headers中沒有得到Authorization則執行
-            if api_settings.JWT_AUTH_COOKIE:
+        if not auth:  # 若在Headers中沒有得到Authorization則執行
+            if api_settings.JWT_AUTH_COOKIE:  # 在cookie中找尋
                 return request.COOKIES.get(api_settings.JWT_AUTH_COOKIE)
+            elif request.GET.get('token'):  # 在GET請求參數中找尋
+                return request.GET.get('token')
             return None
 
         if auth[0].decode(encoding='UTF-8', errors='strict').lower() != auth_header_prefix:

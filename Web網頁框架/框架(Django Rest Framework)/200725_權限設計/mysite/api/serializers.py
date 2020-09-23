@@ -44,10 +44,35 @@ class UsersSerializer(serializers.ModelSerializer):
         return attrs
 
     class Meta:
-        # 指名要與哪張表產生關係
-        model = models.User
+        model = models.User  # 指名要與哪張表產生關係
         fields = '__all__'
-        depth = 1
-        # 將密碼設為唯寫欄位
-        extra_kwargs = {'password': {'write_only': True}}
+        depth = 1  # 關聯表展開深度設為1
+        extra_kwargs = {'password': {'write_only': True}}  # 將密碼設為唯寫欄位
 
+
+class PermissionsSerializer(serializers.ModelSerializer):
+    description = serializers.SerializerMethodField()
+
+    class Meta:
+        model = models.Permission
+        fields = '__all__'
+
+    def get_description(self, obj):
+        """
+        Description:
+            自定義字段內容
+        Parameters:
+            obj: 視圖那傳來的Permission Object
+        return:
+            String: 描述訊息
+        """
+        return 'Can %s %s' % (obj.method, obj.resource)
+
+
+class RolesSerializer(serializers.ModelSerializer):
+    # 嵌套另一個Serializer
+    permissions = PermissionsSerializer(many=True)
+
+    class Meta:
+        model = models.Role
+        fields = '__all__'

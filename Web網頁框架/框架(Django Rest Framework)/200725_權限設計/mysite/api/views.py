@@ -3,8 +3,7 @@ from rest_framework_jwt import authentication
 from rest_framework.viewsets import ModelViewSet, GenericViewSet
 from rest_framework.response import Response
 from rest_framework import mixins
-from api import models
-from api.serializers import UsersSerializer
+from api import models, serializers
 from api.utils import permission
 
 
@@ -13,7 +12,7 @@ class UsersViewSet(ModelViewSet):
     # IsAuthenticated 讓只有通過認證者才可使用
     permission_classes = (IsAuthenticated, permission.MyPermission, )
     queryset = models.User.objects.all()
-    serializer_class = UsersSerializer
+    serializer_class = serializers.UsersSerializer
 
     def list(self, request, *args, **kwargs):
         queryset = self.filter_queryset(self.get_queryset())
@@ -30,4 +29,15 @@ class UsersViewSet(ModelViewSet):
         serializer = self.get_serializer(queryset, many=True)
         return Response(serializer.data)
 
+
+class PermissionsViewSet(ModelViewSet):
+    permission_classes = (IsAuthenticated, permission.MyPermission, )
+    queryset = models.Permission.objects.all()
+    serializer_class = serializers.PermissionsSerializer
+
+
+class RolesViewSet(ModelViewSet):
+    permission_classes = (IsAuthenticated, permission.MyPermission, )
+    queryset = models.Role.objects.all()
+    serializer_class = serializers.RolesSerializer
 

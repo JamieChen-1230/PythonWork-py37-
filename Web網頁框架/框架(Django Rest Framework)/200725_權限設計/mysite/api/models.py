@@ -33,6 +33,7 @@ class UserManager(BaseUserManager):
         return user
 
     def create_user(self, email, password, **extra_fields):
+        print("extra_fields", extra_fields)
         extra_fields.setdefault('is_staff', False)
         extra_fields.setdefault('is_superuser', False)
         return self._create_user(email, password, **extra_fields)
@@ -58,7 +59,7 @@ class User(AbstractBaseUser, PermissionsMixin):
         五、重新定義Manager對象
         六、最後要記得到settings.py中定義 AUTH_USER_MODEL='<app_name>.User'，這樣Django才會找我們的表當作User表
     """
-    # 要定義的其他字段(password等字段他們有幫我們定義的，就不用再定義)
+    # 要定義的其他字段(password等字段，內建有幫我們定義的，就不需額外再定義)
     email = models.EmailField(unique=True)
     username = models.CharField(max_length=150)
     telephone = models.CharField(max_length=11, blank=True, null=True)

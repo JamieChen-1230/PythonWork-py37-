@@ -10,7 +10,7 @@ urlpatterns = [
     re_path(r"^api/v1/", include(('api.urls', "api"), namespace="v1")),
     # =========-JWT內建提供的功能-=========
     # 獲取權杖
-    re_path(r"^login/", obtain_jwt_token),  # 請求：POST, data:{'username':jamie, 'password':'jamie851230'}
+    re_path(r"^login/", obtain_jwt_token),  # 請求：POST, data:{'email':jackooo@kimo.com, 'password':'jack000'}
     # 權杖刷新(須在settings.py中的JWT_AUTH設置 'JWT_ALLOW_REFRESH': True)，且只有為過期之權杖才可刷新
     re_path(r'^api-token-refresh/', refresh_jwt_token),  # 請求:POST, data:{'token': <舊token>}
     # 權杖驗證
